@@ -1,0 +1,71 @@
+account_id,district_id,account_type,city,latitude,longitude,account_risk_score,previous_case_count,account_status
+ACC100001,TN22,Savings,Salem,11.6961,78.1711,0.68,3,Frozen
+ACC100002,TN10,Savings,Kancheepuram,12.7888,79.752,0.62,12,Active
+ACC100003,TN30,Wallet,Tiruchirappalli,10.8291,78.7123,0.72,6,Under Monitoring
+ACC100004,TN26,Current,Theni,9.9752,77.4956,0.88,12,Active
+ACC100005,TN28,Current,Tiruvarur,10.7337,79.6802,0.53,0,Closed
+ACC100006,TN16,Savings,Kanniyakumari,8.0839,77.5686,0.67,8,Closed
+ACC100007,TN21,Wallet,Ranipet,12.9385,79.3552,0.52,8,Under Monitoring
+ACC100008,TN11,Wallet,Karur,10.9551,78.1018,0.83,4,Closed
+ACC100009,TN32,Current,Tirupathur,12.4712,78.5238,0.32,4,Suspended
+ACC100010,TN21,Business,Ranipet,12.8853,79.2984,0.41,2,Frozen
+ACC100011,TN05,Wallet,Cuddalore,11.7388,79.7757,0.44,3,Under Monitoring
+ACC100012,TN25,Business,Thanjavur,10.8316,79.0898,0.87,9,Under Monitoring
+ACC100013,TN31,Savings,Tirunelveli,8.7582,77.7366,0.41,6,Closed
+ACC100014,TN35,Business,The Nilgiris,11.5314,76.7325,0.3,7,Active
+ACC100015,TN25,Jan Dhan,Thanjavur,10.8039,79.1676,0.72,7,Frozen
+ACC100016,TN35,Savings,The Nilgiris,11.5323,76.7429,0.67,1,Under Monitoring
+ACC100017,TN09,Wallet,Kallakurichi,11.7065,78.9399,0.35,7,Suspended
+ACC100018,TN22,Wallet,Salem,11.6421,78.1911,0.44,1,Under Monitoring
+ACC100019,TN02,Business,Chengalpattu,12.6491,80.0209,0.26,1,Active
+ACC100020,TN02,Current,Chengalpattu,12.6638,79.9277,0.19,2,Under Monitoring
+ACC100021,TN08,Business,Erode,11.3858,77.7137,0.29,5,Frozen
+ACC100022,TN08,Current,Erode,11.3875,77.678,0.07,4,Closed
+ACC100023,TN25,Wallet,Thanjavur,10.8311,79.1076,0.6,10,Frozen
+ACC100024,TN07,Jan Dhan,Dindigul,10.3974,77.9795,0.16,9,Active
+ACC100025,TN23,Business,Sivaganga,9.8361,78.468,0.52,5,Active
+ACC100026,TN27,Wallet,Tiruvallur,13.1008,79.9532,0.64,7,Frozen
+ACC100027,TN28,Current,Tiruvarur,10.7895,79.6809,0.3,12,Closed
+ACC100028,TN31,Wallet,Tirunelveli,8.7075,77.7798,0.3,3,Active
+ACC100029,TN18,Wallet,Perambalur,11.2086,78.8786,0.62,6,Suspended
+ACC100030,TN02,Wallet,Chengalpattu,12.729,79.9439,0.25,12,Suspended
+ACC100031,TN22,Jan Dhan,Salem,11.7023,78.1661,0.31,0,Closed
+ACC100032,TN13,Savings,Madurai,9.8993,78.1104,0.57,3,Under Monitoring
+ACC100033,TN32,Wallet,Tirupathur,12.523,78.5254,0.26,11,Frozen
+ACC100034,TN20,Business,Ramanathapuram,9.3508,78.8374,0.37,11,Closed
+ACC100035,TN22,Jan Dhan,Salem,11.6846,78.1231,0.28,1,Frozen
+ACC100036,TN21,Savings,Ranipet,12.9515,79.3784,0.69,3,Frozen
+ACC100037,TN31,Jan Dhan,Tirunelveli,8.7364,77.8044,0.54,4,Active
+ACC100038,TN13,Jan Dhan,Madurai,9.8979,78.0877,0.06,8,Frozen
+ACC100039,TN18,Savings,Perambalur,11.2816,78.8874,0.7,2,Under Monitoring
+ACC100040,TN07,Savings,Dindigul,10.3698,77.9664,0.46,2,Active
+ACC100041,TN17,Wallet,Namakkal,11.1803,78.1239,0.51,9,Active
+ACC100042,TN10,Current,Kancheepuram,12.8653,79.7485,0.13,3,Active
+ACC100043,TN36,Wallet,Vellore,12.9271,79.1616,0.26,8,Under Monitoring
+ACC100044,TN29,Wallet,Thoothukudi,8.7439,78.1437,0.45,9,Closed
+ACC100045,TN04,Business,Coimbatore,11.0628,76.9157,0.76,10,Frozen
+ACC100046,TN17,Savings,Namakkal,11.1846,78.1348,0.12,0,Under Monitoring
+ACC100047,TN29,Business,Thoothukudi,8.7612,78.0881,0.32,4,Under Monitoring
+ACC100048,TN05,Current,Cuddalore,11.7904,79.8002,0.63,10,Frozen
+ACC100049,TN28,Savings,Tiruvarur,10.7706,79.6492,0.89,2,Active
+ACC100050,TN04,Current,Coimbatore,11.0461,76.9653,0.82,4,Under Monitoring
+ACC100051,TN08,Wallet,Erode,11.3599,77.7372,0.93,8,Closed
+ACC100052,TN32,Wallet,Tirupathur,12.4517,78.5201,0.45,5,Closed
+ACC100053,TN17,Savings,Namakkal,11.178,78.2136,0.83,9,Closed
+ACC100054,TN02,Jan Dhan,Chengalpattu,12.7015,80.002,0.21,8,Under Monitoring
+ACC100055,TN18,Current,Perambalur,11.2839,78.8757,0.81,1,Under Monitoring
+ACC100056,TN23,Wallet,Sivaganga,9.8266,78.4979,0.85,5,Under Monitoring
+ACC100057,TN32,Jan Dhan,Tirupathur,12.51,78.5561,0.76,0,Under Monitoring
+ACC100058,TN06,Jan Dhan,Dharmapuri,12.1029,78.1198,0.77,8,Active
+ACC100059,TN35,Wallet,The Nilgiris,11.4829,76.7025,0.39,12,Under Monitoring
+ACC100060,TN29,Savings,Thoothukudi,8.7346,78.1397,0.91,7,Under Monitoring
+ACC100061,TN08,Savings,Erode,11.3883,77.7281,0.27,2,Suspended
+ACC100062,TN36,Savings,Vellore,12.9217,79.0918,0.97,1,Under Monitoring
+ACC100063,TN08,Current,Erode,11.3408,77.7389,0.52,4,Under Monitoring
+ACC100064,TN31,Wallet,Tirunelveli,8.6883,77.7618,0.41,9,Closed
+ACC100065,TN09,Savings,Kallakurichi,11.7159,78.9929,0.44,12,Closed
+ACC100066,TN18,Savings,Perambalur,11.2125,78.862,0.6,10,Under Monitoring
+ACC100067,TN10,Wallet,Kancheepuram,12.8381,79.6881,0.56,8,Under Monitoring
+ACC100068,TN30,Jan Dhan,Tiruchirappalli,10.8275,78.7528,0.27,6,Frozen
+ACC100069,TN27,Savings,Tiruvallur,13.122,79.9044,0.9,6,Under Monitoring
+ACC100070,TN10,Wallet,Kancheepuram,12.8807,79.6662,0.95,5,Active

@@ -1,0 +1,10 @@
+from .health import router as health_router
+from .complaints import router as complaints_router
+from .withdrawal_locations import router as withdrawal_locations_router
+from .historical_cases import router as historical_cases_router
+from .cases import router as cases_router
+from .analysis import router as analysis_router
+from .money_flow import router as money_flow_router
+from .network_analysis import router as network_analysis_router
+from .time_geography import router as time_geography_router
+from .predictions import router as predictions_router

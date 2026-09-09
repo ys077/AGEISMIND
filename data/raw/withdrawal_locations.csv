@@ -1,0 +1,26 @@
+location_id,district_id,location_reference_id,location_name,city,latitude,longitude,atm_count,location_type,area_risk_baseline
+WL1001,TN10,LOC0033,Kancheepuram Market ATM Cluster,Kancheepuram,12.8446,79.662,12,ATM_ZONE,0.65
+WL1002,TN01,LOC0002,Ariyalur North ATM Cluster,Ariyalur,11.1537,79.121,11,ATM_ZONE,0.52
+WL1003,TN27,LOC0080,Tiruvallur South ATM Cluster,Tiruvallur,13.0927,79.9269,14,ATM_ZONE,0.82
+WL1004,TN22,LOC0066,Salem West ATM Cluster,Salem,11.6227,78.0966,2,ATM_ZONE,0.73
+WL1005,TN21,LOC0064,Ranipet North ATM Cluster,Ranipet,12.9307,79.3448,5,ATM_ZONE,0.77
+WL1006,TN08,LOC0026,Erode Plaza ATM Cluster,Erode,11.3035,77.6814,3,ATM_ZONE,0.13
+WL1007,TN21,LOC0064,Ranipet North ATM Cluster,Ranipet,12.9449,79.3546,8,ATM_ZONE,0.36
+WL1008,TN01,LOC0001,Ariyalur Central ATM Cluster,Ariyalur,11.1545,79.0449,2,ATM_ZONE,0.77
+WL1009,TN29,LOC0086,Thoothukudi South ATM Cluster,Thoothukudi,8.7823,78.1605,13,ATM_ZONE,0.51
+WL1010,TN31,LOC0093,Tirunelveli Plaza ATM Cluster,Tirunelveli,8.7034,77.7969,11,ATM_ZONE,0.28
+WL1011,TN12,LOC0038,Krishnagiri Plaza ATM Cluster,Krishnagiri,12.5405,78.1675,14,ATM_ZONE,0.24
+WL1012,TN02,LOC0006,Chengalpattu South ATM Cluster,Chengalpattu,12.7268,79.9389,11,ATM_ZONE,0.35
+WL1013,TN32,LOC0095,Tirupathur South ATM Cluster,Tirupathur,12.5327,78.551,15,ATM_ZONE,0.14
+WL1014,TN37,LOC0110,Viluppuram West ATM Cluster,Viluppuram,11.9294,79.4832,6,ATM_ZONE,0.39
+WL1015,TN19,LOC0057,Pudukkottai East ATM Cluster,Pudukkottai,10.3553,78.7661,12,ATM_ZONE,0.17
+WL1016,TN35,LOC0105,The Nilgiris Central ATM Cluster,The Nilgiris,11.4892,76.7427,7,ATM_ZONE,0.87
+WL1017,TN11,LOC0035,Karur East ATM Cluster,Karur,10.928,78.0667,8,ATM_ZONE,0.74
+WL1018,TN28,LOC0084,Tiruvarur West ATM Cluster,Tiruvarur,10.7386,79.5904,3,ATM_ZONE,0.66
+WL1019,TN03,LOC0008,Chennai South ATM Cluster,Chennai,13.0516,80.2373,2,ATM_ZONE,0.43
+WL1020,TN26,LOC0076,Theni Central ATM Cluster,Theni,10.0343,77.4437,8,ATM_ZONE,0.25
+WL1021,TN16,LOC0049,Kanniyakumari North ATM Cluster,Kanniyakumari,8.0536,77.5338,14,ATM_ZONE,0.65
+WL1022,TN36,LOC0108,Vellore West ATM Cluster,Vellore,12.9011,79.1451,8,ATM_ZONE,0.84
+WL1023,TN05,LOC0015,Cuddalore Plaza ATM Cluster,Cuddalore,11.7221,79.7557,2,ATM_ZONE,0.31
+WL1024,TN13,LOC0041,Madurai Market ATM Cluster,Madurai,9.9367,78.1171,9,ATM_ZONE,0.71
+WL1025,TN25,LOC0074,Thanjavur Plaza ATM Cluster,Thanjavur,10.7423,79.164,11,ATM_ZONE,0.8
