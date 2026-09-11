@@ -15,6 +15,7 @@ from app.models.prediction import Prediction
 from app.models.prediction_factor import PredictionFactor
 from app.models.investigation_action import InvestigationAction
 from app.models.audit_log import AuditLog
+from app.models.alert import Alert
 
 __all__ = [
     "Base",
@@ -30,4 +31,5 @@ __all__ = [
     "PredictionFactor",
     "InvestigationAction",
     "AuditLog",
+    "Alert",
 ]

@@ -16,15 +16,26 @@ from app.schemas import (
 
 router = APIRouter(prefix="/complaints", tags=["Complaints"])
 
-@router.get("", response_model=List[ComplaintResponse])
+from app.schemas.complaint import PaginatedComplaintResponse
+
+@router.get("", response_model=PaginatedComplaintResponse)
 def get_complaints(
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
     db: Session = Depends(get_db)
 ):
     offset = (page - 1) * page_size
+    total = db.query(Complaint).count()
     complaints = db.query(Complaint).offset(offset).limit(page_size).all()
-    return complaints
+    total_pages = (total + page_size - 1) // page_size
+    
+    return PaginatedComplaintResponse(
+        items=complaints,
+        total=total,
+        page=page,
+        page_size=page_size,
+        total_pages=total_pages
+    )
 
 @router.get("/{complaint_id}", response_model=ComplaintResponse)
 def get_complaint(complaint_id: str, db: Session = Depends(get_db)):

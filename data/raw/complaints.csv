@@ -1,36 +1,1001 @@
 complaint_id,district_id,complaint_date,complaint_time,fraud_type,crime_category,fraud_amount,victim_city,victim_latitude,victim_longitude,source_channel,status
 CC1001,TN03,2026-07-15,14:32:00,UPI Fraud,Online Financial Fraud,487500.0,Chennai,13.0827,80.2707,Helpline 1930,Under Investigation
-CC1002,TN22,2026-02-12,20:05:54,Investment Scam,Cyber Deception,190624.69,Salem,11.646,78.1679,Helpline 1930,Pending Review
-CC1003,TN03,2025-03-12,07:40:43,Loan Fraud,Social Engineering,373636.42,Chennai,13.0761,80.2305,National Cybercrime Portal,Resolved
-CC1004,TN11,2025-11-03,00:02:20,UPI Fraud,Identity Fraud,179873.21,Karur,10.9532,78.051,Helpline 1930,Pending Review
-CC1005,TN12,2025-06-24,05:05:39,Job Fraud,Cyber Deception,341884.16,Krishnagiri,12.5184,78.222,State Police Portal,Resolved
-CC1006,TN17,2026-04-16,08:42:00,Card Skimming,Identity Fraud,339127.83,Namakkal,11.1847,78.1616,Bank Referral,Pending Review
-CC1007,TN20,2026-03-11,22:16:29,Loan Fraud,Social Engineering,499687.41,Ramanathapuram,9.3992,78.7928,Helpline 1930,Pending Review
-CC1008,TN23,2026-08-12,09:44:18,UPI Fraud,Banking Fraud,137965.71,Sivaganga,9.8499,78.4995,National Cybercrime Portal,Pending Review
-CC1009,TN32,2025-10-21,07:38:51,Investment Scam,Social Engineering,318672.32,Tirupathur,12.5058,78.5839,State Police Portal,Under Investigation
-CC1010,TN03,2025-11-13,14:02:37,Investment Scam,Social Engineering,45976.55,Chennai,13.0622,80.2954,State Police Portal,FIR Filed
-CC1011,TN09,2026-07-07,11:33:32,Loan Fraud,Social Engineering,129228.07,Kallakurichi,11.7708,78.9621,Bank Referral,Chargesheet Filed
-CC1012,TN08,2026-04-25,02:09:48,SIM Swap,Banking Fraud,483667.6,Erode,11.3715,77.7038,Helpline 1930,Under Investigation
-CC1013,TN17,2026-07-04,03:29:23,Loan Fraud,Cyber Deception,191131.72,Namakkal,11.2328,78.1545,State Police Portal,Resolved
-CC1014,TN02,2026-07-29,10:58:39,SIM Swap,Online Financial Fraud,318066.56,Chengalpattu,12.6903,79.9958,Helpline 1930,Under Investigation
-CC1015,TN09,2025-02-16,01:19:31,Phishing,Online Financial Fraud,118165.22,Kallakurichi,11.7421,78.9528,Bank Referral,Pending Review
-CC1016,TN27,2026-08-25,23:46:09,Job Fraud,Online Financial Fraud,417012.85,Tiruvallur,13.1518,79.951,Bank Referral,Under Investigation
-CC1017,TN24,2025-08-11,14:28:15,Investment Scam,Online Financial Fraud,490482.93,Tenkasi,8.9431,77.3553,Bank Referral,Under Investigation
-CC1018,TN26,2025-10-10,06:07:54,Card Skimming,Online Financial Fraud,331721.6,Theni,10.0246,77.4865,National Cybercrime Portal,Under Investigation
-CC1019,TN22,2025-09-07,04:50:36,SIM Swap,Online Financial Fraud,415079.1,Salem,11.6697,78.1546,State Police Portal,Chargesheet Filed
-CC1020,TN10,2025-01-03,08:54:09,OTP Fraud,Cyber Deception,126076.44,Kancheepuram,12.8016,79.7197,National Cybercrime Portal,FIR Filed
-CC1021,TN01,2026-01-02,07:37:20,UPI Fraud,Social Engineering,133418.39,Ariyalur,11.1027,79.0707,National Cybercrime Portal,Under Investigation
-CC1022,TN31,2026-04-05,11:32:37,Phishing,Banking Fraud,252415.51,Tirunelveli,8.7584,77.711,Walk-in Complaint,Chargesheet Filed
-CC1023,TN30,2025-02-01,01:30:54,Job Fraud,Banking Fraud,343362.65,Tiruchirappalli,10.7895,78.7457,National Cybercrime Portal,Under Investigation
-CC1024,TN21,2025-06-01,02:08:17,Romance Scam,Cyber Deception,274629.86,Ranipet,12.9097,79.3828,Walk-in Complaint,Chargesheet Filed
-CC1025,TN30,2026-06-02,19:27:06,Phishing,Cyber Deception,360699.12,Tiruchirappalli,10.762,78.6999,State Police Portal,Resolved
-CC1026,TN22,2026-04-10,12:26:46,Phishing,Identity Fraud,213955.24,Salem,11.6808,78.1334,State Police Portal,Resolved
-CC1027,TN05,2025-04-04,02:05:27,Phishing,Identity Fraud,406072.87,Cuddalore,11.7536,79.78,Walk-in Complaint,Pending Review
-CC1028,TN22,2025-05-06,13:22:55,Job Fraud,Online Financial Fraud,484230.91,Salem,11.6743,78.1312,Walk-in Complaint,Pending Review
-CC1029,TN14,2025-06-08,21:30:14,Phishing,Identity Fraud,422841.34,Mayiladuthurai,11.0953,79.6797,Walk-in Complaint,FIR Filed
-CC1030,TN28,2026-07-29,19:39:43,Identity Theft,Online Financial Fraud,304888.46,Tiruvarur,10.7819,79.6537,National Cybercrime Portal,FIR Filed
-CC1031,TN18,2025-11-13,10:22:00,OTP Fraud,Social Engineering,283594.23,Perambalur,11.2243,78.8463,National Cybercrime Portal,Under Investigation
-CC1032,TN34,2025-08-09,12:26:29,Investment Scam,Social Engineering,185656.49,Tiruvannamalai,12.2475,79.1024,Walk-in Complaint,Pending Review
-CC1033,TN06,2025-02-23,04:10:48,Romance Scam,Online Financial Fraud,337310.39,Dharmapuri,12.1049,78.1744,Helpline 1930,Pending Review
-CC1034,TN29,2026-03-01,08:13:48,Identity Theft,Online Financial Fraud,173241.25,Thoothukudi,8.7253,78.1526,Walk-in Complaint,Resolved
-CC1035,TN34,2025-11-12,01:14:25,Romance Scam,Online Financial Fraud,4835.86,Tiruvannamalai,12.2054,79.0458,State Police Portal,Chargesheet Filed
+CC1002,TN13,2026-01-08,14:35:55,Job Fraud,Identity Fraud,322356.02,Madurai,9.8966,78.0839,National Cybercrime Portal,Pending Review
+CC1003,TN29,2025-11-04,19:26:03,SIM Swap,Social Engineering,169503.89,Thoothukudi,8.8032,78.1508,Walk-in Complaint,Resolved
+CC1004,TN12,2026-03-30,00:44:13,Job Fraud,Cyber Deception,333829.78,Krishnagiri,12.4959,78.2383,Walk-in Complaint,FIR Filed
+CC1005,TN26,2026-08-12,06:09:26,Investment Scam,Banking Fraud,123603.54,Theni,10.0342,77.5031,Helpline 1930,Chargesheet Filed
+CC1006,TN34,2025-02-06,21:06:50,Phishing,Online Financial Fraud,11711.57,Tiruvannamalai,12.2673,79.1116,Bank Referral,Under Investigation
+CC1007,TN21,2026-01-01,06:47:09,SIM Swap,Identity Fraud,420498.58,Ranipet,12.9135,79.3742,Walk-in Complaint,Resolved
+CC1008,TN31,2025-12-13,22:11:18,Loan Fraud,Online Financial Fraud,401365.63,Tirunelveli,8.6799,77.7948,State Police Portal,Resolved
+CC1009,TN08,2026-06-30,19:26:10,Identity Theft,Cyber Deception,314712.56,Erode,11.361,77.6953,State Police Portal,Under Investigation
+CC1010,TN10,2026-04-01,03:48:02,OTP Fraud,Banking Fraud,236933.73,Kancheepuram,12.8319,79.7303,Walk-in Complaint,Chargesheet Filed
+CC1011,TN29,2026-08-22,18:11:28,UPI Fraud,Banking Fraud,473355.43,Thoothukudi,8.7709,78.1734,National Cybercrime Portal,Chargesheet Filed
+CC1012,TN05,2025-07-01,04:39:19,Job Fraud,Social Engineering,56374.94,Cuddalore,11.7915,79.8174,State Police Portal,Chargesheet Filed
+CC1013,TN19,2025-03-27,11:38:51,Card Skimming,Online Financial Fraud,311309.24,Pudukkottai,10.3887,78.8697,Bank Referral,Chargesheet Filed
+CC1014,TN13,2026-06-10,08:33:57,UPI Fraud,Banking Fraud,159965.21,Madurai,9.8919,78.1347,Bank Referral,Chargesheet Filed
+CC1015,TN29,2026-03-20,10:02:17,Card Skimming,Online Financial Fraud,167126.51,Thoothukudi,8.7173,78.172,Walk-in Complaint,Under Investigation
+CC1016,TN37,2025-01-20,09:24:12,Card Skimming,Banking Fraud,194810.17,Viluppuram,11.9596,79.4631,Helpline 1930,Chargesheet Filed
+CC1017,TN24,2026-06-09,13:26:45,Investment Scam,Social Engineering,471510.22,Tenkasi,8.9783,77.3203,Helpline 1930,Chargesheet Filed
+CC1018,TN18,2025-03-27,14:58:42,Phishing,Identity Fraud,430878.09,Perambalur,11.2738,78.8344,State Police Portal,Under Investigation
+CC1019,TN16,2025-03-18,05:23:04,OTP Fraud,Cyber Deception,400927.07,Kanniyakumari,8.1162,77.5749,National Cybercrime Portal,Under Investigation
+CC1020,TN22,2025-03-14,04:37:40,Card Skimming,Identity Fraud,393279.68,Salem,11.6249,78.1082,State Police Portal,FIR Filed
+CC1021,TN06,2025-07-10,02:45:05,UPI Fraud,Banking Fraud,396004.77,Dharmapuri,12.101,78.1132,National Cybercrime Portal,Resolved
+CC1022,TN21,2026-06-27,06:30:52,SIM Swap,Banking Fraud,303123.45,Ranipet,12.8958,79.3121,Walk-in Complaint,Under Investigation
+CC1023,TN29,2025-07-09,16:00:05,OTP Fraud,Social Engineering,132367.54,Thoothukudi,8.802,78.1423,State Police Portal,Under Investigation
+CC1024,TN05,2025-07-12,05:54:20,SIM Swap,Social Engineering,197939.32,Cuddalore,11.7816,79.7511,Helpline 1930,Pending Review
+CC1025,TN19,2025-08-12,13:16:52,Investment Scam,Social Engineering,265744.87,Pudukkottai,10.3952,78.8673,Bank Referral,Chargesheet Filed
+CC1026,TN11,2025-03-08,01:04:31,Investment Scam,Online Financial Fraud,310302.85,Karur,10.9919,78.0346,Helpline 1930,Under Investigation
+CC1027,TN06,2025-11-23,18:49:58,Investment Scam,Cyber Deception,339419.58,Dharmapuri,12.0843,78.1344,Bank Referral,Resolved
+CC1028,TN23,2026-05-07,11:31:19,Card Skimming,Identity Fraud,273412.53,Sivaganga,9.8678,78.4537,State Police Portal,Under Investigation
+CC1029,TN23,2026-02-24,14:56:29,Investment Scam,Banking Fraud,232348.31,Sivaganga,9.8832,78.4761,State Police Portal,Resolved
+CC1030,TN27,2025-01-26,04:50:20,Job Fraud,Social Engineering,200309.71,Tiruvallur,13.0916,79.9362,State Police Portal,FIR Filed
+CC1031,TN38,2025-07-08,06:06:01,Job Fraud,Banking Fraud,75800.01,Virudhunagar,9.5709,77.9146,Helpline 1930,FIR Filed
+CC1032,TN20,2026-07-17,08:14:12,Card Skimming,Cyber Deception,362140.87,Ramanathapuram,9.3572,78.8768,State Police Portal,Resolved
+CC1033,TN04,2025-12-28,03:04:20,Card Skimming,Cyber Deception,145371.61,Coimbatore,10.9903,77.0001,State Police Portal,Resolved
+CC1034,TN32,2025-01-14,09:40:10,Investment Scam,Identity Fraud,342344.73,Tirupathur,12.4866,78.5283,State Police Portal,Pending Review
+CC1035,TN19,2025-12-16,23:23:51,OTP Fraud,Identity Fraud,283098.52,Pudukkottai,10.3771,78.7723,Bank Referral,Resolved
+CC1036,TN16,2025-08-03,10:44:14,Investment Scam,Banking Fraud,393616.26,Kanniyakumari,8.0938,77.5462,Bank Referral,FIR Filed
+CC1037,TN09,2025-11-26,20:36:58,SIM Swap,Cyber Deception,305084.17,Kallakurichi,11.7696,78.9388,Walk-in Complaint,Resolved
+CC1038,TN02,2025-11-17,16:56:06,Job Fraud,Social Engineering,312179.89,Chengalpattu,12.652,79.9748,Walk-in Complaint,Chargesheet Filed
+CC1039,TN05,2026-04-06,12:49:12,Loan Fraud,Social Engineering,182527.45,Cuddalore,11.7758,79.7688,State Police Portal,Under Investigation
+CC1040,TN21,2025-12-31,19:30:35,OTP Fraud,Identity Fraud,478377.15,Ranipet,12.9257,79.3147,Walk-in Complaint,FIR Filed
+CC1041,TN13,2025-05-04,09:46:03,SIM Swap,Cyber Deception,399625.4,Madurai,9.9034,78.1489,Helpline 1930,Under Investigation
+CC1042,TN20,2025-09-25,06:09:18,UPI Fraud,Online Financial Fraud,326165.85,Ramanathapuram,9.3901,78.79,Helpline 1930,FIR Filed
+CC1043,TN29,2026-01-27,17:10:38,Card Skimming,Identity Fraud,54764.69,Thoothukudi,8.7416,78.1124,Walk-in Complaint,Resolved
+CC1044,TN19,2025-06-16,18:08:20,UPI Fraud,Online Financial Fraud,27159.32,Pudukkottai,10.3624,78.8182,State Police Portal,Chargesheet Filed
+CC1045,TN25,2026-07-18,00:40:27,Investment Scam,Banking Fraud,89821.22,Thanjavur,10.7983,79.1639,Bank Referral,Chargesheet Filed
+CC1046,TN37,2026-08-06,01:56:32,UPI Fraud,Social Engineering,248841.63,Viluppuram,11.9828,79.4501,National Cybercrime Portal,Pending Review
+CC1047,TN11,2025-08-29,02:48:23,Investment Scam,Identity Fraud,41498.2,Karur,10.9445,78.0336,Helpline 1930,Pending Review
+CC1048,TN04,2026-06-22,13:41:50,Job Fraud,Social Engineering,274500.66,Coimbatore,10.9757,76.9265,State Police Portal,Under Investigation
+CC1049,TN17,2025-08-21,07:03:41,Identity Theft,Online Financial Fraud,27189.07,Namakkal,11.2532,78.14,National Cybercrime Portal,Under Investigation
+CC1050,TN15,2025-08-27,04:55:08,Identity Theft,Identity Fraud,162152.18,Nagapattinam,10.7928,79.8619,National Cybercrime Portal,Pending Review
+CC1051,TN19,2026-05-20,00:42:45,Job Fraud,Cyber Deception,34912.81,Pudukkottai,10.3497,78.7741,State Police Portal,Pending Review
+CC1052,TN32,2025-01-08,11:44:05,Romance Scam,Identity Fraud,255065.17,Tirupathur,12.5266,78.5558,State Police Portal,Pending Review
+CC1053,TN01,2025-10-16,08:35:23,Identity Theft,Banking Fraud,80771.8,Ariyalur,11.1102,79.0894,Bank Referral,FIR Filed
+CC1054,TN21,2025-09-24,12:07:41,Loan Fraud,Banking Fraud,15379.92,Ranipet,12.9375,79.3484,Walk-in Complaint,Resolved
+CC1055,TN14,2025-07-09,03:02:24,Phishing,Social Engineering,100871.17,Mayiladuthurai,11.1155,79.6781,State Police Portal,Pending Review
+CC1056,TN20,2026-01-05,14:03:41,SIM Swap,Cyber Deception,445213.05,Ramanathapuram,9.3983,78.8038,National Cybercrime Portal,Chargesheet Filed
+CC1057,TN01,2025-08-10,05:55:21,SIM Swap,Banking Fraud,473450.74,Ariyalur,11.1289,79.0613,Helpline 1930,Pending Review
+CC1058,TN11,2026-05-19,15:35:38,Loan Fraud,Social Engineering,39759.39,Karur,10.9208,78.0266,National Cybercrime Portal,Pending Review
+CC1059,TN04,2025-01-12,08:59:00,Loan Fraud,Banking Fraud,191329.04,Coimbatore,11.0236,76.9217,National Cybercrime Portal,Chargesheet Filed
+CC1060,TN14,2025-07-15,13:47:56,Investment Scam,Online Financial Fraud,140709.36,Mayiladuthurai,11.1239,79.6331,National Cybercrime Portal,Under Investigation
+CC1061,TN20,2025-05-26,08:29:59,SIM Swap,Online Financial Fraud,459783.77,Ramanathapuram,9.3883,78.8503,National Cybercrime Portal,Resolved
+CC1062,TN12,2025-01-15,03:05:46,SIM Swap,Banking Fraud,435026.1,Krishnagiri,12.5266,78.2194,Bank Referral,Under Investigation
+CC1063,TN37,2026-05-07,02:46:44,OTP Fraud,Social Engineering,33513.73,Viluppuram,11.9579,79.4391,Helpline 1930,Resolved
+CC1064,TN30,2026-02-27,05:00:36,UPI Fraud,Online Financial Fraud,479755.01,Tiruchirappalli,10.8281,78.7257,Helpline 1930,FIR Filed
+CC1065,TN18,2025-01-25,21:17:55,SIM Swap,Social Engineering,345147.92,Perambalur,11.2652,78.9317,National Cybercrime Portal,Pending Review
+CC1066,TN28,2026-07-27,22:31:50,SIM Swap,Online Financial Fraud,143972.04,Tiruvarur,10.7249,79.6211,Helpline 1930,Pending Review
+CC1067,TN11,2026-01-18,21:57:23,Identity Theft,Cyber Deception,73702.15,Karur,10.9836,78.0613,State Police Portal,Pending Review
+CC1068,TN26,2026-01-17,14:22:49,Loan Fraud,Social Engineering,407299.51,Theni,10.0356,77.4763,Walk-in Complaint,Resolved
+CC1069,TN24,2026-03-19,02:38:16,OTP Fraud,Identity Fraud,462434.82,Tenkasi,8.9709,77.3102,Walk-in Complaint,FIR Filed
+CC1070,TN03,2025-12-18,16:58:55,OTP Fraud,Cyber Deception,171483.29,Chennai,13.096,80.2952,Walk-in Complaint,FIR Filed
+CC1071,TN14,2026-02-10,02:52:26,Phishing,Cyber Deception,272454.37,Mayiladuthurai,11.1105,79.6609,Bank Referral,Pending Review
+CC1072,TN11,2025-08-21,21:45:50,Investment Scam,Banking Fraud,59343.75,Karur,10.9833,78.1063,Walk-in Complaint,Resolved
+CC1073,TN34,2026-02-07,07:36:22,Job Fraud,Online Financial Fraud,113681.59,Tiruvannamalai,12.2397,79.0403,State Police Portal,Under Investigation
+CC1074,TN33,2025-04-21,15:09:58,Phishing,Identity Fraud,121674.84,Tiruppur,11.0991,77.3736,Walk-in Complaint,Under Investigation
+CC1075,TN13,2025-01-25,00:01:18,Phishing,Social Engineering,93671.34,Madurai,9.9528,78.0769,Bank Referral,Resolved
+CC1076,TN08,2026-03-09,11:42:25,UPI Fraud,Cyber Deception,150807.52,Erode,11.3298,77.688,Helpline 1930,Pending Review
+CC1077,TN38,2026-05-05,20:39:37,UPI Fraud,Banking Fraud,488529.72,Virudhunagar,9.5872,77.9475,Bank Referral,Resolved
+CC1078,TN25,2026-07-06,03:27:44,Romance Scam,Cyber Deception,440437.24,Thanjavur,10.8319,79.1563,National Cybercrime Portal,Resolved
+CC1079,TN03,2026-05-15,02:30:16,Identity Theft,Online Financial Fraud,42399.38,Chennai,13.1051,80.2923,National Cybercrime Portal,Resolved
+CC1080,TN25,2025-12-12,07:38:30,UPI Fraud,Identity Fraud,155596.98,Thanjavur,10.8147,79.1733,State Police Portal,Pending Review
+CC1081,TN27,2025-04-08,00:43:08,Romance Scam,Online Financial Fraud,467833.55,Tiruvallur,13.1346,79.9073,Helpline 1930,Chargesheet Filed
+CC1082,TN37,2026-02-02,17:41:46,UPI Fraud,Identity Fraud,293244.87,Viluppuram,11.9599,79.4852,Helpline 1930,Chargesheet Filed
+CC1083,TN11,2025-02-10,09:38:21,Job Fraud,Online Financial Fraud,343716.87,Karur,11.007,78.0343,Helpline 1930,Resolved
+CC1084,TN16,2025-01-06,12:49:47,OTP Fraud,Banking Fraud,22893.46,Kanniyakumari,8.0566,77.5225,Walk-in Complaint,Resolved
+CC1085,TN15,2026-04-01,22:58:07,Phishing,Social Engineering,70463.45,Nagapattinam,10.7912,79.8896,Walk-in Complaint,Under Investigation
+CC1086,TN29,2026-05-24,11:50:44,Job Fraud,Online Financial Fraud,354495.99,Thoothukudi,8.804,78.1216,Walk-in Complaint,Under Investigation
+CC1087,TN27,2026-05-01,01:17:27,Identity Theft,Banking Fraud,34402.34,Tiruvallur,13.0989,79.9449,Bank Referral,Resolved
+CC1088,TN26,2026-06-04,07:58:59,OTP Fraud,Online Financial Fraud,13030.53,Theni,9.969,77.4455,State Police Portal,Resolved
+CC1089,TN35,2026-01-18,17:16:30,Phishing,Social Engineering,291478.14,The Nilgiris,11.4532,76.6877,State Police Portal,FIR Filed
+CC1090,TN20,2025-05-17,23:44:25,UPI Fraud,Identity Fraud,30937.0,Ramanathapuram,9.3927,78.7934,Bank Referral,Pending Review
+CC1091,TN34,2025-01-10,09:56:51,OTP Fraud,Identity Fraud,460445.1,Tiruvannamalai,12.2614,79.1048,State Police Portal,Resolved
+CC1092,TN31,2026-05-06,06:06:11,Job Fraud,Cyber Deception,317064.89,Tirunelveli,8.718,77.7871,State Police Portal,FIR Filed
+CC1093,TN33,2025-05-29,02:30:32,Phishing,Cyber Deception,83201.63,Tiruppur,11.1212,77.3325,Bank Referral,FIR Filed
+CC1094,TN17,2026-02-21,01:48:27,UPI Fraud,Identity Fraud,390535.37,Namakkal,11.1717,78.1846,Bank Referral,Resolved
+CC1095,TN29,2025-08-19,23:58:08,Card Skimming,Cyber Deception,474744.57,Thoothukudi,8.7652,78.1255,State Police Portal,FIR Filed
+CC1096,TN34,2025-10-22,15:49:04,Job Fraud,Cyber Deception,16426.09,Tiruvannamalai,12.1819,79.0332,State Police Portal,Under Investigation
+CC1097,TN24,2025-10-12,12:17:29,Investment Scam,Identity Fraud,418325.91,Tenkasi,8.9669,77.357,Helpline 1930,Pending Review
+CC1098,TN32,2026-01-31,22:37:44,Identity Theft,Cyber Deception,300071.6,Tirupathur,12.5223,78.5298,Bank Referral,Under Investigation
+CC1099,TN32,2025-12-17,17:33:39,Phishing,Identity Fraud,314931.56,Tirupathur,12.5371,78.6036,Walk-in Complaint,Pending Review
+CC1100,TN15,2025-11-17,10:58:15,Romance Scam,Social Engineering,174908.09,Nagapattinam,10.7478,79.8775,Walk-in Complaint,Resolved
+CC1101,TN18,2025-09-28,19:27:42,SIM Swap,Cyber Deception,445384.65,Perambalur,11.1981,78.9091,Bank Referral,FIR Filed
+CC1102,TN24,2026-07-10,17:20:13,Card Skimming,Cyber Deception,260536.23,Tenkasi,8.9181,77.3374,Bank Referral,FIR Filed
+CC1103,TN14,2025-12-12,05:56:41,Card Skimming,Identity Fraud,123571.27,Mayiladuthurai,11.1069,79.6305,Walk-in Complaint,Resolved
+CC1104,TN35,2025-12-16,04:16:38,Phishing,Identity Fraud,63090.21,The Nilgiris,11.4793,76.7388,Helpline 1930,Under Investigation
+CC1105,TN05,2025-07-13,08:59:31,Card Skimming,Cyber Deception,292208.22,Cuddalore,11.7257,79.7781,State Police Portal,Chargesheet Filed
+CC1106,TN04,2026-03-14,20:31:38,Phishing,Banking Fraud,219148.94,Coimbatore,10.9981,76.9198,National Cybercrime Portal,Chargesheet Filed
+CC1107,TN04,2025-02-12,02:17:06,Identity Theft,Cyber Deception,134938.73,Coimbatore,11.0452,76.9984,Helpline 1930,FIR Filed
+CC1108,TN03,2026-08-04,01:00:07,Investment Scam,Cyber Deception,360066.41,Chennai,13.0611,80.2448,State Police Portal,Pending Review
+CC1109,TN37,2025-10-01,17:22:53,SIM Swap,Social Engineering,12454.08,Viluppuram,11.9485,79.5123,State Police Portal,Resolved
+CC1110,TN14,2026-07-09,19:01:10,Phishing,Cyber Deception,370487.6,Mayiladuthurai,11.1564,79.6304,Helpline 1930,Under Investigation
+CC1111,TN07,2025-09-10,13:14:15,Card Skimming,Cyber Deception,83655.64,Dindigul,10.3298,77.9415,National Cybercrime Portal,Under Investigation
+CC1112,TN16,2025-11-12,13:37:55,Romance Scam,Banking Fraud,223636.44,Kanniyakumari,8.0615,77.5732,Helpline 1930,Resolved
+CC1113,TN29,2025-06-03,23:56:24,Romance Scam,Banking Fraud,12490.27,Thoothukudi,8.7907,78.1053,Helpline 1930,Resolved
+CC1114,TN34,2025-12-17,10:01:31,Identity Theft,Cyber Deception,194562.44,Tiruvannamalai,12.2195,79.0452,State Police Portal,Under Investigation
+CC1115,TN25,2025-06-22,12:13:13,Investment Scam,Identity Fraud,203146.04,Thanjavur,10.7619,79.1169,State Police Portal,Resolved
+CC1116,TN31,2025-01-25,21:59:36,SIM Swap,Online Financial Fraud,226670.66,Tirunelveli,8.7439,77.7456,Bank Referral,Chargesheet Filed
+CC1117,TN25,2025-01-21,15:27:46,Card Skimming,Banking Fraud,45640.99,Thanjavur,10.7625,79.1107,Bank Referral,Chargesheet Filed
+CC1118,TN31,2025-06-11,05:14:54,Romance Scam,Cyber Deception,299953.51,Tirunelveli,8.7449,77.7913,Helpline 1930,Chargesheet Filed
+CC1119,TN04,2025-08-23,02:45:58,OTP Fraud,Online Financial Fraud,308109.53,Coimbatore,11.0221,76.9308,Walk-in Complaint,Chargesheet Filed
+CC1120,TN29,2025-06-02,09:09:54,Job Fraud,Identity Fraud,435633.35,Thoothukudi,8.7328,78.1257,State Police Portal,Pending Review
+CC1121,TN05,2025-08-26,02:39:03,Romance Scam,Social Engineering,144833.25,Cuddalore,11.745,79.7637,State Police Portal,FIR Filed
+CC1122,TN02,2025-07-20,19:45:04,Phishing,Online Financial Fraud,135253.02,Chengalpattu,12.7222,79.9791,Helpline 1930,Pending Review
+CC1123,TN24,2025-07-03,04:34:59,OTP Fraud,Social Engineering,393667.27,Tenkasi,8.9389,77.2823,Bank Referral,Pending Review
+CC1124,TN02,2026-05-28,16:57:03,Job Fraud,Social Engineering,84333.63,Chengalpattu,12.6908,80.0104,State Police Portal,Pending Review
+CC1125,TN24,2026-08-11,08:29:15,Card Skimming,Social Engineering,355394.38,Tenkasi,8.9777,77.2813,Walk-in Complaint,Under Investigation
+CC1126,TN05,2026-01-22,04:00:18,Card Skimming,Cyber Deception,399620.19,Cuddalore,11.7658,79.7609,Walk-in Complaint,Resolved
+CC1127,TN34,2026-04-23,20:33:22,Romance Scam,Cyber Deception,359459.57,Tiruvannamalai,12.2502,79.0999,Walk-in Complaint,Resolved
+CC1128,TN11,2026-05-31,15:08:51,UPI Fraud,Social Engineering,37635.12,Karur,11.0096,78.1108,National Cybercrime Portal,Pending Review
+CC1129,TN27,2026-01-27,12:19:23,UPI Fraud,Identity Fraud,244123.57,Tiruvallur,13.1652,79.8787,State Police Portal,Resolved
+CC1130,TN38,2025-05-24,20:50:19,Job Fraud,Social Engineering,72015.35,Virudhunagar,9.6273,78.0028,Bank Referral,Resolved
+CC1131,TN26,2026-04-23,22:29:23,SIM Swap,Banking Fraud,66076.64,Theni,10.0564,77.4513,State Police Portal,Under Investigation
+CC1132,TN19,2026-01-19,01:22:29,Job Fraud,Banking Fraud,39983.62,Pudukkottai,10.3591,78.8526,Walk-in Complaint,Resolved
+CC1133,TN03,2026-05-06,02:22:21,SIM Swap,Identity Fraud,461070.66,Chennai,13.0493,80.3199,State Police Portal,Pending Review
+CC1134,TN18,2025-03-03,00:32:13,Identity Theft,Identity Fraud,13045.78,Perambalur,11.2245,78.912,Helpline 1930,Chargesheet Filed
+CC1135,TN21,2025-10-19,11:03:51,Identity Theft,Cyber Deception,62525.6,Ranipet,12.921,79.3321,Walk-in Complaint,Under Investigation
+CC1136,TN36,2026-08-03,16:04:09,Job Fraud,Identity Fraud,330647.51,Vellore,12.9105,79.1548,Bank Referral,FIR Filed
+CC1137,TN10,2025-07-21,02:39:24,Loan Fraud,Banking Fraud,110898.54,Kancheepuram,12.7886,79.6548,State Police Portal,FIR Filed
+CC1138,TN27,2026-08-06,06:26:51,OTP Fraud,Banking Fraud,273980.93,Tiruvallur,13.1157,79.9487,National Cybercrime Portal,Under Investigation
+CC1139,TN11,2025-02-08,08:46:30,Phishing,Social Engineering,234685.0,Karur,11.0082,78.1191,Helpline 1930,Under Investigation
+CC1140,TN06,2026-04-16,10:39:46,Investment Scam,Banking Fraud,477878.54,Dharmapuri,12.1035,78.1641,Bank Referral,Chargesheet Filed
+CC1141,TN34,2025-06-09,21:43:53,Romance Scam,Cyber Deception,341618.11,Tiruvannamalai,12.2559,79.1025,State Police Portal,FIR Filed
+CC1142,TN02,2026-03-21,15:17:21,Identity Theft,Identity Fraud,249938.31,Chengalpattu,12.7163,79.9662,Walk-in Complaint,Chargesheet Filed
+CC1143,TN17,2025-04-20,04:35:14,SIM Swap,Social Engineering,232709.44,Namakkal,11.1842,78.1273,Walk-in Complaint,Pending Review
+CC1144,TN24,2026-02-27,23:25:26,Romance Scam,Identity Fraud,150243.18,Tenkasi,8.9306,77.3274,National Cybercrime Portal,Chargesheet Filed
+CC1145,TN04,2026-03-23,12:52:27,OTP Fraud,Banking Fraud,237113.9,Coimbatore,10.9699,76.9996,National Cybercrime Portal,Chargesheet Filed
+CC1146,TN16,2026-05-14,15:59:25,Romance Scam,Social Engineering,203253.53,Kanniyakumari,8.1232,77.5171,Walk-in Complaint,FIR Filed
+CC1147,TN22,2025-06-13,19:20:37,Job Fraud,Online Financial Fraud,51229.26,Salem,11.6225,78.1697,State Police Portal,Pending Review
+CC1148,TN28,2026-05-20,02:59:50,OTP Fraud,Online Financial Fraud,2041.54,Tiruvarur,10.7339,79.5977,Bank Referral,Chargesheet Filed
+CC1149,TN37,2025-03-31,01:10:57,Loan Fraud,Identity Fraud,50885.68,Viluppuram,11.9897,79.4443,National Cybercrime Portal,Pending Review
+CC1150,TN01,2025-07-16,05:57:25,Card Skimming,Online Financial Fraud,134397.82,Ariyalur,11.1191,79.1123,National Cybercrime Portal,Pending Review
+CC1151,TN19,2025-05-22,02:29:38,Loan Fraud,Social Engineering,322088.55,Pudukkottai,10.3997,78.7801,Walk-in Complaint,FIR Filed
+CC1152,TN19,2025-02-02,12:54:21,OTP Fraud,Banking Fraud,405325.12,Pudukkottai,10.3656,78.8214,Bank Referral,Resolved
+CC1153,TN27,2025-08-29,09:42:20,SIM Swap,Social Engineering,231182.09,Tiruvallur,13.1605,79.8608,National Cybercrime Portal,Pending Review
+CC1154,TN08,2025-06-01,03:28:08,OTP Fraud,Online Financial Fraud,141955.16,Erode,11.3243,77.6992,State Police Portal,Resolved
+CC1155,TN28,2026-02-24,03:59:41,Identity Theft,Cyber Deception,151970.45,Tiruvarur,10.787,79.674,National Cybercrime Portal,Chargesheet Filed
+CC1156,TN11,2026-02-05,06:22:04,UPI Fraud,Online Financial Fraud,420719.55,Karur,10.9905,78.0656,Helpline 1930,Resolved
+CC1157,TN26,2025-11-28,14:08:52,Investment Scam,Banking Fraud,329544.0,Theni,10.0562,77.502,State Police Portal,Under Investigation
+CC1158,TN11,2025-09-14,13:05:31,Investment Scam,Social Engineering,21970.71,Karur,10.9241,78.0779,Helpline 1930,Chargesheet Filed
+CC1159,TN13,2025-07-04,13:02:49,UPI Fraud,Identity Fraud,355971.24,Madurai,9.9552,78.1071,National Cybercrime Portal,Under Investigation
+CC1160,TN31,2026-05-29,06:13:09,Investment Scam,Cyber Deception,137449.57,Tirunelveli,8.703,77.7596,Walk-in Complaint,Pending Review
+CC1161,TN13,2026-03-22,23:51:02,Card Skimming,Cyber Deception,274014.47,Madurai,9.9291,78.1454,National Cybercrime Portal,Chargesheet Filed
+CC1162,TN22,2025-01-19,13:37:40,Phishing,Banking Fraud,414946.83,Salem,11.656,78.1424,Walk-in Complaint,Pending Review
+CC1163,TN15,2025-11-19,18:14:28,Loan Fraud,Identity Fraud,445865.08,Nagapattinam,10.8024,79.8766,Walk-in Complaint,Chargesheet Filed
+CC1164,TN26,2025-09-29,00:33:14,UPI Fraud,Social Engineering,476052.29,Theni,10.0053,77.4665,Helpline 1930,Under Investigation
+CC1165,TN05,2025-10-08,17:52:57,Identity Theft,Banking Fraud,9155.36,Cuddalore,11.7849,79.7947,Bank Referral,Pending Review
+CC1166,TN04,2026-05-24,18:13:34,Identity Theft,Identity Fraud,390057.72,Coimbatore,11.0523,76.9984,Helpline 1930,Pending Review
+CC1167,TN22,2025-07-01,17:41:12,UPI Fraud,Banking Fraud,40758.77,Salem,11.679,78.1907,National Cybercrime Portal,Under Investigation
+CC1168,TN09,2025-09-22,05:42:18,Loan Fraud,Banking Fraud,81768.87,Kallakurichi,11.7309,78.9868,Bank Referral,Under Investigation
+CC1169,TN19,2025-11-13,17:44:35,Phishing,Online Financial Fraud,491423.99,Pudukkottai,10.417,78.8558,National Cybercrime Portal,FIR Filed
+CC1170,TN05,2025-10-04,05:07:48,Card Skimming,Identity Fraud,61598.08,Cuddalore,11.7746,79.7994,Helpline 1930,Pending Review
+CC1171,TN08,2026-05-08,21:39:17,Phishing,Identity Fraud,394711.01,Erode,11.3263,77.706,State Police Portal,Pending Review
+CC1172,TN17,2025-01-19,19:51:50,Phishing,Online Financial Fraud,81983.77,Namakkal,11.2031,78.1696,Walk-in Complaint,FIR Filed
+CC1173,TN31,2025-12-26,00:21:54,Job Fraud,Banking Fraud,52681.12,Tirunelveli,8.7151,77.7879,State Police Portal,FIR Filed
+CC1174,TN13,2026-05-11,18:47:44,Phishing,Social Engineering,417421.07,Madurai,9.9686,78.1479,Walk-in Complaint,Resolved
+CC1175,TN25,2025-11-26,20:23:12,UPI Fraud,Online Financial Fraud,227001.8,Thanjavur,10.7374,79.1233,Bank Referral,Chargesheet Filed
+CC1176,TN27,2025-01-08,10:55:29,Phishing,Social Engineering,421668.17,Tiruvallur,13.1497,79.9132,National Cybercrime Portal,Pending Review
+CC1177,TN09,2026-04-30,15:35:35,Investment Scam,Online Financial Fraud,312848.33,Kallakurichi,11.6915,78.9974,Bank Referral,FIR Filed
+CC1178,TN20,2026-07-04,13:18:02,Phishing,Online Financial Fraud,469585.26,Ramanathapuram,9.3804,78.8819,Bank Referral,Resolved
+CC1179,TN10,2025-10-15,10:54:26,Phishing,Cyber Deception,182528.83,Kancheepuram,12.834,79.7275,Helpline 1930,Under Investigation
+CC1180,TN02,2025-10-19,10:11:45,Phishing,Social Engineering,465773.75,Chengalpattu,12.7042,80.0109,Bank Referral,Under Investigation
+CC1181,TN07,2025-09-28,10:20:56,Phishing,Social Engineering,288629.27,Dindigul,10.3706,77.9274,National Cybercrime Portal,Chargesheet Filed
+CC1182,TN20,2026-07-18,17:58:54,Phishing,Cyber Deception,467669.44,Ramanathapuram,9.4009,78.8367,Walk-in Complaint,Chargesheet Filed
+CC1183,TN07,2026-02-18,01:19:58,Job Fraud,Online Financial Fraud,329290.86,Dindigul,10.3393,77.9247,National Cybercrime Portal,Under Investigation
+CC1184,TN38,2025-01-05,03:57:30,UPI Fraud,Banking Fraud,404940.79,Virudhunagar,9.5778,77.9231,State Police Portal,Pending Review
+CC1185,TN36,2025-09-11,02:21:10,OTP Fraud,Cyber Deception,350648.04,Vellore,12.8769,79.1637,Helpline 1930,FIR Filed
+CC1186,TN09,2025-06-23,23:52:55,Identity Theft,Social Engineering,494833.78,Kallakurichi,11.6888,78.9662,Bank Referral,Pending Review
+CC1187,TN13,2026-05-20,17:15:03,Job Fraud,Social Engineering,307015.72,Madurai,9.914,78.1523,Bank Referral,Chargesheet Filed
+CC1188,TN09,2026-02-19,18:26:58,Romance Scam,Identity Fraud,135410.76,Kallakurichi,11.7499,79.0029,Helpline 1930,Chargesheet Filed
+CC1189,TN32,2025-01-02,03:25:37,SIM Swap,Identity Fraud,345958.68,Tirupathur,12.5014,78.5975,Walk-in Complaint,Under Investigation
+CC1190,TN16,2025-05-16,22:02:14,SIM Swap,Online Financial Fraud,365894.99,Kanniyakumari,8.1067,77.5018,State Police Portal,Chargesheet Filed
+CC1191,TN08,2026-08-12,00:41:13,Phishing,Online Financial Fraud,207264.56,Erode,11.3251,77.7119,State Police Portal,Under Investigation
+CC1192,TN24,2025-11-29,13:24:42,Identity Theft,Identity Fraud,222262.47,Tenkasi,8.9266,77.3286,State Police Portal,Resolved
+CC1193,TN23,2025-07-12,21:54:42,SIM Swap,Banking Fraud,244967.84,Sivaganga,9.8207,78.4358,National Cybercrime Portal,Resolved
+CC1194,TN30,2025-06-12,01:50:56,UPI Fraud,Banking Fraud,262616.72,Tiruchirappalli,10.7609,78.6657,Bank Referral,FIR Filed
+CC1195,TN19,2025-10-14,05:27:49,UPI Fraud,Banking Fraud,393061.92,Pudukkottai,10.3827,78.8291,Bank Referral,Chargesheet Filed
+CC1196,TN15,2026-04-06,06:44:55,Loan Fraud,Banking Fraud,481790.58,Nagapattinam,10.7442,79.8429,Helpline 1930,FIR Filed
+CC1197,TN02,2025-08-29,20:31:24,SIM Swap,Cyber Deception,255339.16,Chengalpattu,12.7373,79.9367,Bank Referral,Pending Review
+CC1198,TN17,2025-04-12,08:55:42,Identity Theft,Identity Fraud,373455.06,Namakkal,11.1709,78.1741,National Cybercrime Portal,FIR Filed
+CC1199,TN19,2025-09-16,07:48:42,Identity Theft,Cyber Deception,287632.42,Pudukkottai,10.4221,78.8627,Helpline 1930,Pending Review
+CC1200,TN01,2025-06-02,00:20:49,Identity Theft,Banking Fraud,284407.58,Ariyalur,11.0901,79.0479,National Cybercrime Portal,Chargesheet Filed
+CC1201,TN28,2025-09-15,22:51:17,Romance Scam,Social Engineering,314794.67,Tiruvarur,10.7831,79.6805,Walk-in Complaint,Pending Review
+CC1202,TN23,2025-04-09,12:30:39,SIM Swap,Social Engineering,163032.81,Sivaganga,9.8791,78.4666,State Police Portal,Pending Review
+CC1203,TN22,2026-05-20,07:27:35,UPI Fraud,Online Financial Fraud,52493.02,Salem,11.7039,78.1191,National Cybercrime Portal,FIR Filed
+CC1204,TN30,2026-02-27,17:47:04,Phishing,Cyber Deception,221199.31,Tiruchirappalli,10.7541,78.7285,State Police Portal,Chargesheet Filed
+CC1205,TN07,2025-02-07,08:00:58,Romance Scam,Banking Fraud,61018.45,Dindigul,10.3404,77.9784,Helpline 1930,FIR Filed
+CC1206,TN06,2025-12-15,07:39:07,Phishing,Identity Fraud,395758.67,Dharmapuri,12.1314,78.1711,State Police Portal,Under Investigation
+CC1207,TN31,2025-10-11,17:10:42,UPI Fraud,Banking Fraud,408715.64,Tirunelveli,8.6855,77.7479,Bank Referral,Under Investigation
+CC1208,TN06,2026-05-31,18:14:59,Romance Scam,Identity Fraud,1046.36,Dharmapuri,12.1473,78.2017,Helpline 1930,Pending Review
+CC1209,TN11,2025-01-28,23:06:40,Romance Scam,Online Financial Fraud,333982.0,Karur,10.9294,78.1088,State Police Portal,Under Investigation
+CC1210,TN12,2025-07-20,06:12:08,Loan Fraud,Banking Fraud,31576.3,Krishnagiri,12.5135,78.2256,National Cybercrime Portal,Under Investigation
+CC1211,TN14,2026-01-11,20:48:56,Loan Fraud,Banking Fraud,77810.81,Mayiladuthurai,11.0648,79.6935,Helpline 1930,Resolved
+CC1212,TN01,2025-06-25,11:02:34,OTP Fraud,Banking Fraud,55153.69,Ariyalur,11.1664,79.0498,State Police Portal,Resolved
+CC1213,TN07,2026-03-22,07:44:52,OTP Fraud,Identity Fraud,357134.81,Dindigul,10.3838,78.0079,Walk-in Complaint,Pending Review
+CC1214,TN38,2025-12-04,14:10:53,Romance Scam,Cyber Deception,330597.8,Virudhunagar,9.5588,77.9573,State Police Portal,Pending Review
+CC1215,TN29,2025-10-13,10:16:38,SIM Swap,Online Financial Fraud,98938.56,Thoothukudi,8.7438,78.1621,Helpline 1930,Under Investigation
+CC1216,TN38,2025-04-29,22:08:57,UPI Fraud,Social Engineering,368764.79,Virudhunagar,9.5906,77.9981,Walk-in Complaint,Resolved
+CC1217,TN26,2026-08-18,22:47:52,OTP Fraud,Online Financial Fraud,259459.26,Theni,10.0143,77.45,State Police Portal,FIR Filed
+CC1218,TN04,2026-06-05,19:34:56,Phishing,Social Engineering,269962.44,Coimbatore,10.9752,76.9583,National Cybercrime Portal,Chargesheet Filed
+CC1219,TN17,2025-12-07,17:08:52,OTP Fraud,Online Financial Fraud,214432.63,Namakkal,11.2539,78.1379,State Police Portal,Under Investigation
+CC1220,TN34,2025-06-01,19:28:04,Job Fraud,Cyber Deception,40998.28,Tiruvannamalai,12.2513,79.0708,Bank Referral,Chargesheet Filed
+CC1221,TN02,2025-02-03,00:49:01,UPI Fraud,Online Financial Fraud,42733.27,Chengalpattu,12.6604,79.9999,Walk-in Complaint,Under Investigation
+CC1222,TN06,2025-07-14,15:51:06,Card Skimming,Cyber Deception,324126.31,Dharmapuri,12.0834,78.1713,Walk-in Complaint,Under Investigation
+CC1223,TN10,2025-12-28,10:24:43,Phishing,Cyber Deception,323157.91,Kancheepuram,12.8595,79.6797,National Cybercrime Portal,Pending Review
+CC1224,TN10,2026-08-14,17:30:18,Card Skimming,Cyber Deception,455216.55,Kancheepuram,12.7919,79.6712,Bank Referral,Pending Review
+CC1225,TN03,2025-11-18,12:30:02,Identity Theft,Banking Fraud,234189.08,Chennai,13.0371,80.2256,Bank Referral,FIR Filed
+CC1226,TN25,2025-12-20,20:21:05,Investment Scam,Cyber Deception,138264.58,Thanjavur,10.752,79.1256,National Cybercrime Portal,FIR Filed
+CC1227,TN27,2025-06-02,08:32:14,Investment Scam,Identity Fraud,331000.63,Tiruvallur,13.1268,79.9393,Walk-in Complaint,Resolved
+CC1228,TN03,2026-07-20,22:02:40,Card Skimming,Online Financial Fraud,203959.22,Chennai,13.0567,80.2809,Walk-in Complaint,Pending Review
+CC1229,TN30,2025-12-30,00:49:39,Identity Theft,Social Engineering,63757.57,Tiruchirappalli,10.7466,78.7349,National Cybercrime Portal,Resolved
+CC1230,TN17,2026-06-26,03:56:35,Identity Theft,Online Financial Fraud,131542.3,Namakkal,11.2422,78.2136,State Police Portal,Pending Review
+CC1231,TN31,2026-05-26,07:33:12,Job Fraud,Social Engineering,264632.33,Tirunelveli,8.6703,77.7335,State Police Portal,Under Investigation
+CC1232,TN10,2026-02-14,19:43:18,OTP Fraud,Cyber Deception,286138.79,Kancheepuram,12.8511,79.7267,Helpline 1930,Chargesheet Filed
+CC1233,TN11,2025-01-22,07:56:26,OTP Fraud,Identity Fraud,361402.49,Karur,10.9946,78.0697,National Cybercrime Portal,Chargesheet Filed
+CC1234,TN17,2025-03-26,14:55:02,Job Fraud,Identity Fraud,472780.97,Namakkal,11.2321,78.1331,Bank Referral,Chargesheet Filed
+CC1235,TN03,2025-07-11,12:50:14,Investment Scam,Identity Fraud,272191.14,Chennai,13.0514,80.2399,National Cybercrime Portal,Under Investigation
+CC1236,TN31,2026-01-22,09:26:50,Loan Fraud,Identity Fraud,256977.09,Tirunelveli,8.7599,77.7597,National Cybercrime Portal,FIR Filed
+CC1237,TN07,2026-01-13,07:35:44,Identity Theft,Cyber Deception,90048.86,Dindigul,10.4106,77.9527,State Police Portal,Resolved
+CC1238,TN04,2025-12-15,01:18:43,UPI Fraud,Identity Fraud,120169.74,Coimbatore,11.0584,76.9267,Bank Referral,FIR Filed
+CC1239,TN34,2025-09-21,18:20:56,Phishing,Banking Fraud,364497.06,Tiruvannamalai,12.256,79.1053,National Cybercrime Portal,Under Investigation
+CC1240,TN30,2026-06-23,14:46:56,Phishing,Cyber Deception,25116.84,Tiruchirappalli,10.8381,78.6788,National Cybercrime Portal,FIR Filed
+CC1241,TN32,2025-08-10,04:25:41,Investment Scam,Social Engineering,20566.36,Tirupathur,12.4844,78.5196,National Cybercrime Portal,Under Investigation
+CC1242,TN33,2026-05-24,10:24:06,Card Skimming,Cyber Deception,429330.85,Tiruppur,11.1364,77.3631,Walk-in Complaint,Under Investigation
+CC1243,TN01,2025-07-09,06:52:01,UPI Fraud,Cyber Deception,54266.15,Ariyalur,11.1679,79.0398,State Police Portal,Pending Review
+CC1244,TN34,2025-01-14,07:44:24,Investment Scam,Banking Fraud,318779.88,Tiruvannamalai,12.225,79.0976,Walk-in Complaint,Under Investigation
+CC1245,TN27,2025-01-04,19:43:13,Job Fraud,Identity Fraud,305261.57,Tiruvallur,13.1248,79.9457,National Cybercrime Portal,Chargesheet Filed
+CC1246,TN05,2025-05-07,16:40:49,Romance Scam,Identity Fraud,55319.21,Cuddalore,11.7272,79.7445,Walk-in Complaint,Resolved
+CC1247,TN22,2025-01-28,18:08:48,Job Fraud,Social Engineering,86129.74,Salem,11.6866,78.1902,Walk-in Complaint,Pending Review
+CC1248,TN33,2025-06-01,02:15:28,Loan Fraud,Identity Fraud,169509.65,Tiruppur,11.0662,77.3166,National Cybercrime Portal,Chargesheet Filed
+CC1249,TN09,2026-06-17,17:26:47,UPI Fraud,Identity Fraud,315608.5,Kallakurichi,11.7661,78.9476,Helpline 1930,Resolved
+CC1250,TN28,2026-03-22,23:02:33,Phishing,Online Financial Fraud,373425.11,Tiruvarur,10.7588,79.6691,National Cybercrime Portal,FIR Filed
+CC1251,TN04,2026-06-17,06:23:24,Job Fraud,Cyber Deception,45101.49,Coimbatore,11.0539,76.9085,State Police Portal,Resolved
+CC1252,TN05,2025-11-25,23:13:06,OTP Fraud,Social Engineering,127759.43,Cuddalore,11.7321,79.7266,Helpline 1930,Pending Review
+CC1253,TN36,2025-07-07,13:36:06,Card Skimming,Banking Fraud,212812.31,Vellore,12.9226,79.1727,Walk-in Complaint,FIR Filed
+CC1254,TN34,2025-09-28,09:47:02,Phishing,Social Engineering,152699.09,Tiruvannamalai,12.2308,79.1041,Helpline 1930,FIR Filed
+CC1255,TN22,2025-11-02,07:30:55,Identity Theft,Cyber Deception,69111.14,Salem,11.6189,78.1194,Bank Referral,Pending Review
+CC1256,TN08,2025-02-24,03:42:23,Card Skimming,Online Financial Fraud,303235.35,Erode,11.2957,77.704,Walk-in Complaint,Pending Review
+CC1257,TN05,2025-10-24,09:36:11,UPI Fraud,Banking Fraud,495955.15,Cuddalore,11.7563,79.738,Walk-in Complaint,Pending Review
+CC1258,TN27,2026-08-10,12:55:49,Loan Fraud,Cyber Deception,321232.91,Tiruvallur,13.1661,79.9317,Helpline 1930,Under Investigation
+CC1259,TN34,2025-10-30,04:34:50,Investment Scam,Cyber Deception,192665.32,Tiruvannamalai,12.2705,79.0495,Bank Referral,Pending Review
+CC1260,TN07,2025-10-29,00:49:32,Loan Fraud,Cyber Deception,309773.03,Dindigul,10.4099,77.9389,State Police Portal,FIR Filed
+CC1261,TN07,2025-07-09,07:18:49,OTP Fraud,Banking Fraud,202701.87,Dindigul,10.3684,78.0133,Helpline 1930,Pending Review
+CC1262,TN02,2026-07-26,15:09:25,Phishing,Banking Fraud,382132.02,Chengalpattu,12.7411,79.9288,Helpline 1930,FIR Filed
+CC1263,TN14,2025-11-13,17:46:14,Identity Theft,Cyber Deception,110978.28,Mayiladuthurai,11.1255,79.6636,Bank Referral,FIR Filed
+CC1264,TN34,2025-05-22,21:57:35,UPI Fraud,Identity Fraud,414178.79,Tiruvannamalai,12.265,79.1207,National Cybercrime Portal,FIR Filed
+CC1265,TN37,2026-03-21,10:01:35,OTP Fraud,Banking Fraud,295665.55,Viluppuram,11.926,79.5038,Helpline 1930,Chargesheet Filed
+CC1266,TN06,2026-07-18,12:36:24,Investment Scam,Banking Fraud,315546.06,Dharmapuri,12.17,78.1299,Walk-in Complaint,Resolved
+CC1267,TN28,2025-04-11,21:53:43,OTP Fraud,Social Engineering,403809.0,Tiruvarur,10.7475,79.6181,National Cybercrime Portal,Chargesheet Filed
+CC1268,TN13,2025-10-01,12:34:09,SIM Swap,Cyber Deception,398345.5,Madurai,9.9063,78.1207,National Cybercrime Portal,Under Investigation
+CC1269,TN11,2026-05-05,07:00:00,Identity Theft,Banking Fraud,300595.83,Karur,11.0008,78.0655,National Cybercrime Portal,Under Investigation
+CC1270,TN25,2026-05-31,06:04:05,SIM Swap,Cyber Deception,168085.65,Thanjavur,10.8339,79.1732,National Cybercrime Portal,Under Investigation
+CC1271,TN25,2026-06-25,01:39:41,Loan Fraud,Online Financial Fraud,147224.26,Thanjavur,10.7977,79.1736,Bank Referral,Under Investigation
+CC1272,TN30,2026-02-22,05:55:40,Identity Theft,Social Engineering,436048.49,Tiruchirappalli,10.8354,78.7189,State Police Portal,Under Investigation
+CC1273,TN24,2025-08-14,20:17:17,UPI Fraud,Banking Fraud,220884.13,Tenkasi,8.9663,77.3042,National Cybercrime Portal,Resolved
+CC1274,TN09,2026-02-17,13:42:08,Romance Scam,Social Engineering,172930.69,Kallakurichi,11.7438,78.9231,Helpline 1930,Resolved
+CC1275,TN25,2025-02-18,05:36:44,Romance Scam,Online Financial Fraud,384787.46,Thanjavur,10.7634,79.1275,Walk-in Complaint,Pending Review
+CC1276,TN17,2025-03-10,06:12:12,Card Skimming,Social Engineering,45504.24,Namakkal,11.1822,78.2105,Bank Referral,FIR Filed
+CC1277,TN13,2025-12-20,12:06:29,Identity Theft,Online Financial Fraud,232663.26,Madurai,9.8957,78.1694,State Police Portal,Under Investigation
+CC1278,TN06,2025-06-17,00:24:07,SIM Swap,Banking Fraud,119748.52,Dharmapuri,12.129,78.1752,State Police Portal,Resolved
+CC1279,TN32,2026-07-14,18:22:24,Phishing,Social Engineering,109908.61,Tirupathur,12.4511,78.5829,Bank Referral,Chargesheet Filed
+CC1280,TN17,2026-08-30,01:46:10,Romance Scam,Identity Fraud,24845.03,Namakkal,11.2553,78.1468,National Cybercrime Portal,Under Investigation
+CC1281,TN28,2025-10-10,09:03:15,Card Skimming,Social Engineering,341342.32,Tiruvarur,10.7993,79.6242,Walk-in Complaint,Under Investigation
+CC1282,TN10,2026-04-20,23:50:31,Identity Theft,Social Engineering,457670.09,Kancheepuram,12.7917,79.737,National Cybercrime Portal,Resolved
+CC1283,TN38,2026-07-04,05:06:40,SIM Swap,Identity Fraud,260192.82,Virudhunagar,9.6346,77.9296,Walk-in Complaint,Chargesheet Filed
+CC1284,TN32,2026-03-25,07:48:27,SIM Swap,Cyber Deception,122271.67,Tirupathur,12.4552,78.5676,Walk-in Complaint,Chargesheet Filed
+CC1285,TN27,2025-01-30,10:14:36,Card Skimming,Online Financial Fraud,246920.22,Tiruvallur,13.1605,79.9116,Helpline 1930,Resolved
+CC1286,TN08,2026-04-10,15:44:03,Job Fraud,Banking Fraud,118739.01,Erode,11.3315,77.7452,State Police Portal,Under Investigation
+CC1287,TN24,2025-01-03,12:34:09,Phishing,Social Engineering,91044.04,Tenkasi,8.9693,77.2979,State Police Portal,Under Investigation
+CC1288,TN26,2026-01-10,00:49:21,Identity Theft,Banking Fraud,468592.32,Theni,10.0291,77.4673,State Police Portal,Under Investigation
+CC1289,TN34,2025-06-28,02:36:08,Investment Scam,Cyber Deception,199567.29,Tiruvannamalai,12.221,79.0841,National Cybercrime Portal,Pending Review
+CC1290,TN38,2026-07-02,21:17:15,Job Fraud,Cyber Deception,304871.67,Virudhunagar,9.5661,77.9671,National Cybercrime Portal,FIR Filed
+CC1291,TN09,2025-02-08,10:51:02,Romance Scam,Social Engineering,331494.48,Kallakurichi,11.7425,79.0114,Walk-in Complaint,Chargesheet Filed
+CC1292,TN33,2025-10-26,20:08:19,Romance Scam,Identity Fraud,423221.63,Tiruppur,11.1195,77.3465,National Cybercrime Portal,Under Investigation
+CC1293,TN19,2025-12-22,14:40:34,Identity Theft,Banking Fraud,481252.57,Pudukkottai,10.4048,78.7741,Helpline 1930,Under Investigation
+CC1294,TN23,2025-07-03,07:57:34,Job Fraud,Banking Fraud,195857.6,Sivaganga,9.8129,78.5078,State Police Portal,Under Investigation
+CC1295,TN29,2025-10-09,12:49:04,Romance Scam,Online Financial Fraud,359984.95,Thoothukudi,8.7806,78.1309,Walk-in Complaint,Pending Review
+CC1296,TN32,2026-01-29,17:09:54,Romance Scam,Cyber Deception,457743.82,Tirupathur,12.4943,78.588,State Police Portal,FIR Filed
+CC1297,TN21,2026-06-13,18:12:31,UPI Fraud,Cyber Deception,159808.67,Ranipet,12.9296,79.3232,State Police Portal,FIR Filed
+CC1298,TN24,2025-02-23,22:17:56,UPI Fraud,Identity Fraud,378028.01,Tenkasi,8.9454,77.3379,Bank Referral,Resolved
+CC1299,TN37,2025-02-09,00:43:07,OTP Fraud,Identity Fraud,449983.61,Viluppuram,11.9077,79.5107,Bank Referral,Chargesheet Filed
+CC1300,TN17,2025-07-06,16:25:29,Romance Scam,Banking Fraud,98857.52,Namakkal,11.2042,78.1989,Bank Referral,FIR Filed
+CC1301,TN16,2025-05-17,21:34:47,Romance Scam,Identity Fraud,394978.01,Kanniyakumari,8.1213,77.5107,State Police Portal,Pending Review
+CC1302,TN37,2025-04-16,10:25:10,Loan Fraud,Online Financial Fraud,342550.16,Viluppuram,11.9817,79.4548,Bank Referral,Resolved
+CC1303,TN12,2025-12-18,12:10:36,OTP Fraud,Banking Fraud,473086.3,Krishnagiri,12.4908,78.2332,Bank Referral,Pending Review
+CC1304,TN24,2025-04-15,07:55:32,Phishing,Cyber Deception,355597.03,Tenkasi,8.9433,77.2677,Helpline 1930,Pending Review
+CC1305,TN17,2026-01-31,17:20:01,Romance Scam,Identity Fraud,378237.96,Namakkal,11.2462,78.1461,Bank Referral,FIR Filed
+CC1306,TN01,2025-07-18,09:40:39,Phishing,Cyber Deception,412339.96,Ariyalur,11.0975,79.1118,Helpline 1930,Pending Review
+CC1307,TN31,2025-06-18,01:12:33,Investment Scam,Cyber Deception,118772.99,Tirunelveli,8.7432,77.7153,Bank Referral,FIR Filed
+CC1308,TN26,2025-11-11,02:20:18,Card Skimming,Online Financial Fraud,164057.15,Theni,9.9932,77.4375,State Police Portal,Chargesheet Filed
+CC1309,TN14,2026-03-06,15:46:54,Identity Theft,Online Financial Fraud,119836.27,Mayiladuthurai,11.1011,79.6886,National Cybercrime Portal,Under Investigation
+CC1310,TN18,2025-06-03,22:55:41,Phishing,Identity Fraud,475243.01,Perambalur,11.2634,78.8356,Bank Referral,FIR Filed
+CC1311,TN30,2026-01-28,19:33:07,Romance Scam,Cyber Deception,236970.97,Tiruchirappalli,10.7465,78.728,State Police Portal,Resolved
+CC1312,TN01,2025-10-06,11:08:15,Identity Theft,Cyber Deception,279344.6,Ariyalur,11.1667,79.0688,State Police Portal,Chargesheet Filed
+CC1313,TN36,2026-03-15,13:03:20,Romance Scam,Cyber Deception,208340.82,Vellore,12.9419,79.1364,Bank Referral,Chargesheet Filed
+CC1314,TN11,2025-05-22,15:45:21,Identity Theft,Identity Fraud,491593.81,Karur,10.9994,78.0546,Bank Referral,Pending Review
+CC1315,TN28,2026-01-08,10:50:45,Romance Scam,Identity Fraud,89709.78,Tiruvarur,10.729,79.6802,National Cybercrime Portal,Under Investigation
+CC1316,TN28,2025-12-07,00:08:59,UPI Fraud,Online Financial Fraud,22394.59,Tiruvarur,10.7963,79.6217,State Police Portal,Pending Review
+CC1317,TN15,2025-03-16,07:08:41,Phishing,Identity Fraud,434374.06,Nagapattinam,10.7241,79.7955,Bank Referral,Resolved
+CC1318,TN03,2026-06-19,06:40:40,Job Fraud,Cyber Deception,369339.4,Chennai,13.1009,80.2491,Bank Referral,Pending Review
+CC1319,TN34,2026-01-28,12:37:39,Card Skimming,Social Engineering,250292.65,Tiruvannamalai,12.2603,79.1237,State Police Portal,Resolved
+CC1320,TN29,2026-03-28,23:18:41,Job Fraud,Social Engineering,373703.16,Thoothukudi,8.7272,78.1694,State Police Portal,Chargesheet Filed
+CC1321,TN19,2025-08-03,02:33:13,OTP Fraud,Cyber Deception,404056.85,Pudukkottai,10.3403,78.7839,National Cybercrime Portal,FIR Filed
+CC1322,TN13,2025-05-27,20:00:40,Loan Fraud,Cyber Deception,47209.44,Madurai,9.9129,78.0706,National Cybercrime Portal,Pending Review
+CC1323,TN16,2026-03-02,08:31:10,SIM Swap,Cyber Deception,232129.86,Kanniyakumari,8.0407,77.505,Helpline 1930,Resolved
+CC1324,TN34,2025-03-31,21:29:11,OTP Fraud,Identity Fraud,240559.71,Tiruvannamalai,12.2074,79.0994,Bank Referral,Pending Review
+CC1325,TN18,2026-05-11,04:24:09,Romance Scam,Online Financial Fraud,163391.69,Perambalur,11.2461,78.8832,Helpline 1930,Resolved
+CC1326,TN36,2025-09-04,23:06:25,UPI Fraud,Cyber Deception,434646.15,Vellore,12.9383,79.1785,Helpline 1930,FIR Filed
+CC1327,TN05,2026-04-14,21:13:12,Card Skimming,Social Engineering,462971.69,Cuddalore,11.7635,79.8181,National Cybercrime Portal,Chargesheet Filed
+CC1328,TN12,2025-06-26,04:36:36,Romance Scam,Social Engineering,370756.29,Krishnagiri,12.5568,78.2592,Helpline 1930,Chargesheet Filed
+CC1329,TN38,2025-03-19,20:19:15,Identity Theft,Cyber Deception,72792.6,Virudhunagar,9.6269,77.9449,Bank Referral,FIR Filed
+CC1330,TN37,2026-07-08,06:20:35,Loan Fraud,Identity Fraud,209519.82,Viluppuram,11.939,79.5006,Helpline 1930,FIR Filed
+CC1331,TN11,2026-02-07,09:15:01,Romance Scam,Identity Fraud,131257.93,Karur,10.9355,78.1077,Helpline 1930,Pending Review
+CC1332,TN08,2025-07-04,14:38:52,Romance Scam,Banking Fraud,2341.35,Erode,11.3481,77.7112,State Police Portal,Under Investigation
+CC1333,TN22,2025-09-10,21:57:38,Card Skimming,Cyber Deception,455421.08,Salem,11.6862,78.1174,Bank Referral,FIR Filed
+CC1334,TN38,2026-07-26,16:15:08,OTP Fraud,Online Financial Fraud,406348.06,Virudhunagar,9.6125,77.9223,Bank Referral,Resolved
+CC1335,TN04,2026-07-16,06:11:02,UPI Fraud,Identity Fraud,380737.38,Coimbatore,11.0157,76.9869,Helpline 1930,Pending Review
+CC1336,TN33,2026-06-03,18:28:22,SIM Swap,Identity Fraud,334006.6,Tiruppur,11.0942,77.3148,Walk-in Complaint,Resolved
+CC1337,TN04,2025-02-11,06:01:17,Loan Fraud,Social Engineering,461349.79,Coimbatore,11.0313,76.9873,Walk-in Complaint,Chargesheet Filed
+CC1338,TN08,2026-04-17,02:22:53,OTP Fraud,Social Engineering,436131.3,Erode,11.3481,77.7601,National Cybercrime Portal,Under Investigation
+CC1339,TN10,2026-08-15,05:49:59,Romance Scam,Identity Fraud,332340.17,Kancheepuram,12.7934,79.6735,Bank Referral,Pending Review
+CC1340,TN13,2025-02-28,19:52:12,UPI Fraud,Cyber Deception,208376.62,Madurai,9.9222,78.0908,Walk-in Complaint,Resolved
+CC1341,TN06,2025-04-28,04:25:03,OTP Fraud,Social Engineering,58664.24,Dharmapuri,12.0934,78.1949,Helpline 1930,Resolved
+CC1342,TN30,2025-05-23,01:07:38,Phishing,Online Financial Fraud,57242.08,Tiruchirappalli,10.7808,78.6677,State Police Portal,Under Investigation
+CC1343,TN08,2025-02-02,14:08:46,Investment Scam,Cyber Deception,380216.04,Erode,11.3842,77.687,Walk-in Complaint,FIR Filed
+CC1344,TN03,2025-10-28,18:12:27,Job Fraud,Identity Fraud,104992.55,Chennai,13.034,80.2386,Bank Referral,Pending Review
+CC1345,TN07,2025-06-03,09:11:06,Phishing,Identity Fraud,12332.01,Dindigul,10.3682,77.959,Walk-in Complaint,FIR Filed
+CC1346,TN22,2025-01-09,18:42:20,OTP Fraud,Social Engineering,298565.31,Salem,11.6519,78.0977,Walk-in Complaint,FIR Filed
+CC1347,TN24,2025-12-25,23:24:53,Phishing,Online Financial Fraud,402875.72,Tenkasi,8.9279,77.3318,Walk-in Complaint,Chargesheet Filed
+CC1348,TN09,2026-08-21,15:52:01,Phishing,Social Engineering,484473.87,Kallakurichi,11.7002,78.9414,Helpline 1930,Chargesheet Filed
+CC1349,TN36,2025-12-01,17:23:24,Loan Fraud,Social Engineering,106794.29,Vellore,12.8692,79.1767,State Police Portal,Under Investigation
+CC1350,TN10,2026-05-09,01:27:07,Investment Scam,Cyber Deception,81814.98,Kancheepuram,12.8073,79.7031,National Cybercrime Portal,FIR Filed
+CC1351,TN04,2026-03-30,23:46:05,Job Fraud,Banking Fraud,431120.18,Coimbatore,10.969,76.9286,State Police Portal,Chargesheet Filed
+CC1352,TN34,2025-04-20,10:20:16,OTP Fraud,Online Financial Fraud,111696.62,Tiruvannamalai,12.2463,79.0532,State Police Portal,Under Investigation
+CC1353,TN08,2025-01-18,19:23:58,Job Fraud,Banking Fraud,282649.71,Erode,11.3678,77.7123,Helpline 1930,Chargesheet Filed
+CC1354,TN05,2026-01-15,14:37:43,Investment Scam,Identity Fraud,143236.76,Cuddalore,11.7824,79.816,Bank Referral,Resolved
+CC1355,TN07,2025-05-21,08:29:27,UPI Fraud,Online Financial Fraud,23017.68,Dindigul,10.3183,77.9314,Walk-in Complaint,Under Investigation
+CC1356,TN03,2025-08-01,00:51:58,Job Fraud,Cyber Deception,115695.62,Chennai,13.0776,80.2483,National Cybercrime Portal,Resolved
+CC1357,TN11,2026-03-10,16:02:34,UPI Fraud,Cyber Deception,49616.74,Karur,10.9828,78.0632,National Cybercrime Portal,FIR Filed
+CC1358,TN38,2025-02-01,23:06:21,UPI Fraud,Banking Fraud,43133.06,Virudhunagar,9.588,77.9533,National Cybercrime Portal,FIR Filed
+CC1359,TN04,2026-04-19,22:14:21,Phishing,Online Financial Fraud,406685.58,Coimbatore,10.9956,77.0028,Bank Referral,Resolved
+CC1360,TN20,2025-07-24,12:11:07,SIM Swap,Online Financial Fraud,9697.38,Ramanathapuram,9.3574,78.817,Walk-in Complaint,Chargesheet Filed
+CC1361,TN29,2026-03-13,22:27:38,Loan Fraud,Banking Fraud,15812.34,Thoothukudi,8.7262,78.0853,State Police Portal,FIR Filed
+CC1362,TN26,2025-06-10,14:59:16,Job Fraud,Banking Fraud,218967.62,Theni,9.9753,77.4621,National Cybercrime Portal,Pending Review
+CC1363,TN16,2025-05-22,22:54:30,UPI Fraud,Online Financial Fraud,29732.86,Kanniyakumari,8.0649,77.53,National Cybercrime Portal,Chargesheet Filed
+CC1364,TN22,2026-08-27,00:48:04,Phishing,Online Financial Fraud,224018.76,Salem,11.6629,78.1427,Bank Referral,Under Investigation
+CC1365,TN02,2025-09-26,18:15:34,Identity Theft,Online Financial Fraud,410453.17,Chengalpattu,12.7002,79.9957,Bank Referral,Pending Review
+CC1366,TN01,2025-11-19,07:42:45,Phishing,Identity Fraud,392444.39,Ariyalur,11.0942,79.0897,Walk-in Complaint,Under Investigation
+CC1367,TN38,2025-11-01,20:53:38,Card Skimming,Banking Fraud,391879.61,Virudhunagar,9.5901,77.9617,State Police Portal,Under Investigation
+CC1368,TN13,2026-04-20,18:28:43,Phishing,Banking Fraud,191728.4,Madurai,9.9309,78.0991,Helpline 1930,Resolved
+CC1369,TN07,2025-06-02,06:31:18,UPI Fraud,Banking Fraud,240466.05,Dindigul,10.339,77.9428,State Police Portal,Chargesheet Filed
+CC1370,TN28,2025-07-07,06:47:44,Identity Theft,Cyber Deception,297965.55,Tiruvarur,10.7744,79.6756,Walk-in Complaint,Resolved
+CC1371,TN01,2025-03-10,22:52:58,Loan Fraud,Social Engineering,441829.07,Ariyalur,11.1748,79.1242,State Police Portal,Under Investigation
+CC1372,TN14,2026-04-24,01:32:29,Identity Theft,Social Engineering,53739.9,Mayiladuthurai,11.0996,79.6875,National Cybercrime Portal,Chargesheet Filed
+CC1373,TN07,2026-07-13,02:15:23,Romance Scam,Cyber Deception,256964.66,Dindigul,10.3628,78.0188,Walk-in Complaint,Resolved
+CC1374,TN10,2025-04-25,02:28:01,Identity Theft,Cyber Deception,313354.38,Kancheepuram,12.8807,79.7464,Walk-in Complaint,Under Investigation
+CC1375,TN05,2026-07-14,12:57:16,Loan Fraud,Cyber Deception,69982.08,Cuddalore,11.7738,79.7665,Bank Referral,Pending Review
+CC1376,TN33,2025-08-27,18:28:32,Investment Scam,Banking Fraud,466320.98,Tiruppur,11.1124,77.2973,National Cybercrime Portal,Chargesheet Filed
+CC1377,TN35,2025-02-17,13:30:20,Card Skimming,Online Financial Fraud,414576.51,The Nilgiris,11.4596,76.7026,Walk-in Complaint,Under Investigation
+CC1378,TN20,2026-02-17,02:48:41,Phishing,Social Engineering,255938.24,Ramanathapuram,9.3639,78.8638,Bank Referral,FIR Filed
+CC1379,TN28,2026-07-28,16:09:29,Job Fraud,Cyber Deception,471691.81,Tiruvarur,10.7831,79.6692,National Cybercrime Portal,Chargesheet Filed
+CC1380,TN03,2026-08-26,11:14:45,Phishing,Identity Fraud,452456.03,Chennai,13.0415,80.2788,National Cybercrime Portal,Chargesheet Filed
+CC1381,TN28,2025-02-15,15:57:35,SIM Swap,Social Engineering,244265.89,Tiruvarur,10.7835,79.6652,Walk-in Complaint,Pending Review
+CC1382,TN15,2025-12-08,23:24:22,Phishing,Banking Fraud,290935.84,Nagapattinam,10.8031,79.8608,Helpline 1930,FIR Filed
+CC1383,TN19,2025-02-16,19:59:26,Loan Fraud,Cyber Deception,188780.99,Pudukkottai,10.3844,78.8425,Walk-in Complaint,Resolved
+CC1384,TN02,2025-09-30,14:32:19,OTP Fraud,Online Financial Fraud,222529.27,Chengalpattu,12.6592,79.9595,Helpline 1930,FIR Filed
+CC1385,TN11,2025-12-31,18:48:15,Job Fraud,Identity Fraud,271767.21,Karur,10.9226,78.0769,Walk-in Complaint,FIR Filed
+CC1386,TN18,2026-07-02,12:34:44,Identity Theft,Social Engineering,307426.04,Perambalur,11.2722,78.8458,Bank Referral,Resolved
+CC1387,TN31,2025-06-04,16:28:38,Romance Scam,Online Financial Fraud,213032.3,Tirunelveli,8.7262,77.713,Bank Referral,Under Investigation
+CC1388,TN14,2025-04-26,18:57:48,SIM Swap,Identity Fraud,330929.39,Mayiladuthurai,11.1572,79.6674,State Police Portal,FIR Filed
+CC1389,TN27,2025-04-21,07:13:30,Job Fraud,Online Financial Fraud,171522.78,Tiruvallur,13.1883,79.8615,Bank Referral,Chargesheet Filed
+CC1390,TN36,2026-06-08,03:25:21,UPI Fraud,Social Engineering,180797.78,Vellore,12.9621,79.1575,Helpline 1930,FIR Filed
+CC1391,TN17,2025-05-08,19:06:27,Investment Scam,Online Financial Fraud,436647.91,Namakkal,11.2386,78.1448,Walk-in Complaint,Resolved
+CC1392,TN26,2025-03-06,15:48:47,Card Skimming,Online Financial Fraud,386427.53,Theni,9.9731,77.4527,Walk-in Complaint,Pending Review
+CC1393,TN35,2025-02-12,17:34:58,UPI Fraud,Banking Fraud,231400.81,The Nilgiris,11.4967,76.6934,National Cybercrime Portal,Resolved
+CC1394,TN18,2026-02-28,16:54:06,SIM Swap,Identity Fraud,311651.21,Perambalur,11.2761,78.8948,Bank Referral,Pending Review
+CC1395,TN28,2026-07-06,19:51:58,SIM Swap,Cyber Deception,198517.96,Tiruvarur,10.778,79.6284,Walk-in Complaint,Resolved
+CC1396,TN37,2025-11-16,22:57:55,Phishing,Identity Fraud,170802.21,Viluppuram,11.9162,79.4675,National Cybercrime Portal,Under Investigation
+CC1397,TN08,2025-05-19,23:38:43,OTP Fraud,Online Financial Fraud,422564.42,Erode,11.3691,77.7667,State Police Portal,Resolved
+CC1398,TN03,2025-12-26,03:04:30,Phishing,Banking Fraud,341700.26,Chennai,13.0389,80.304,Walk-in Complaint,Pending Review
+CC1399,TN26,2025-08-01,13:20:15,Job Fraud,Social Engineering,50904.15,Theni,10.0183,77.4596,Walk-in Complaint,Under Investigation
+CC1400,TN25,2026-05-13,00:03:01,Romance Scam,Cyber Deception,151265.25,Thanjavur,10.7506,79.1408,Walk-in Complaint,Chargesheet Filed
+CC1401,TN12,2025-02-18,09:58:24,Job Fraud,Identity Fraud,392973.05,Krishnagiri,12.5427,78.2194,Helpline 1930,Resolved
+CC1402,TN32,2026-02-25,01:20:50,Job Fraud,Identity Fraud,81752.81,Tirupathur,12.5257,78.6092,Bank Referral,Resolved
+CC1403,TN24,2026-05-17,14:21:34,UPI Fraud,Cyber Deception,225860.02,Tenkasi,9.0017,77.3419,State Police Portal,FIR Filed
+CC1404,TN33,2025-01-30,13:08:15,Investment Scam,Identity Fraud,399666.05,Tiruppur,11.1461,77.3694,State Police Portal,Resolved
+CC1405,TN22,2025-10-24,01:06:25,Investment Scam,Cyber Deception,304511.83,Salem,11.6372,78.1014,Helpline 1930,FIR Filed
+CC1406,TN12,2025-05-02,05:09:18,OTP Fraud,Banking Fraud,214662.81,Krishnagiri,12.5567,78.2331,Helpline 1930,Chargesheet Filed
+CC1407,TN26,2025-05-18,10:39:04,Job Fraud,Online Financial Fraud,52724.49,Theni,9.9781,77.4977,National Cybercrime Portal,Under Investigation
+CC1408,TN24,2026-05-31,08:34:51,Identity Theft,Banking Fraud,496693.38,Tenkasi,8.907,77.3555,Walk-in Complaint,Under Investigation
+CC1409,TN07,2026-05-01,18:33:25,Card Skimming,Banking Fraud,495826.85,Dindigul,10.3252,78.007,State Police Portal,Pending Review
+CC1410,TN23,2026-03-31,00:59:51,Loan Fraud,Banking Fraud,68320.1,Sivaganga,9.8651,78.5102,State Police Portal,Resolved
+CC1411,TN05,2025-05-31,23:07:58,OTP Fraud,Online Financial Fraud,102741.58,Cuddalore,11.7231,79.7949,Helpline 1930,Chargesheet Filed
+CC1412,TN15,2026-03-17,11:44:37,Job Fraud,Cyber Deception,24998.75,Nagapattinam,10.7726,79.8923,State Police Portal,Chargesheet Filed
+CC1413,TN17,2026-06-11,05:19:08,Phishing,Cyber Deception,347663.35,Namakkal,11.1922,78.1498,Bank Referral,Chargesheet Filed
+CC1414,TN18,2025-02-18,01:43:27,Loan Fraud,Identity Fraud,326757.81,Perambalur,11.2127,78.8788,State Police Portal,FIR Filed
+CC1415,TN05,2025-04-25,04:12:09,Card Skimming,Identity Fraud,385105.71,Cuddalore,11.7595,79.795,Helpline 1930,Pending Review
+CC1416,TN06,2026-04-07,14:57:49,Job Fraud,Social Engineering,122205.21,Dharmapuri,12.107,78.1724,State Police Portal,Resolved
+CC1417,TN11,2025-02-01,06:55:53,Identity Theft,Cyber Deception,190373.98,Karur,10.9271,78.0339,Helpline 1930,Chargesheet Filed
+CC1418,TN01,2026-07-10,01:51:54,Phishing,Cyber Deception,392235.05,Ariyalur,11.1862,79.1113,Bank Referral,Chargesheet Filed
+CC1419,TN13,2025-02-03,12:38:50,SIM Swap,Identity Fraud,359874.12,Madurai,9.9255,78.0843,Walk-in Complaint,FIR Filed
+CC1420,TN22,2025-08-24,09:00:02,Phishing,Cyber Deception,35492.67,Salem,11.7016,78.1401,Walk-in Complaint,Chargesheet Filed
+CC1421,TN33,2025-03-10,13:22:11,Loan Fraud,Identity Fraud,127942.26,Tiruppur,11.1255,77.327,Bank Referral,Resolved
+CC1422,TN04,2026-06-29,06:52:34,Investment Scam,Online Financial Fraud,238080.61,Coimbatore,11.0288,76.9508,Walk-in Complaint,Under Investigation
+CC1423,TN01,2025-11-25,07:41:38,Phishing,Social Engineering,268778.81,Ariyalur,11.186,79.0798,Bank Referral,Pending Review
+CC1424,TN25,2026-08-05,18:27:37,Identity Theft,Cyber Deception,388429.2,Thanjavur,10.8255,79.1642,Walk-in Complaint,Under Investigation
+CC1425,TN20,2025-11-19,15:37:44,OTP Fraud,Banking Fraud,53222.41,Ramanathapuram,9.3979,78.8502,Bank Referral,Resolved
+CC1426,TN15,2025-02-07,02:55:46,Romance Scam,Cyber Deception,374101.8,Nagapattinam,10.7553,79.8202,Bank Referral,FIR Filed
+CC1427,TN14,2026-07-25,20:14:37,Card Skimming,Social Engineering,261210.26,Mayiladuthurai,11.0823,79.6826,State Police Portal,Under Investigation
+CC1428,TN36,2026-05-27,00:25:58,OTP Fraud,Cyber Deception,105835.04,Vellore,12.8837,79.1692,National Cybercrime Portal,Pending Review
+CC1429,TN36,2025-08-06,05:09:07,UPI Fraud,Online Financial Fraud,8436.51,Vellore,12.8895,79.1714,National Cybercrime Portal,Under Investigation
+CC1430,TN34,2026-01-31,14:27:24,Phishing,Online Financial Fraud,455110.33,Tiruvannamalai,12.2261,79.0878,Walk-in Complaint,Resolved
+CC1431,TN25,2025-05-05,00:35:05,Loan Fraud,Social Engineering,186963.0,Thanjavur,10.8167,79.1167,State Police Portal,Pending Review
+CC1432,TN19,2025-11-23,20:15:41,Phishing,Cyber Deception,255657.04,Pudukkottai,10.3344,78.8188,Helpline 1930,Pending Review
+CC1433,TN09,2025-07-19,10:19:26,Romance Scam,Identity Fraud,416196.71,Kallakurichi,11.7673,78.9174,State Police Portal,Under Investigation
+CC1434,TN30,2026-02-18,05:00:23,Loan Fraud,Identity Fraud,476295.94,Tiruchirappalli,10.7993,78.6985,National Cybercrime Portal,Chargesheet Filed
+CC1435,TN02,2025-02-17,13:27:57,Job Fraud,Banking Fraud,135067.6,Chengalpattu,12.6513,80.0162,Helpline 1930,Chargesheet Filed
+CC1436,TN20,2025-03-30,22:05:45,SIM Swap,Identity Fraud,1791.24,Ramanathapuram,9.3586,78.8145,Helpline 1930,Pending Review
+CC1437,TN38,2025-10-03,19:30:02,Identity Theft,Cyber Deception,8507.15,Virudhunagar,9.6145,77.9884,Helpline 1930,Resolved
+CC1438,TN36,2025-07-27,09:35:09,Job Fraud,Cyber Deception,363082.19,Vellore,12.923,79.123,Helpline 1930,Pending Review
+CC1439,TN30,2025-01-16,16:14:34,Job Fraud,Cyber Deception,278154.97,Tiruchirappalli,10.8303,78.7113,Helpline 1930,Pending Review
+CC1440,TN32,2025-03-16,11:01:23,Romance Scam,Banking Fraud,91124.43,Tirupathur,12.4891,78.5239,Helpline 1930,Resolved
+CC1441,TN02,2025-08-31,04:01:05,OTP Fraud,Banking Fraud,440708.58,Chengalpattu,12.7203,79.9616,Walk-in Complaint,Pending Review
+CC1442,TN36,2025-07-11,12:00:19,Phishing,Cyber Deception,427535.51,Vellore,12.9426,79.1805,Walk-in Complaint,Chargesheet Filed
+CC1443,TN09,2025-03-16,14:23:21,Identity Theft,Identity Fraud,485786.2,Kallakurichi,11.7001,78.9626,Bank Referral,Under Investigation
+CC1444,TN09,2026-05-15,09:24:38,OTP Fraud,Online Financial Fraud,49189.42,Kallakurichi,11.7556,78.9974,Walk-in Complaint,FIR Filed
+CC1445,TN18,2025-04-05,19:45:37,Job Fraud,Social Engineering,218435.48,Perambalur,11.2019,78.8462,Helpline 1930,Chargesheet Filed
+CC1446,TN33,2026-08-25,02:28:03,Loan Fraud,Identity Fraud,133934.12,Tiruppur,11.0717,77.3734,Bank Referral,Chargesheet Filed
+CC1447,TN24,2026-05-13,01:20:27,Identity Theft,Social Engineering,2440.19,Tenkasi,8.9642,77.2777,Bank Referral,Resolved
+CC1448,TN01,2026-08-12,00:46:03,Phishing,Banking Fraud,110559.09,Ariyalur,11.1604,79.0628,Bank Referral,Under Investigation
+CC1449,TN30,2025-06-25,06:52:08,Loan Fraud,Banking Fraud,495947.86,Tiruchirappalli,10.7908,78.7467,Walk-in Complaint,Chargesheet Filed
+CC1450,TN18,2025-01-06,01:05:31,Identity Theft,Cyber Deception,92201.34,Perambalur,11.2531,78.9038,State Police Portal,Under Investigation
+CC1451,TN09,2026-03-06,02:24:59,Identity Theft,Identity Fraud,4117.25,Kallakurichi,11.6949,78.9925,Walk-in Complaint,Under Investigation
+CC1452,TN06,2025-04-29,18:23:00,Romance Scam,Social Engineering,422076.41,Dharmapuri,12.1663,78.1191,National Cybercrime Portal,Chargesheet Filed
+CC1453,TN12,2026-03-14,02:47:56,UPI Fraud,Identity Fraud,114478.97,Krishnagiri,12.5503,78.2431,National Cybercrime Portal,Pending Review
+CC1454,TN09,2025-07-24,01:02:29,Phishing,Banking Fraud,297230.57,Kallakurichi,11.7563,78.9144,Helpline 1930,Chargesheet Filed
+CC1455,TN06,2026-06-01,18:50:19,Identity Theft,Identity Fraud,349864.29,Dharmapuri,12.1004,78.1728,Walk-in Complaint,Pending Review
+CC1456,TN30,2026-02-28,18:35:36,SIM Swap,Banking Fraud,172962.27,Tiruchirappalli,10.8,78.6826,Helpline 1930,Under Investigation
+CC1457,TN27,2025-04-01,19:50:46,Identity Theft,Social Engineering,488724.7,Tiruvallur,13.1104,79.8882,Walk-in Complaint,Under Investigation
+CC1458,TN14,2025-03-14,01:16:21,UPI Fraud,Social Engineering,176545.71,Mayiladuthurai,11.1146,79.6645,State Police Portal,FIR Filed
+CC1459,TN05,2026-04-25,09:13:56,Investment Scam,Banking Fraud,128760.76,Cuddalore,11.7744,79.8038,Bank Referral,FIR Filed
+CC1460,TN27,2026-06-27,01:25:55,Loan Fraud,Cyber Deception,218275.44,Tiruvallur,13.1647,79.9019,Walk-in Complaint,Pending Review
+CC1461,TN15,2025-09-15,09:59:34,Identity Theft,Social Engineering,274034.07,Nagapattinam,10.814,79.8267,State Police Portal,Resolved
+CC1462,TN20,2026-02-20,04:34:03,Investment Scam,Identity Fraud,27483.41,Ramanathapuram,9.3955,78.8748,National Cybercrime Portal,Resolved
+CC1463,TN24,2026-04-05,19:21:22,Phishing,Identity Fraud,480499.55,Tenkasi,8.9223,77.3216,National Cybercrime Portal,Pending Review
+CC1464,TN03,2026-07-08,10:57:49,Investment Scam,Online Financial Fraud,22210.08,Chennai,13.0956,80.2516,National Cybercrime Portal,Pending Review
+CC1465,TN07,2025-08-28,03:05:06,Card Skimming,Cyber Deception,470760.49,Dindigul,10.3219,78.0181,National Cybercrime Portal,FIR Filed
+CC1466,TN22,2025-10-30,22:28:43,Job Fraud,Online Financial Fraud,343682.07,Salem,11.632,78.1594,Helpline 1930,Pending Review
+CC1467,TN24,2025-08-28,10:52:58,Loan Fraud,Online Financial Fraud,341611.38,Tenkasi,9.0062,77.3544,State Police Portal,FIR Filed
+CC1468,TN29,2025-11-18,18:22:55,UPI Fraud,Online Financial Fraud,79796.43,Thoothukudi,8.756,78.166,National Cybercrime Portal,Under Investigation
+CC1469,TN21,2025-04-24,10:13:55,OTP Fraud,Identity Fraud,483339.59,Ranipet,12.9427,79.3519,Bank Referral,Resolved
+CC1470,TN22,2025-02-02,14:18:02,Card Skimming,Online Financial Fraud,382727.5,Salem,11.6847,78.1805,Helpline 1930,Pending Review
+CC1471,TN36,2025-02-20,11:45:47,Romance Scam,Identity Fraud,322312.74,Vellore,12.9578,79.1491,National Cybercrime Portal,Under Investigation
+CC1472,TN01,2026-02-07,09:43:39,SIM Swap,Identity Fraud,386657.81,Ariyalur,11.0912,79.0976,Walk-in Complaint,Under Investigation
+CC1473,TN01,2025-10-12,11:08:02,SIM Swap,Banking Fraud,23757.96,Ariyalur,11.1512,79.1258,Bank Referral,Under Investigation
+CC1474,TN05,2026-07-10,09:40:39,Phishing,Social Engineering,495252.34,Cuddalore,11.7317,79.7829,State Police Portal,Pending Review
+CC1475,TN23,2025-12-21,07:58:23,Romance Scam,Identity Fraud,74107.46,Sivaganga,9.8294,78.438,National Cybercrime Portal,Resolved
+CC1476,TN32,2026-08-07,18:00:41,UPI Fraud,Banking Fraud,286025.29,Tirupathur,12.538,78.607,Walk-in Complaint,Under Investigation
+CC1477,TN05,2026-07-14,12:45:28,Card Skimming,Identity Fraud,23000.33,Cuddalore,11.7675,79.7456,Helpline 1930,Pending Review
+CC1478,TN18,2025-05-09,22:56:13,SIM Swap,Cyber Deception,424290.75,Perambalur,11.2149,78.902,Bank Referral,FIR Filed
+CC1479,TN02,2025-01-03,12:31:29,Job Fraud,Social Engineering,167752.96,Chengalpattu,12.6447,79.9418,Bank Referral,Under Investigation
+CC1480,TN05,2026-05-21,06:24:20,Loan Fraud,Social Engineering,449523.13,Cuddalore,11.7164,79.732,Walk-in Complaint,Chargesheet Filed
+CC1481,TN12,2026-08-20,01:40:11,Romance Scam,Social Engineering,110198.73,Krishnagiri,12.4907,78.1968,National Cybercrime Portal,Under Investigation
+CC1482,TN01,2025-02-02,18:02:41,Job Fraud,Online Financial Fraud,178728.58,Ariyalur,11.0906,79.105,Walk-in Complaint,Pending Review
+CC1483,TN27,2026-06-07,08:15:00,OTP Fraud,Online Financial Fraud,45104.74,Tiruvallur,13.1295,79.8791,State Police Portal,Pending Review
+CC1484,TN01,2025-10-16,21:21:59,Card Skimming,Identity Fraud,377364.31,Ariyalur,11.1896,79.0842,Walk-in Complaint,Resolved
+CC1485,TN21,2026-08-03,05:05:10,Romance Scam,Cyber Deception,385761.95,Ranipet,12.9084,79.3228,State Police Portal,FIR Filed
+CC1486,TN27,2025-07-03,00:56:44,OTP Fraud,Banking Fraud,185651.95,Tiruvallur,13.1423,79.8649,Helpline 1930,Resolved
+CC1487,TN02,2025-05-10,00:58:28,Phishing,Online Financial Fraud,400775.4,Chengalpattu,12.7281,79.9483,Walk-in Complaint,Under Investigation
+CC1488,TN12,2025-07-13,13:44:10,Phishing,Cyber Deception,363053.02,Krishnagiri,12.4857,78.199,Walk-in Complaint,Under Investigation
+CC1489,TN34,2026-08-10,15:46:00,Investment Scam,Cyber Deception,48137.21,Tiruvannamalai,12.1859,79.0359,Helpline 1930,FIR Filed
+CC1490,TN35,2026-01-16,10:35:35,Phishing,Cyber Deception,440481.55,The Nilgiris,11.4985,76.7301,Helpline 1930,FIR Filed
+CC1491,TN07,2026-01-26,17:33:02,UPI Fraud,Identity Fraud,458666.76,Dindigul,10.3603,77.9961,Walk-in Complaint,FIR Filed
+CC1492,TN05,2026-07-15,12:38:09,Identity Theft,Cyber Deception,240316.34,Cuddalore,11.7152,79.7723,Bank Referral,Chargesheet Filed
+CC1493,TN04,2025-04-09,16:08:10,Card Skimming,Social Engineering,1608.36,Coimbatore,10.9846,76.9272,Bank Referral,Pending Review
+CC1494,TN09,2025-08-23,04:42:09,UPI Fraud,Identity Fraud,45251.58,Kallakurichi,11.7162,79.0126,State Police Portal,FIR Filed
+CC1495,TN34,2025-04-23,02:26:23,Romance Scam,Cyber Deception,355559.55,Tiruvannamalai,12.2454,79.092,National Cybercrime Portal,FIR Filed
+CC1496,TN03,2025-08-01,01:17:59,OTP Fraud,Social Engineering,426335.28,Chennai,13.0458,80.2646,Bank Referral,FIR Filed
+CC1497,TN07,2025-09-07,11:45:12,UPI Fraud,Social Engineering,252165.72,Dindigul,10.3542,78.0081,Helpline 1930,Chargesheet Filed
+CC1498,TN26,2025-07-21,00:43:52,UPI Fraud,Identity Fraud,357908.41,Theni,10.0199,77.5203,Helpline 1930,Resolved
+CC1499,TN30,2025-12-31,12:57:37,Phishing,Cyber Deception,269097.27,Tiruchirappalli,10.7537,78.6618,National Cybercrime Portal,FIR Filed
+CC1500,TN06,2026-03-02,21:56:52,Phishing,Banking Fraud,149970.45,Dharmapuri,12.1642,78.1123,State Police Portal,Pending Review
+CC1501,TN34,2025-08-12,03:50:01,Loan Fraud,Social Engineering,421231.28,Tiruvannamalai,12.2495,79.1068,National Cybercrime Portal,Pending Review
+CC1502,TN25,2026-02-06,05:09:36,Phishing,Social Engineering,469504.1,Thanjavur,10.779,79.0892,National Cybercrime Portal,Chargesheet Filed
+CC1503,TN26,2026-07-25,11:53:26,Job Fraud,Banking Fraud,477069.31,Theni,10.0481,77.4309,State Police Portal,Resolved
+CC1504,TN10,2025-03-28,18:32:51,Job Fraud,Identity Fraud,181473.58,Kancheepuram,12.8145,79.6823,Bank Referral,Chargesheet Filed
+CC1505,TN03,2026-03-28,13:25:12,Loan Fraud,Cyber Deception,385334.91,Chennai,13.1044,80.2775,Bank Referral,Under Investigation
+CC1506,TN20,2026-01-21,05:29:12,OTP Fraud,Social Engineering,193284.83,Ramanathapuram,9.3573,78.8655,National Cybercrime Portal,Chargesheet Filed
+CC1507,TN10,2025-09-19,06:50:26,OTP Fraud,Identity Fraud,470478.33,Kancheepuram,12.8397,79.6857,State Police Portal,Under Investigation
+CC1508,TN33,2026-06-10,20:56:02,Identity Theft,Banking Fraud,474622.63,Tiruppur,11.1179,77.3598,National Cybercrime Portal,Pending Review
+CC1509,TN27,2025-06-01,20:15:46,Loan Fraud,Online Financial Fraud,329349.49,Tiruvallur,13.1473,79.8951,State Police Portal,FIR Filed
+CC1510,TN36,2025-12-13,07:56:08,Loan Fraud,Banking Fraud,487080.05,Vellore,12.8852,79.1191,National Cybercrime Portal,Chargesheet Filed
+CC1511,TN35,2025-08-30,07:15:16,SIM Swap,Online Financial Fraud,404649.49,The Nilgiris,11.4657,76.6916,Bank Referral,Pending Review
+CC1512,TN32,2026-02-20,00:23:46,Loan Fraud,Identity Fraud,431919.98,Tirupathur,12.5215,78.5551,Walk-in Complaint,Chargesheet Filed
+CC1513,TN32,2025-12-05,14:25:37,Loan Fraud,Identity Fraud,473547.73,Tirupathur,12.4797,78.5401,Bank Referral,Pending Review
+CC1514,TN31,2025-10-05,12:24:59,Romance Scam,Cyber Deception,191771.58,Tirunelveli,8.7446,77.7498,Bank Referral,FIR Filed
+CC1515,TN06,2025-07-01,10:18:23,UPI Fraud,Cyber Deception,349172.94,Dharmapuri,12.0785,78.1414,Walk-in Complaint,Chargesheet Filed
+CC1516,TN33,2025-03-31,10:11:48,Job Fraud,Cyber Deception,72155.09,Tiruppur,11.1372,77.3282,Helpline 1930,Resolved
+CC1517,TN20,2026-04-03,05:07:54,SIM Swap,Online Financial Fraud,227146.97,Ramanathapuram,9.412,78.7958,Bank Referral,Pending Review
+CC1518,TN08,2025-09-30,05:24:07,Loan Fraud,Online Financial Fraud,498850.43,Erode,11.3864,77.7323,Walk-in Complaint,FIR Filed
+CC1519,TN16,2025-06-11,13:52:07,Loan Fraud,Identity Fraud,443179.32,Kanniyakumari,8.0596,77.5695,Helpline 1930,Pending Review
+CC1520,TN27,2025-08-14,21:49:29,SIM Swap,Online Financial Fraud,480564.23,Tiruvallur,13.1583,79.8589,Walk-in Complaint,Under Investigation
+CC1521,TN32,2026-06-28,11:58:10,OTP Fraud,Online Financial Fraud,40621.01,Tirupathur,12.5167,78.5608,Walk-in Complaint,Chargesheet Filed
+CC1522,TN21,2025-06-10,06:23:52,Loan Fraud,Social Engineering,217039.84,Ranipet,12.9678,79.3631,Bank Referral,Chargesheet Filed
+CC1523,TN32,2025-02-19,03:31:12,OTP Fraud,Online Financial Fraud,346058.99,Tirupathur,12.4848,78.5502,State Police Portal,FIR Filed
+CC1524,TN29,2026-04-19,14:08:36,Job Fraud,Banking Fraud,341302.32,Thoothukudi,8.7549,78.1043,National Cybercrime Portal,Under Investigation
+CC1525,TN18,2025-03-05,20:52:02,Investment Scam,Social Engineering,407022.03,Perambalur,11.2774,78.8384,Bank Referral,Chargesheet Filed
+CC1526,TN34,2025-02-16,01:01:58,OTP Fraud,Banking Fraud,428311.1,Tiruvannamalai,12.1931,79.0375,Bank Referral,FIR Filed
+CC1527,TN21,2026-04-20,21:54:12,Phishing,Banking Fraud,14208.41,Ranipet,12.9073,79.3801,National Cybercrime Portal,FIR Filed
+CC1528,TN26,2026-06-26,20:44:05,Card Skimming,Social Engineering,454308.13,Theni,9.9802,77.4466,Walk-in Complaint,Chargesheet Filed
+CC1529,TN23,2025-06-07,16:49:25,OTP Fraud,Online Financial Fraud,300865.59,Sivaganga,9.8119,78.5035,Helpline 1930,FIR Filed
+CC1530,TN23,2025-05-11,23:23:39,Investment Scam,Social Engineering,454862.75,Sivaganga,9.8081,78.446,Helpline 1930,FIR Filed
+CC1531,TN13,2026-06-19,19:38:11,UPI Fraud,Identity Fraud,182431.7,Madurai,9.9226,78.1391,State Police Portal,Chargesheet Filed
+CC1532,TN15,2025-05-13,07:27:27,Phishing,Cyber Deception,175654.03,Nagapattinam,10.7207,79.8346,National Cybercrime Portal,Pending Review
+CC1533,TN30,2025-02-16,16:11:24,Romance Scam,Banking Fraud,394168.19,Tiruchirappalli,10.7526,78.7053,State Police Portal,FIR Filed
+CC1534,TN25,2025-02-09,03:00:31,Phishing,Social Engineering,198816.44,Thanjavur,10.7724,79.1723,Walk-in Complaint,FIR Filed
+CC1535,TN36,2026-07-28,20:11:45,Phishing,Banking Fraud,333444.1,Vellore,12.9507,79.126,Bank Referral,Pending Review
+CC1536,TN17,2026-02-17,15:12:20,Card Skimming,Identity Fraud,66381.04,Namakkal,11.1899,78.2144,State Police Portal,FIR Filed
+CC1537,TN10,2025-06-15,22:32:01,Phishing,Cyber Deception,146726.42,Kancheepuram,12.8839,79.6882,Walk-in Complaint,FIR Filed
+CC1538,TN12,2025-07-02,23:22:25,UPI Fraud,Banking Fraud,92337.2,Krishnagiri,12.5574,78.263,Bank Referral,FIR Filed
+CC1539,TN24,2025-02-20,12:15:53,Card Skimming,Social Engineering,34267.88,Tenkasi,8.9712,77.3183,Bank Referral,Resolved
+CC1540,TN32,2025-10-10,03:52:15,UPI Fraud,Banking Fraud,334832.19,Tirupathur,12.4666,78.572,Bank Referral,Under Investigation
+CC1541,TN36,2025-11-28,04:00:56,Phishing,Social Engineering,387609.41,Vellore,12.884,79.1486,Walk-in Complaint,Chargesheet Filed
+CC1542,TN26,2025-08-23,18:53:46,Card Skimming,Identity Fraud,193672.04,Theni,9.9918,77.4545,Helpline 1930,Under Investigation
+CC1543,TN24,2025-11-23,08:36:04,OTP Fraud,Online Financial Fraud,184775.43,Tenkasi,8.9492,77.3371,National Cybercrime Portal,Under Investigation
+CC1544,TN37,2025-12-17,10:27:17,UPI Fraud,Cyber Deception,466739.26,Viluppuram,11.8992,79.5082,Walk-in Complaint,FIR Filed
+CC1545,TN38,2025-11-25,14:35:31,Investment Scam,Social Engineering,31038.86,Virudhunagar,9.6175,77.9935,National Cybercrime Portal,Chargesheet Filed
+CC1546,TN11,2026-03-22,05:42:00,Phishing,Cyber Deception,433571.73,Karur,10.9597,78.0402,National Cybercrime Portal,FIR Filed
+CC1547,TN20,2025-03-17,06:36:15,Job Fraud,Cyber Deception,202363.3,Ramanathapuram,9.3671,78.8468,Helpline 1930,Under Investigation
+CC1548,TN37,2026-06-20,15:13:04,OTP Fraud,Banking Fraud,245784.2,Viluppuram,11.9385,79.4441,Walk-in Complaint,FIR Filed
+CC1549,TN09,2026-03-25,20:24:43,UPI Fraud,Banking Fraud,479612.77,Kallakurichi,11.7578,79.0103,Walk-in Complaint,Pending Review
+CC1550,TN31,2026-07-12,13:22:15,SIM Swap,Cyber Deception,450154.5,Tirunelveli,8.7337,77.7376,National Cybercrime Portal,Pending Review
+CC1551,TN06,2026-01-27,10:19:12,UPI Fraud,Cyber Deception,336384.63,Dharmapuri,12.1563,78.1719,State Police Portal,FIR Filed
+CC1552,TN08,2025-05-29,01:10:07,Romance Scam,Online Financial Fraud,176634.45,Erode,11.2934,77.7021,Helpline 1930,Chargesheet Filed
+CC1553,TN19,2026-07-31,20:29:51,Loan Fraud,Banking Fraud,4436.94,Pudukkottai,10.3347,78.7845,Walk-in Complaint,Resolved
+CC1554,TN26,2025-11-10,09:34:42,Job Fraud,Banking Fraud,201055.93,Theni,10.0176,77.4861,Bank Referral,Under Investigation
+CC1555,TN27,2025-07-26,12:56:22,Job Fraud,Online Financial Fraud,129208.85,Tiruvallur,13.1233,79.8594,State Police Portal,Chargesheet Filed
+CC1556,TN21,2025-08-14,15:12:02,Romance Scam,Banking Fraud,487550.7,Ranipet,12.9337,79.3449,Helpline 1930,Resolved
+CC1557,TN06,2025-04-23,20:36:41,Investment Scam,Social Engineering,285085.57,Dharmapuri,12.1157,78.1403,National Cybercrime Portal,Chargesheet Filed
+CC1558,TN38,2026-04-23,23:00:11,Investment Scam,Identity Fraud,55950.86,Virudhunagar,9.5901,77.9587,State Police Portal,Resolved
+CC1559,TN20,2025-08-29,02:54:20,Romance Scam,Identity Fraud,458166.4,Ramanathapuram,9.376,78.8381,Walk-in Complaint,Chargesheet Filed
+CC1560,TN26,2025-12-24,09:26:42,Job Fraud,Social Engineering,149970.02,Theni,9.9934,77.453,Bank Referral,FIR Filed
+CC1561,TN20,2025-09-21,02:50:57,Loan Fraud,Cyber Deception,61534.82,Ramanathapuram,9.3708,78.8424,State Police Portal,Pending Review
+CC1562,TN16,2025-09-22,08:37:28,Loan Fraud,Social Engineering,287885.04,Kanniyakumari,8.0653,77.5295,National Cybercrime Portal,Pending Review
+CC1563,TN36,2025-06-25,04:14:03,Romance Scam,Identity Fraud,250751.62,Vellore,12.8793,79.1548,State Police Portal,Pending Review
+CC1564,TN35,2026-06-19,18:54:59,Loan Fraud,Online Financial Fraud,125339.43,The Nilgiris,11.452,76.6845,Walk-in Complaint,Resolved
+CC1565,TN09,2025-03-04,22:11:07,Card Skimming,Online Financial Fraud,239986.16,Kallakurichi,11.7184,78.9991,Bank Referral,FIR Filed
+CC1566,TN19,2026-02-27,11:21:30,Romance Scam,Social Engineering,429712.61,Pudukkottai,10.3423,78.7949,National Cybercrime Portal,Chargesheet Filed
+CC1567,TN18,2026-08-04,13:54:19,Job Fraud,Online Financial Fraud,75042.47,Perambalur,11.2453,78.8888,National Cybercrime Portal,FIR Filed
+CC1568,TN23,2025-04-20,04:49:07,SIM Swap,Banking Fraud,167325.91,Sivaganga,9.8326,78.4665,Walk-in Complaint,Resolved
+CC1569,TN13,2025-12-05,18:21:40,Card Skimming,Online Financial Fraud,278133.24,Madurai,9.9182,78.1504,Walk-in Complaint,Pending Review
+CC1570,TN14,2025-03-12,08:45:23,Identity Theft,Identity Fraud,95387.13,Mayiladuthurai,11.1281,79.6431,State Police Portal,Under Investigation
+CC1571,TN05,2025-08-17,17:35:23,UPI Fraud,Social Engineering,149015.08,Cuddalore,11.7164,79.8043,State Police Portal,FIR Filed
+CC1572,TN03,2025-09-12,06:19:29,Loan Fraud,Social Engineering,133296.44,Chennai,13.0535,80.2315,Bank Referral,FIR Filed
+CC1573,TN29,2026-08-17,13:32:47,Job Fraud,Cyber Deception,415766.36,Thoothukudi,8.7175,78.1639,Bank Referral,FIR Filed
+CC1574,TN37,2025-10-15,12:48:37,UPI Fraud,Social Engineering,443174.37,Viluppuram,11.9555,79.5008,Helpline 1930,Resolved
+CC1575,TN19,2025-03-07,14:16:12,UPI Fraud,Identity Fraud,104711.82,Pudukkottai,10.3616,78.786,Walk-in Complaint,Chargesheet Filed
+CC1576,TN04,2025-06-17,05:52:35,Romance Scam,Identity Fraud,211640.03,Coimbatore,11.0006,76.9506,Bank Referral,FIR Filed
+CC1577,TN13,2025-07-25,04:33:09,Romance Scam,Social Engineering,5650.32,Madurai,9.8768,78.1028,Walk-in Complaint,Under Investigation
+CC1578,TN14,2025-07-29,00:14:01,SIM Swap,Social Engineering,127565.81,Mayiladuthurai,11.1053,79.6102,National Cybercrime Portal,Resolved
+CC1579,TN30,2026-01-09,00:28:54,Job Fraud,Social Engineering,388176.96,Tiruchirappalli,10.8015,78.6894,Bank Referral,FIR Filed
+CC1580,TN04,2025-06-27,08:41:23,SIM Swap,Online Financial Fraud,40042.71,Coimbatore,11.0572,76.9968,Walk-in Complaint,Pending Review
+CC1581,TN17,2026-05-15,05:15:01,SIM Swap,Identity Fraud,358652.7,Namakkal,11.264,78.1306,State Police Portal,Pending Review
+CC1582,TN19,2026-04-15,02:51:37,UPI Fraud,Online Financial Fraud,227655.22,Pudukkottai,10.346,78.7868,State Police Portal,Chargesheet Filed
+CC1583,TN04,2026-01-18,01:28:52,Job Fraud,Identity Fraud,330616.37,Coimbatore,11.0214,76.9788,National Cybercrime Portal,Resolved
+CC1584,TN32,2025-11-25,08:26:06,Romance Scam,Cyber Deception,467921.88,Tirupathur,12.462,78.5425,Helpline 1930,Chargesheet Filed
+CC1585,TN35,2025-08-21,17:55:58,Card Skimming,Social Engineering,394521.28,The Nilgiris,11.4885,76.6985,Walk-in Complaint,Under Investigation
+CC1586,TN12,2025-06-09,10:38:02,Romance Scam,Identity Fraud,193253.42,Krishnagiri,12.5444,78.1919,Bank Referral,Pending Review
+CC1587,TN10,2025-09-11,15:15:40,SIM Swap,Banking Fraud,287128.31,Kancheepuram,12.8782,79.733,National Cybercrime Portal,FIR Filed
+CC1588,TN06,2025-03-30,01:07:33,Card Skimming,Cyber Deception,21939.85,Dharmapuri,12.1474,78.2065,Walk-in Complaint,Resolved
+CC1589,TN04,2025-03-17,14:54:03,Card Skimming,Identity Fraud,347099.39,Coimbatore,11.0466,76.9991,Walk-in Complaint,FIR Filed
+CC1590,TN23,2025-04-17,18:39:39,Loan Fraud,Identity Fraud,89923.2,Sivaganga,9.8251,78.5195,National Cybercrime Portal,Resolved
+CC1591,TN07,2025-06-26,05:09:57,Card Skimming,Banking Fraud,374470.71,Dindigul,10.3374,77.9753,State Police Portal,FIR Filed
+CC1592,TN02,2026-01-05,09:09:09,Phishing,Banking Fraud,88897.64,Chengalpattu,12.7118,79.9942,Bank Referral,Pending Review
+CC1593,TN25,2025-07-16,06:47:47,UPI Fraud,Cyber Deception,408410.53,Thanjavur,10.7572,79.1168,Bank Referral,Resolved
+CC1594,TN02,2025-11-09,16:53:33,Card Skimming,Cyber Deception,300010.94,Chengalpattu,12.7361,79.9269,Helpline 1930,Under Investigation
+CC1595,TN11,2025-01-11,11:39:43,Job Fraud,Cyber Deception,342493.0,Karur,10.9172,78.1032,Bank Referral,FIR Filed
+CC1596,TN29,2026-05-24,08:39:44,OTP Fraud,Banking Fraud,214142.2,Thoothukudi,8.78,78.1008,Walk-in Complaint,Chargesheet Filed
+CC1597,TN27,2025-08-27,08:11:28,Card Skimming,Banking Fraud,160134.48,Tiruvallur,13.1072,79.9483,Walk-in Complaint,FIR Filed
+CC1598,TN02,2026-03-05,02:56:25,Investment Scam,Cyber Deception,42773.76,Chengalpattu,12.7249,79.9391,Bank Referral,Pending Review
+CC1599,TN11,2025-06-04,18:18:07,Phishing,Identity Fraud,462106.22,Karur,11.0056,78.1035,State Police Portal,Under Investigation
+CC1600,TN10,2026-08-29,10:20:48,Romance Scam,Banking Fraud,117063.1,Kancheepuram,12.8086,79.7204,State Police Portal,Resolved
+CC1601,TN12,2025-10-31,21:48:11,UPI Fraud,Banking Fraud,189114.62,Krishnagiri,12.5021,78.1896,Walk-in Complaint,Under Investigation
+CC1602,TN36,2025-12-14,03:12:13,Phishing,Social Engineering,327695.94,Vellore,12.9425,79.0865,Bank Referral,Pending Review
+CC1603,TN35,2025-08-18,22:54:10,Phishing,Online Financial Fraud,89213.33,The Nilgiris,11.4568,76.7787,State Police Portal,Under Investigation
+CC1604,TN24,2025-10-31,16:42:58,Phishing,Identity Fraud,269624.88,Tenkasi,8.9934,77.3194,Walk-in Complaint,Resolved
+CC1605,TN26,2025-11-02,00:06:48,Romance Scam,Online Financial Fraud,265888.31,Theni,9.9866,77.4805,Helpline 1930,Chargesheet Filed
+CC1606,TN20,2025-05-17,21:00:02,Job Fraud,Social Engineering,285438.61,Ramanathapuram,9.3641,78.8753,Helpline 1930,Pending Review
+CC1607,TN31,2025-09-08,10:33:20,Job Fraud,Banking Fraud,141602.72,Tirunelveli,8.7509,77.7816,National Cybercrime Portal,Pending Review
+CC1608,TN28,2025-05-13,06:18:42,OTP Fraud,Online Financial Fraud,305646.99,Tiruvarur,10.7876,79.628,State Police Portal,FIR Filed
+CC1609,TN05,2025-07-17,05:01:19,Phishing,Online Financial Fraud,142876.73,Cuddalore,11.7592,79.7746,National Cybercrime Portal,Chargesheet Filed
+CC1610,TN32,2026-06-08,18:49:55,Phishing,Online Financial Fraud,236058.66,Tirupathur,12.5052,78.5314,Helpline 1930,Pending Review
+CC1611,TN18,2026-08-13,22:33:06,OTP Fraud,Cyber Deception,349456.18,Perambalur,11.1953,78.8871,National Cybercrime Portal,FIR Filed
+CC1612,TN28,2026-03-09,13:01:47,OTP Fraud,Online Financial Fraud,32131.59,Tiruvarur,10.7509,79.6041,State Police Portal,Pending Review
+CC1613,TN22,2025-07-18,17:25:12,Phishing,Online Financial Fraud,161560.97,Salem,11.6189,78.177,Bank Referral,FIR Filed
+CC1614,TN34,2025-08-29,17:45:00,Investment Scam,Cyber Deception,344867.12,Tiruvannamalai,12.2678,79.1089,Walk-in Complaint,FIR Filed
+CC1615,TN37,2025-03-05,01:28:25,Identity Theft,Banking Fraud,82843.04,Viluppuram,11.9358,79.4797,State Police Portal,FIR Filed
+CC1616,TN12,2026-07-24,06:56:55,Identity Theft,Cyber Deception,446585.46,Krishnagiri,12.5359,78.252,State Police Portal,FIR Filed
+CC1617,TN31,2026-02-22,23:05:32,Investment Scam,Online Financial Fraud,441753.14,Tirunelveli,8.7602,77.798,Helpline 1930,FIR Filed
+CC1618,TN26,2026-04-11,03:15:27,Identity Theft,Identity Fraud,482600.99,Theni,9.9713,77.5241,State Police Portal,FIR Filed
+CC1619,TN33,2025-06-10,06:57:14,Romance Scam,Social Engineering,50475.53,Tiruppur,11.1126,77.3419,State Police Portal,Chargesheet Filed
+CC1620,TN12,2026-04-18,23:38:46,Phishing,Cyber Deception,238958.49,Krishnagiri,12.5394,78.2401,National Cybercrime Portal,Resolved
+CC1621,TN31,2026-05-20,12:06:41,UPI Fraud,Banking Fraud,378003.31,Tirunelveli,8.7362,77.7893,State Police Portal,Under Investigation
+CC1622,TN35,2026-06-20,03:54:41,Loan Fraud,Social Engineering,385391.94,The Nilgiris,11.5037,76.7304,Helpline 1930,Resolved
+CC1623,TN08,2026-04-17,16:44:07,Investment Scam,Cyber Deception,210080.63,Erode,11.3763,77.7315,Walk-in Complaint,Chargesheet Filed
+CC1624,TN23,2026-05-25,05:47:43,UPI Fraud,Social Engineering,351046.11,Sivaganga,9.831,78.5005,Helpline 1930,Pending Review
+CC1625,TN25,2025-06-24,19:55:22,Romance Scam,Online Financial Fraud,70044.54,Thanjavur,10.7818,79.1186,Walk-in Complaint,Pending Review
+CC1626,TN37,2025-06-16,10:20:14,Romance Scam,Identity Fraud,335910.07,Viluppuram,11.9529,79.437,Helpline 1930,Chargesheet Filed
+CC1627,TN09,2026-08-17,19:01:28,Loan Fraud,Banking Fraud,72216.97,Kallakurichi,11.75,78.9562,Bank Referral,Under Investigation
+CC1628,TN29,2026-08-11,19:25:31,UPI Fraud,Cyber Deception,2919.77,Thoothukudi,8.7924,78.1305,Helpline 1930,Chargesheet Filed
+CC1629,TN36,2025-12-27,21:39:54,Romance Scam,Identity Fraud,203408.42,Vellore,12.874,79.1334,Walk-in Complaint,Pending Review
+CC1630,TN20,2025-04-26,13:29:15,Loan Fraud,Banking Fraud,259974.79,Ramanathapuram,9.3769,78.8027,Walk-in Complaint,Pending Review
+CC1631,TN35,2025-04-20,12:18:49,Romance Scam,Cyber Deception,14949.24,The Nilgiris,11.4706,76.6847,Walk-in Complaint,FIR Filed
+CC1632,TN33,2026-02-08,00:20:10,Phishing,Online Financial Fraud,82849.17,Tiruppur,11.0725,77.337,Helpline 1930,Resolved
+CC1633,TN19,2026-07-21,19:57:03,UPI Fraud,Cyber Deception,90391.61,Pudukkottai,10.3832,78.7958,Walk-in Complaint,Under Investigation
+CC1634,TN15,2025-01-01,17:56:34,Romance Scam,Cyber Deception,95786.99,Nagapattinam,10.7838,79.799,Helpline 1930,Chargesheet Filed
+CC1635,TN35,2026-07-19,07:39:38,Card Skimming,Identity Fraud,416870.37,The Nilgiris,11.516,76.6943,Bank Referral,Resolved
+CC1636,TN16,2025-01-15,04:59:28,Investment Scam,Online Financial Fraud,24574.41,Kanniyakumari,8.0596,77.5565,Helpline 1930,Resolved
+CC1637,TN07,2026-08-30,19:22:41,SIM Swap,Online Financial Fraud,455669.07,Dindigul,10.4074,77.9582,National Cybercrime Portal,Pending Review
+CC1638,TN17,2026-08-02,06:52:28,Identity Theft,Identity Fraud,216564.61,Namakkal,11.2258,78.1677,Helpline 1930,Under Investigation
+CC1639,TN08,2026-06-28,15:10:26,UPI Fraud,Online Financial Fraud,57386.29,Erode,11.366,77.71,National Cybercrime Portal,Under Investigation
+CC1640,TN15,2025-10-05,09:19:16,OTP Fraud,Cyber Deception,298057.7,Nagapattinam,10.7215,79.8433,Bank Referral,Resolved
+CC1641,TN36,2026-02-15,11:10:19,UPI Fraud,Banking Fraud,71739.93,Vellore,12.9443,79.0942,Bank Referral,Pending Review
+CC1642,TN28,2026-05-05,04:20:59,Job Fraud,Social Engineering,92934.16,Tiruvarur,10.8016,79.5969,National Cybercrime Portal,Chargesheet Filed
+CC1643,TN16,2025-08-09,20:41:42,Loan Fraud,Banking Fraud,396770.97,Kanniyakumari,8.0642,77.5192,Helpline 1930,Chargesheet Filed
+CC1644,TN35,2025-10-23,21:50:20,Investment Scam,Cyber Deception,112195.83,The Nilgiris,11.4853,76.7008,State Police Portal,Pending Review
+CC1645,TN15,2025-11-17,00:31:53,Phishing,Social Engineering,144447.46,Nagapattinam,10.7901,79.8167,State Police Portal,Pending Review
+CC1646,TN04,2025-01-04,23:15:25,OTP Fraud,Social Engineering,473305.92,Coimbatore,11.0599,76.9126,Helpline 1930,FIR Filed
+CC1647,TN10,2026-04-20,15:10:27,Loan Fraud,Cyber Deception,321626.49,Kancheepuram,12.8574,79.7153,Walk-in Complaint,Chargesheet Filed
+CC1648,TN21,2026-07-22,10:10:11,Romance Scam,Identity Fraud,85985.28,Ranipet,12.9614,79.2973,Bank Referral,Under Investigation
+CC1649,TN26,2025-04-29,16:20:31,Investment Scam,Cyber Deception,42932.66,Theni,9.9671,77.4604,National Cybercrime Portal,Pending Review
+CC1650,TN04,2026-01-07,09:38:05,Loan Fraud,Banking Fraud,227599.9,Coimbatore,10.9937,76.9288,Bank Referral,FIR Filed
+CC1651,TN23,2025-05-25,09:28:55,Identity Theft,Identity Fraud,56955.36,Sivaganga,9.8722,78.477,Bank Referral,Pending Review
+CC1652,TN20,2026-08-08,14:12:16,Loan Fraud,Cyber Deception,102384.09,Ramanathapuram,9.3472,78.8309,Walk-in Complaint,Under Investigation
+CC1653,TN15,2025-07-19,03:33:13,Job Fraud,Online Financial Fraud,437049.62,Nagapattinam,10.7241,79.815,Walk-in Complaint,Pending Review
+CC1654,TN12,2026-03-14,01:32:30,Identity Theft,Cyber Deception,444922.6,Krishnagiri,12.5498,78.2194,Bank Referral,FIR Filed
+CC1655,TN31,2026-07-11,15:12:00,Loan Fraud,Cyber Deception,217962.67,Tirunelveli,8.6955,77.713,State Police Portal,Under Investigation
+CC1656,TN29,2025-11-10,13:20:53,SIM Swap,Identity Fraud,364740.33,Thoothukudi,8.7625,78.1654,Walk-in Complaint,Under Investigation
+CC1657,TN07,2026-06-09,18:55:06,Investment Scam,Banking Fraud,343093.98,Dindigul,10.3312,77.9474,Helpline 1930,Resolved
+CC1658,TN06,2026-05-06,14:47:24,OTP Fraud,Cyber Deception,404727.01,Dharmapuri,12.1366,78.1147,Bank Referral,FIR Filed
+CC1659,TN14,2026-02-10,04:37:38,Romance Scam,Identity Fraud,444440.75,Mayiladuthurai,11.1214,79.6464,Bank Referral,Under Investigation
+CC1660,TN38,2026-08-12,18:50:01,UPI Fraud,Online Financial Fraud,25063.88,Virudhunagar,9.5968,77.9464,State Police Portal,Pending Review
+CC1661,TN02,2026-06-29,07:53:59,Investment Scam,Social Engineering,48504.63,Chengalpattu,12.6524,79.9851,Walk-in Complaint,Chargesheet Filed
+CC1662,TN19,2025-06-24,20:18:24,Loan Fraud,Cyber Deception,388463.01,Pudukkottai,10.3595,78.8456,Walk-in Complaint,Resolved
+CC1663,TN38,2026-01-15,14:10:35,Investment Scam,Banking Fraud,164968.11,Virudhunagar,9.6082,77.9473,Walk-in Complaint,FIR Filed
+CC1664,TN34,2025-04-24,18:03:11,OTP Fraud,Online Financial Fraud,221112.58,Tiruvannamalai,12.2337,79.0978,Walk-in Complaint,Under Investigation
+CC1665,TN09,2025-11-03,16:34:12,Romance Scam,Banking Fraud,449458.13,Kallakurichi,11.7345,79.0065,Walk-in Complaint,Pending Review
+CC1666,TN20,2025-09-26,10:51:06,Loan Fraud,Social Engineering,213301.57,Ramanathapuram,9.39,78.7981,Helpline 1930,Pending Review
+CC1667,TN07,2025-03-26,05:46:13,UPI Fraud,Social Engineering,264553.4,Dindigul,10.3466,77.9629,Walk-in Complaint,Under Investigation
+CC1668,TN06,2026-08-15,07:39:31,Identity Theft,Online Financial Fraud,138276.02,Dharmapuri,12.1693,78.1658,National Cybercrime Portal,Pending Review
+CC1669,TN37,2025-06-20,03:28:29,Romance Scam,Online Financial Fraud,185832.86,Viluppuram,11.9049,79.5222,Helpline 1930,Pending Review
+CC1670,TN14,2025-08-15,11:05:40,Investment Scam,Cyber Deception,269692.06,Mayiladuthurai,11.0606,79.6756,National Cybercrime Portal,Chargesheet Filed
+CC1671,TN13,2025-05-10,21:25:01,Phishing,Online Financial Fraud,288260.96,Madurai,9.9539,78.0778,State Police Portal,Pending Review
+CC1672,TN09,2026-08-11,15:19:08,Investment Scam,Identity Fraud,61510.03,Kallakurichi,11.7607,78.9181,National Cybercrime Portal,Pending Review
+CC1673,TN21,2026-07-02,03:54:32,Phishing,Online Financial Fraud,142420.13,Ranipet,12.8833,79.2969,State Police Portal,Resolved
+CC1674,TN14,2026-02-15,02:57:21,Identity Theft,Banking Fraud,103615.15,Mayiladuthurai,11.1343,79.6174,Helpline 1930,Under Investigation
+CC1675,TN14,2025-12-24,16:46:38,Job Fraud,Cyber Deception,123427.67,Mayiladuthurai,11.0938,79.6832,National Cybercrime Portal,Under Investigation
+CC1676,TN22,2026-07-12,10:55:48,Job Fraud,Online Financial Fraud,183992.31,Salem,11.7099,78.141,State Police Portal,Under Investigation
+CC1677,TN22,2026-01-31,12:15:37,Card Skimming,Cyber Deception,93782.76,Salem,11.649,78.1837,National Cybercrime Portal,Resolved
+CC1678,TN19,2025-09-10,12:43:39,UPI Fraud,Social Engineering,419321.26,Pudukkottai,10.4208,78.8177,State Police Portal,Resolved
+CC1679,TN02,2025-06-12,17:38:26,Job Fraud,Banking Fraud,3338.31,Chengalpattu,12.7353,79.9552,Walk-in Complaint,Under Investigation
+CC1680,TN25,2025-09-19,08:04:52,Job Fraud,Online Financial Fraud,18446.0,Thanjavur,10.7475,79.1877,Helpline 1930,Chargesheet Filed
+CC1681,TN14,2025-12-09,17:55:52,Loan Fraud,Banking Fraud,414289.51,Mayiladuthurai,11.0628,79.6407,National Cybercrime Portal,Under Investigation
+CC1682,TN13,2026-07-28,17:00:08,Card Skimming,Social Engineering,5128.01,Madurai,9.8895,78.1118,Helpline 1930,FIR Filed
+CC1683,TN33,2025-04-15,08:40:16,Loan Fraud,Banking Fraud,58913.56,Tiruppur,11.134,77.3141,Bank Referral,FIR Filed
+CC1684,TN02,2026-08-13,13:36:51,UPI Fraud,Banking Fraud,248153.26,Chengalpattu,12.6699,80.0013,Walk-in Complaint,Under Investigation
+CC1685,TN37,2025-06-27,05:32:34,Loan Fraud,Cyber Deception,255064.61,Viluppuram,11.9666,79.5232,Bank Referral,Under Investigation
+CC1686,TN16,2025-12-03,17:47:57,Card Skimming,Social Engineering,423083.29,Kanniyakumari,8.0506,77.5151,State Police Portal,Under Investigation
+CC1687,TN28,2026-07-21,17:07:50,Phishing,Banking Fraud,419732.72,Tiruvarur,10.7982,79.662,National Cybercrime Portal,FIR Filed
+CC1688,TN20,2025-08-02,18:32:48,Identity Theft,Online Financial Fraud,254121.31,Ramanathapuram,9.3345,78.8291,Bank Referral,Pending Review
+CC1689,TN15,2025-08-28,06:25:18,Card Skimming,Banking Fraud,7948.36,Nagapattinam,10.7423,79.8182,National Cybercrime Portal,Pending Review
+CC1690,TN01,2025-04-26,11:12:32,Job Fraud,Online Financial Fraud,93958.56,Ariyalur,11.1028,79.0419,Bank Referral,FIR Filed
+CC1691,TN03,2025-09-26,02:41:54,OTP Fraud,Social Engineering,447324.9,Chennai,13.0938,80.2931,Bank Referral,Resolved
+CC1692,TN30,2025-05-18,00:17:48,Loan Fraud,Online Financial Fraud,10820.45,Tiruchirappalli,10.8112,78.7042,Walk-in Complaint,Chargesheet Filed
+CC1693,TN07,2026-08-02,06:10:17,Investment Scam,Social Engineering,420254.16,Dindigul,10.3767,77.9254,Helpline 1930,Pending Review
+CC1694,TN20,2025-04-12,20:59:09,OTP Fraud,Identity Fraud,272449.08,Ramanathapuram,9.3605,78.8408,Walk-in Complaint,Resolved
+CC1695,TN10,2026-02-04,08:55:59,Romance Scam,Banking Fraud,103138.36,Kancheepuram,12.8019,79.6614,Helpline 1930,Chargesheet Filed
+CC1696,TN10,2025-07-09,09:00:16,SIM Swap,Social Engineering,210188.79,Kancheepuram,12.795,79.7364,National Cybercrime Portal,Under Investigation
+CC1697,TN13,2025-11-09,12:33:27,Phishing,Banking Fraud,108341.0,Madurai,9.9227,78.0847,Helpline 1930,Resolved
+CC1698,TN11,2025-02-27,04:49:02,UPI Fraud,Cyber Deception,168275.36,Karur,10.9893,78.0657,Helpline 1930,FIR Filed
+CC1699,TN05,2026-08-08,11:12:26,Identity Theft,Cyber Deception,16557.46,Cuddalore,11.7319,79.769,Bank Referral,Under Investigation
+CC1700,TN04,2025-04-09,15:15:08,Investment Scam,Cyber Deception,482882.73,Coimbatore,10.9694,76.9519,Walk-in Complaint,Resolved
+CC1701,TN06,2025-07-14,01:41:28,OTP Fraud,Social Engineering,47668.57,Dharmapuri,12.0981,78.1895,Walk-in Complaint,Under Investigation
+CC1702,TN33,2026-04-29,02:41:24,Card Skimming,Social Engineering,93633.3,Tiruppur,11.061,77.3735,Bank Referral,Chargesheet Filed
+CC1703,TN27,2025-04-25,15:07:36,OTP Fraud,Cyber Deception,404063.8,Tiruvallur,13.1866,79.9045,National Cybercrime Portal,Resolved
+CC1704,TN17,2025-11-10,07:26:03,OTP Fraud,Social Engineering,380028.56,Namakkal,11.1982,78.1961,State Police Portal,FIR Filed
+CC1705,TN24,2025-05-28,02:41:25,UPI Fraud,Social Engineering,171818.29,Tenkasi,8.9279,77.3239,National Cybercrime Portal,FIR Filed
+CC1706,TN02,2026-08-21,08:19:47,Card Skimming,Banking Fraud,441767.66,Chengalpattu,12.6815,79.928,State Police Portal,Resolved
+CC1707,TN23,2025-11-20,03:14:59,OTP Fraud,Banking Fraud,205078.67,Sivaganga,9.8585,78.4912,Bank Referral,Pending Review
+CC1708,TN02,2025-05-18,08:22:52,Investment Scam,Cyber Deception,270484.9,Chengalpattu,12.6551,79.9294,National Cybercrime Portal,Under Investigation
+CC1709,TN37,2025-04-24,10:59:34,Romance Scam,Online Financial Fraud,86194.04,Viluppuram,11.9331,79.5242,Bank Referral,Pending Review
+CC1710,TN35,2026-02-28,08:30:35,Job Fraud,Cyber Deception,337557.79,The Nilgiris,11.4543,76.7301,National Cybercrime Portal,Under Investigation
+CC1711,TN33,2026-06-23,08:19:29,Loan Fraud,Online Financial Fraud,256074.75,Tiruppur,11.0816,77.3732,Walk-in Complaint,Under Investigation
+CC1712,TN37,2025-04-23,18:02:31,Loan Fraud,Cyber Deception,423339.02,Viluppuram,11.9032,79.4798,National Cybercrime Portal,Under Investigation
+CC1713,TN26,2026-08-08,23:46:48,Identity Theft,Social Engineering,197126.02,Theni,10.0566,77.4893,State Police Portal,Chargesheet Filed
+CC1714,TN15,2025-10-13,17:17:32,Job Fraud,Identity Fraud,225074.64,Nagapattinam,10.8123,79.8453,National Cybercrime Portal,FIR Filed
+CC1715,TN37,2026-06-25,13:20:17,Job Fraud,Social Engineering,74869.07,Viluppuram,11.9757,79.4529,State Police Portal,FIR Filed
+CC1716,TN32,2025-06-01,00:22:57,Investment Scam,Online Financial Fraud,439445.97,Tirupathur,12.5198,78.5163,National Cybercrime Portal,Under Investigation
+CC1717,TN36,2026-06-16,12:15:50,Loan Fraud,Banking Fraud,227265.08,Vellore,12.9259,79.1437,National Cybercrime Portal,Pending Review
+CC1718,TN34,2026-08-09,18:05:07,Loan Fraud,Online Financial Fraud,203690.7,Tiruvannamalai,12.1756,79.0827,National Cybercrime Portal,Resolved
+CC1719,TN37,2025-06-05,07:08:43,Card Skimming,Social Engineering,466975.58,Viluppuram,11.9643,79.4943,Walk-in Complaint,Pending Review
+CC1720,TN30,2025-02-15,12:00:34,Investment Scam,Identity Fraud,272120.01,Tiruchirappalli,10.8248,78.6629,Walk-in Complaint,Resolved
+CC1721,TN31,2025-09-22,12:15:02,UPI Fraud,Online Financial Fraud,460758.32,Tirunelveli,8.7455,77.8039,Walk-in Complaint,Chargesheet Filed
+CC1722,TN15,2025-09-13,13:07:56,Phishing,Social Engineering,476593.04,Nagapattinam,10.7254,79.8045,National Cybercrime Portal,Chargesheet Filed
+CC1723,TN06,2026-07-23,20:23:44,Loan Fraud,Identity Fraud,251123.0,Dharmapuri,12.1536,78.2045,Bank Referral,FIR Filed
+CC1724,TN02,2025-07-13,20:16:51,UPI Fraud,Online Financial Fraud,182146.4,Chengalpattu,12.6763,79.9496,Helpline 1930,Resolved
+CC1725,TN02,2026-04-03,10:24:36,Romance Scam,Cyber Deception,125941.05,Chengalpattu,12.7021,79.9961,Helpline 1930,Resolved
+CC1726,TN29,2025-06-01,22:03:06,UPI Fraud,Cyber Deception,69836.14,Thoothukudi,8.8023,78.1569,State Police Portal,Pending Review
+CC1727,TN06,2026-06-04,04:58:08,SIM Swap,Cyber Deception,223922.44,Dharmapuri,12.1699,78.1371,National Cybercrime Portal,FIR Filed
+CC1728,TN26,2025-05-25,01:33:22,Identity Theft,Online Financial Fraud,248943.45,Theni,10.0293,77.5173,Helpline 1930,FIR Filed
+CC1729,TN23,2025-07-17,13:19:10,SIM Swap,Identity Fraud,497877.14,Sivaganga,9.795,78.4604,State Police Portal,Pending Review
+CC1730,TN07,2026-07-28,04:35:44,Investment Scam,Online Financial Fraud,274927.07,Dindigul,10.3811,78.0133,State Police Portal,Chargesheet Filed
+CC1731,TN23,2026-08-02,00:18:42,Job Fraud,Online Financial Fraud,441801.4,Sivaganga,9.7994,78.4911,State Police Portal,Under Investigation
+CC1732,TN17,2026-03-13,13:01:03,Phishing,Social Engineering,281217.24,Namakkal,11.2211,78.1632,National Cybercrime Portal,Under Investigation
+CC1733,TN12,2025-07-25,04:36:47,Job Fraud,Online Financial Fraud,176072.89,Krishnagiri,12.4811,78.2292,Bank Referral,Pending Review
+CC1734,TN24,2025-01-12,15:47:27,Job Fraud,Identity Fraud,112969.79,Tenkasi,8.9879,77.3542,Bank Referral,Chargesheet Filed
+CC1735,TN25,2025-02-17,09:41:11,OTP Fraud,Banking Fraud,210062.0,Thanjavur,10.7589,79.1512,Helpline 1930,Under Investigation
+CC1736,TN07,2025-04-01,10:15:00,Investment Scam,Banking Fraud,359870.07,Dindigul,10.3923,78.0178,Bank Referral,Resolved
+CC1737,TN10,2025-09-23,07:22:35,Job Fraud,Online Financial Fraud,246093.35,Kancheepuram,12.8252,79.6705,Bank Referral,Under Investigation
+CC1738,TN09,2026-04-15,21:11:25,Card Skimming,Online Financial Fraud,255184.58,Kallakurichi,11.773,78.9843,Helpline 1930,Chargesheet Filed
+CC1739,TN26,2025-06-06,04:17:04,Romance Scam,Banking Fraud,442053.19,Theni,10.0013,77.4814,Walk-in Complaint,Chargesheet Filed
+CC1740,TN19,2026-04-30,14:53:05,OTP Fraud,Cyber Deception,30984.67,Pudukkottai,10.3505,78.772,Helpline 1930,Under Investigation
+CC1741,TN33,2025-11-07,16:36:30,Loan Fraud,Social Engineering,63651.48,Tiruppur,11.0898,77.3183,State Police Portal,Chargesheet Filed
+CC1742,TN04,2025-11-11,23:26:56,Job Fraud,Cyber Deception,77027.83,Coimbatore,10.9778,76.9145,Helpline 1930,Chargesheet Filed
+CC1743,TN23,2025-06-17,11:16:36,OTP Fraud,Online Financial Fraud,484978.38,Sivaganga,9.8593,78.4585,Bank Referral,Under Investigation
+CC1744,TN08,2025-04-14,21:45:39,Card Skimming,Social Engineering,273804.29,Erode,11.299,77.6819,State Police Portal,Under Investigation
+CC1745,TN28,2025-08-28,09:14:21,Romance Scam,Identity Fraud,250720.95,Tiruvarur,10.8025,79.665,National Cybercrime Portal,Pending Review
+CC1746,TN34,2025-10-11,18:51:26,Identity Theft,Online Financial Fraud,496543.14,Tiruvannamalai,12.2158,79.1113,National Cybercrime Portal,Chargesheet Filed
+CC1747,TN07,2025-04-14,01:11:05,OTP Fraud,Identity Fraud,156190.04,Dindigul,10.3781,77.9474,State Police Portal,FIR Filed
+CC1748,TN02,2025-05-02,22:25:03,Loan Fraud,Cyber Deception,372243.12,Chengalpattu,12.6967,79.9261,State Police Portal,Resolved
+CC1749,TN10,2025-04-13,22:46:41,Identity Theft,Banking Fraud,27382.82,Kancheepuram,12.79,79.6699,State Police Portal,Under Investigation
+CC1750,TN29,2026-07-18,18:39:38,UPI Fraud,Online Financial Fraud,45643.26,Thoothukudi,8.7418,78.1786,State Police Portal,Chargesheet Filed
+CC1751,TN31,2025-04-30,07:06:48,Card Skimming,Online Financial Fraud,295257.31,Tirunelveli,8.7106,77.7719,Helpline 1930,Under Investigation
+CC1752,TN07,2026-02-02,04:48:22,Romance Scam,Online Financial Fraud,361157.51,Dindigul,10.3382,77.9777,Bank Referral,Resolved
+CC1753,TN34,2025-12-03,11:58:00,Phishing,Online Financial Fraud,103810.48,Tiruvannamalai,12.2191,79.047,Walk-in Complaint,FIR Filed
+CC1754,TN08,2025-01-24,15:59:10,Identity Theft,Cyber Deception,338321.86,Erode,11.3747,77.7195,National Cybercrime Portal,Resolved
+CC1755,TN09,2026-04-25,19:48:03,SIM Swap,Banking Fraud,56863.61,Kallakurichi,11.7299,78.9566,Walk-in Complaint,Pending Review
+CC1756,TN08,2026-04-27,04:08:57,SIM Swap,Cyber Deception,439678.52,Erode,11.3498,77.766,Bank Referral,Resolved
+CC1757,TN32,2025-05-04,17:12:31,Investment Scam,Social Engineering,21118.87,Tirupathur,12.5315,78.5721,National Cybercrime Portal,Under Investigation
+CC1758,TN12,2025-10-21,17:00:43,Identity Theft,Identity Fraud,392404.69,Krishnagiri,12.5152,78.2607,National Cybercrime Portal,Under Investigation
+CC1759,TN11,2025-09-21,21:55:18,SIM Swap,Social Engineering,107430.35,Karur,10.9496,78.0452,National Cybercrime Portal,Resolved
+CC1760,TN38,2025-02-08,12:38:42,Job Fraud,Cyber Deception,176853.38,Virudhunagar,9.5828,77.9522,Helpline 1930,Under Investigation
+CC1761,TN25,2026-03-30,21:43:22,Phishing,Banking Fraud,310252.13,Thanjavur,10.7488,79.1456,Bank Referral,FIR Filed
+CC1762,TN06,2025-11-26,01:47:07,Job Fraud,Identity Fraud,411902.26,Dharmapuri,12.1165,78.1086,National Cybercrime Portal,FIR Filed
+CC1763,TN13,2026-01-08,01:52:41,Identity Theft,Identity Fraud,446501.23,Madurai,9.8909,78.1547,National Cybercrime Portal,Pending Review
+CC1764,TN35,2025-08-16,18:08:18,Identity Theft,Identity Fraud,252191.22,The Nilgiris,11.4636,76.6847,National Cybercrime Portal,Resolved
+CC1765,TN05,2025-01-16,10:54:14,UPI Fraud,Social Engineering,51366.07,Cuddalore,11.7892,79.7591,Bank Referral,Pending Review
+CC1766,TN25,2025-10-25,12:45:50,SIM Swap,Social Engineering,334205.55,Thanjavur,10.8306,79.1741,State Police Portal,Chargesheet Filed
+CC1767,TN36,2025-04-03,02:00:20,UPI Fraud,Online Financial Fraud,440351.76,Vellore,12.8941,79.1324,Bank Referral,FIR Filed
+CC1768,TN32,2026-06-02,18:50:27,Phishing,Identity Fraud,236756.87,Tirupathur,12.4989,78.5482,National Cybercrime Portal,FIR Filed
+CC1769,TN35,2025-03-20,14:58:31,Investment Scam,Online Financial Fraud,67859.22,The Nilgiris,11.5008,76.7602,Helpline 1930,Pending Review
+CC1770,TN07,2025-12-16,11:16:09,Job Fraud,Online Financial Fraud,381451.19,Dindigul,10.3936,77.9657,State Police Portal,Resolved
+CC1771,TN02,2025-06-07,09:50:18,Job Fraud,Identity Fraud,386079.24,Chengalpattu,12.6862,79.972,State Police Portal,Under Investigation
+CC1772,TN23,2025-03-08,14:06:01,Card Skimming,Social Engineering,31511.92,Sivaganga,9.8433,78.4432,Helpline 1930,Chargesheet Filed
+CC1773,TN31,2026-06-29,20:48:14,Card Skimming,Online Financial Fraud,109040.0,Tirunelveli,8.7126,77.7374,State Police Portal,Pending Review
+CC1774,TN02,2025-07-10,14:18:52,Phishing,Identity Fraud,252124.18,Chengalpattu,12.6763,79.9716,State Police Portal,Resolved
+CC1775,TN04,2025-06-15,18:11:21,Loan Fraud,Banking Fraud,342940.34,Coimbatore,11.0071,76.9206,Helpline 1930,FIR Filed
+CC1776,TN36,2026-06-13,09:02:28,Job Fraud,Banking Fraud,126085.16,Vellore,12.8675,79.1478,Helpline 1930,FIR Filed
+CC1777,TN10,2026-05-05,02:55:53,SIM Swap,Identity Fraud,104914.66,Kancheepuram,12.839,79.7457,Helpline 1930,Resolved
+CC1778,TN09,2026-01-02,19:08:13,Identity Theft,Banking Fraud,361295.74,Kallakurichi,11.7719,78.9746,Helpline 1930,Under Investigation
+CC1779,TN17,2026-06-14,16:25:37,SIM Swap,Social Engineering,29709.66,Namakkal,11.2024,78.1545,State Police Portal,Chargesheet Filed
+CC1780,TN01,2025-12-22,00:43:33,Romance Scam,Social Engineering,237658.42,Ariyalur,11.1478,79.1028,Bank Referral,Pending Review
+CC1781,TN29,2026-03-16,08:49:00,Investment Scam,Social Engineering,341223.92,Thoothukudi,8.788,78.1259,National Cybercrime Portal,Resolved
+CC1782,TN33,2026-04-20,15:45:21,Investment Scam,Identity Fraud,80233.82,Tiruppur,11.1436,77.3498,National Cybercrime Portal,FIR Filed
+CC1783,TN34,2025-09-23,04:54:11,Card Skimming,Social Engineering,430296.38,Tiruvannamalai,12.2503,79.0377,State Police Portal,FIR Filed
+CC1784,TN04,2025-06-30,05:41:09,Card Skimming,Online Financial Fraud,54102.01,Coimbatore,10.9743,76.9523,Bank Referral,Resolved
+CC1785,TN28,2025-05-04,15:06:27,OTP Fraud,Online Financial Fraud,389939.47,Tiruvarur,10.7319,79.6727,Bank Referral,Under Investigation
+CC1786,TN19,2025-10-02,17:25:36,Identity Theft,Social Engineering,17158.59,Pudukkottai,10.3473,78.7809,Helpline 1930,Pending Review
+CC1787,TN01,2025-08-01,18:54:51,OTP Fraud,Social Engineering,15764.4,Ariyalur,11.108,79.0699,Walk-in Complaint,Pending Review
+CC1788,TN01,2025-04-08,08:11:43,Job Fraud,Identity Fraud,248232.37,Ariyalur,11.0977,79.0708,National Cybercrime Portal,Under Investigation
+CC1789,TN29,2026-04-21,00:58:13,Phishing,Banking Fraud,462001.6,Thoothukudi,8.7588,78.1627,Bank Referral,Under Investigation
+CC1790,TN03,2025-10-26,18:12:13,OTP Fraud,Banking Fraud,417730.24,Chennai,13.0511,80.3124,Helpline 1930,Pending Review
+CC1791,TN15,2025-04-26,14:10:36,Loan Fraud,Banking Fraud,217182.39,Nagapattinam,10.7414,79.8504,Walk-in Complaint,FIR Filed
+CC1792,TN37,2025-02-03,23:25:48,Investment Scam,Identity Fraud,31371.92,Viluppuram,11.9782,79.4977,Walk-in Complaint,Pending Review
+CC1793,TN21,2025-04-22,22:38:14,Romance Scam,Social Engineering,64483.06,Ranipet,12.9473,79.3824,Helpline 1930,FIR Filed
+CC1794,TN35,2025-03-31,05:57:36,Phishing,Banking Fraud,111882.13,The Nilgiris,11.5068,76.7135,Walk-in Complaint,Resolved
+CC1795,TN04,2025-05-09,13:45:26,Card Skimming,Banking Fraud,323294.95,Coimbatore,11.0492,76.9512,State Police Portal,Pending Review
+CC1796,TN20,2025-12-31,06:37:31,Loan Fraud,Cyber Deception,374710.37,Ramanathapuram,9.3725,78.7844,National Cybercrime Portal,Pending Review
+CC1797,TN35,2026-03-22,09:52:00,Job Fraud,Banking Fraud,496864.94,The Nilgiris,11.517,76.7683,National Cybercrime Portal,FIR Filed
+CC1798,TN03,2026-07-13,00:42:45,Phishing,Cyber Deception,479955.43,Chennai,13.1171,80.2802,State Police Portal,FIR Filed
+CC1799,TN05,2026-01-16,09:56:52,SIM Swap,Cyber Deception,17254.64,Cuddalore,11.7239,79.7786,National Cybercrime Portal,Pending Review
+CC1800,TN15,2025-06-27,05:22:12,SIM Swap,Social Engineering,87483.26,Nagapattinam,10.8129,79.8194,National Cybercrime Portal,Under Investigation
+CC1801,TN10,2026-01-19,20:51:21,Investment Scam,Online Financial Fraud,57647.53,Kancheepuram,12.8727,79.6762,Bank Referral,Chargesheet Filed
+CC1802,TN22,2025-02-04,07:54:25,Romance Scam,Cyber Deception,406766.53,Salem,11.6952,78.1245,State Police Portal,Pending Review
+CC1803,TN13,2025-09-09,06:56:10,Loan Fraud,Social Engineering,197663.01,Madurai,9.8915,78.1125,National Cybercrime Portal,Pending Review
+CC1804,TN02,2025-12-22,18:47:47,Identity Theft,Social Engineering,62101.97,Chengalpattu,12.7271,80.0046,Bank Referral,Under Investigation
+CC1805,TN11,2026-08-17,01:28:49,Investment Scam,Cyber Deception,197018.08,Karur,11.0009,78.0878,Walk-in Complaint,FIR Filed
+CC1806,TN04,2025-05-01,04:15:31,Job Fraud,Social Engineering,38551.73,Coimbatore,11.0128,76.9646,Bank Referral,FIR Filed
+CC1807,TN05,2025-01-16,12:11:38,Loan Fraud,Online Financial Fraud,283612.25,Cuddalore,11.7882,79.7556,National Cybercrime Portal,Pending Review
+CC1808,TN09,2025-07-05,12:28:04,SIM Swap,Online Financial Fraud,241327.17,Kallakurichi,11.7115,78.954,Helpline 1930,Chargesheet Filed
+CC1809,TN31,2025-11-23,04:42:54,Identity Theft,Banking Fraud,126685.38,Tirunelveli,8.6742,77.7973,National Cybercrime Portal,Pending Review
+CC1810,TN28,2025-05-04,14:51:49,SIM Swap,Online Financial Fraud,3250.22,Tiruvarur,10.7754,79.6504,Walk-in Complaint,Chargesheet Filed
+CC1811,TN21,2025-05-21,08:03:12,OTP Fraud,Online Financial Fraud,32334.5,Ranipet,12.9463,79.3693,Bank Referral,Under Investigation
+CC1812,TN21,2025-04-07,08:13:46,OTP Fraud,Online Financial Fraud,291361.46,Ranipet,12.8877,79.3071,National Cybercrime Portal,Pending Review
+CC1813,TN29,2026-05-12,18:29:40,OTP Fraud,Identity Fraud,233602.74,Thoothukudi,8.8116,78.1222,Bank Referral,FIR Filed
+CC1814,TN10,2025-04-06,16:34:15,Loan Fraud,Identity Fraud,350505.58,Kancheepuram,12.8382,79.6645,State Police Portal,Under Investigation
+CC1815,TN20,2026-07-10,15:31:02,Job Fraud,Banking Fraud,317389.63,Ramanathapuram,9.3969,78.8019,State Police Portal,FIR Filed
+CC1816,TN11,2026-08-27,18:35:27,Investment Scam,Online Financial Fraud,179626.25,Karur,10.9719,78.0323,Bank Referral,Resolved
+CC1817,TN35,2025-10-24,13:17:03,Identity Theft,Identity Fraud,318633.37,The Nilgiris,11.5202,76.7196,Walk-in Complaint,Pending Review
+CC1818,TN13,2026-07-09,05:49:20,Job Fraud,Banking Fraud,68352.87,Madurai,9.9541,78.0716,Walk-in Complaint,Chargesheet Filed
+CC1819,TN26,2026-05-09,04:42:37,OTP Fraud,Identity Fraud,153266.64,Theni,9.9821,77.5048,Bank Referral,Chargesheet Filed
+CC1820,TN06,2026-08-23,12:10:35,OTP Fraud,Social Engineering,92599.89,Dharmapuri,12.1127,78.1837,Walk-in Complaint,FIR Filed
+CC1821,TN23,2026-02-20,05:48:56,Loan Fraud,Banking Fraud,86879.56,Sivaganga,9.8344,78.4898,Bank Referral,FIR Filed
+CC1822,TN01,2025-04-03,05:50:10,SIM Swap,Identity Fraud,44507.57,Ariyalur,11.147,79.0461,National Cybercrime Portal,Under Investigation
+CC1823,TN27,2026-02-08,05:53:44,Card Skimming,Online Financial Fraud,68055.06,Tiruvallur,13.1301,79.8833,Bank Referral,Under Investigation
+CC1824,TN38,2026-01-05,13:12:11,Phishing,Banking Fraud,418140.98,Virudhunagar,9.6019,77.9143,State Police Portal,Pending Review
+CC1825,TN05,2025-02-21,23:48:05,Romance Scam,Social Engineering,123559.55,Cuddalore,11.7743,79.7753,State Police Portal,FIR Filed
+CC1826,TN11,2025-11-02,14:05:05,Romance Scam,Social Engineering,191778.43,Karur,10.9107,78.0313,National Cybercrime Portal,Pending Review
+CC1827,TN10,2026-04-18,15:42:02,Investment Scam,Banking Fraud,141212.31,Kancheepuram,12.7953,79.7221,Helpline 1930,Under Investigation
+CC1828,TN31,2026-03-23,04:25:18,SIM Swap,Cyber Deception,356900.88,Tirunelveli,8.6993,77.7082,Bank Referral,FIR Filed
+CC1829,TN30,2025-06-27,06:17:27,Phishing,Banking Fraud,413255.02,Tiruchirappalli,10.8064,78.7404,National Cybercrime Portal,FIR Filed
+CC1830,TN13,2026-02-25,03:00:41,Romance Scam,Identity Fraud,142274.03,Madurai,9.8845,78.1133,State Police Portal,FIR Filed
+CC1831,TN07,2026-02-03,11:17:57,Loan Fraud,Online Financial Fraud,457781.2,Dindigul,10.3321,77.9374,Helpline 1930,Resolved
+CC1832,TN34,2026-01-06,15:26:57,UPI Fraud,Banking Fraud,429467.88,Tiruvannamalai,12.1961,79.0498,Bank Referral,FIR Filed
+CC1833,TN03,2025-10-12,13:51:04,Card Skimming,Identity Fraud,429315.65,Chennai,13.0427,80.2757,National Cybercrime Portal,Under Investigation
+CC1834,TN32,2026-08-02,06:11:19,OTP Fraud,Online Financial Fraud,441220.2,Tirupathur,12.4724,78.538,Bank Referral,Chargesheet Filed
+CC1835,TN18,2025-03-21,15:10:14,Loan Fraud,Identity Fraud,214771.92,Perambalur,11.2177,78.8517,Helpline 1930,Pending Review
+CC1836,TN17,2026-04-05,18:48:00,OTP Fraud,Identity Fraud,437199.09,Namakkal,11.2462,78.1544,State Police Portal,Resolved
+CC1837,TN09,2026-03-05,17:36:02,Loan Fraud,Banking Fraud,87305.34,Kallakurichi,11.7399,78.9873,Bank Referral,Under Investigation
+CC1838,TN01,2025-01-04,19:21:14,Identity Theft,Identity Fraud,313284.9,Ariyalur,11.1213,79.1028,Bank Referral,FIR Filed
+CC1839,TN06,2026-02-05,23:17:15,Investment Scam,Cyber Deception,302099.54,Dharmapuri,12.1612,78.1115,State Police Portal,Resolved
+CC1840,TN35,2025-03-21,08:43:27,UPI Fraud,Identity Fraud,244875.65,The Nilgiris,11.5064,76.7248,National Cybercrime Portal,Chargesheet Filed
+CC1841,TN15,2026-04-12,16:58:33,Loan Fraud,Identity Fraud,106927.06,Nagapattinam,10.7223,79.8677,National Cybercrime Portal,Pending Review
+CC1842,TN29,2025-12-26,13:16:57,Job Fraud,Banking Fraud,66555.43,Thoothukudi,8.8019,78.1603,Helpline 1930,Pending Review
+CC1843,TN05,2026-01-12,21:19:56,Phishing,Cyber Deception,187010.74,Cuddalore,11.7498,79.7823,National Cybercrime Portal,Under Investigation
+CC1844,TN10,2026-04-09,15:59:44,OTP Fraud,Cyber Deception,421718.52,Kancheepuram,12.7853,79.7053,Bank Referral,Under Investigation
+CC1845,TN30,2026-07-30,12:01:18,SIM Swap,Identity Fraud,206536.83,Tiruchirappalli,10.8287,78.658,National Cybercrime Portal,FIR Filed
+CC1846,TN16,2026-03-31,08:58:27,Romance Scam,Cyber Deception,123577.92,Kanniyakumari,8.041,77.5368,Helpline 1930,FIR Filed
+CC1847,TN02,2026-02-19,15:44:50,Phishing,Cyber Deception,466574.96,Chengalpattu,12.6622,79.944,Helpline 1930,Resolved
+CC1848,TN37,2025-10-15,02:39:01,Identity Theft,Banking Fraud,254534.54,Viluppuram,11.9408,79.469,Walk-in Complaint,Chargesheet Filed
+CC1849,TN03,2026-02-01,15:48:13,Romance Scam,Banking Fraud,102970.82,Chennai,13.1007,80.2376,Walk-in Complaint,Pending Review
+CC1850,TN33,2026-05-09,12:01:47,Investment Scam,Identity Fraud,424232.1,Tiruppur,11.1429,77.3548,Walk-in Complaint,FIR Filed
+CC1851,TN09,2025-05-01,22:29:03,Loan Fraud,Cyber Deception,211871.14,Kallakurichi,11.7583,78.9217,Helpline 1930,Resolved
+CC1852,TN02,2026-02-21,12:13:11,UPI Fraud,Online Financial Fraud,201707.35,Chengalpattu,12.6602,80.0188,National Cybercrime Portal,Resolved
+CC1853,TN13,2026-08-18,18:11:49,Identity Theft,Cyber Deception,40965.97,Madurai,9.9747,78.1514,State Police Portal,Resolved
+CC1854,TN08,2026-07-30,04:26:44,Investment Scam,Social Engineering,386534.89,Erode,11.3143,77.6762,National Cybercrime Portal,Pending Review
+CC1855,TN28,2025-11-12,19:16:10,Job Fraud,Cyber Deception,146676.43,Tiruvarur,10.7191,79.6562,Walk-in Complaint,Pending Review
+CC1856,TN16,2025-03-31,21:49:15,Investment Scam,Identity Fraud,343856.85,Kanniyakumari,8.1023,77.5577,National Cybercrime Portal,Chargesheet Filed
+CC1857,TN23,2026-08-03,19:26:28,UPI Fraud,Banking Fraud,299808.39,Sivaganga,9.7997,78.4649,Walk-in Complaint,Resolved
+CC1858,TN13,2025-01-03,11:16:38,Identity Theft,Social Engineering,479336.41,Madurai,9.9024,78.1259,Walk-in Complaint,Chargesheet Filed
+CC1859,TN16,2025-02-25,22:09:50,Phishing,Banking Fraud,362614.91,Kanniyakumari,8.0495,77.5356,National Cybercrime Portal,Resolved
+CC1860,TN25,2025-10-05,21:14:43,Phishing,Identity Fraud,441631.07,Thanjavur,10.7898,79.1742,National Cybercrime Portal,Under Investigation
+CC1861,TN25,2025-09-16,18:58:46,OTP Fraud,Cyber Deception,47483.66,Thanjavur,10.7371,79.1817,National Cybercrime Portal,Under Investigation
+CC1862,TN31,2025-02-25,19:09:26,Loan Fraud,Online Financial Fraud,223687.0,Tirunelveli,8.6687,77.7098,Walk-in Complaint,Under Investigation
+CC1863,TN34,2025-03-09,14:10:25,OTP Fraud,Cyber Deception,83636.6,Tiruvannamalai,12.2699,79.0797,Bank Referral,Chargesheet Filed
+CC1864,TN34,2025-12-01,00:42:54,UPI Fraud,Banking Fraud,74505.28,Tiruvannamalai,12.2261,79.0826,Bank Referral,Pending Review
+CC1865,TN12,2026-04-24,20:17:05,Phishing,Banking Fraud,270378.61,Krishnagiri,12.5109,78.2229,National Cybercrime Portal,Pending Review
+CC1866,TN25,2025-04-23,05:51:30,Job Fraud,Banking Fraud,67083.42,Thanjavur,10.7927,79.1408,National Cybercrime Portal,FIR Filed
+CC1867,TN08,2026-04-13,01:40:48,OTP Fraud,Banking Fraud,98114.55,Erode,11.3811,77.6937,Bank Referral,FIR Filed
+CC1868,TN21,2026-01-26,20:41:11,Loan Fraud,Identity Fraud,499161.59,Ranipet,12.9452,79.3708,National Cybercrime Portal,Under Investigation
+CC1869,TN12,2025-01-12,23:47:18,OTP Fraud,Identity Fraud,81990.84,Krishnagiri,12.5563,78.1852,Walk-in Complaint,Under Investigation
+CC1870,TN38,2025-04-03,04:14:29,Investment Scam,Social Engineering,5468.51,Virudhunagar,9.5923,77.939,Helpline 1930,Resolved
+CC1871,TN04,2025-09-13,19:24:41,Card Skimming,Online Financial Fraud,66797.72,Coimbatore,11.0422,76.93,Bank Referral,FIR Filed
+CC1872,TN20,2025-02-13,11:22:14,Job Fraud,Identity Fraud,251114.85,Ramanathapuram,9.3218,78.8354,Helpline 1930,Chargesheet Filed
+CC1873,TN18,2025-01-17,07:55:25,Loan Fraud,Cyber Deception,273845.39,Perambalur,11.1961,78.9195,Walk-in Complaint,Resolved
+CC1874,TN32,2025-09-12,16:23:17,Job Fraud,Banking Fraud,76982.81,Tirupathur,12.4635,78.5288,Helpline 1930,Under Investigation
+CC1875,TN25,2026-02-17,14:38:49,Romance Scam,Cyber Deception,204468.56,Thanjavur,10.7955,79.1007,Walk-in Complaint,Chargesheet Filed
+CC1876,TN37,2026-05-12,21:57:11,OTP Fraud,Online Financial Fraud,475706.61,Viluppuram,11.9087,79.4885,State Police Portal,FIR Filed
+CC1877,TN27,2026-08-01,19:08:00,Job Fraud,Banking Fraud,199679.41,Tiruvallur,13.1868,79.952,Walk-in Complaint,Pending Review
+CC1878,TN27,2025-07-01,06:57:22,Job Fraud,Cyber Deception,492648.1,Tiruvallur,13.1811,79.9519,State Police Portal,Pending Review
+CC1879,TN36,2025-09-11,06:20:48,Identity Theft,Banking Fraud,432715.5,Vellore,12.9065,79.134,Helpline 1930,Resolved
+CC1880,TN12,2026-01-17,13:00:19,Phishing,Social Engineering,128148.67,Krishnagiri,12.4859,78.216,Bank Referral,Pending Review
+CC1881,TN16,2025-04-08,10:12:38,Identity Theft,Social Engineering,488048.08,Kanniyakumari,8.0982,77.504,State Police Portal,Resolved
+CC1882,TN01,2025-01-31,00:57:04,Loan Fraud,Identity Fraud,25785.5,Ariyalur,11.1879,79.0984,Helpline 1930,FIR Filed
+CC1883,TN05,2025-11-09,23:41:42,SIM Swap,Online Financial Fraud,435486.88,Cuddalore,11.7711,79.7778,State Police Portal,Chargesheet Filed
+CC1884,TN08,2025-01-18,06:33:51,Romance Scam,Banking Fraud,161377.18,Erode,11.3811,77.7516,Helpline 1930,FIR Filed
+CC1885,TN03,2026-08-29,19:34:27,Investment Scam,Banking Fraud,149264.22,Chennai,13.1069,80.2874,State Police Portal,Chargesheet Filed
+CC1886,TN01,2025-12-04,19:45:41,OTP Fraud,Online Financial Fraud,259776.51,Ariyalur,11.1134,79.1118,National Cybercrime Portal,Pending Review
+CC1887,TN32,2026-03-13,13:38:51,Phishing,Cyber Deception,471695.33,Tirupathur,12.4996,78.5781,State Police Portal,Pending Review
+CC1888,TN35,2025-02-04,20:54:23,Job Fraud,Cyber Deception,66722.59,The Nilgiris,11.442,76.7311,Bank Referral,FIR Filed
+CC1889,TN01,2026-04-05,19:26:26,Phishing,Cyber Deception,215876.1,Ariyalur,11.1233,79.0766,Bank Referral,Under Investigation
+CC1890,TN20,2025-09-11,09:31:16,Phishing,Social Engineering,159675.85,Ramanathapuram,9.4103,78.8478,Helpline 1930,Pending Review
+CC1891,TN21,2026-02-19,03:00:03,Card Skimming,Banking Fraud,248438.17,Ranipet,12.9414,79.2906,Bank Referral,Under Investigation
+CC1892,TN15,2026-03-06,02:48:36,OTP Fraud,Online Financial Fraud,74159.76,Nagapattinam,10.7506,79.8571,Walk-in Complaint,Pending Review
+CC1893,TN05,2026-08-28,06:33:30,SIM Swap,Social Engineering,230351.3,Cuddalore,11.717,79.7946,Bank Referral,Chargesheet Filed
+CC1894,TN18,2026-04-05,09:35:38,UPI Fraud,Identity Fraud,247197.77,Perambalur,11.1868,78.9071,Walk-in Complaint,Resolved
+CC1895,TN09,2025-08-19,10:04:59,UPI Fraud,Banking Fraud,207355.89,Kallakurichi,11.6959,78.9896,National Cybercrime Portal,Resolved
+CC1896,TN03,2026-07-25,11:05:30,SIM Swap,Social Engineering,432075.11,Chennai,13.092,80.2285,Bank Referral,Resolved
+CC1897,TN13,2025-09-19,01:38:52,Phishing,Cyber Deception,397598.14,Madurai,9.9261,78.1042,Walk-in Complaint,Under Investigation
+CC1898,TN07,2025-11-25,14:16:17,Romance Scam,Banking Fraud,334869.37,Dindigul,10.3373,77.9861,Helpline 1930,Under Investigation
+CC1899,TN32,2026-04-30,00:03:18,UPI Fraud,Cyber Deception,123669.15,Tirupathur,12.5266,78.5174,Bank Referral,Chargesheet Filed
+CC1900,TN20,2025-05-01,17:17:01,SIM Swap,Cyber Deception,461636.58,Ramanathapuram,9.3851,78.7971,National Cybercrime Portal,Pending Review
+CC1901,TN02,2025-08-03,18:24:25,OTP Fraud,Online Financial Fraud,120035.15,Chengalpattu,12.6811,80.0078,Walk-in Complaint,Resolved
+CC1902,TN18,2025-01-22,21:28:34,Identity Theft,Online Financial Fraud,76624.33,Perambalur,11.2164,78.8929,Bank Referral,Under Investigation
+CC1903,TN25,2025-10-17,22:27:45,Romance Scam,Social Engineering,433608.87,Thanjavur,10.8092,79.1221,Helpline 1930,FIR Filed
+CC1904,TN13,2025-02-26,06:38:29,Loan Fraud,Identity Fraud,425152.1,Madurai,9.9255,78.1205,National Cybercrime Portal,Resolved
+CC1905,TN32,2025-02-13,16:46:38,Identity Theft,Banking Fraud,496207.7,Tirupathur,12.448,78.5329,National Cybercrime Portal,Pending Review
+CC1906,TN06,2026-07-08,23:52:44,Loan Fraud,Social Engineering,40351.52,Dharmapuri,12.0977,78.1938,State Police Portal,Resolved
+CC1907,TN25,2025-04-13,03:21:34,Loan Fraud,Cyber Deception,169913.18,Thanjavur,10.7417,79.1041,Helpline 1930,FIR Filed
+CC1908,TN12,2025-05-03,03:38:41,Job Fraud,Online Financial Fraud,148339.04,Krishnagiri,12.5141,78.2321,State Police Portal,FIR Filed
+CC1909,TN02,2025-11-18,07:38:57,Card Skimming,Online Financial Fraud,238548.35,Chengalpattu,12.7391,79.962,Bank Referral,Chargesheet Filed
+CC1910,TN31,2025-02-28,17:43:57,OTP Fraud,Social Engineering,40884.2,Tirunelveli,8.739,77.7356,National Cybercrime Portal,Pending Review
+CC1911,TN37,2025-12-14,23:15:36,Loan Fraud,Banking Fraud,438323.21,Viluppuram,11.9387,79.4748,Helpline 1930,FIR Filed
+CC1912,TN27,2025-07-04,07:20:44,Romance Scam,Banking Fraud,461501.7,Tiruvallur,13.1265,79.9547,State Police Portal,Resolved
+CC1913,TN05,2026-07-02,09:01:08,Investment Scam,Banking Fraud,406664.31,Cuddalore,11.7887,79.722,Helpline 1930,Pending Review
+CC1914,TN26,2025-02-19,10:59:52,UPI Fraud,Banking Fraud,119015.51,Theni,10.0,77.4507,National Cybercrime Portal,Chargesheet Filed
+CC1915,TN03,2025-05-13,23:33:56,Phishing,Banking Fraud,133724.96,Chennai,13.0335,80.2752,National Cybercrime Portal,Under Investigation
+CC1916,TN14,2026-08-24,01:37:07,OTP Fraud,Online Financial Fraud,402941.55,Mayiladuthurai,11.0822,79.6063,Bank Referral,FIR Filed
+CC1917,TN02,2025-09-26,10:10:44,SIM Swap,Banking Fraud,378731.09,Chengalpattu,12.7007,79.9953,Bank Referral,FIR Filed
+CC1918,TN08,2026-08-12,20:52:11,Job Fraud,Online Financial Fraud,25719.96,Erode,11.3627,77.7102,State Police Portal,Resolved
+CC1919,TN23,2026-05-20,09:42:20,Loan Fraud,Identity Fraud,490759.74,Sivaganga,9.8524,78.4446,Bank Referral,Chargesheet Filed
+CC1920,TN36,2025-10-16,22:18:59,Investment Scam,Social Engineering,257383.56,Vellore,12.8789,79.0841,Walk-in Complaint,Under Investigation
+CC1921,TN36,2026-02-03,11:40:22,Identity Theft,Social Engineering,142413.37,Vellore,12.9504,79.1108,Bank Referral,Resolved
+CC1922,TN26,2025-06-10,05:38:50,Investment Scam,Social Engineering,62550.64,Theni,10.0221,77.432,Helpline 1930,Resolved
+CC1923,TN01,2025-08-29,13:06:51,Job Fraud,Social Engineering,155488.86,Ariyalur,11.1323,79.0734,Bank Referral,Resolved
+CC1924,TN10,2026-03-08,12:01:08,SIM Swap,Identity Fraud,400088.72,Kancheepuram,12.7905,79.704,National Cybercrime Portal,Under Investigation
+CC1925,TN24,2025-07-23,21:00:04,Card Skimming,Social Engineering,340015.98,Tenkasi,8.9699,77.2741,Helpline 1930,Under Investigation
+CC1926,TN21,2026-03-10,01:22:33,Card Skimming,Cyber Deception,31857.35,Ranipet,12.8901,79.3089,National Cybercrime Portal,FIR Filed
+CC1927,TN16,2026-08-28,10:19:28,Romance Scam,Identity Fraud,29250.59,Kanniyakumari,8.0758,77.5149,Bank Referral,FIR Filed
+CC1928,TN07,2025-11-24,22:58:29,Romance Scam,Online Financial Fraud,160339.63,Dindigul,10.3584,77.9768,National Cybercrime Portal,Pending Review
+CC1929,TN37,2026-06-29,12:27:47,Loan Fraud,Banking Fraud,290787.49,Viluppuram,11.9331,79.4749,National Cybercrime Portal,Pending Review
+CC1930,TN16,2025-07-19,10:45:38,Card Skimming,Identity Fraud,313973.43,Kanniyakumari,8.0943,77.5281,National Cybercrime Portal,Chargesheet Filed
+CC1931,TN30,2025-02-20,05:15:47,Card Skimming,Banking Fraud,400843.14,Tiruchirappalli,10.7494,78.6812,National Cybercrime Portal,Under Investigation
+CC1932,TN37,2025-07-10,05:01:38,Investment Scam,Banking Fraud,244945.59,Viluppuram,11.9118,79.5211,State Police Portal,Pending Review
+CC1933,TN31,2025-08-06,21:08:13,Romance Scam,Banking Fraud,145258.81,Tirunelveli,8.6679,77.7936,State Police Portal,Chargesheet Filed
+CC1934,TN16,2025-06-17,12:59:51,Card Skimming,Banking Fraud,309038.45,Kanniyakumari,8.0977,77.5072,State Police Portal,Resolved
+CC1935,TN31,2025-08-31,19:59:45,OTP Fraud,Social Engineering,360744.1,Tirunelveli,8.7506,77.7719,National Cybercrime Portal,FIR Filed
+CC1936,TN16,2025-07-06,00:36:06,Loan Fraud,Online Financial Fraud,33564.07,Kanniyakumari,8.1,77.5113,State Police Portal,Pending Review
+CC1937,TN18,2025-10-28,04:13:19,Card Skimming,Online Financial Fraud,302720.33,Perambalur,11.2367,78.921,National Cybercrime Portal,Resolved
+CC1938,TN22,2025-11-25,02:21:53,Loan Fraud,Identity Fraud,64292.03,Salem,11.6532,78.1875,Helpline 1930,Chargesheet Filed
+CC1939,TN28,2026-08-06,22:38:39,Phishing,Social Engineering,276005.95,Tiruvarur,10.7382,79.5873,Helpline 1930,Chargesheet Filed
+CC1940,TN16,2025-08-07,21:09:11,Job Fraud,Social Engineering,456891.87,Kanniyakumari,8.0876,77.5352,State Police Portal,FIR Filed
+CC1941,TN05,2026-03-01,23:32:44,UPI Fraud,Banking Fraud,201502.74,Cuddalore,11.7279,79.7692,Helpline 1930,Under Investigation
+CC1942,TN14,2026-07-26,11:03:15,Job Fraud,Online Financial Fraud,168193.98,Mayiladuthurai,11.0898,79.6658,Bank Referral,FIR Filed
+CC1943,TN19,2025-03-28,23:52:02,Card Skimming,Identity Fraud,364234.36,Pudukkottai,10.3429,78.8201,National Cybercrime Portal,Resolved
+CC1944,TN31,2026-01-11,16:10:27,Card Skimming,Banking Fraud,69722.33,Tirunelveli,8.7208,77.7069,Helpline 1930,FIR Filed
+CC1945,TN01,2025-02-10,07:45:25,SIM Swap,Cyber Deception,331517.51,Ariyalur,11.1257,79.1133,Helpline 1930,Chargesheet Filed
+CC1946,TN27,2025-03-14,09:36:28,Loan Fraud,Identity Fraud,297911.29,Tiruvallur,13.1548,79.878,Walk-in Complaint,FIR Filed
+CC1947,TN38,2026-08-08,21:31:47,Romance Scam,Cyber Deception,354325.66,Virudhunagar,9.6214,77.9722,National Cybercrime Portal,Chargesheet Filed
+CC1948,TN33,2026-03-14,01:37:47,Romance Scam,Identity Fraud,407119.93,Tiruppur,11.0599,77.3193,State Police Portal,FIR Filed
+CC1949,TN27,2026-03-23,09:13:08,OTP Fraud,Social Engineering,487704.47,Tiruvallur,13.1159,79.8952,State Police Portal,Under Investigation
+CC1950,TN11,2026-07-16,18:45:59,Identity Theft,Online Financial Fraud,330605.91,Karur,11.0011,78.0596,Bank Referral,Pending Review
+CC1951,TN22,2025-08-22,08:01:00,Phishing,Social Engineering,342842.94,Salem,11.658,78.1659,State Police Portal,FIR Filed
+CC1952,TN13,2026-08-29,16:45:58,Loan Fraud,Banking Fraud,150785.44,Madurai,9.9579,78.1627,State Police Portal,Chargesheet Filed
+CC1953,TN26,2026-04-18,23:32:44,Card Skimming,Online Financial Fraud,423775.13,Theni,10.0378,77.4794,State Police Portal,FIR Filed
+CC1954,TN29,2026-06-23,20:34:41,Card Skimming,Online Financial Fraud,165584.06,Thoothukudi,8.7689,78.1696,National Cybercrime Portal,Resolved
+CC1955,TN34,2025-02-20,12:44:04,SIM Swap,Identity Fraud,288191.74,Tiruvannamalai,12.2123,79.0553,Walk-in Complaint,Pending Review
+CC1956,TN35,2025-10-05,12:01:48,Investment Scam,Cyber Deception,214762.29,The Nilgiris,11.486,76.7106,Helpline 1930,FIR Filed
+CC1957,TN35,2025-09-05,00:54:39,Card Skimming,Social Engineering,101463.98,The Nilgiris,11.522,76.6888,Walk-in Complaint,Under Investigation
+CC1958,TN37,2025-05-25,13:05:24,Job Fraud,Social Engineering,4697.1,Viluppuram,11.932,79.4717,Bank Referral,Resolved
+CC1959,TN33,2026-02-21,08:21:31,Identity Theft,Banking Fraud,161914.38,Tiruppur,11.1337,77.3269,Helpline 1930,Chargesheet Filed
+CC1960,TN07,2025-06-26,08:30:27,Loan Fraud,Online Financial Fraud,4417.45,Dindigul,10.351,77.9641,Walk-in Complaint,Resolved
+CC1961,TN34,2025-05-16,09:43:03,Investment Scam,Online Financial Fraud,207946.87,Tiruvannamalai,12.2106,79.0572,State Police Portal,FIR Filed
+CC1962,TN17,2025-11-06,08:04:49,Identity Theft,Cyber Deception,306199.55,Namakkal,11.2622,78.1179,State Police Portal,FIR Filed
+CC1963,TN34,2026-02-21,17:27:01,Identity Theft,Social Engineering,418412.2,Tiruvannamalai,12.2574,79.1114,National Cybercrime Portal,Resolved
+CC1964,TN02,2025-09-09,13:12:02,Romance Scam,Identity Fraud,405135.26,Chengalpattu,12.6707,80.0173,Walk-in Complaint,Resolved
+CC1965,TN04,2025-06-27,01:51:44,Investment Scam,Online Financial Fraud,270738.11,Coimbatore,11.0404,76.9281,Walk-in Complaint,Chargesheet Filed
+CC1966,TN05,2025-08-06,08:42:37,UPI Fraud,Cyber Deception,385308.84,Cuddalore,11.7618,79.8038,Helpline 1930,Pending Review
+CC1967,TN32,2026-08-13,15:08:53,Loan Fraud,Identity Fraud,495026.29,Tirupathur,12.4992,78.5271,Bank Referral,Resolved
+CC1968,TN18,2026-06-24,00:19:20,UPI Fraud,Banking Fraud,103117.34,Perambalur,11.2596,78.8699,Helpline 1930,Chargesheet Filed
+CC1969,TN33,2025-01-15,18:20:31,SIM Swap,Cyber Deception,126356.17,Tiruppur,11.0604,77.3248,Walk-in Complaint,Under Investigation
+CC1970,TN09,2026-03-19,00:10:45,Romance Scam,Identity Fraud,135862.16,Kallakurichi,11.7534,78.9948,National Cybercrime Portal,FIR Filed
+CC1971,TN06,2025-12-29,16:38:48,OTP Fraud,Identity Fraud,260771.67,Dharmapuri,12.1388,78.1953,Helpline 1930,FIR Filed
+CC1972,TN20,2025-06-07,01:14:06,Romance Scam,Banking Fraud,332828.96,Ramanathapuram,9.361,78.8354,Helpline 1930,Chargesheet Filed
+CC1973,TN24,2025-04-27,21:19:04,Identity Theft,Banking Fraud,369169.23,Tenkasi,9.0057,77.3338,State Police Portal,FIR Filed
+CC1974,TN01,2026-05-28,16:48:46,OTP Fraud,Cyber Deception,160680.0,Ariyalur,11.1541,79.116,Walk-in Complaint,Chargesheet Filed
+CC1975,TN07,2026-08-08,13:10:15,SIM Swap,Social Engineering,485565.95,Dindigul,10.3553,77.9932,Bank Referral,Pending Review
+CC1976,TN25,2025-10-14,05:29:26,Card Skimming,Identity Fraud,464117.8,Thanjavur,10.758,79.1727,Helpline 1930,FIR Filed
+CC1977,TN01,2026-01-29,12:11:53,Romance Scam,Social Engineering,328944.42,Ariyalur,11.1542,79.0967,Bank Referral,Under Investigation
+CC1978,TN34,2025-04-03,14:34:32,OTP Fraud,Identity Fraud,389690.76,Tiruvannamalai,12.2639,79.107,Bank Referral,Pending Review
+CC1979,TN20,2026-03-01,19:35:37,UPI Fraud,Banking Fraud,463997.68,Ramanathapuram,9.3375,78.8281,State Police Portal,FIR Filed
+CC1980,TN31,2025-05-02,14:39:32,Romance Scam,Online Financial Fraud,490367.32,Tirunelveli,8.7523,77.7295,Walk-in Complaint,Under Investigation
+CC1981,TN03,2026-03-15,10:52:17,Identity Theft,Banking Fraud,28758.78,Chennai,13.1216,80.2488,Helpline 1930,Resolved
+CC1982,TN38,2025-11-27,22:16:04,Card Skimming,Banking Fraud,248703.39,Virudhunagar,9.5686,77.9717,National Cybercrime Portal,Pending Review
+CC1983,TN35,2025-02-10,14:47:13,Card Skimming,Cyber Deception,34088.15,The Nilgiris,11.4999,76.7157,Walk-in Complaint,Under Investigation
+CC1984,TN36,2026-08-18,09:23:32,Romance Scam,Banking Fraud,84656.48,Vellore,12.9492,79.1035,Bank Referral,Pending Review
+CC1985,TN33,2026-03-30,13:13:33,UPI Fraud,Social Engineering,479782.93,Tiruppur,11.127,77.331,State Police Portal,FIR Filed
+CC1986,TN38,2026-02-13,21:06:11,Phishing,Cyber Deception,14900.8,Virudhunagar,9.6222,77.9862,Walk-in Complaint,Pending Review
+CC1987,TN07,2025-06-08,18:41:50,Identity Theft,Cyber Deception,322144.13,Dindigul,10.3971,77.9979,National Cybercrime Portal,Pending Review
+CC1988,TN09,2025-01-28,20:52:31,UPI Fraud,Banking Fraud,194623.96,Kallakurichi,11.7643,79.0105,National Cybercrime Portal,Under Investigation
+CC1989,TN04,2026-04-11,18:08:14,Card Skimming,Social Engineering,295150.37,Coimbatore,10.9812,76.9611,State Police Portal,FIR Filed
+CC1990,TN18,2026-06-08,21:59:54,Job Fraud,Identity Fraud,304128.5,Perambalur,11.2296,78.8367,Bank Referral,Under Investigation
+CC1991,TN27,2026-05-18,10:29:32,Romance Scam,Banking Fraud,431263.85,Tiruvallur,13.1685,79.9436,State Police Portal,Chargesheet Filed
+CC1992,TN23,2026-04-02,00:51:31,Card Skimming,Social Engineering,370127.8,Sivaganga,9.8699,78.5149,State Police Portal,Under Investigation
+CC1993,TN21,2025-12-04,10:40:02,Investment Scam,Banking Fraud,338383.45,Ranipet,12.8805,79.296,National Cybercrime Portal,Pending Review
+CC1994,TN31,2025-08-16,16:17:45,Loan Fraud,Identity Fraud,23311.53,Tirunelveli,8.7007,77.7576,State Police Portal,Under Investigation
+CC1995,TN05,2025-11-15,02:19:56,Card Skimming,Online Financial Fraud,326048.95,Cuddalore,11.7682,79.7967,State Police Portal,Chargesheet Filed
+CC1996,TN04,2025-07-23,12:34:28,Phishing,Identity Fraud,314264.82,Coimbatore,11.0062,76.9992,Walk-in Complaint,Pending Review
+CC1997,TN05,2025-02-08,18:40:28,Card Skimming,Cyber Deception,223757.93,Cuddalore,11.7033,79.8096,State Police Portal,Chargesheet Filed
+CC1998,TN18,2026-01-01,13:32:18,Loan Fraud,Banking Fraud,488187.03,Perambalur,11.2417,78.8614,State Police Portal,Resolved
+CC1999,TN28,2025-11-02,00:04:27,SIM Swap,Social Engineering,306964.84,Tiruvarur,10.7641,79.6602,Walk-in Complaint,FIR Filed
+CC2000,TN08,2025-12-30,18:31:23,Card Skimming,Social Engineering,301108.56,Erode,11.3613,77.6819,Helpline 1930,FIR Filed

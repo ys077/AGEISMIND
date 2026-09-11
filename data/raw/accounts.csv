@@ -69,3 +69,1933 @@ ACC100067,TN10,Wallet,Kancheepuram,12.8381,79.6881,0.56,8,Under Monitoring
 ACC100068,TN30,Jan Dhan,Tiruchirappalli,10.8275,78.7528,0.27,6,Frozen
 ACC100069,TN27,Savings,Tiruvallur,13.122,79.9044,0.9,6,Under Monitoring
 ACC100070,TN10,Wallet,Kancheepuram,12.8807,79.6662,0.95,5,Active
+ACC100071,TN29,Savings,Thoothukudi,8.7668,78.1305,0.72,6,Frozen
+ACC100072,TN05,Wallet,Cuddalore,11.7762,79.7479,0.63,6,Active
+ACC100073,TN22,Business,Salem,11.6523,78.1277,0.72,12,Under Monitoring
+ACC100074,TN35,Savings,The Nilgiris,11.5033,76.7072,0.69,4,Frozen
+ACC100075,TN06,Wallet,Dharmapuri,12.1755,78.1842,0.7,1,Under Monitoring
+ACC100076,TN11,Jan Dhan,Karur,11.0004,78.0312,0.79,4,Suspended
+ACC100077,TN24,Wallet,Tenkasi,8.921,77.3182,0.58,12,Frozen
+ACC100078,TN11,Current,Karur,10.918,78.1137,0.63,3,Under Monitoring
+ACC100079,TN38,Current,Virudhunagar,9.5604,77.9762,0.48,10,Active
+ACC100080,TN30,Jan Dhan,Tiruchirappalli,10.8083,78.6705,0.46,5,Closed
+ACC100081,TN20,Wallet,Ramanathapuram,9.3829,78.8278,0.33,6,Under Monitoring
+ACC100082,TN07,Current,Dindigul,10.3505,77.9554,0.33,11,Suspended
+ACC100083,TN02,Wallet,Chengalpattu,12.6713,79.9823,0.69,11,Active
+ACC100084,TN32,Jan Dhan,Tirupathur,12.5213,78.5391,0.8,3,Frozen
+ACC100085,TN17,Current,Namakkal,11.2317,78.2077,0.65,4,Under Monitoring
+ACC100086,TN03,Business,Chennai,13.0692,80.2338,0.9,5,Under Monitoring
+ACC100087,TN12,Current,Krishnagiri,12.4818,78.2176,0.95,8,Closed
+ACC100088,TN18,Current,Perambalur,11.2099,78.9146,0.5,12,Suspended
+ACC100089,TN22,Savings,Salem,11.6611,78.1035,0.75,3,Under Monitoring
+ACC100090,TN36,Jan Dhan,Vellore,12.8755,79.122,0.3,1,Under Monitoring
+ACC100091,TN24,Jan Dhan,Tenkasi,8.9649,77.3473,0.92,1,Frozen
+ACC100092,TN31,Savings,Tirunelveli,8.7259,77.801,0.36,9,Frozen
+ACC100093,TN05,Wallet,Cuddalore,11.7889,79.7516,0.43,2,Active
+ACC100094,TN03,Jan Dhan,Chennai,13.1323,80.2323,0.27,8,Frozen
+ACC100095,TN25,Wallet,Thanjavur,10.7741,79.1827,0.7,8,Under Monitoring
+ACC100096,TN38,Current,Virudhunagar,9.6257,77.9779,0.83,9,Under Monitoring
+ACC100097,TN18,Savings,Perambalur,11.2532,78.8538,0.46,3,Suspended
+ACC100098,TN07,Jan Dhan,Dindigul,10.3668,78.0173,0.38,6,Suspended
+ACC100099,TN13,Savings,Madurai,9.9701,78.1522,0.14,3,Closed
+ACC100100,TN02,Savings,Chengalpattu,12.7226,79.9501,0.17,9,Frozen
+ACC100101,TN05,Business,Cuddalore,11.7187,79.743,0.86,5,Frozen
+ACC100102,TN01,Jan Dhan,Ariyalur,11.1758,79.0431,0.17,4,Frozen
+ACC100103,TN08,Savings,Erode,11.3042,77.703,0.78,9,Suspended
+ACC100104,TN02,Current,Chengalpattu,12.6704,79.9384,0.44,1,Active
+ACC100105,TN31,Wallet,Tirunelveli,8.7417,77.758,0.15,8,Frozen
+ACC100106,TN03,Business,Chennai,13.0629,80.285,0.08,7,Under Monitoring
+ACC100107,TN28,Savings,Tiruvarur,10.7651,79.6754,0.12,1,Suspended
+ACC100108,TN10,Savings,Kancheepuram,12.7968,79.716,0.59,11,Suspended
+ACC100109,TN25,Business,Thanjavur,10.7901,79.1332,0.61,1,Active
+ACC100110,TN36,Current,Vellore,12.9095,79.1713,0.43,7,Under Monitoring
+ACC100111,TN27,Savings,Tiruvallur,13.1215,79.8884,0.29,2,Under Monitoring
+ACC100112,TN05,Savings,Cuddalore,11.7812,79.7307,0.14,11,Suspended
+ACC100113,TN09,Business,Kallakurichi,11.6943,79.0096,0.57,10,Active
+ACC100114,TN27,Jan Dhan,Tiruvallur,13.1776,79.9512,0.44,11,Active
+ACC100115,TN19,Business,Pudukkottai,10.3609,78.7809,0.52,2,Under Monitoring
+ACC100116,TN15,Savings,Nagapattinam,10.7522,79.8505,0.16,4,Closed
+ACC100117,TN15,Wallet,Nagapattinam,10.8017,79.8924,0.81,9,Closed
+ACC100118,TN02,Business,Chengalpattu,12.7368,80.0086,0.3,2,Suspended
+ACC100119,TN20,Jan Dhan,Ramanathapuram,9.349,78.8002,0.18,10,Under Monitoring
+ACC100120,TN05,Current,Cuddalore,11.7721,79.8186,0.14,8,Frozen
+ACC100121,TN25,Wallet,Thanjavur,10.7824,79.1035,0.34,5,Closed
+ACC100122,TN06,Savings,Dharmapuri,12.0933,78.1836,0.1,1,Suspended
+ACC100123,TN29,Wallet,Thoothukudi,8.7628,78.129,0.3,12,Closed
+ACC100124,TN08,Jan Dhan,Erode,11.334,77.6955,0.68,7,Closed
+ACC100125,TN20,Savings,Ramanathapuram,9.336,78.8805,0.1,3,Suspended
+ACC100126,TN14,Current,Mayiladuthurai,11.1349,79.6323,0.16,7,Under Monitoring
+ACC100127,TN12,Current,Krishnagiri,12.5066,78.2341,0.52,10,Suspended
+ACC100128,TN05,Wallet,Cuddalore,11.7842,79.7256,0.07,1,Suspended
+ACC100129,TN37,Wallet,Viluppuram,11.9474,79.507,0.44,1,Under Monitoring
+ACC100130,TN02,Jan Dhan,Chengalpattu,12.6611,80.0205,0.48,11,Suspended
+ACC100131,TN06,Wallet,Dharmapuri,12.1621,78.1325,0.6,8,Active
+ACC100132,TN26,Jan Dhan,Theni,10.035,77.449,0.77,1,Closed
+ACC100133,TN08,Business,Erode,11.342,77.7578,0.37,11,Frozen
+ACC100134,TN16,Savings,Kanniyakumari,8.0529,77.5082,0.61,12,Active
+ACC100135,TN12,Wallet,Krishnagiri,12.515,78.2201,0.59,10,Closed
+ACC100136,TN21,Jan Dhan,Ranipet,12.8923,79.2901,0.46,4,Suspended
+ACC100137,TN38,Savings,Virudhunagar,9.5724,77.9198,0.48,0,Active
+ACC100138,TN24,Jan Dhan,Tenkasi,8.9141,77.3515,0.85,9,Closed
+ACC100139,TN33,Wallet,Tiruppur,11.1048,77.3465,0.79,0,Under Monitoring
+ACC100140,TN37,Current,Viluppuram,11.9223,79.4837,0.19,0,Under Monitoring
+ACC100141,TN07,Jan Dhan,Dindigul,10.4106,77.9279,0.65,0,Frozen
+ACC100142,TN29,Wallet,Thoothukudi,8.7666,78.1458,0.39,4,Under Monitoring
+ACC100143,TN27,Jan Dhan,Tiruvallur,13.1581,79.8623,0.64,5,Active
+ACC100144,TN22,Savings,Salem,11.6701,78.1347,0.28,10,Closed
+ACC100145,TN10,Jan Dhan,Kancheepuram,12.7924,79.72,0.9,4,Under Monitoring
+ACC100146,TN09,Business,Kallakurichi,11.7592,78.9224,0.57,10,Suspended
+ACC100147,TN09,Business,Kallakurichi,11.6976,78.9809,0.52,0,Suspended
+ACC100148,TN20,Current,Ramanathapuram,9.409,78.8163,0.76,3,Frozen
+ACC100149,TN09,Current,Kallakurichi,11.696,78.9983,0.14,12,Closed
+ACC100150,TN34,Savings,Tiruvannamalai,12.2415,79.1123,0.62,9,Under Monitoring
+ACC100151,TN10,Current,Kancheepuram,12.8023,79.7229,0.63,2,Under Monitoring
+ACC100152,TN03,Wallet,Chennai,13.0691,80.2927,0.95,9,Suspended
+ACC100153,TN29,Current,Thoothukudi,8.7676,78.1157,0.8,7,Frozen
+ACC100154,TN24,Business,Tenkasi,9.0048,77.3113,0.31,6,Closed
+ACC100155,TN34,Wallet,Tiruvannamalai,12.2719,79.1064,0.8,2,Suspended
+ACC100156,TN04,Wallet,Coimbatore,11.0542,76.9613,0.15,8,Active
+ACC100157,TN19,Savings,Pudukkottai,10.406,78.7978,0.89,2,Under Monitoring
+ACC100158,TN06,Current,Dharmapuri,12.1594,78.1967,0.92,6,Active
+ACC100159,TN26,Business,Theni,9.9978,77.4654,0.13,3,Active
+ACC100160,TN21,Savings,Ranipet,12.9611,79.3483,0.79,2,Active
+ACC100161,TN19,Wallet,Pudukkottai,10.3993,78.7844,0.71,7,Closed
+ACC100162,TN01,Savings,Ariyalur,11.0919,79.0502,0.19,11,Closed
+ACC100163,TN34,Wallet,Tiruvannamalai,12.1864,79.0535,0.33,0,Frozen
+ACC100164,TN27,Business,Tiruvallur,13.1359,79.8682,0.89,9,Closed
+ACC100165,TN02,Business,Chengalpattu,12.7014,79.9976,0.32,0,Closed
+ACC100166,TN23,Current,Sivaganga,9.8504,78.4496,0.67,8,Suspended
+ACC100167,TN05,Business,Cuddalore,11.7524,79.8,0.52,0,Under Monitoring
+ACC100168,TN31,Savings,Tirunelveli,8.7275,77.8048,0.29,0,Suspended
+ACC100169,TN05,Jan Dhan,Cuddalore,11.7221,79.7871,0.15,9,Suspended
+ACC100170,TN09,Savings,Kallakurichi,11.7235,78.9478,0.65,12,Under Monitoring
+ACC100171,TN31,Current,Tirunelveli,8.745,77.713,0.77,7,Active
+ACC100172,TN19,Current,Pudukkottai,10.3341,78.7904,0.09,4,Closed
+ACC100173,TN26,Business,Theni,10.0077,77.4305,0.65,4,Suspended
+ACC100174,TN04,Jan Dhan,Coimbatore,10.9941,76.9857,0.46,6,Under Monitoring
+ACC100175,TN25,Jan Dhan,Thanjavur,10.8344,79.1374,0.51,12,Closed
+ACC100176,TN18,Savings,Perambalur,11.2569,78.84,0.61,2,Closed
+ACC100177,TN19,Jan Dhan,Pudukkottai,10.34,78.8033,0.32,7,Closed
+ACC100178,TN28,Current,Tiruvarur,10.7851,79.6196,0.09,5,Closed
+ACC100179,TN28,Jan Dhan,Tiruvarur,10.78,79.6635,0.1,10,Under Monitoring
+ACC100180,TN24,Business,Tenkasi,8.9865,77.333,0.94,2,Closed
+ACC100181,TN29,Savings,Thoothukudi,8.7268,78.1084,0.65,5,Under Monitoring
+ACC100182,TN37,Savings,Viluppuram,11.9506,79.504,0.93,5,Under Monitoring
+ACC100183,TN05,Business,Cuddalore,11.7118,79.7581,0.34,4,Frozen
+ACC100184,TN08,Savings,Erode,11.3646,77.7171,0.41,8,Active
+ACC100185,TN17,Jan Dhan,Namakkal,11.2393,78.1389,0.62,11,Under Monitoring
+ACC100186,TN13,Savings,Madurai,9.8888,78.0772,0.21,11,Under Monitoring
+ACC100187,TN06,Jan Dhan,Dharmapuri,12.1445,78.1792,0.56,4,Suspended
+ACC100188,TN11,Current,Karur,10.9895,78.0775,0.16,3,Frozen
+ACC100189,TN16,Wallet,Kanniyakumari,8.0409,77.5439,0.39,12,Closed
+ACC100190,TN09,Business,Kallakurichi,11.7767,78.9205,0.42,11,Under Monitoring
+ACC100191,TN34,Wallet,Tiruvannamalai,12.2522,79.107,0.12,5,Active
+ACC100192,TN29,Wallet,Thoothukudi,8.7822,78.1193,0.87,12,Closed
+ACC100193,TN38,Current,Virudhunagar,9.614,77.9253,0.52,0,Active
+ACC100194,TN34,Current,Tiruvannamalai,12.2057,79.0409,0.92,3,Suspended
+ACC100195,TN34,Jan Dhan,Tiruvannamalai,12.2599,79.0498,0.64,8,Suspended
+ACC100196,TN09,Jan Dhan,Kallakurichi,11.7497,78.9232,0.65,9,Closed
+ACC100197,TN10,Current,Kancheepuram,12.8501,79.7257,0.61,9,Active
+ACC100198,TN02,Savings,Chengalpattu,12.6484,79.9898,0.59,10,Frozen
+ACC100199,TN37,Wallet,Viluppuram,11.9519,79.4391,0.88,8,Suspended
+ACC100200,TN20,Wallet,Ramanathapuram,9.3384,78.8628,0.43,7,Active
+ACC100201,TN04,Current,Coimbatore,11.0108,76.9542,0.24,9,Frozen
+ACC100202,TN21,Jan Dhan,Ranipet,12.9506,79.3694,0.96,2,Suspended
+ACC100203,TN33,Business,Tiruppur,11.0691,77.3153,0.16,7,Frozen
+ACC100204,TN10,Savings,Kancheepuram,12.7893,79.7481,0.85,6,Frozen
+ACC100205,TN11,Jan Dhan,Karur,11.0035,78.0987,0.23,2,Under Monitoring
+ACC100206,TN33,Wallet,Tiruppur,11.1084,77.322,0.07,6,Closed
+ACC100207,TN30,Current,Tiruchirappalli,10.762,78.69,0.1,7,Closed
+ACC100208,TN31,Jan Dhan,Tirunelveli,8.7176,77.7914,0.45,4,Suspended
+ACC100209,TN26,Jan Dhan,Theni,9.9649,77.4319,0.57,5,Closed
+ACC100210,TN19,Savings,Pudukkottai,10.3683,78.8155,0.56,9,Closed
+ACC100211,TN08,Current,Erode,11.3885,77.7066,0.79,5,Closed
+ACC100212,TN24,Current,Tenkasi,8.9263,77.316,0.52,0,Active
+ACC100213,TN09,Jan Dhan,Kallakurichi,11.7687,78.9658,0.19,8,Frozen
+ACC100214,TN21,Business,Ranipet,12.9091,79.3226,0.62,4,Closed
+ACC100215,TN22,Business,Salem,11.6971,78.1492,0.71,4,Under Monitoring
+ACC100216,TN02,Jan Dhan,Chengalpattu,12.677,79.9367,0.44,4,Active
+ACC100217,TN31,Jan Dhan,Tirunelveli,8.7606,77.785,0.77,9,Frozen
+ACC100218,TN04,Business,Coimbatore,11.0148,76.9582,0.72,12,Under Monitoring
+ACC100219,TN10,Current,Kancheepuram,12.7874,79.7484,0.15,0,Under Monitoring
+ACC100220,TN21,Wallet,Ranipet,12.8923,79.3524,0.43,12,Closed
+ACC100221,TN31,Savings,Tirunelveli,8.7345,77.7586,0.57,10,Under Monitoring
+ACC100222,TN34,Wallet,Tiruvannamalai,12.2067,79.042,0.9,5,Closed
+ACC100223,TN23,Jan Dhan,Sivaganga,9.8543,78.4501,0.28,8,Suspended
+ACC100224,TN15,Jan Dhan,Nagapattinam,10.7943,79.8654,0.69,7,Suspended
+ACC100225,TN31,Jan Dhan,Tirunelveli,8.7199,77.8001,0.72,4,Active
+ACC100226,TN37,Business,Viluppuram,11.9281,79.5341,0.81,12,Frozen
+ACC100227,TN19,Savings,Pudukkottai,10.3585,78.8419,0.37,7,Suspended
+ACC100228,TN31,Current,Tirunelveli,8.6841,77.7606,0.92,11,Suspended
+ACC100229,TN09,Savings,Kallakurichi,11.7499,78.9726,0.28,10,Closed
+ACC100230,TN15,Current,Nagapattinam,10.7224,79.8362,0.72,1,Frozen
+ACC100231,TN01,Business,Ariyalur,11.1878,79.0444,0.66,7,Under Monitoring
+ACC100232,TN13,Jan Dhan,Madurai,9.9073,78.1344,0.89,1,Closed
+ACC100233,TN15,Business,Nagapattinam,10.7911,79.8799,0.08,2,Under Monitoring
+ACC100234,TN12,Savings,Krishnagiri,12.5683,78.2034,0.51,11,Suspended
+ACC100235,TN03,Savings,Chennai,13.0625,80.281,0.91,5,Suspended
+ACC100236,TN30,Business,Tiruchirappalli,10.7929,78.7436,0.17,8,Under Monitoring
+ACC100237,TN18,Current,Perambalur,11.2651,78.8652,0.73,10,Suspended
+ACC100238,TN12,Savings,Krishnagiri,12.5423,78.2428,0.58,12,Frozen
+ACC100239,TN12,Business,Krishnagiri,12.5542,78.2534,0.82,8,Suspended
+ACC100240,TN06,Wallet,Dharmapuri,12.1446,78.1267,0.18,5,Frozen
+ACC100241,TN01,Jan Dhan,Ariyalur,11.1284,79.0733,0.3,5,Suspended
+ACC100242,TN38,Business,Virudhunagar,9.5383,77.9778,0.69,0,Active
+ACC100243,TN30,Jan Dhan,Tiruchirappalli,10.7565,78.7233,0.91,11,Suspended
+ACC100244,TN08,Jan Dhan,Erode,11.3278,77.6893,0.94,7,Frozen
+ACC100245,TN30,Business,Tiruchirappalli,10.7779,78.7249,0.9,12,Closed
+ACC100246,TN14,Current,Mayiladuthurai,11.1265,79.663,0.78,8,Under Monitoring
+ACC100247,TN34,Jan Dhan,Tiruvannamalai,12.1831,79.0811,0.11,8,Closed
+ACC100248,TN13,Business,Madurai,9.9289,78.0863,0.84,7,Active
+ACC100249,TN14,Business,Mayiladuthurai,11.1074,79.6933,0.46,0,Under Monitoring
+ACC100250,TN09,Business,Kallakurichi,11.7298,78.9703,0.57,10,Suspended
+ACC100251,TN02,Wallet,Chengalpattu,12.6693,79.926,0.25,1,Active
+ACC100252,TN28,Jan Dhan,Tiruvarur,10.7861,79.6385,0.11,1,Under Monitoring
+ACC100253,TN03,Jan Dhan,Chennai,13.0736,80.2976,0.76,11,Under Monitoring
+ACC100254,TN24,Wallet,Tenkasi,8.9513,77.3568,0.4,1,Closed
+ACC100255,TN09,Jan Dhan,Kallakurichi,11.7002,79.0132,0.42,2,Frozen
+ACC100256,TN01,Savings,Ariyalur,11.1878,79.0749,0.72,6,Closed
+ACC100257,TN25,Current,Thanjavur,10.7618,79.1224,0.31,11,Active
+ACC100258,TN03,Wallet,Chennai,13.0942,80.3143,0.88,3,Frozen
+ACC100259,TN05,Savings,Cuddalore,11.7574,79.766,0.67,0,Frozen
+ACC100260,TN03,Wallet,Chennai,13.0766,80.2747,0.75,12,Active
+ACC100261,TN09,Business,Kallakurichi,11.7876,78.9373,0.9,9,Suspended
+ACC100262,TN37,Business,Viluppuram,11.9674,79.5179,0.27,2,Closed
+ACC100263,TN15,Wallet,Nagapattinam,10.7473,79.801,0.93,11,Frozen
+ACC100264,TN28,Business,Tiruvarur,10.7657,79.6816,0.93,10,Under Monitoring
+ACC100265,TN34,Jan Dhan,Tiruvannamalai,12.2449,79.0655,0.33,2,Closed
+ACC100266,TN31,Current,Tirunelveli,8.7488,77.7368,0.71,12,Under Monitoring
+ACC100267,TN04,Business,Coimbatore,11.0081,76.9475,0.54,6,Frozen
+ACC100268,TN17,Current,Namakkal,11.2019,78.1253,0.47,5,Active
+ACC100269,TN35,Current,The Nilgiris,11.4468,76.7214,0.61,0,Active
+ACC100270,TN13,Business,Madurai,9.9476,78.1257,0.5,5,Suspended
+ACC100271,TN01,Current,Ariyalur,11.1837,79.1248,0.16,12,Under Monitoring
+ACC100272,TN16,Business,Kanniyakumari,8.1087,77.5282,0.27,5,Suspended
+ACC100273,TN25,Wallet,Thanjavur,10.7904,79.1237,0.29,8,Under Monitoring
+ACC100274,TN30,Savings,Tiruchirappalli,10.8208,78.7269,0.76,5,Frozen
+ACC100275,TN24,Jan Dhan,Tenkasi,8.9478,77.3214,0.26,2,Active
+ACC100276,TN17,Business,Namakkal,11.2624,78.1753,0.44,2,Frozen
+ACC100277,TN22,Current,Salem,11.6523,78.1793,0.51,10,Suspended
+ACC100278,TN17,Wallet,Namakkal,11.2656,78.1816,0.51,2,Suspended
+ACC100279,TN11,Current,Karur,10.9821,78.0754,0.9,8,Active
+ACC100280,TN34,Savings,Tiruvannamalai,12.2592,79.0321,0.81,0,Active
+ACC100281,TN27,Current,Tiruvallur,13.1745,79.8802,0.71,0,Frozen
+ACC100282,TN33,Wallet,Tiruppur,11.0958,77.3529,0.67,9,Under Monitoring
+ACC100283,TN32,Savings,Tirupathur,12.4444,78.5713,0.06,8,Suspended
+ACC100284,TN35,Jan Dhan,The Nilgiris,11.4433,76.765,0.68,12,Frozen
+ACC100285,TN07,Savings,Dindigul,10.3648,77.9436,0.63,4,Suspended
+ACC100286,TN18,Wallet,Perambalur,11.1921,78.928,0.48,3,Frozen
+ACC100287,TN20,Savings,Ramanathapuram,9.3793,78.8679,0.76,1,Under Monitoring
+ACC100288,TN25,Wallet,Thanjavur,10.7923,79.0934,0.06,2,Active
+ACC100289,TN32,Wallet,Tirupathur,12.5082,78.5492,0.96,1,Closed
+ACC100290,TN03,Current,Chennai,13.0538,80.3075,0.88,7,Suspended
+ACC100291,TN03,Savings,Chennai,13.1011,80.2487,0.56,10,Active
+ACC100292,TN12,Jan Dhan,Krishnagiri,12.4702,78.1844,0.18,11,Under Monitoring
+ACC100293,TN05,Jan Dhan,Cuddalore,11.7142,79.7454,0.83,6,Closed
+ACC100294,TN22,Wallet,Salem,11.6899,78.11,0.97,11,Active
+ACC100295,TN33,Jan Dhan,Tiruppur,11.0639,77.3348,0.83,5,Closed
+ACC100296,TN26,Jan Dhan,Theni,9.9634,77.4541,0.97,7,Frozen
+ACC100297,TN23,Business,Sivaganga,9.8874,78.4741,0.68,10,Under Monitoring
+ACC100298,TN06,Business,Dharmapuri,12.1072,78.1328,0.12,4,Frozen
+ACC100299,TN25,Current,Thanjavur,10.811,79.1195,0.15,0,Suspended
+ACC100300,TN29,Jan Dhan,Thoothukudi,8.7903,78.095,0.13,6,Under Monitoring
+ACC100301,TN36,Business,Vellore,12.9177,79.0928,0.13,8,Active
+ACC100302,TN21,Wallet,Ranipet,12.8784,79.3247,0.77,11,Closed
+ACC100303,TN16,Business,Kanniyakumari,8.0904,77.557,0.21,4,Suspended
+ACC100304,TN18,Wallet,Perambalur,11.1988,78.8488,0.31,4,Under Monitoring
+ACC100305,TN05,Jan Dhan,Cuddalore,11.7232,79.7461,0.63,9,Closed
+ACC100306,TN13,Wallet,Madurai,9.8859,78.1003,0.93,5,Closed
+ACC100307,TN25,Jan Dhan,Thanjavur,10.781,79.1309,0.82,10,Closed
+ACC100308,TN09,Jan Dhan,Kallakurichi,11.7204,79.0086,0.24,5,Frozen
+ACC100309,TN26,Jan Dhan,Theni,9.9895,77.4963,0.51,9,Frozen
+ACC100310,TN21,Wallet,Ranipet,12.9052,79.3619,0.39,9,Frozen
+ACC100311,TN38,Business,Virudhunagar,9.5552,77.9892,0.08,11,Under Monitoring
+ACC100312,TN14,Wallet,Mayiladuthurai,11.1383,79.6865,0.11,12,Under Monitoring
+ACC100313,TN32,Current,Tirupathur,12.507,78.5403,0.66,11,Under Monitoring
+ACC100314,TN25,Savings,Thanjavur,10.7819,79.1476,0.59,8,Closed
+ACC100315,TN27,Business,Tiruvallur,13.0939,79.9539,0.7,12,Closed
+ACC100316,TN06,Savings,Dharmapuri,12.1546,78.174,0.38,10,Closed
+ACC100317,TN03,Business,Chennai,13.1311,80.2884,0.42,12,Suspended
+ACC100318,TN28,Savings,Tiruvarur,10.7172,79.6103,0.52,8,Closed
+ACC100319,TN38,Business,Virudhunagar,9.5593,77.9498,0.48,10,Closed
+ACC100320,TN33,Current,Tiruppur,11.093,77.2936,0.15,6,Active
+ACC100321,TN08,Current,Erode,11.3258,77.7015,0.78,8,Under Monitoring
+ACC100322,TN23,Wallet,Sivaganga,9.8031,78.5031,0.47,1,Suspended
+ACC100323,TN03,Savings,Chennai,13.035,80.255,0.15,12,Frozen
+ACC100324,TN16,Business,Kanniyakumari,8.0557,77.5045,0.57,7,Frozen
+ACC100325,TN26,Current,Theni,9.979,77.4925,0.42,11,Closed
+ACC100326,TN13,Wallet,Madurai,9.9344,78.1087,0.71,3,Suspended
+ACC100327,TN05,Business,Cuddalore,11.7082,79.8086,0.22,5,Frozen
+ACC100328,TN30,Savings,Tiruchirappalli,10.7667,78.741,0.54,10,Suspended
+ACC100329,TN25,Business,Thanjavur,10.7763,79.0992,0.38,7,Closed
+ACC100330,TN12,Jan Dhan,Krishnagiri,12.5605,78.2227,0.68,5,Active
+ACC100331,TN16,Jan Dhan,Kanniyakumari,8.05,77.5258,0.18,6,Under Monitoring
+ACC100332,TN09,Business,Kallakurichi,11.7267,78.9325,0.64,11,Frozen
+ACC100333,TN36,Current,Vellore,12.9155,79.0965,0.34,7,Closed
+ACC100334,TN04,Jan Dhan,Coimbatore,11.062,76.9543,0.23,6,Closed
+ACC100335,TN33,Wallet,Tiruppur,11.0994,77.3403,0.71,7,Under Monitoring
+ACC100336,TN11,Savings,Karur,10.9666,78.1062,0.26,0,Suspended
+ACC100337,TN15,Business,Nagapattinam,10.7461,79.873,0.58,12,Under Monitoring
+ACC100338,TN36,Business,Vellore,12.8778,79.0939,0.77,5,Closed
+ACC100339,TN03,Wallet,Chennai,13.0873,80.3197,0.15,10,Frozen
+ACC100340,TN20,Savings,Ramanathapuram,9.3589,78.817,0.81,7,Active
+ACC100341,TN16,Current,Kanniyakumari,8.1194,77.5473,0.38,11,Closed
+ACC100342,TN28,Current,Tiruvarur,10.7777,79.6629,0.81,12,Active
+ACC100343,TN37,Jan Dhan,Viluppuram,11.9433,79.4958,0.21,11,Suspended
+ACC100344,TN19,Business,Pudukkottai,10.3564,78.8563,0.97,10,Active
+ACC100345,TN09,Wallet,Kallakurichi,11.7802,79.0131,0.86,2,Frozen
+ACC100346,TN16,Current,Kanniyakumari,8.1094,77.5713,0.76,10,Under Monitoring
+ACC100347,TN32,Current,Tirupathur,12.5014,78.543,0.44,7,Active
+ACC100348,TN06,Wallet,Dharmapuri,12.1293,78.136,0.92,5,Under Monitoring
+ACC100349,TN32,Jan Dhan,Tirupathur,12.5019,78.603,0.84,1,Under Monitoring
+ACC100350,TN23,Savings,Sivaganga,9.8729,78.4707,0.95,3,Under Monitoring
+ACC100351,TN18,Jan Dhan,Perambalur,11.267,78.8659,0.59,9,Under Monitoring
+ACC100352,TN22,Savings,Salem,11.6189,78.1586,0.83,0,Active
+ACC100353,TN11,Wallet,Karur,10.9558,78.1258,0.45,11,Frozen
+ACC100354,TN20,Current,Ramanathapuram,9.4013,78.8698,0.14,5,Suspended
+ACC100355,TN06,Jan Dhan,Dharmapuri,12.1442,78.1731,0.1,10,Suspended
+ACC100356,TN15,Wallet,Nagapattinam,10.7827,79.8653,0.05,7,Active
+ACC100357,TN09,Business,Kallakurichi,11.7109,78.9819,0.06,11,Suspended
+ACC100358,TN08,Wallet,Erode,11.3604,77.715,0.26,1,Active
+ACC100359,TN07,Jan Dhan,Dindigul,10.3492,77.9494,0.41,12,Frozen
+ACC100360,TN10,Savings,Kancheepuram,12.8373,79.6544,0.65,7,Suspended
+ACC100361,TN14,Current,Mayiladuthurai,11.1505,79.665,0.46,3,Active
+ACC100362,TN07,Current,Dindigul,10.3876,77.9785,0.41,6,Suspended
+ACC100363,TN09,Current,Kallakurichi,11.716,78.9223,0.56,9,Closed
+ACC100364,TN19,Savings,Pudukkottai,10.4145,78.8363,0.33,8,Closed
+ACC100365,TN33,Current,Tiruppur,11.1333,77.3207,0.1,12,Frozen
+ACC100366,TN32,Wallet,Tirupathur,12.455,78.5661,0.6,8,Active
+ACC100367,TN24,Jan Dhan,Tenkasi,8.9196,77.3512,0.58,5,Closed
+ACC100368,TN12,Wallet,Krishnagiri,12.564,78.2407,0.07,1,Active
+ACC100369,TN17,Current,Namakkal,11.1729,78.1234,0.78,8,Suspended
+ACC100370,TN33,Wallet,Tiruppur,11.1009,77.3313,0.65,8,Closed
+ACC100371,TN10,Jan Dhan,Kancheepuram,12.7926,79.6615,0.91,12,Frozen
+ACC100372,TN35,Jan Dhan,The Nilgiris,11.4807,76.7471,0.83,10,Active
+ACC100373,TN20,Wallet,Ramanathapuram,9.3869,78.8667,0.1,1,Under Monitoring
+ACC100374,TN08,Wallet,Erode,11.3522,77.6727,0.67,10,Frozen
+ACC100375,TN08,Savings,Erode,11.3618,77.7373,0.2,5,Closed
+ACC100376,TN34,Jan Dhan,Tiruvannamalai,12.192,79.0374,0.78,4,Active
+ACC100377,TN02,Jan Dhan,Chengalpattu,12.7246,79.9529,0.11,11,Closed
+ACC100378,TN05,Wallet,Cuddalore,11.7435,79.7574,0.51,9,Frozen
+ACC100379,TN24,Current,Tenkasi,8.9319,77.2754,0.58,11,Active
+ACC100380,TN15,Business,Nagapattinam,10.7175,79.8808,0.06,0,Under Monitoring
+ACC100381,TN24,Wallet,Tenkasi,8.9984,77.283,0.94,0,Closed
+ACC100382,TN27,Current,Tiruvallur,13.1224,79.8987,0.72,4,Active
+ACC100383,TN37,Jan Dhan,Viluppuram,11.902,79.5034,0.1,3,Closed
+ACC100384,TN03,Wallet,Chennai,13.0396,80.2672,0.31,4,Suspended
+ACC100385,TN06,Business,Dharmapuri,12.1234,78.1451,0.32,12,Suspended
+ACC100386,TN16,Wallet,Kanniyakumari,8.0751,77.5857,0.98,12,Frozen
+ACC100387,TN35,Current,The Nilgiris,11.4567,76.7769,0.07,8,Suspended
+ACC100388,TN01,Jan Dhan,Ariyalur,11.0901,79.0943,0.84,11,Suspended
+ACC100389,TN07,Current,Dindigul,10.3654,77.9433,0.51,0,Frozen
+ACC100390,TN18,Savings,Perambalur,11.1886,78.8552,0.84,6,Suspended
+ACC100391,TN30,Savings,Tiruchirappalli,10.7986,78.7052,0.64,6,Active
+ACC100392,TN38,Business,Virudhunagar,9.5434,77.9786,0.17,4,Suspended
+ACC100393,TN21,Wallet,Ranipet,12.9473,79.3568,0.35,4,Frozen
+ACC100394,TN05,Current,Cuddalore,11.7116,79.7984,0.15,1,Frozen
+ACC100395,TN29,Wallet,Thoothukudi,8.7456,78.0969,0.38,12,Frozen
+ACC100396,TN29,Jan Dhan,Thoothukudi,8.7605,78.17,0.13,12,Suspended
+ACC100397,TN03,Current,Chennai,13.1163,80.2535,0.13,3,Suspended
+ACC100398,TN26,Business,Theni,9.9653,77.4567,0.81,2,Active
+ACC100399,TN26,Wallet,Theni,10.016,77.4818,0.14,1,Frozen
+ACC100400,TN08,Savings,Erode,11.2972,77.7453,0.26,3,Under Monitoring
+ACC100401,TN24,Savings,Tenkasi,8.9646,77.291,0.81,0,Active
+ACC100402,TN13,Wallet,Madurai,9.9561,78.079,0.84,12,Suspended
+ACC100403,TN08,Savings,Erode,11.3852,77.6723,0.91,6,Under Monitoring
+ACC100404,TN32,Savings,Tirupathur,12.482,78.5588,0.38,2,Suspended
+ACC100405,TN18,Wallet,Perambalur,11.2725,78.8356,0.63,3,Suspended
+ACC100406,TN32,Wallet,Tirupathur,12.532,78.564,0.13,6,Frozen
+ACC100407,TN27,Current,Tiruvallur,13.1545,79.9368,0.28,12,Closed
+ACC100408,TN02,Wallet,Chengalpattu,12.7221,79.9616,0.56,7,Suspended
+ACC100409,TN37,Business,Viluppuram,11.9223,79.4631,0.07,9,Frozen
+ACC100410,TN02,Jan Dhan,Chengalpattu,12.6498,80.0249,0.54,12,Closed
+ACC100411,TN15,Current,Nagapattinam,10.7272,79.8606,0.3,12,Active
+ACC100412,TN15,Business,Nagapattinam,10.8019,79.8746,0.38,2,Frozen
+ACC100413,TN16,Business,Kanniyakumari,8.0701,77.5623,0.38,9,Active
+ACC100414,TN23,Business,Sivaganga,9.8497,78.4872,0.23,12,Under Monitoring
+ACC100415,TN35,Jan Dhan,The Nilgiris,11.4592,76.6875,0.1,9,Frozen
+ACC100416,TN02,Business,Chengalpattu,12.6917,79.9589,0.62,12,Frozen
+ACC100417,TN22,Current,Salem,11.7062,78.1804,0.35,0,Frozen
+ACC100418,TN38,Current,Virudhunagar,9.6146,77.997,0.85,1,Suspended
+ACC100419,TN26,Business,Theni,9.9705,77.457,0.18,2,Under Monitoring
+ACC100420,TN32,Jan Dhan,Tirupathur,12.4611,78.613,0.7,9,Suspended
+ACC100421,TN15,Business,Nagapattinam,10.7986,79.8327,0.73,4,Frozen
+ACC100422,TN12,Savings,Krishnagiri,12.5635,78.2586,0.41,12,Closed
+ACC100423,TN03,Current,Chennai,13.0929,80.3128,0.95,3,Closed
+ACC100424,TN07,Wallet,Dindigul,10.3265,77.994,0.27,5,Frozen
+ACC100425,TN06,Jan Dhan,Dharmapuri,12.1224,78.1347,0.28,1,Suspended
+ACC100426,TN17,Savings,Namakkal,11.2409,78.1222,0.46,6,Frozen
+ACC100427,TN27,Wallet,Tiruvallur,13.1784,79.8922,0.4,7,Closed
+ACC100428,TN15,Current,Nagapattinam,10.7623,79.8748,0.08,0,Suspended
+ACC100429,TN17,Savings,Namakkal,11.1763,78.1344,0.4,11,Active
+ACC100430,TN36,Savings,Vellore,12.9003,79.181,0.88,11,Active
+ACC100431,TN28,Current,Tiruvarur,10.7768,79.6278,0.1,5,Frozen
+ACC100432,TN13,Wallet,Madurai,9.9449,78.142,0.73,4,Suspended
+ACC100433,TN20,Current,Ramanathapuram,9.3235,78.8214,0.56,7,Frozen
+ACC100434,TN04,Jan Dhan,Coimbatore,10.9672,76.9146,0.82,10,Closed
+ACC100435,TN31,Current,Tirunelveli,8.6736,77.7274,0.64,1,Under Monitoring
+ACC100436,TN08,Jan Dhan,Erode,11.3695,77.7143,0.88,4,Active
+ACC100437,TN35,Wallet,The Nilgiris,11.4601,76.7722,0.39,7,Active
+ACC100438,TN17,Wallet,Namakkal,11.2154,78.14,0.3,0,Frozen
+ACC100439,TN07,Savings,Dindigul,10.3792,78.0003,0.44,12,Closed
+ACC100440,TN15,Business,Nagapattinam,10.7233,79.8336,0.54,8,Under Monitoring
+ACC100441,TN37,Current,Viluppuram,11.9377,79.444,0.89,11,Active
+ACC100442,TN33,Business,Tiruppur,11.1485,77.3711,0.68,9,Frozen
+ACC100443,TN08,Wallet,Erode,11.3083,77.7656,0.95,12,Frozen
+ACC100444,TN09,Savings,Kallakurichi,11.7306,79.0127,0.45,10,Frozen
+ACC100445,TN17,Jan Dhan,Namakkal,11.26,78.2088,0.11,6,Closed
+ACC100446,TN26,Business,Theni,9.993,77.4544,0.48,0,Closed
+ACC100447,TN38,Business,Virudhunagar,9.6154,77.9237,0.19,9,Closed
+ACC100448,TN38,Savings,Virudhunagar,9.6297,77.9687,0.14,4,Closed
+ACC100449,TN23,Wallet,Sivaganga,9.8197,78.4964,0.58,7,Active
+ACC100450,TN12,Jan Dhan,Krishnagiri,12.5089,78.2255,0.68,6,Active
+ACC100451,TN26,Jan Dhan,Theni,10.0295,77.4317,0.49,4,Suspended
+ACC100452,TN02,Jan Dhan,Chengalpattu,12.7256,79.956,0.31,7,Active
+ACC100453,TN15,Current,Nagapattinam,10.7472,79.8693,0.77,5,Suspended
+ACC100454,TN27,Business,Tiruvallur,13.1548,79.8759,0.25,6,Under Monitoring
+ACC100455,TN34,Jan Dhan,Tiruvannamalai,12.2574,79.0762,0.2,4,Closed
+ACC100456,TN26,Current,Theni,10.0385,77.4792,0.58,2,Frozen
+ACC100457,TN13,Savings,Madurai,9.9001,78.1154,0.9,11,Frozen
+ACC100458,TN18,Jan Dhan,Perambalur,11.2666,78.8826,0.64,1,Active
+ACC100459,TN16,Jan Dhan,Kanniyakumari,8.0872,77.5331,0.94,7,Closed
+ACC100460,TN36,Jan Dhan,Vellore,12.9009,79.1663,0.29,11,Active
+ACC100461,TN19,Savings,Pudukkottai,10.3684,78.7868,0.58,3,Frozen
+ACC100462,TN15,Current,Nagapattinam,10.7441,79.8359,0.07,12,Active
+ACC100463,TN31,Current,Tirunelveli,8.7286,77.7668,0.06,4,Closed
+ACC100464,TN20,Jan Dhan,Ramanathapuram,9.3563,78.8197,0.37,4,Frozen
+ACC100465,TN30,Jan Dhan,Tiruchirappalli,10.8082,78.7371,0.42,1,Active
+ACC100466,TN33,Jan Dhan,Tiruppur,11.1146,77.3505,0.31,10,Active
+ACC100467,TN31,Savings,Tirunelveli,8.6975,77.7343,0.35,4,Suspended
+ACC100468,TN20,Current,Ramanathapuram,9.3289,78.8586,0.89,12,Closed
+ACC100469,TN26,Jan Dhan,Theni,10.0285,77.4989,0.66,4,Suspended
+ACC100470,TN27,Wallet,Tiruvallur,13.129,79.8606,0.71,9,Frozen
+ACC100471,TN22,Current,Salem,11.6829,78.1598,0.49,10,Suspended
+ACC100472,TN33,Jan Dhan,Tiruppur,11.143,77.3752,0.87,2,Suspended
+ACC100473,TN07,Wallet,Dindigul,10.3252,77.9454,0.8,12,Frozen
+ACC100474,TN22,Savings,Salem,11.6365,78.1183,0.86,6,Suspended
+ACC100475,TN24,Jan Dhan,Tenkasi,8.965,77.3115,0.16,0,Closed
+ACC100476,TN38,Business,Virudhunagar,9.5443,78.0013,0.52,10,Under Monitoring
+ACC100477,TN34,Jan Dhan,Tiruvannamalai,12.2166,79.1118,0.19,3,Suspended
+ACC100478,TN27,Business,Tiruvallur,13.1795,79.9558,0.18,11,Frozen
+ACC100479,TN06,Wallet,Dharmapuri,12.111,78.2069,0.34,0,Active
+ACC100480,TN29,Jan Dhan,Thoothukudi,8.7351,78.1622,0.59,2,Under Monitoring
+ACC100481,TN06,Current,Dharmapuri,12.1391,78.1715,0.43,7,Under Monitoring
+ACC100482,TN01,Savings,Ariyalur,11.1434,79.1017,0.93,5,Closed
+ACC100483,TN13,Savings,Madurai,9.9429,78.1325,0.28,11,Suspended
+ACC100484,TN20,Current,Ramanathapuram,9.3242,78.8324,0.33,1,Active
+ACC100485,TN20,Jan Dhan,Ramanathapuram,9.3595,78.8341,0.54,6,Frozen
+ACC100486,TN22,Wallet,Salem,11.6502,78.1148,0.93,12,Under Monitoring
+ACC100487,TN02,Current,Chengalpattu,12.6663,80.0242,0.25,0,Closed
+ACC100488,TN33,Current,Tiruppur,11.0708,77.3622,0.79,6,Suspended
+ACC100489,TN35,Business,The Nilgiris,11.4465,76.7832,0.67,10,Active
+ACC100490,TN04,Savings,Coimbatore,11.0085,76.9438,0.56,7,Frozen
+ACC100491,TN14,Savings,Mayiladuthurai,11.0886,79.6696,0.67,4,Closed
+ACC100492,TN09,Wallet,Kallakurichi,11.7714,78.9244,0.72,1,Suspended
+ACC100493,TN08,Savings,Erode,11.3408,77.7281,0.77,8,Frozen
+ACC100494,TN23,Wallet,Sivaganga,9.8228,78.4348,0.51,3,Under Monitoring
+ACC100495,TN22,Current,Salem,11.6146,78.1632,0.89,9,Under Monitoring
+ACC100496,TN10,Savings,Kancheepuram,12.8622,79.6611,0.72,4,Frozen
+ACC100497,TN30,Jan Dhan,Tiruchirappalli,10.7669,78.6597,0.81,0,Suspended
+ACC100498,TN24,Jan Dhan,Tenkasi,8.949,77.2767,0.84,0,Active
+ACC100499,TN09,Current,Kallakurichi,11.7212,79.0034,0.94,4,Active
+ACC100500,TN24,Jan Dhan,Tenkasi,8.9247,77.3052,0.94,4,Under Monitoring
+ACC100501,TN31,Wallet,Tirunelveli,8.7288,77.7864,0.16,11,Active
+ACC100502,TN11,Savings,Karur,10.9517,78.0857,0.8,10,Under Monitoring
+ACC100503,TN12,Business,Krishnagiri,12.5066,78.1996,0.08,10,Frozen
+ACC100504,TN31,Wallet,Tirunelveli,8.6752,77.7478,0.09,4,Suspended
+ACC100505,TN01,Business,Ariyalur,11.1668,79.0863,0.58,10,Suspended
+ACC100506,TN34,Business,Tiruvannamalai,12.2441,79.0865,0.45,11,Frozen
+ACC100507,TN31,Jan Dhan,Tirunelveli,8.7303,77.7708,0.19,8,Closed
+ACC100508,TN04,Savings,Coimbatore,11.0311,76.9215,0.84,7,Frozen
+ACC100509,TN05,Wallet,Cuddalore,11.7301,79.7545,0.31,8,Frozen
+ACC100510,TN36,Wallet,Vellore,12.9068,79.106,0.48,12,Closed
+ACC100511,TN29,Savings,Thoothukudi,8.7999,78.1295,0.16,7,Active
+ACC100512,TN07,Wallet,Dindigul,10.3536,77.9752,0.05,1,Closed
+ACC100513,TN20,Business,Ramanathapuram,9.3701,78.8476,0.47,5,Suspended
+ACC100514,TN04,Current,Coimbatore,11.0512,76.939,0.76,9,Under Monitoring
+ACC100515,TN24,Wallet,Tenkasi,8.9178,77.341,0.26,5,Suspended
+ACC100516,TN19,Business,Pudukkottai,10.3819,78.8407,0.09,2,Under Monitoring
+ACC100517,TN09,Wallet,Kallakurichi,11.699,78.975,0.22,6,Frozen
+ACC100518,TN30,Current,Tiruchirappalli,10.8122,78.6655,0.44,10,Closed
+ACC100519,TN08,Wallet,Erode,11.3367,77.7261,0.52,7,Active
+ACC100520,TN34,Savings,Tiruvannamalai,12.2306,79.068,0.59,8,Frozen
+ACC100521,TN38,Current,Virudhunagar,9.6102,77.9252,0.41,9,Closed
+ACC100522,TN21,Business,Ranipet,12.9653,79.3252,0.62,11,Frozen
+ACC100523,TN18,Wallet,Perambalur,11.2806,78.9291,0.47,2,Frozen
+ACC100524,TN27,Business,Tiruvallur,13.1602,79.9319,0.33,11,Closed
+ACC100525,TN21,Business,Ranipet,12.9405,79.3034,0.63,4,Suspended
+ACC100526,TN09,Current,Kallakurichi,11.7387,78.9833,0.35,1,Suspended
+ACC100527,TN36,Wallet,Vellore,12.9248,79.1768,0.71,10,Closed
+ACC100528,TN19,Wallet,Pudukkottai,10.4105,78.8228,0.07,2,Active
+ACC100529,TN04,Current,Coimbatore,10.9935,76.9844,0.96,10,Suspended
+ACC100530,TN10,Savings,Kancheepuram,12.8533,79.6831,0.75,0,Suspended
+ACC100531,TN29,Savings,Thoothukudi,8.7758,78.1524,0.57,3,Closed
+ACC100532,TN25,Current,Thanjavur,10.7881,79.1675,0.7,11,Active
+ACC100533,TN25,Wallet,Thanjavur,10.7787,79.1666,0.69,8,Active
+ACC100534,TN01,Jan Dhan,Ariyalur,11.1103,79.1155,0.85,7,Frozen
+ACC100535,TN24,Business,Tenkasi,8.9611,77.3254,0.77,3,Suspended
+ACC100536,TN29,Current,Thoothukudi,8.8125,78.0922,0.95,11,Closed
+ACC100537,TN08,Wallet,Erode,11.2951,77.6951,0.3,2,Closed
+ACC100538,TN17,Savings,Namakkal,11.202,78.1884,0.19,2,Suspended
+ACC100539,TN04,Business,Coimbatore,11.0511,76.9359,0.78,8,Suspended
+ACC100540,TN05,Jan Dhan,Cuddalore,11.7505,79.8171,0.53,12,Closed
+ACC100541,TN11,Wallet,Karur,10.9644,78.0669,0.37,3,Suspended
+ACC100542,TN22,Jan Dhan,Salem,11.6437,78.191,0.63,7,Closed
+ACC100543,TN01,Savings,Ariyalur,11.1569,79.0732,0.89,9,Closed
+ACC100544,TN16,Savings,Kanniyakumari,8.1066,77.5206,0.9,1,Under Monitoring
+ACC100545,TN17,Business,Namakkal,11.2413,78.1199,0.53,12,Suspended
+ACC100546,TN33,Business,Tiruppur,11.1031,77.2955,0.89,3,Suspended
+ACC100547,TN33,Savings,Tiruppur,11.1533,77.3078,0.94,8,Closed
+ACC100548,TN01,Savings,Ariyalur,11.1111,79.0916,0.25,10,Under Monitoring
+ACC100549,TN07,Current,Dindigul,10.3662,77.9898,0.96,12,Under Monitoring
+ACC100550,TN05,Current,Cuddalore,11.7004,79.7931,0.09,1,Active
+ACC100551,TN12,Jan Dhan,Krishnagiri,12.5244,78.2212,0.26,4,Under Monitoring
+ACC100552,TN25,Wallet,Thanjavur,10.8,79.1311,0.07,10,Active
+ACC100553,TN35,Savings,The Nilgiris,11.5057,76.7455,0.75,9,Active
+ACC100554,TN05,Jan Dhan,Cuddalore,11.7908,79.732,0.78,4,Closed
+ACC100555,TN06,Jan Dhan,Dharmapuri,12.1542,78.152,0.42,10,Active
+ACC100556,TN31,Current,Tirunelveli,8.7172,77.7203,0.41,12,Closed
+ACC100557,TN19,Current,Pudukkottai,10.3595,78.8592,0.95,11,Suspended
+ACC100558,TN01,Business,Ariyalur,11.1775,79.0427,0.09,9,Closed
+ACC100559,TN26,Business,Theni,10.0152,77.4353,0.25,11,Suspended
+ACC100560,TN14,Wallet,Mayiladuthurai,11.1491,79.6885,0.18,2,Frozen
+ACC100561,TN17,Current,Namakkal,11.1804,78.1845,0.58,0,Closed
+ACC100562,TN30,Business,Tiruchirappalli,10.7478,78.7219,0.28,3,Closed
+ACC100563,TN32,Jan Dhan,Tirupathur,12.4794,78.5832,0.27,4,Closed
+ACC100564,TN05,Current,Cuddalore,11.7298,79.7665,0.62,4,Closed
+ACC100565,TN10,Business,Kancheepuram,12.8409,79.7344,0.94,2,Active
+ACC100566,TN21,Current,Ranipet,12.9558,79.3545,0.65,4,Suspended
+ACC100567,TN09,Jan Dhan,Kallakurichi,11.7761,78.9602,0.38,4,Under Monitoring
+ACC100568,TN36,Savings,Vellore,12.8841,79.1432,0.83,2,Closed
+ACC100569,TN13,Jan Dhan,Madurai,9.9486,78.1325,0.73,0,Closed
+ACC100570,TN02,Business,Chengalpattu,12.7018,80.0026,0.25,0,Closed
+ACC100571,TN17,Business,Namakkal,11.2583,78.1714,0.66,2,Suspended
+ACC100572,TN26,Current,Theni,10.0495,77.4858,0.85,2,Under Monitoring
+ACC100573,TN33,Business,Tiruppur,11.0676,77.3275,0.06,3,Closed
+ACC100574,TN11,Business,Karur,10.9241,78.0425,0.58,9,Frozen
+ACC100575,TN31,Jan Dhan,Tirunelveli,8.6679,77.7828,0.27,4,Suspended
+ACC100576,TN15,Savings,Nagapattinam,10.7841,79.8467,0.79,6,Under Monitoring
+ACC100577,TN30,Savings,Tiruchirappalli,10.7445,78.7196,0.15,8,Suspended
+ACC100578,TN17,Business,Namakkal,11.2233,78.1348,0.66,5,Closed
+ACC100579,TN05,Business,Cuddalore,11.7232,79.8187,0.26,6,Suspended
+ACC100580,TN23,Wallet,Sivaganga,9.8726,78.5196,0.06,2,Under Monitoring
+ACC100581,TN11,Current,Karur,10.9178,78.0909,0.25,2,Frozen
+ACC100582,TN24,Business,Tenkasi,8.9781,77.2769,0.26,12,Suspended
+ACC100583,TN08,Wallet,Erode,11.3585,77.7151,0.6,10,Under Monitoring
+ACC100584,TN02,Current,Chengalpattu,12.6482,79.983,0.2,10,Closed
+ACC100585,TN03,Business,Chennai,13.0474,80.2373,0.91,8,Under Monitoring
+ACC100586,TN37,Savings,Viluppuram,11.978,79.5089,0.81,1,Frozen
+ACC100587,TN29,Business,Thoothukudi,8.8135,78.1715,0.21,6,Closed
+ACC100588,TN10,Business,Kancheepuram,12.8662,79.6718,0.66,4,Frozen
+ACC100589,TN22,Wallet,Salem,11.674,78.1029,0.4,2,Active
+ACC100590,TN02,Current,Chengalpattu,12.6962,80.0166,0.69,2,Closed
+ACC100591,TN07,Current,Dindigul,10.36,77.981,0.09,12,Closed
+ACC100592,TN33,Savings,Tiruppur,11.0678,77.357,0.89,8,Active
+ACC100593,TN28,Business,Tiruvarur,10.7582,79.6719,0.7,6,Frozen
+ACC100594,TN31,Wallet,Tirunelveli,8.699,77.7872,0.89,11,Closed
+ACC100595,TN07,Wallet,Dindigul,10.3258,77.9672,0.27,1,Suspended
+ACC100596,TN35,Wallet,The Nilgiris,11.4674,76.6842,0.74,0,Closed
+ACC100597,TN34,Savings,Tiruvannamalai,12.2273,79.0622,0.24,12,Suspended
+ACC100598,TN27,Jan Dhan,Tiruvallur,13.1009,79.8997,0.59,4,Closed
+ACC100599,TN28,Business,Tiruvarur,10.7527,79.612,0.68,12,Frozen
+ACC100600,TN27,Business,Tiruvallur,13.1686,79.9053,0.39,8,Under Monitoring
+ACC100601,TN17,Jan Dhan,Namakkal,11.2267,78.1948,0.42,2,Active
+ACC100602,TN15,Wallet,Nagapattinam,10.7955,79.8898,0.14,8,Under Monitoring
+ACC100603,TN22,Business,Salem,11.6757,78.1645,0.1,6,Active
+ACC100604,TN06,Current,Dharmapuri,12.1249,78.1682,0.13,4,Frozen
+ACC100605,TN24,Savings,Tenkasi,8.9673,77.3375,0.92,6,Closed
+ACC100606,TN34,Jan Dhan,Tiruvannamalai,12.2465,79.0844,0.93,2,Under Monitoring
+ACC100607,TN29,Savings,Thoothukudi,8.7344,78.1505,0.8,4,Frozen
+ACC100608,TN03,Business,Chennai,13.0838,80.2905,0.62,10,Active
+ACC100609,TN24,Current,Tenkasi,8.9719,77.3627,0.13,4,Under Monitoring
+ACC100610,TN23,Wallet,Sivaganga,9.8338,78.4509,0.06,11,Active
+ACC100611,TN06,Business,Dharmapuri,12.1061,78.1912,0.9,5,Suspended
+ACC100612,TN18,Current,Perambalur,11.2448,78.8516,0.91,9,Active
+ACC100613,TN17,Current,Namakkal,11.2096,78.128,0.12,4,Suspended
+ACC100614,TN08,Business,Erode,11.3867,77.7548,0.81,9,Suspended
+ACC100615,TN29,Wallet,Thoothukudi,8.7705,78.1618,0.75,12,Under Monitoring
+ACC100616,TN30,Business,Tiruchirappalli,10.8267,78.7029,0.29,6,Frozen
+ACC100617,TN15,Jan Dhan,Nagapattinam,10.7584,79.8302,0.55,11,Suspended
+ACC100618,TN16,Jan Dhan,Kanniyakumari,8.0476,77.5559,0.81,1,Closed
+ACC100619,TN12,Wallet,Krishnagiri,12.5,78.1856,0.58,2,Frozen
+ACC100620,TN32,Current,Tirupathur,12.4672,78.5403,0.3,3,Frozen
+ACC100621,TN16,Business,Kanniyakumari,8.0739,77.5664,0.16,1,Under Monitoring
+ACC100622,TN01,Business,Ariyalur,11.1858,79.1134,0.4,5,Under Monitoring
+ACC100623,TN37,Jan Dhan,Viluppuram,11.9392,79.5345,0.9,4,Under Monitoring
+ACC100624,TN15,Business,Nagapattinam,10.73,79.8475,0.44,8,Active
+ACC100625,TN33,Jan Dhan,Tiruppur,11.0979,77.3597,0.21,1,Closed
+ACC100626,TN30,Jan Dhan,Tiruchirappalli,10.8094,78.6559,0.25,9,Active
+ACC100627,TN21,Jan Dhan,Ranipet,12.9385,79.3093,0.56,3,Suspended
+ACC100628,TN31,Business,Tirunelveli,8.6982,77.7251,0.44,6,Suspended
+ACC100629,TN24,Wallet,Tenkasi,8.9344,77.2831,0.17,9,Frozen
+ACC100630,TN07,Jan Dhan,Dindigul,10.3928,77.975,0.85,3,Frozen
+ACC100631,TN10,Wallet,Kancheepuram,12.8648,79.6713,0.51,10,Closed
+ACC100632,TN35,Jan Dhan,The Nilgiris,11.5201,76.7137,0.57,9,Active
+ACC100633,TN26,Savings,Theni,10.0295,77.4328,0.81,7,Active
+ACC100634,TN29,Jan Dhan,Thoothukudi,8.7402,78.1208,0.57,12,Suspended
+ACC100635,TN23,Savings,Sivaganga,9.8345,78.466,0.68,9,Frozen
+ACC100636,TN37,Business,Viluppuram,11.9551,79.4899,0.96,4,Suspended
+ACC100637,TN21,Business,Ranipet,12.9259,79.357,0.88,6,Closed
+ACC100638,TN19,Wallet,Pudukkottai,10.3929,78.785,0.21,12,Suspended
+ACC100639,TN27,Business,Tiruvallur,13.1474,79.942,0.12,2,Suspended
+ACC100640,TN15,Jan Dhan,Nagapattinam,10.7489,79.824,0.3,10,Under Monitoring
+ACC100641,TN18,Wallet,Perambalur,11.2623,78.926,0.75,8,Under Monitoring
+ACC100642,TN27,Current,Tiruvallur,13.1086,79.8594,0.73,10,Suspended
+ACC100643,TN06,Current,Dharmapuri,12.0944,78.1185,0.11,7,Closed
+ACC100644,TN04,Savings,Coimbatore,11.0439,76.9582,0.98,1,Suspended
+ACC100645,TN10,Savings,Kancheepuram,12.8497,79.7421,0.34,3,Suspended
+ACC100646,TN29,Current,Thoothukudi,8.7273,78.1687,0.08,10,Suspended
+ACC100647,TN21,Wallet,Ranipet,12.9239,79.3704,0.92,8,Under Monitoring
+ACC100648,TN09,Business,Kallakurichi,11.706,78.9737,0.64,10,Closed
+ACC100649,TN28,Business,Tiruvarur,10.7801,79.6378,0.9,7,Closed
+ACC100650,TN15,Savings,Nagapattinam,10.7614,79.8315,0.29,4,Active
+ACC100651,TN01,Business,Ariyalur,11.1715,79.1134,0.37,7,Closed
+ACC100652,TN01,Wallet,Ariyalur,11.1847,79.0763,0.06,6,Suspended
+ACC100653,TN15,Savings,Nagapattinam,10.772,79.8138,0.87,6,Under Monitoring
+ACC100654,TN16,Current,Kanniyakumari,8.1098,77.5531,0.82,3,Suspended
+ACC100655,TN06,Wallet,Dharmapuri,12.1402,78.1599,0.79,9,Suspended
+ACC100656,TN19,Business,Pudukkottai,10.4106,78.8118,0.84,2,Frozen
+ACC100657,TN19,Savings,Pudukkottai,10.3934,78.8323,0.3,9,Under Monitoring
+ACC100658,TN13,Jan Dhan,Madurai,9.8771,78.0748,0.55,2,Active
+ACC100659,TN19,Jan Dhan,Pudukkottai,10.3422,78.8143,0.06,1,Frozen
+ACC100660,TN01,Wallet,Ariyalur,11.1117,79.0706,0.78,7,Suspended
+ACC100661,TN30,Savings,Tiruchirappalli,10.7735,78.7391,0.94,0,Suspended
+ACC100662,TN26,Savings,Theni,10.0147,77.445,0.88,4,Under Monitoring
+ACC100663,TN01,Savings,Ariyalur,11.1875,79.1001,0.41,7,Frozen
+ACC100664,TN03,Current,Chennai,13.0788,80.2978,0.53,3,Under Monitoring
+ACC100665,TN25,Jan Dhan,Thanjavur,10.8306,79.1037,0.73,11,Closed
+ACC100666,TN34,Savings,Tiruvannamalai,12.2006,79.0886,0.23,0,Frozen
+ACC100667,TN08,Current,Erode,11.3543,77.6997,0.21,4,Closed
+ACC100668,TN08,Wallet,Erode,11.3699,77.6681,0.09,12,Under Monitoring
+ACC100669,TN10,Jan Dhan,Kancheepuram,12.8613,79.6785,0.51,10,Closed
+ACC100670,TN22,Savings,Salem,11.6203,78.1605,0.7,12,Active
+ACC100671,TN09,Wallet,Kallakurichi,11.7116,79.0121,0.78,12,Suspended
+ACC100672,TN29,Current,Thoothukudi,8.7163,78.1226,0.72,4,Active
+ACC100673,TN32,Wallet,Tirupathur,12.4996,78.5704,0.51,9,Frozen
+ACC100674,TN35,Jan Dhan,The Nilgiris,11.474,76.7305,0.86,9,Closed
+ACC100675,TN11,Savings,Karur,10.9632,78.0715,0.81,8,Suspended
+ACC100676,TN30,Savings,Tiruchirappalli,10.8181,78.7053,0.73,0,Closed
+ACC100677,TN24,Business,Tenkasi,8.9303,77.3372,0.66,8,Under Monitoring
+ACC100678,TN13,Business,Madurai,9.9435,78.1464,0.19,4,Suspended
+ACC100679,TN27,Jan Dhan,Tiruvallur,13.1012,79.9094,0.11,2,Frozen
+ACC100680,TN03,Current,Chennai,13.0434,80.2399,0.08,10,Under Monitoring
+ACC100681,TN32,Business,Tirupathur,12.5061,78.5751,0.1,3,Closed
+ACC100682,TN05,Savings,Cuddalore,11.791,79.7423,0.51,1,Under Monitoring
+ACC100683,TN04,Jan Dhan,Coimbatore,11.0226,76.9996,0.44,5,Active
+ACC100684,TN18,Business,Perambalur,11.1883,78.8391,0.33,3,Closed
+ACC100685,TN07,Savings,Dindigul,10.3849,77.9727,0.23,8,Frozen
+ACC100686,TN37,Current,Viluppuram,11.9459,79.4919,0.74,12,Closed
+ACC100687,TN23,Wallet,Sivaganga,9.8636,78.4736,0.15,12,Frozen
+ACC100688,TN36,Wallet,Vellore,12.917,79.1483,0.55,9,Under Monitoring
+ACC100689,TN23,Jan Dhan,Sivaganga,9.8483,78.5306,0.84,6,Under Monitoring
+ACC100690,TN21,Business,Ranipet,12.9013,79.3379,0.4,8,Suspended
+ACC100691,TN24,Wallet,Tenkasi,8.9511,77.3048,0.73,4,Closed
+ACC100692,TN02,Business,Chengalpattu,12.6574,80.0147,0.06,3,Frozen
+ACC100693,TN21,Savings,Ranipet,12.9544,79.3776,0.81,8,Closed
+ACC100694,TN36,Business,Vellore,12.9591,79.098,0.09,5,Frozen
+ACC100695,TN09,Jan Dhan,Kallakurichi,11.725,78.9721,0.27,12,Suspended
+ACC100696,TN06,Business,Dharmapuri,12.1177,78.2,0.73,11,Suspended
+ACC100697,TN31,Current,Tirunelveli,8.7127,77.7966,0.7,1,Closed
+ACC100698,TN20,Savings,Ramanathapuram,9.387,78.8397,0.12,0,Suspended
+ACC100699,TN23,Wallet,Sivaganga,9.835,78.5177,0.86,3,Closed
+ACC100700,TN01,Wallet,Ariyalur,11.0954,79.081,0.35,9,Frozen
+ACC100701,TN21,Business,Ranipet,12.947,79.2986,0.68,6,Under Monitoring
+ACC100702,TN37,Business,Viluppuram,11.8991,79.4793,0.78,2,Frozen
+ACC100703,TN22,Savings,Salem,11.6619,78.1705,0.56,4,Active
+ACC100704,TN26,Business,Theni,10.0038,77.4966,0.76,7,Closed
+ACC100705,TN13,Wallet,Madurai,9.9147,78.1269,0.57,11,Closed
+ACC100706,TN16,Current,Kanniyakumari,8.0455,77.5662,0.35,9,Active
+ACC100707,TN08,Wallet,Erode,11.3334,77.702,0.35,9,Active
+ACC100708,TN20,Current,Ramanathapuram,9.4127,78.8437,0.97,7,Closed
+ACC100709,TN10,Wallet,Kancheepuram,12.7887,79.7354,0.24,5,Frozen
+ACC100710,TN06,Savings,Dharmapuri,12.1517,78.1325,0.63,2,Suspended
+ACC100711,TN01,Jan Dhan,Ariyalur,11.1594,79.0397,0.47,0,Suspended
+ACC100712,TN14,Business,Mayiladuthurai,11.0797,79.658,0.75,8,Under Monitoring
+ACC100713,TN10,Savings,Kancheepuram,12.8219,79.7442,0.54,4,Frozen
+ACC100714,TN04,Jan Dhan,Coimbatore,10.9869,76.9755,0.3,7,Active
+ACC100715,TN05,Wallet,Cuddalore,11.764,79.7877,0.9,5,Active
+ACC100716,TN02,Jan Dhan,Chengalpattu,12.7306,79.9906,0.26,6,Closed
+ACC100717,TN07,Jan Dhan,Dindigul,10.3609,77.9792,0.13,3,Closed
+ACC100718,TN30,Business,Tiruchirappalli,10.8331,78.6568,0.28,8,Suspended
+ACC100719,TN22,Wallet,Salem,11.6536,78.1117,0.37,5,Suspended
+ACC100720,TN20,Current,Ramanathapuram,9.4135,78.88,0.31,0,Suspended
+ACC100721,TN25,Savings,Thanjavur,10.8314,79.1827,0.26,5,Under Monitoring
+ACC100722,TN09,Savings,Kallakurichi,11.7613,78.966,0.68,10,Frozen
+ACC100723,TN27,Current,Tiruvallur,13.1475,79.8997,0.34,9,Suspended
+ACC100724,TN29,Business,Thoothukudi,8.7274,78.15,0.59,10,Frozen
+ACC100725,TN09,Jan Dhan,Kallakurichi,11.7572,79.0038,0.9,6,Frozen
+ACC100726,TN37,Current,Viluppuram,11.9218,79.4918,0.93,1,Frozen
+ACC100727,TN21,Current,Ranipet,12.9499,79.3598,0.87,6,Under Monitoring
+ACC100728,TN20,Wallet,Ramanathapuram,9.3885,78.8643,0.64,11,Suspended
+ACC100729,TN10,Current,Kancheepuram,12.7949,79.6721,0.76,9,Closed
+ACC100730,TN18,Business,Perambalur,11.2409,78.8552,0.27,10,Active
+ACC100731,TN23,Savings,Sivaganga,9.8621,78.4786,0.52,9,Under Monitoring
+ACC100732,TN24,Current,Tenkasi,8.9916,77.3142,0.18,3,Frozen
+ACC100733,TN03,Wallet,Chennai,13.1092,80.2222,0.3,6,Frozen
+ACC100734,TN13,Current,Madurai,9.8818,78.1625,0.97,9,Under Monitoring
+ACC100735,TN21,Wallet,Ranipet,12.966,79.3261,0.77,9,Under Monitoring
+ACC100736,TN21,Wallet,Ranipet,12.9384,79.3575,0.6,8,Active
+ACC100737,TN34,Savings,Tiruvannamalai,12.2205,79.1074,0.09,3,Closed
+ACC100738,TN35,Wallet,The Nilgiris,11.54,76.6876,0.41,12,Active
+ACC100739,TN13,Jan Dhan,Madurai,9.9192,78.1582,0.77,4,Under Monitoring
+ACC100740,TN11,Wallet,Karur,10.9395,78.1185,0.69,2,Under Monitoring
+ACC100741,TN29,Savings,Thoothukudi,8.7865,78.0961,0.77,11,Closed
+ACC100742,TN09,Wallet,Kallakurichi,11.7297,78.959,0.22,9,Frozen
+ACC100743,TN30,Savings,Tiruchirappalli,10.7655,78.7239,0.89,12,Frozen
+ACC100744,TN08,Savings,Erode,11.3024,77.7121,0.39,8,Under Monitoring
+ACC100745,TN33,Business,Tiruppur,11.1535,77.329,0.4,12,Frozen
+ACC100746,TN22,Business,Salem,11.7014,78.1823,0.2,2,Frozen
+ACC100747,TN04,Wallet,Coimbatore,10.9976,76.9788,0.94,4,Frozen
+ACC100748,TN08,Current,Erode,11.387,77.6676,0.76,0,Under Monitoring
+ACC100749,TN32,Wallet,Tirupathur,12.4981,78.5167,0.87,3,Frozen
+ACC100750,TN38,Wallet,Virudhunagar,9.5826,77.9566,0.61,0,Frozen
+ACC100751,TN36,Jan Dhan,Vellore,12.9285,79.1383,0.82,0,Frozen
+ACC100752,TN10,Savings,Kancheepuram,12.8495,79.6573,0.84,10,Closed
+ACC100753,TN20,Jan Dhan,Ramanathapuram,9.4059,78.787,0.44,2,Frozen
+ACC100754,TN19,Business,Pudukkottai,10.3958,78.8405,0.58,8,Frozen
+ACC100755,TN30,Business,Tiruchirappalli,10.7765,78.6583,0.76,5,Suspended
+ACC100756,TN25,Savings,Thanjavur,10.8128,79.1721,0.11,7,Frozen
+ACC100757,TN08,Jan Dhan,Erode,11.3239,77.7086,0.25,3,Closed
+ACC100758,TN04,Savings,Coimbatore,11.0239,77.0037,0.54,1,Under Monitoring
+ACC100759,TN19,Wallet,Pudukkottai,10.3906,78.8021,0.54,9,Suspended
+ACC100760,TN09,Business,Kallakurichi,11.7446,78.9659,0.64,7,Frozen
+ACC100761,TN15,Jan Dhan,Nagapattinam,10.8151,79.7951,0.07,10,Active
+ACC100762,TN14,Business,Mayiladuthurai,11.1584,79.6448,0.36,8,Frozen
+ACC100763,TN01,Current,Ariyalur,11.159,79.054,0.11,4,Closed
+ACC100764,TN36,Jan Dhan,Vellore,12.9432,79.0939,0.36,6,Closed
+ACC100765,TN02,Current,Chengalpattu,12.6633,80.0091,0.91,7,Under Monitoring
+ACC100766,TN03,Current,Chennai,13.0808,80.2834,0.88,8,Suspended
+ACC100767,TN30,Wallet,Tiruchirappalli,10.8333,78.6603,0.53,9,Suspended
+ACC100768,TN36,Business,Vellore,12.8684,79.1402,0.36,12,Suspended
+ACC100769,TN05,Current,Cuddalore,11.726,79.7245,0.96,10,Closed
+ACC100770,TN11,Business,Karur,10.9707,78.0453,0.16,12,Suspended
+ACC100771,TN21,Savings,Ranipet,12.9043,79.292,0.87,5,Under Monitoring
+ACC100772,TN20,Current,Ramanathapuram,9.3664,78.7996,0.4,0,Frozen
+ACC100773,TN06,Wallet,Dharmapuri,12.1283,78.1881,0.89,2,Frozen
+ACC100774,TN22,Wallet,Salem,11.6875,78.1484,0.77,2,Active
+ACC100775,TN34,Current,Tiruvannamalai,12.1958,79.0284,0.41,8,Active
+ACC100776,TN01,Jan Dhan,Ariyalur,11.1832,79.0973,0.6,1,Suspended
+ACC100777,TN30,Savings,Tiruchirappalli,10.7508,78.7313,0.74,0,Closed
+ACC100778,TN20,Current,Ramanathapuram,9.346,78.8014,0.31,5,Under Monitoring
+ACC100779,TN08,Jan Dhan,Erode,11.3059,77.6946,0.06,9,Closed
+ACC100780,TN33,Savings,Tiruppur,11.0792,77.3261,0.35,2,Suspended
+ACC100781,TN37,Current,Viluppuram,11.9072,79.4672,0.88,8,Under Monitoring
+ACC100782,TN04,Current,Coimbatore,10.9697,76.9961,0.1,6,Active
+ACC100783,TN06,Wallet,Dharmapuri,12.1169,78.1787,0.88,10,Under Monitoring
+ACC100784,TN23,Jan Dhan,Sivaganga,9.8265,78.4507,0.76,12,Closed
+ACC100785,TN06,Wallet,Dharmapuri,12.1345,78.1175,0.8,11,Under Monitoring
+ACC100786,TN07,Wallet,Dindigul,10.3434,77.9839,0.76,7,Frozen
+ACC100787,TN15,Current,Nagapattinam,10.8033,79.8566,0.9,6,Frozen
+ACC100788,TN22,Jan Dhan,Salem,11.6596,78.099,0.49,5,Under Monitoring
+ACC100789,TN30,Current,Tiruchirappalli,10.7687,78.6896,0.58,8,Active
+ACC100790,TN26,Savings,Theni,9.993,77.4917,0.79,8,Under Monitoring
+ACC100791,TN26,Business,Theni,10.0017,77.4889,0.56,7,Under Monitoring
+ACC100792,TN05,Jan Dhan,Cuddalore,11.7188,79.7908,0.45,6,Closed
+ACC100793,TN22,Business,Salem,11.6837,78.1133,0.67,11,Closed
+ACC100794,TN32,Savings,Tirupathur,12.5029,78.5624,0.57,7,Frozen
+ACC100795,TN20,Wallet,Ramanathapuram,9.3209,78.793,0.81,12,Under Monitoring
+ACC100796,TN21,Wallet,Ranipet,12.9417,79.2894,0.25,2,Closed
+ACC100797,TN01,Current,Ariyalur,11.1561,79.0739,0.32,9,Closed
+ACC100798,TN29,Current,Thoothukudi,8.7348,78.1725,0.33,12,Suspended
+ACC100799,TN28,Jan Dhan,Tiruvarur,10.8151,79.6427,0.62,8,Under Monitoring
+ACC100800,TN09,Jan Dhan,Kallakurichi,11.6945,79.004,0.95,0,Closed
+ACC100801,TN23,Savings,Sivaganga,9.8794,78.5175,0.27,11,Closed
+ACC100802,TN26,Jan Dhan,Theni,10.0316,77.4674,0.45,3,Frozen
+ACC100803,TN31,Current,Tirunelveli,8.6827,77.7452,0.91,6,Frozen
+ACC100804,TN19,Current,Pudukkottai,10.3431,78.7777,0.06,11,Under Monitoring
+ACC100805,TN28,Current,Tiruvarur,10.7246,79.6486,0.44,7,Closed
+ACC100806,TN28,Business,Tiruvarur,10.7341,79.6353,0.56,7,Under Monitoring
+ACC100807,TN23,Current,Sivaganga,9.8119,78.4914,0.59,11,Frozen
+ACC100808,TN33,Jan Dhan,Tiruppur,11.0996,77.3457,0.39,0,Closed
+ACC100809,TN31,Jan Dhan,Tirunelveli,8.6752,77.7549,0.69,2,Closed
+ACC100810,TN18,Wallet,Perambalur,11.2359,78.8844,0.62,3,Under Monitoring
+ACC100811,TN05,Business,Cuddalore,11.7778,79.7526,0.1,5,Closed
+ACC100812,TN01,Wallet,Ariyalur,11.1354,79.1192,0.58,5,Under Monitoring
+ACC100813,TN23,Jan Dhan,Sivaganga,9.8222,78.4344,0.91,11,Suspended
+ACC100814,TN37,Jan Dhan,Viluppuram,11.8962,79.4834,0.21,0,Suspended
+ACC100815,TN02,Jan Dhan,Chengalpattu,12.6924,79.9384,0.12,12,Suspended
+ACC100816,TN17,Current,Namakkal,11.2305,78.1449,0.29,11,Active
+ACC100817,TN12,Business,Krishnagiri,12.5425,78.2296,0.39,2,Suspended
+ACC100818,TN16,Wallet,Kanniyakumari,8.0564,77.5412,0.08,1,Frozen
+ACC100819,TN10,Wallet,Kancheepuram,12.8595,79.6949,0.41,10,Under Monitoring
+ACC100820,TN11,Current,Karur,10.9679,78.1108,0.1,4,Active
+ACC100821,TN04,Current,Coimbatore,11.0132,76.9534,0.49,12,Closed
+ACC100822,TN15,Wallet,Nagapattinam,10.7856,79.8339,0.29,8,Under Monitoring
+ACC100823,TN01,Jan Dhan,Ariyalur,11.1827,79.0735,0.68,8,Active
+ACC100824,TN07,Business,Dindigul,10.3761,78.0151,0.45,10,Suspended
+ACC100825,TN22,Jan Dhan,Salem,11.641,78.1058,0.66,6,Under Monitoring
+ACC100826,TN16,Business,Kanniyakumari,8.1153,77.5405,0.68,2,Suspended
+ACC100827,TN36,Savings,Vellore,12.9338,79.1657,0.06,1,Closed
+ACC100828,TN07,Wallet,Dindigul,10.3476,77.992,0.28,0,Active
+ACC100829,TN06,Savings,Dharmapuri,12.1716,78.1739,0.83,9,Active
+ACC100830,TN08,Savings,Erode,11.3766,77.6802,0.66,10,Closed
+ACC100831,TN12,Savings,Krishnagiri,12.5382,78.189,0.48,1,Under Monitoring
+ACC100832,TN18,Wallet,Perambalur,11.2534,78.8989,0.77,4,Frozen
+ACC100833,TN05,Jan Dhan,Cuddalore,11.7757,79.7597,0.36,0,Suspended
+ACC100834,TN17,Current,Namakkal,11.213,78.1666,0.91,9,Under Monitoring
+ACC100835,TN12,Wallet,Krishnagiri,12.4794,78.2178,0.45,9,Active
+ACC100836,TN29,Jan Dhan,Thoothukudi,8.7245,78.0921,0.58,4,Under Monitoring
+ACC100837,TN02,Wallet,Chengalpattu,12.6588,79.9897,0.92,10,Under Monitoring
+ACC100838,TN18,Current,Perambalur,11.2542,78.9226,0.58,8,Under Monitoring
+ACC100839,TN31,Wallet,Tirunelveli,8.7043,77.7795,0.81,1,Closed
+ACC100840,TN15,Savings,Nagapattinam,10.7556,79.8638,0.78,1,Closed
+ACC100841,TN35,Jan Dhan,The Nilgiris,11.4749,76.714,0.1,10,Active
+ACC100842,TN24,Business,Tenkasi,8.9917,77.2991,0.83,12,Suspended
+ACC100843,TN13,Current,Madurai,9.9306,78.1666,0.66,4,Under Monitoring
+ACC100844,TN07,Jan Dhan,Dindigul,10.3611,78.008,0.46,3,Frozen
+ACC100845,TN03,Current,Chennai,13.0352,80.3203,0.27,6,Active
+ACC100846,TN35,Jan Dhan,The Nilgiris,11.4916,76.7802,0.8,0,Active
+ACC100847,TN22,Savings,Salem,11.6481,78.1681,0.43,3,Closed
+ACC100848,TN30,Business,Tiruchirappalli,10.7554,78.7126,0.91,0,Frozen
+ACC100849,TN32,Savings,Tirupathur,12.4908,78.6079,0.09,11,Frozen
+ACC100850,TN01,Current,Ariyalur,11.1533,79.1191,0.81,1,Under Monitoring
+ACC100851,TN11,Business,Karur,10.9165,78.1083,0.16,9,Closed
+ACC100852,TN15,Savings,Nagapattinam,10.7976,79.8375,0.8,11,Under Monitoring
+ACC100853,TN21,Savings,Ranipet,12.9748,79.3409,0.18,12,Frozen
+ACC100854,TN03,Business,Chennai,13.05,80.227,0.3,12,Under Monitoring
+ACC100855,TN11,Jan Dhan,Karur,10.9654,78.0705,0.91,0,Frozen
+ACC100856,TN07,Business,Dindigul,10.35,77.9353,0.87,1,Active
+ACC100857,TN01,Current,Ariyalur,11.1826,79.0993,0.6,4,Under Monitoring
+ACC100858,TN31,Current,Tirunelveli,8.6845,77.7707,0.54,6,Frozen
+ACC100859,TN12,Business,Krishnagiri,12.5378,78.2233,0.72,9,Active
+ACC100860,TN20,Jan Dhan,Ramanathapuram,9.3558,78.8379,0.23,8,Active
+ACC100861,TN24,Business,Tenkasi,8.9572,77.3115,0.63,3,Suspended
+ACC100862,TN04,Current,Coimbatore,10.9781,76.9207,0.83,7,Under Monitoring
+ACC100863,TN12,Current,Krishnagiri,12.5356,78.168,0.65,4,Frozen
+ACC100864,TN28,Jan Dhan,Tiruvarur,10.7495,79.6649,0.76,0,Active
+ACC100865,TN04,Business,Coimbatore,10.9844,76.9843,0.5,1,Active
+ACC100866,TN16,Wallet,Kanniyakumari,8.0976,77.5211,0.23,10,Suspended
+ACC100867,TN15,Savings,Nagapattinam,10.7498,79.8047,0.74,3,Under Monitoring
+ACC100868,TN15,Savings,Nagapattinam,10.7643,79.8433,0.88,2,Frozen
+ACC100869,TN30,Current,Tiruchirappalli,10.7792,78.6683,0.72,10,Suspended
+ACC100870,TN18,Current,Perambalur,11.2178,78.8353,0.58,4,Frozen
+ACC100871,TN08,Wallet,Erode,11.3369,77.6843,0.37,4,Closed
+ACC100872,TN11,Business,Karur,11.0007,78.0844,0.56,3,Active
+ACC100873,TN27,Business,Tiruvallur,13.1391,79.9567,0.6,7,Suspended
+ACC100874,TN01,Wallet,Ariyalur,11.1636,79.0533,0.35,9,Frozen
+ACC100875,TN38,Current,Virudhunagar,9.6286,78.0022,0.44,0,Active
+ACC100876,TN31,Business,Tirunelveli,8.6673,77.7598,0.5,12,Active
+ACC100877,TN29,Wallet,Thoothukudi,8.7383,78.1406,0.06,11,Under Monitoring
+ACC100878,TN14,Current,Mayiladuthurai,11.0943,79.6273,0.98,0,Under Monitoring
+ACC100879,TN20,Current,Ramanathapuram,9.3842,78.8679,0.74,0,Under Monitoring
+ACC100880,TN30,Current,Tiruchirappalli,10.8279,78.6952,0.78,5,Under Monitoring
+ACC100881,TN01,Savings,Ariyalur,11.1285,79.0977,0.54,4,Under Monitoring
+ACC100882,TN18,Business,Perambalur,11.2384,78.9115,0.78,1,Closed
+ACC100883,TN22,Savings,Salem,11.6658,78.187,0.39,0,Active
+ACC100884,TN25,Jan Dhan,Thanjavur,10.7835,79.0919,0.39,10,Closed
+ACC100885,TN05,Business,Cuddalore,11.7689,79.7419,0.96,3,Closed
+ACC100886,TN08,Wallet,Erode,11.3647,77.7424,0.86,11,Frozen
+ACC100887,TN15,Jan Dhan,Nagapattinam,10.7525,79.8216,0.68,4,Active
+ACC100888,TN05,Jan Dhan,Cuddalore,11.7325,79.77,0.54,1,Under Monitoring
+ACC100889,TN35,Business,The Nilgiris,11.5315,76.7289,0.39,10,Active
+ACC100890,TN13,Wallet,Madurai,9.8839,78.1089,0.22,1,Active
+ACC100891,TN11,Jan Dhan,Karur,10.9213,78.0414,0.19,3,Closed
+ACC100892,TN02,Jan Dhan,Chengalpattu,12.6856,79.9939,0.92,7,Suspended
+ACC100893,TN27,Wallet,Tiruvallur,13.164,79.8592,0.23,0,Frozen
+ACC100894,TN34,Jan Dhan,Tiruvannamalai,12.2165,79.059,0.65,5,Under Monitoring
+ACC100895,TN38,Business,Virudhunagar,9.6214,77.9569,0.33,2,Suspended
+ACC100896,TN11,Jan Dhan,Karur,10.9328,78.0638,0.32,0,Frozen
+ACC100897,TN23,Jan Dhan,Sivaganga,9.8389,78.4475,0.91,11,Closed
+ACC100898,TN19,Current,Pudukkottai,10.427,78.8544,0.69,10,Frozen
+ACC100899,TN11,Current,Karur,10.9218,78.126,0.58,7,Suspended
+ACC100900,TN24,Current,Tenkasi,8.9269,77.3358,0.67,5,Frozen
+ACC100901,TN24,Wallet,Tenkasi,8.9604,77.2814,0.33,0,Under Monitoring
+ACC100902,TN32,Current,Tirupathur,12.5385,78.6089,0.2,11,Closed
+ACC100903,TN33,Jan Dhan,Tiruppur,11.1232,77.3207,0.88,12,Closed
+ACC100904,TN10,Business,Kancheepuram,12.8571,79.7458,0.36,1,Under Monitoring
+ACC100905,TN03,Current,Chennai,13.1005,80.2324,0.07,9,Frozen
+ACC100906,TN29,Jan Dhan,Thoothukudi,8.7234,78.0903,0.65,9,Closed
+ACC100907,TN15,Jan Dhan,Nagapattinam,10.7368,79.8033,0.84,10,Active
+ACC100908,TN33,Wallet,Tiruppur,11.0779,77.3229,0.61,0,Suspended
+ACC100909,TN26,Current,Theni,10.032,77.4696,0.41,0,Suspended
+ACC100910,TN23,Jan Dhan,Sivaganga,9.8241,78.4755,0.57,3,Under Monitoring
+ACC100911,TN27,Wallet,Tiruvallur,13.1191,79.9377,0.95,6,Under Monitoring
+ACC100912,TN09,Business,Kallakurichi,11.7481,78.9283,0.33,8,Suspended
+ACC100913,TN05,Business,Cuddalore,11.7736,79.7302,0.43,4,Under Monitoring
+ACC100914,TN12,Business,Krishnagiri,12.5148,78.2205,0.9,3,Frozen
+ACC100915,TN25,Jan Dhan,Thanjavur,10.7924,79.092,0.82,9,Suspended
+ACC100916,TN32,Business,Tirupathur,12.5177,78.5386,0.79,2,Suspended
+ACC100917,TN20,Wallet,Ramanathapuram,9.3263,78.8487,0.32,2,Under Monitoring
+ACC100918,TN16,Savings,Kanniyakumari,8.0502,77.5162,0.97,1,Closed
+ACC100919,TN24,Business,Tenkasi,8.9544,77.3087,0.29,10,Under Monitoring
+ACC100920,TN08,Jan Dhan,Erode,11.3423,77.7247,0.84,2,Closed
+ACC100921,TN04,Current,Coimbatore,10.9988,76.9936,0.18,2,Active
+ACC100922,TN18,Jan Dhan,Perambalur,11.2262,78.9233,0.38,4,Suspended
+ACC100923,TN34,Savings,Tiruvannamalai,12.2267,79.1013,0.22,1,Closed
+ACC100924,TN11,Business,Karur,10.9424,78.0582,0.84,12,Suspended
+ACC100925,TN18,Jan Dhan,Perambalur,11.1938,78.8901,0.82,0,Frozen
+ACC100926,TN34,Jan Dhan,Tiruvannamalai,12.2126,79.0732,0.37,2,Active
+ACC100927,TN14,Current,Mayiladuthurai,11.1088,79.6866,0.79,8,Closed
+ACC100928,TN34,Business,Tiruvannamalai,12.2466,79.0949,0.8,6,Under Monitoring
+ACC100929,TN05,Savings,Cuddalore,11.7799,79.8137,0.5,4,Suspended
+ACC100930,TN09,Wallet,Kallakurichi,11.7773,78.9737,0.76,5,Frozen
+ACC100931,TN20,Savings,Ramanathapuram,9.3883,78.794,0.17,11,Frozen
+ACC100932,TN15,Jan Dhan,Nagapattinam,10.7297,79.8079,0.12,11,Active
+ACC100933,TN05,Savings,Cuddalore,11.7755,79.7971,0.09,1,Active
+ACC100934,TN33,Business,Tiruppur,11.0644,77.303,0.29,1,Suspended
+ACC100935,TN01,Savings,Ariyalur,11.1682,79.1206,0.24,3,Frozen
+ACC100936,TN23,Savings,Sivaganga,9.8024,78.5155,0.93,9,Suspended
+ACC100937,TN23,Current,Sivaganga,9.8788,78.509,0.62,8,Closed
+ACC100938,TN05,Savings,Cuddalore,11.78,79.7977,0.54,11,Frozen
+ACC100939,TN19,Current,Pudukkottai,10.4199,78.8242,0.96,1,Frozen
+ACC100940,TN33,Wallet,Tiruppur,11.0951,77.35,0.46,1,Frozen
+ACC100941,TN23,Wallet,Sivaganga,9.8357,78.4823,0.43,12,Suspended
+ACC100942,TN08,Wallet,Erode,11.302,77.6808,0.76,11,Suspended
+ACC100943,TN36,Savings,Vellore,12.8747,79.1319,0.41,7,Closed
+ACC100944,TN20,Wallet,Ramanathapuram,9.3365,78.8228,0.97,6,Frozen
+ACC100945,TN05,Wallet,Cuddalore,11.7919,79.7581,0.06,10,Under Monitoring
+ACC100946,TN07,Wallet,Dindigul,10.3562,77.9854,0.13,2,Under Monitoring
+ACC100947,TN26,Business,Theni,10.0582,77.5009,0.88,2,Active
+ACC100948,TN24,Current,Tenkasi,8.9403,77.3246,0.97,1,Frozen
+ACC100949,TN28,Wallet,Tiruvarur,10.744,79.6557,0.59,4,Under Monitoring
+ACC100950,TN23,Wallet,Sivaganga,9.86,78.5259,0.97,8,Suspended
+ACC100951,TN10,Wallet,Kancheepuram,12.795,79.6787,0.51,10,Frozen
+ACC100952,TN02,Savings,Chengalpattu,12.7177,80.0087,0.51,0,Frozen
+ACC100953,TN25,Business,Thanjavur,10.8049,79.1031,0.63,1,Active
+ACC100954,TN34,Wallet,Tiruvannamalai,12.2546,79.0449,0.67,7,Closed
+ACC100955,TN17,Business,Namakkal,11.2033,78.2034,0.56,12,Active
+ACC100956,TN28,Savings,Tiruvarur,10.7545,79.6159,0.4,7,Active
+ACC100957,TN03,Current,Chennai,13.0884,80.3067,0.33,11,Frozen
+ACC100958,TN32,Wallet,Tirupathur,12.4571,78.5877,0.5,1,Closed
+ACC100959,TN32,Business,Tirupathur,12.5122,78.5733,0.49,2,Closed
+ACC100960,TN04,Wallet,Coimbatore,10.9931,76.9649,0.4,10,Suspended
+ACC100961,TN19,Jan Dhan,Pudukkottai,10.3358,78.8295,0.17,5,Suspended
+ACC100962,TN38,Savings,Virudhunagar,9.6137,77.9749,0.4,6,Suspended
+ACC100963,TN23,Wallet,Sivaganga,9.8284,78.497,0.28,10,Suspended
+ACC100964,TN38,Savings,Virudhunagar,9.6282,77.919,0.33,5,Frozen
+ACC100965,TN02,Business,Chengalpattu,12.6765,79.9718,0.85,9,Closed
+ACC100966,TN27,Jan Dhan,Tiruvallur,13.0922,79.9041,0.07,5,Under Monitoring
+ACC100967,TN37,Wallet,Viluppuram,11.9223,79.4459,0.5,11,Frozen
+ACC100968,TN22,Wallet,Salem,11.6646,78.1725,0.37,9,Suspended
+ACC100969,TN24,Wallet,Tenkasi,8.9266,77.3286,0.96,1,Closed
+ACC100970,TN14,Jan Dhan,Mayiladuthurai,11.085,79.6331,0.58,12,Frozen
+ACC100971,TN06,Business,Dharmapuri,12.0872,78.1419,0.11,12,Closed
+ACC100972,TN31,Wallet,Tirunelveli,8.6849,77.7863,0.66,4,Closed
+ACC100973,TN20,Wallet,Ramanathapuram,9.3802,78.8134,0.44,4,Closed
+ACC100974,TN33,Wallet,Tiruppur,11.1257,77.3459,0.87,10,Closed
+ACC100975,TN12,Business,Krishnagiri,12.5185,78.2298,0.82,7,Suspended
+ACC100976,TN35,Business,The Nilgiris,11.5269,76.7744,0.92,11,Active
+ACC100977,TN34,Current,Tiruvannamalai,12.2117,79.0395,0.19,10,Suspended
+ACC100978,TN28,Wallet,Tiruvarur,10.748,79.6674,0.11,3,Under Monitoring
+ACC100979,TN18,Jan Dhan,Perambalur,11.2488,78.8577,0.61,6,Frozen
+ACC100980,TN08,Current,Erode,11.3102,77.6918,0.82,7,Under Monitoring
+ACC100981,TN36,Wallet,Vellore,12.9087,79.1731,0.24,4,Frozen
+ACC100982,TN02,Jan Dhan,Chengalpattu,12.7229,79.9535,0.56,10,Active
+ACC100983,TN32,Savings,Tirupathur,12.4492,78.6058,0.34,4,Active
+ACC100984,TN27,Jan Dhan,Tiruvallur,13.1574,79.9457,0.42,11,Frozen
+ACC100985,TN16,Savings,Kanniyakumari,8.0954,77.5385,0.16,10,Closed
+ACC100986,TN34,Jan Dhan,Tiruvannamalai,12.2249,79.0337,0.61,12,Suspended
+ACC100987,TN22,Business,Salem,11.688,78.1766,0.74,6,Frozen
+ACC100988,TN10,Savings,Kancheepuram,12.8017,79.7506,0.46,4,Closed
+ACC100989,TN04,Wallet,Coimbatore,11.0201,76.9758,0.16,8,Under Monitoring
+ACC100990,TN31,Current,Tirunelveli,8.7602,77.7946,0.92,5,Under Monitoring
+ACC100991,TN24,Jan Dhan,Tenkasi,8.9085,77.3618,0.61,11,Active
+ACC100992,TN16,Jan Dhan,Kanniyakumari,8.0936,77.5194,0.94,5,Active
+ACC100993,TN35,Current,The Nilgiris,11.5274,76.7225,0.9,6,Suspended
+ACC100994,TN20,Savings,Ramanathapuram,9.4075,78.8578,0.33,2,Under Monitoring
+ACC100995,TN21,Wallet,Ranipet,12.9561,79.3107,0.12,12,Under Monitoring
+ACC100996,TN31,Wallet,Tirunelveli,8.7565,77.74,0.44,1,Frozen
+ACC100997,TN17,Business,Namakkal,11.1755,78.1595,0.73,8,Suspended
+ACC100998,TN30,Savings,Tiruchirappalli,10.8167,78.7188,0.22,7,Frozen
+ACC100999,TN01,Wallet,Ariyalur,11.11,79.0592,0.59,1,Frozen
+ACC101000,TN16,Business,Kanniyakumari,8.1097,77.5653,0.65,2,Closed
+ACC101001,TN27,Jan Dhan,Tiruvallur,13.1353,79.9445,0.17,2,Closed
+ACC101002,TN21,Jan Dhan,Ranipet,12.8971,79.3247,0.22,6,Closed
+ACC101003,TN15,Savings,Nagapattinam,10.812,79.8872,0.65,10,Frozen
+ACC101004,TN06,Wallet,Dharmapuri,12.0975,78.1783,0.21,6,Closed
+ACC101005,TN28,Business,Tiruvarur,10.7421,79.5933,0.39,9,Active
+ACC101006,TN01,Business,Ariyalur,11.1335,79.1206,0.47,10,Under Monitoring
+ACC101007,TN08,Current,Erode,11.3624,77.6863,0.85,12,Suspended
+ACC101008,TN19,Wallet,Pudukkottai,10.3679,78.8136,0.24,3,Suspended
+ACC101009,TN13,Wallet,Madurai,9.8932,78.149,0.08,4,Frozen
+ACC101010,TN29,Current,Thoothukudi,8.7512,78.1532,0.48,0,Under Monitoring
+ACC101011,TN09,Jan Dhan,Kallakurichi,11.7857,78.9537,0.25,6,Under Monitoring
+ACC101012,TN17,Savings,Namakkal,11.1784,78.1233,0.36,3,Under Monitoring
+ACC101013,TN23,Business,Sivaganga,9.8872,78.5276,0.61,11,Active
+ACC101014,TN01,Jan Dhan,Ariyalur,11.1405,79.0667,0.96,10,Suspended
+ACC101015,TN09,Business,Kallakurichi,11.6924,78.9318,0.21,7,Suspended
+ACC101016,TN30,Current,Tiruchirappalli,10.7495,78.7257,0.45,4,Active
+ACC101017,TN21,Savings,Ranipet,12.9751,79.3332,0.96,4,Suspended
+ACC101018,TN28,Jan Dhan,Tiruvarur,10.8064,79.6107,0.82,4,Closed
+ACC101019,TN21,Wallet,Ranipet,12.9665,79.3149,0.97,12,Frozen
+ACC101020,TN36,Wallet,Vellore,12.8718,79.0974,0.26,0,Under Monitoring
+ACC101021,TN17,Current,Namakkal,11.2395,78.161,0.98,7,Active
+ACC101022,TN29,Jan Dhan,Thoothukudi,8.8131,78.1409,0.48,1,Frozen
+ACC101023,TN08,Jan Dhan,Erode,11.3004,77.754,0.22,2,Closed
+ACC101024,TN18,Business,Perambalur,11.2733,78.8907,0.59,0,Closed
+ACC101025,TN37,Current,Viluppuram,11.9317,79.4438,0.76,10,Active
+ACC101026,TN22,Savings,Salem,11.6427,78.1941,0.16,5,Closed
+ACC101027,TN07,Jan Dhan,Dindigul,10.3278,77.9276,0.82,10,Under Monitoring
+ACC101028,TN30,Jan Dhan,Tiruchirappalli,10.7999,78.6553,0.95,10,Closed
+ACC101029,TN29,Jan Dhan,Thoothukudi,8.8089,78.1848,0.89,12,Closed
+ACC101030,TN09,Current,Kallakurichi,11.7746,78.9941,0.31,12,Active
+ACC101031,TN05,Business,Cuddalore,11.7932,79.7595,0.42,2,Frozen
+ACC101032,TN26,Savings,Theni,9.9625,77.4476,0.41,6,Suspended
+ACC101033,TN10,Savings,Kancheepuram,12.8141,79.7337,0.73,4,Closed
+ACC101034,TN09,Jan Dhan,Kallakurichi,11.7549,78.9971,0.53,7,Under Monitoring
+ACC101035,TN25,Wallet,Thanjavur,10.7638,79.1478,0.13,6,Suspended
+ACC101036,TN12,Wallet,Krishnagiri,12.5317,78.173,0.53,7,Frozen
+ACC101037,TN10,Wallet,Kancheepuram,12.8369,79.7183,0.13,7,Under Monitoring
+ACC101038,TN06,Wallet,Dharmapuri,12.1077,78.2066,0.69,4,Frozen
+ACC101039,TN34,Wallet,Tiruvannamalai,12.2048,79.0295,0.12,0,Closed
+ACC101040,TN07,Business,Dindigul,10.3549,77.9289,0.66,9,Suspended
+ACC101041,TN23,Jan Dhan,Sivaganga,9.8519,78.5078,0.07,11,Under Monitoring
+ACC101042,TN12,Current,Krishnagiri,12.5529,78.1682,0.44,11,Suspended
+ACC101043,TN21,Business,Ranipet,12.9496,79.359,0.47,12,Suspended
+ACC101044,TN22,Current,Salem,11.6354,78.1038,0.96,4,Active
+ACC101045,TN28,Business,Tiruvarur,10.7179,79.6239,0.06,10,Under Monitoring
+ACC101046,TN30,Wallet,Tiruchirappalli,10.8274,78.7513,0.61,7,Suspended
+ACC101047,TN24,Wallet,Tenkasi,8.9869,77.2739,0.18,3,Active
+ACC101048,TN02,Current,Chengalpattu,12.7298,79.9466,0.65,10,Frozen
+ACC101049,TN28,Business,Tiruvarur,10.7352,79.6145,0.48,7,Under Monitoring
+ACC101050,TN02,Savings,Chengalpattu,12.6605,79.9409,0.7,7,Under Monitoring
+ACC101051,TN02,Wallet,Chengalpattu,12.7024,79.9458,0.58,6,Active
+ACC101052,TN22,Savings,Salem,11.6246,78.1808,0.45,6,Under Monitoring
+ACC101053,TN38,Business,Virudhunagar,9.6103,78.0123,0.08,6,Under Monitoring
+ACC101054,TN33,Business,Tiruppur,11.131,77.3846,0.89,7,Frozen
+ACC101055,TN04,Business,Coimbatore,10.9687,76.9634,0.56,4,Under Monitoring
+ACC101056,TN31,Savings,Tirunelveli,8.7134,77.8006,0.37,11,Under Monitoring
+ACC101057,TN02,Current,Chengalpattu,12.6727,79.9449,0.37,3,Closed
+ACC101058,TN15,Business,Nagapattinam,10.8081,79.8288,0.61,11,Under Monitoring
+ACC101059,TN09,Jan Dhan,Kallakurichi,11.7606,78.9529,0.44,10,Suspended
+ACC101060,TN31,Current,Tirunelveli,8.7261,77.7349,0.75,10,Under Monitoring
+ACC101061,TN09,Current,Kallakurichi,11.7082,78.9745,0.14,6,Under Monitoring
+ACC101062,TN20,Current,Ramanathapuram,9.3348,78.7868,0.07,4,Suspended
+ACC101063,TN11,Current,Karur,10.9929,78.116,0.08,1,Suspended
+ACC101064,TN28,Savings,Tiruvarur,10.7779,79.5965,0.26,4,Suspended
+ACC101065,TN23,Savings,Sivaganga,9.8703,78.4866,0.88,11,Closed
+ACC101066,TN07,Savings,Dindigul,10.4051,77.9633,0.48,12,Active
+ACC101067,TN07,Business,Dindigul,10.3734,78.0053,0.14,8,Active
+ACC101068,TN33,Savings,Tiruppur,11.0752,77.3029,0.24,5,Frozen
+ACC101069,TN19,Wallet,Pudukkottai,10.4059,78.8203,0.86,2,Suspended
+ACC101070,TN22,Current,Salem,11.6266,78.1162,0.95,12,Active
+ACC101071,TN16,Wallet,Kanniyakumari,8.0724,77.539,0.13,5,Under Monitoring
+ACC101072,TN24,Current,Tenkasi,8.9216,77.3405,0.44,3,Frozen
+ACC101073,TN28,Wallet,Tiruvarur,10.8079,79.6742,0.94,8,Suspended
+ACC101074,TN02,Wallet,Chengalpattu,12.6585,79.9267,0.8,1,Active
+ACC101075,TN22,Jan Dhan,Salem,11.6545,78.1732,0.45,6,Active
+ACC101076,TN10,Business,Kancheepuram,12.79,79.7168,0.71,10,Closed
+ACC101077,TN19,Wallet,Pudukkottai,10.3699,78.8386,0.56,4,Suspended
+ACC101078,TN23,Savings,Sivaganga,9.876,78.5209,0.62,2,Under Monitoring
+ACC101079,TN29,Current,Thoothukudi,8.803,78.1472,0.62,7,Suspended
+ACC101080,TN26,Current,Theni,10.0485,77.4352,0.55,6,Frozen
+ACC101081,TN34,Business,Tiruvannamalai,12.2037,79.034,0.56,8,Suspended
+ACC101082,TN11,Savings,Karur,10.9129,78.1063,0.6,3,Suspended
+ACC101083,TN28,Business,Tiruvarur,10.7271,79.5904,0.4,10,Closed
+ACC101084,TN23,Savings,Sivaganga,9.7981,78.496,0.17,4,Closed
+ACC101085,TN01,Wallet,Ariyalur,11.1239,79.0522,0.74,9,Closed
+ACC101086,TN35,Business,The Nilgiris,11.465,76.7136,0.67,11,Closed
+ACC101087,TN09,Wallet,Kallakurichi,11.7403,78.9387,0.35,9,Frozen
+ACC101088,TN24,Wallet,Tenkasi,8.9162,77.3363,0.82,1,Active
+ACC101089,TN04,Wallet,Coimbatore,11.0557,76.9534,0.46,5,Closed
+ACC101090,TN26,Business,Theni,10.0163,77.5047,0.86,9,Under Monitoring
+ACC101091,TN28,Wallet,Tiruvarur,10.785,79.6792,0.73,6,Frozen
+ACC101092,TN10,Business,Kancheepuram,12.7969,79.7247,0.17,11,Closed
+ACC101093,TN34,Savings,Tiruvannamalai,12.2447,79.0702,0.08,2,Closed
+ACC101094,TN24,Savings,Tenkasi,8.9666,77.306,0.16,9,Suspended
+ACC101095,TN03,Business,Chennai,13.048,80.2578,0.97,4,Suspended
+ACC101096,TN32,Savings,Tirupathur,12.5228,78.5303,0.6,0,Suspended
+ACC101097,TN19,Current,Pudukkottai,10.348,78.8445,0.05,8,Suspended
+ACC101098,TN05,Savings,Cuddalore,11.7398,79.7787,0.58,5,Under Monitoring
+ACC101099,TN31,Business,Tirunelveli,8.6772,77.7206,0.64,12,Under Monitoring
+ACC101100,TN29,Current,Thoothukudi,8.8008,78.1173,0.79,10,Closed
+ACC101101,TN27,Wallet,Tiruvallur,13.1135,79.8966,0.55,10,Under Monitoring
+ACC101102,TN18,Savings,Perambalur,11.2708,78.9028,0.58,12,Suspended
+ACC101103,TN36,Savings,Vellore,12.9309,79.091,0.94,8,Closed
+ACC101104,TN04,Business,Coimbatore,11.019,76.9809,0.52,0,Active
+ACC101105,TN35,Current,The Nilgiris,11.5378,76.7112,0.24,11,Closed
+ACC101106,TN29,Savings,Thoothukudi,8.7949,78.1455,0.42,0,Under Monitoring
+ACC101107,TN02,Jan Dhan,Chengalpattu,12.6876,79.9672,0.85,5,Under Monitoring
+ACC101108,TN17,Savings,Namakkal,11.1804,78.1273,0.21,2,Frozen
+ACC101109,TN17,Savings,Namakkal,11.1843,78.2126,0.68,0,Closed
+ACC101110,TN21,Current,Ranipet,12.8799,79.2892,0.41,5,Frozen
+ACC101111,TN27,Jan Dhan,Tiruvallur,13.116,79.9513,0.89,0,Frozen
+ACC101112,TN16,Business,Kanniyakumari,8.0969,77.5378,0.75,6,Active
+ACC101113,TN18,Savings,Perambalur,11.216,78.8874,0.11,0,Under Monitoring
+ACC101114,TN15,Savings,Nagapattinam,10.7441,79.8912,0.68,3,Closed
+ACC101115,TN09,Jan Dhan,Kallakurichi,11.7451,78.9585,0.84,8,Frozen
+ACC101116,TN10,Jan Dhan,Kancheepuram,12.8382,79.6704,0.28,6,Closed
+ACC101117,TN29,Savings,Thoothukudi,8.7143,78.1313,0.82,4,Frozen
+ACC101118,TN01,Savings,Ariyalur,11.1834,79.0768,0.61,10,Under Monitoring
+ACC101119,TN23,Current,Sivaganga,9.8518,78.4819,0.09,11,Closed
+ACC101120,TN37,Savings,Viluppuram,11.9202,79.4756,0.16,2,Closed
+ACC101121,TN18,Wallet,Perambalur,11.2053,78.8826,0.8,10,Suspended
+ACC101122,TN17,Wallet,Namakkal,11.1962,78.1836,0.35,3,Under Monitoring
+ACC101123,TN22,Savings,Salem,11.7057,78.1094,0.91,9,Under Monitoring
+ACC101124,TN01,Savings,Ariyalur,11.1573,79.0699,0.88,11,Under Monitoring
+ACC101125,TN26,Business,Theni,9.9685,77.5145,0.66,8,Active
+ACC101126,TN29,Savings,Thoothukudi,8.7495,78.1661,0.82,5,Under Monitoring
+ACC101127,TN12,Savings,Krishnagiri,12.4811,78.2007,0.23,0,Frozen
+ACC101128,TN02,Jan Dhan,Chengalpattu,12.712,79.9966,0.23,9,Suspended
+ACC101129,TN15,Current,Nagapattinam,10.8152,79.8916,0.08,7,Closed
+ACC101130,TN14,Savings,Mayiladuthurai,11.0781,79.6855,0.42,4,Closed
+ACC101131,TN33,Wallet,Tiruppur,11.0755,77.3105,0.74,10,Closed
+ACC101132,TN37,Current,Viluppuram,11.8966,79.4489,0.11,4,Closed
+ACC101133,TN15,Business,Nagapattinam,10.7901,79.8223,0.84,0,Closed
+ACC101134,TN17,Business,Namakkal,11.2572,78.1176,0.45,10,Active
+ACC101135,TN21,Wallet,Ranipet,12.9616,79.324,0.16,8,Under Monitoring
+ACC101136,TN32,Jan Dhan,Tirupathur,12.4954,78.5204,0.72,0,Suspended
+ACC101137,TN27,Business,Tiruvallur,13.1351,79.8576,0.23,1,Closed
+ACC101138,TN02,Current,Chengalpattu,12.7417,79.9681,0.12,3,Frozen
+ACC101139,TN11,Jan Dhan,Karur,10.9412,78.0892,0.14,7,Under Monitoring
+ACC101140,TN02,Business,Chengalpattu,12.7236,80.0192,0.83,3,Active
+ACC101141,TN31,Current,Tirunelveli,8.7598,77.79,0.81,8,Frozen
+ACC101142,TN05,Business,Cuddalore,11.76,79.7978,0.63,9,Active
+ACC101143,TN06,Savings,Dharmapuri,12.1694,78.1459,0.88,11,Active
+ACC101144,TN09,Savings,Kallakurichi,11.7802,78.9581,0.33,10,Under Monitoring
+ACC101145,TN05,Savings,Cuddalore,11.7658,79.7773,0.32,6,Under Monitoring
+ACC101146,TN07,Business,Dindigul,10.3876,77.9428,0.61,10,Closed
+ACC101147,TN01,Wallet,Ariyalur,11.1284,79.1081,0.87,9,Active
+ACC101148,TN22,Savings,Salem,11.6597,78.1288,0.23,1,Active
+ACC101149,TN05,Business,Cuddalore,11.7769,79.7408,0.58,10,Closed
+ACC101150,TN17,Jan Dhan,Namakkal,11.211,78.1899,0.46,3,Frozen
+ACC101151,TN03,Savings,Chennai,13.0455,80.2792,0.53,10,Suspended
+ACC101152,TN20,Business,Ramanathapuram,9.4024,78.8596,0.19,4,Closed
+ACC101153,TN22,Jan Dhan,Salem,11.6512,78.0968,0.6,10,Frozen
+ACC101154,TN04,Current,Coimbatore,11.0175,76.9893,0.85,6,Suspended
+ACC101155,TN13,Current,Madurai,9.9393,78.0899,0.11,3,Under Monitoring
+ACC101156,TN30,Business,Tiruchirappalli,10.8097,78.7399,0.58,5,Closed
+ACC101157,TN20,Wallet,Ramanathapuram,9.3468,78.7926,0.86,0,Under Monitoring
+ACC101158,TN15,Savings,Nagapattinam,10.7811,79.8642,0.48,3,Frozen
+ACC101159,TN31,Jan Dhan,Tirunelveli,8.7446,77.7443,0.42,0,Suspended
+ACC101160,TN01,Savings,Ariyalur,11.1258,79.0841,0.18,7,Frozen
+ACC101161,TN38,Jan Dhan,Virudhunagar,9.5416,77.9154,0.23,2,Frozen
+ACC101162,TN17,Current,Namakkal,11.2029,78.1729,0.22,0,Frozen
+ACC101163,TN17,Savings,Namakkal,11.171,78.1851,0.4,12,Active
+ACC101164,TN22,Current,Salem,11.6448,78.12,0.8,10,Frozen
+ACC101165,TN34,Business,Tiruvannamalai,12.2635,79.1125,0.11,2,Frozen
+ACC101166,TN13,Current,Madurai,9.9285,78.1392,0.35,6,Frozen
+ACC101167,TN03,Business,Chennai,13.0914,80.3061,0.32,2,Suspended
+ACC101168,TN16,Savings,Kanniyakumari,8.1012,77.5165,0.17,8,Closed
+ACC101169,TN32,Current,Tirupathur,12.5164,78.5946,0.79,9,Active
+ACC101170,TN11,Business,Karur,10.9489,78.1148,0.75,5,Under Monitoring
+ACC101171,TN34,Wallet,Tiruvannamalai,12.1932,79.0959,0.54,7,Under Monitoring
+ACC101172,TN31,Jan Dhan,Tirunelveli,8.722,77.7705,0.79,10,Active
+ACC101173,TN14,Current,Mayiladuthurai,11.148,79.6486,0.27,3,Suspended
+ACC101174,TN28,Wallet,Tiruvarur,10.7732,79.6779,0.4,8,Active
+ACC101175,TN09,Savings,Kallakurichi,11.7178,78.9658,0.26,0,Under Monitoring
+ACC101176,TN33,Business,Tiruppur,11.0921,77.3362,0.45,5,Under Monitoring
+ACC101177,TN21,Jan Dhan,Ranipet,12.9154,79.3013,0.27,10,Active
+ACC101178,TN23,Savings,Sivaganga,9.8228,78.4811,0.56,1,Suspended
+ACC101179,TN15,Savings,Nagapattinam,10.7291,79.8309,0.56,5,Frozen
+ACC101180,TN22,Jan Dhan,Salem,11.6446,78.1776,0.69,4,Frozen
+ACC101181,TN09,Business,Kallakurichi,11.7795,78.9148,0.33,5,Under Monitoring
+ACC101182,TN26,Business,Theni,10.0362,77.428,0.66,12,Frozen
+ACC101183,TN26,Current,Theni,9.9831,77.5017,0.49,8,Closed
+ACC101184,TN36,Wallet,Vellore,12.9388,79.1286,0.79,5,Frozen
+ACC101185,TN28,Wallet,Tiruvarur,10.7371,79.6294,0.57,5,Frozen
+ACC101186,TN37,Current,Viluppuram,11.9207,79.5099,0.51,10,Suspended
+ACC101187,TN22,Current,Salem,11.6562,78.1646,0.43,12,Closed
+ACC101188,TN20,Jan Dhan,Ramanathapuram,9.3726,78.8389,0.08,2,Frozen
+ACC101189,TN22,Business,Salem,11.6773,78.1563,0.62,6,Under Monitoring
+ACC101190,TN14,Wallet,Mayiladuthurai,11.0649,79.642,0.49,5,Closed
+ACC101191,TN29,Jan Dhan,Thoothukudi,8.7235,78.0952,0.56,0,Closed
+ACC101192,TN32,Savings,Tirupathur,12.4624,78.523,0.95,4,Frozen
+ACC101193,TN15,Jan Dhan,Nagapattinam,10.7832,79.8019,0.1,8,Active
+ACC101194,TN11,Jan Dhan,Karur,10.9961,78.0677,0.2,1,Frozen
+ACC101195,TN35,Wallet,The Nilgiris,11.4894,76.6906,0.94,3,Frozen
+ACC101196,TN14,Jan Dhan,Mayiladuthurai,11.1017,79.6744,0.49,9,Closed
+ACC101197,TN20,Business,Ramanathapuram,9.3342,78.8538,0.48,3,Active
+ACC101198,TN10,Wallet,Kancheepuram,12.7906,79.6935,0.8,8,Suspended
+ACC101199,TN37,Wallet,Viluppuram,11.9361,79.4937,0.74,4,Under Monitoring
+ACC101200,TN23,Jan Dhan,Sivaganga,9.8324,78.5132,0.84,6,Frozen
+ACC101201,TN12,Business,Krishnagiri,12.5419,78.2095,0.9,2,Closed
+ACC101202,TN07,Wallet,Dindigul,10.3823,77.9239,0.87,2,Suspended
+ACC101203,TN35,Jan Dhan,The Nilgiris,11.5083,76.6904,0.73,3,Under Monitoring
+ACC101204,TN27,Business,Tiruvallur,13.1023,79.894,0.75,8,Suspended
+ACC101205,TN27,Wallet,Tiruvallur,13.1067,79.8778,0.09,0,Active
+ACC101206,TN30,Wallet,Tiruchirappalli,10.7749,78.6946,0.23,0,Active
+ACC101207,TN17,Savings,Namakkal,11.2398,78.131,0.67,7,Under Monitoring
+ACC101208,TN30,Savings,Tiruchirappalli,10.7488,78.7204,0.71,7,Frozen
+ACC101209,TN31,Jan Dhan,Tirunelveli,8.7481,77.7238,0.07,1,Frozen
+ACC101210,TN19,Savings,Pudukkottai,10.3832,78.8096,0.12,12,Active
+ACC101211,TN18,Current,Perambalur,11.2283,78.8499,0.71,10,Closed
+ACC101212,TN14,Wallet,Mayiladuthurai,11.1282,79.6871,0.8,10,Active
+ACC101213,TN25,Jan Dhan,Thanjavur,10.7814,79.1476,0.1,6,Frozen
+ACC101214,TN16,Jan Dhan,Kanniyakumari,8.1292,77.5085,0.06,0,Active
+ACC101215,TN22,Current,Salem,11.6823,78.1023,0.94,1,Frozen
+ACC101216,TN11,Savings,Karur,10.9517,78.0374,0.35,8,Frozen
+ACC101217,TN14,Business,Mayiladuthurai,11.098,79.6462,0.27,1,Suspended
+ACC101218,TN21,Current,Ranipet,12.8787,79.3487,0.06,3,Under Monitoring
+ACC101219,TN15,Savings,Nagapattinam,10.783,79.8227,0.63,0,Active
+ACC101220,TN14,Wallet,Mayiladuthurai,11.0887,79.6633,0.96,1,Closed
+ACC101221,TN37,Current,Viluppuram,11.9153,79.4456,0.35,10,Under Monitoring
+ACC101222,TN09,Jan Dhan,Kallakurichi,11.7058,78.9901,0.69,10,Under Monitoring
+ACC101223,TN05,Jan Dhan,Cuddalore,11.6998,79.8126,0.47,8,Frozen
+ACC101224,TN33,Business,Tiruppur,11.129,77.2924,0.07,12,Active
+ACC101225,TN20,Current,Ramanathapuram,9.3877,78.8578,0.63,0,Frozen
+ACC101226,TN24,Wallet,Tenkasi,8.9361,77.2803,0.24,0,Frozen
+ACC101227,TN29,Jan Dhan,Thoothukudi,8.7276,78.1166,0.78,0,Closed
+ACC101228,TN27,Jan Dhan,Tiruvallur,13.1653,79.88,0.73,5,Frozen
+ACC101229,TN14,Business,Mayiladuthurai,11.0639,79.6952,0.97,12,Frozen
+ACC101230,TN25,Business,Thanjavur,10.7692,79.132,0.06,7,Active
+ACC101231,TN13,Savings,Madurai,9.9386,78.084,0.24,1,Frozen
+ACC101232,TN38,Business,Virudhunagar,9.6203,78.0056,0.27,1,Under Monitoring
+ACC101233,TN30,Jan Dhan,Tiruchirappalli,10.7569,78.6745,0.44,9,Frozen
+ACC101234,TN20,Jan Dhan,Ramanathapuram,9.3715,78.8789,0.24,12,Under Monitoring
+ACC101235,TN06,Jan Dhan,Dharmapuri,12.1175,78.125,0.46,8,Closed
+ACC101236,TN28,Current,Tiruvarur,10.7981,79.6638,0.07,6,Under Monitoring
+ACC101237,TN06,Jan Dhan,Dharmapuri,12.1372,78.1235,0.73,4,Under Monitoring
+ACC101238,TN30,Jan Dhan,Tiruchirappalli,10.7859,78.6922,0.61,1,Suspended
+ACC101239,TN09,Wallet,Kallakurichi,11.7079,79.0055,0.05,8,Suspended
+ACC101240,TN32,Wallet,Tirupathur,12.5363,78.6101,0.95,5,Under Monitoring
+ACC101241,TN32,Jan Dhan,Tirupathur,12.5078,78.5749,0.43,0,Active
+ACC101242,TN25,Business,Thanjavur,10.7532,79.1641,0.94,12,Suspended
+ACC101243,TN33,Wallet,Tiruppur,11.122,77.3279,0.1,6,Under Monitoring
+ACC101244,TN16,Current,Kanniyakumari,8.0861,77.5806,0.39,11,Active
+ACC101245,TN10,Jan Dhan,Kancheepuram,12.8447,79.748,0.19,3,Closed
+ACC101246,TN38,Current,Virudhunagar,9.5384,77.9895,0.65,6,Under Monitoring
+ACC101247,TN38,Savings,Virudhunagar,9.5891,77.9313,0.44,6,Suspended
+ACC101248,TN20,Business,Ramanathapuram,9.4107,78.8479,0.41,4,Under Monitoring
+ACC101249,TN06,Savings,Dharmapuri,12.1413,78.1859,0.37,2,Suspended
+ACC101250,TN14,Wallet,Mayiladuthurai,11.1284,79.604,0.21,7,Active
+ACC101251,TN07,Savings,Dindigul,10.3898,77.9613,0.44,4,Under Monitoring
+ACC101252,TN11,Current,Karur,10.9476,78.097,0.23,2,Closed
+ACC101253,TN08,Wallet,Erode,11.3477,77.6885,0.24,11,Frozen
+ACC101254,TN13,Jan Dhan,Madurai,9.9735,78.157,0.46,9,Active
+ACC101255,TN11,Savings,Karur,10.9394,78.0644,0.31,5,Active
+ACC101256,TN38,Current,Virudhunagar,9.585,77.9797,0.14,0,Suspended
+ACC101257,TN01,Business,Ariyalur,11.1689,79.0328,0.25,12,Active
+ACC101258,TN25,Business,Thanjavur,10.789,79.184,0.3,7,Under Monitoring
+ACC101259,TN22,Business,Salem,11.6572,78.1331,0.88,5,Frozen
+ACC101260,TN24,Wallet,Tenkasi,8.9442,77.2708,0.38,5,Active
+ACC101261,TN01,Wallet,Ariyalur,11.1771,79.0688,0.83,2,Active
+ACC101262,TN08,Business,Erode,11.3189,77.7371,0.81,5,Under Monitoring
+ACC101263,TN31,Business,Tirunelveli,8.7052,77.7255,0.97,5,Active
+ACC101264,TN24,Savings,Tenkasi,9.0034,77.3387,0.68,3,Closed
+ACC101265,TN32,Wallet,Tirupathur,12.5176,78.5955,0.37,7,Active
+ACC101266,TN25,Jan Dhan,Thanjavur,10.7977,79.159,0.86,9,Closed
+ACC101267,TN03,Current,Chennai,13.0825,80.2294,0.82,8,Under Monitoring
+ACC101268,TN11,Wallet,Karur,11.0056,78.0748,0.55,3,Frozen
+ACC101269,TN11,Savings,Karur,10.9206,78.1259,0.08,5,Under Monitoring
+ACC101270,TN18,Current,Perambalur,11.2561,78.8987,0.93,10,Active
+ACC101271,TN09,Business,Kallakurichi,11.7517,78.9631,0.79,5,Frozen
+ACC101272,TN37,Business,Viluppuram,11.8966,79.4704,0.9,11,Under Monitoring
+ACC101273,TN36,Wallet,Vellore,12.9473,79.1049,0.16,1,Active
+ACC101274,TN06,Jan Dhan,Dharmapuri,12.1518,78.2019,0.74,1,Closed
+ACC101275,TN24,Current,Tenkasi,8.9917,77.3605,0.59,0,Suspended
+ACC101276,TN04,Business,Coimbatore,11.0204,76.9905,0.96,5,Suspended
+ACC101277,TN09,Business,Kallakurichi,11.7547,78.973,0.15,0,Closed
+ACC101278,TN30,Jan Dhan,Tiruchirappalli,10.755,78.749,0.83,7,Under Monitoring
+ACC101279,TN10,Business,Kancheepuram,12.8125,79.7283,0.84,11,Active
+ACC101280,TN21,Jan Dhan,Ranipet,12.9274,79.3522,0.3,11,Closed
+ACC101281,TN31,Current,Tirunelveli,8.7134,77.7771,0.4,12,Suspended
+ACC101282,TN10,Current,Kancheepuram,12.869,79.747,0.26,11,Active
+ACC101283,TN12,Wallet,Krishnagiri,12.5413,78.1936,0.81,2,Active
+ACC101284,TN36,Wallet,Vellore,12.9002,79.1503,0.97,12,Under Monitoring
+ACC101285,TN26,Savings,Theni,10.0132,77.4551,0.7,3,Closed
+ACC101286,TN26,Savings,Theni,9.9735,77.502,0.59,12,Active
+ACC101287,TN20,Wallet,Ramanathapuram,9.3794,78.8398,0.46,7,Suspended
+ACC101288,TN10,Current,Kancheepuram,12.806,79.7284,0.73,0,Suspended
+ACC101289,TN37,Savings,Viluppuram,11.9579,79.5349,0.19,6,Frozen
+ACC101290,TN04,Savings,Coimbatore,11.0024,76.9532,0.93,1,Closed
+ACC101291,TN22,Business,Salem,11.6577,78.1109,0.72,3,Active
+ACC101292,TN08,Current,Erode,11.3307,77.6975,0.6,2,Under Monitoring
+ACC101293,TN06,Wallet,Dharmapuri,12.1642,78.1732,0.31,10,Under Monitoring
+ACC101294,TN24,Savings,Tenkasi,8.9184,77.2734,0.5,10,Closed
+ACC101295,TN15,Savings,Nagapattinam,10.7759,79.8936,0.5,11,Active
+ACC101296,TN38,Current,Virudhunagar,9.5756,78.0124,0.7,4,Closed
+ACC101297,TN09,Savings,Kallakurichi,11.7208,78.9853,0.85,8,Frozen
+ACC101298,TN26,Savings,Theni,9.9998,77.5085,0.78,8,Under Monitoring
+ACC101299,TN05,Business,Cuddalore,11.7817,79.7753,0.81,10,Active
+ACC101300,TN14,Savings,Mayiladuthurai,11.0766,79.6633,0.22,8,Under Monitoring
+ACC101301,TN21,Savings,Ranipet,12.8811,79.3408,0.66,1,Closed
+ACC101302,TN17,Savings,Namakkal,11.1774,78.1299,0.33,8,Frozen
+ACC101303,TN28,Savings,Tiruvarur,10.7409,79.589,0.93,12,Suspended
+ACC101304,TN35,Wallet,The Nilgiris,11.4556,76.7327,0.34,5,Closed
+ACC101305,TN35,Business,The Nilgiris,11.4626,76.6936,0.81,3,Active
+ACC101306,TN13,Current,Madurai,9.9052,78.1531,0.94,9,Closed
+ACC101307,TN14,Business,Mayiladuthurai,11.0944,79.6162,0.63,1,Closed
+ACC101308,TN17,Jan Dhan,Namakkal,11.2071,78.2078,0.42,1,Suspended
+ACC101309,TN28,Current,Tiruvarur,10.7697,79.5915,0.73,10,Frozen
+ACC101310,TN24,Business,Tenkasi,8.9721,77.3472,0.61,6,Frozen
+ACC101311,TN21,Wallet,Ranipet,12.9151,79.3797,0.28,4,Active
+ACC101312,TN35,Savings,The Nilgiris,11.51,76.7244,0.36,1,Suspended
+ACC101313,TN22,Jan Dhan,Salem,11.6289,78.1758,0.3,1,Under Monitoring
+ACC101314,TN15,Wallet,Nagapattinam,10.8124,79.8732,0.16,8,Suspended
+ACC101315,TN38,Wallet,Virudhunagar,9.5468,77.9473,0.58,4,Closed
+ACC101316,TN18,Business,Perambalur,11.1941,78.8369,0.35,12,Under Monitoring
+ACC101317,TN12,Jan Dhan,Krishnagiri,12.5492,78.2315,0.78,8,Closed
+ACC101318,TN26,Wallet,Theni,10.0196,77.4527,0.69,11,Frozen
+ACC101319,TN09,Current,Kallakurichi,11.7262,78.9874,0.1,11,Suspended
+ACC101320,TN16,Business,Kanniyakumari,8.0801,77.5343,0.46,5,Under Monitoring
+ACC101321,TN33,Jan Dhan,Tiruppur,11.0861,77.3339,0.93,3,Suspended
+ACC101322,TN06,Jan Dhan,Dharmapuri,12.1184,78.1395,0.13,1,Active
+ACC101323,TN16,Savings,Kanniyakumari,8.0548,77.4942,0.74,8,Under Monitoring
+ACC101324,TN01,Wallet,Ariyalur,11.1577,79.1218,0.18,7,Closed
+ACC101325,TN35,Savings,The Nilgiris,11.4821,76.7453,0.9,11,Active
+ACC101326,TN28,Business,Tiruvarur,10.7911,79.6088,0.74,8,Closed
+ACC101327,TN03,Business,Chennai,13.0776,80.2376,0.92,12,Closed
+ACC101328,TN15,Current,Nagapattinam,10.7247,79.8788,0.53,0,Under Monitoring
+ACC101329,TN32,Wallet,Tirupathur,12.4607,78.6131,0.36,10,Frozen
+ACC101330,TN35,Savings,The Nilgiris,11.4706,76.732,0.3,0,Closed
+ACC101331,TN26,Current,Theni,10.0527,77.5197,0.94,8,Active
+ACC101332,TN30,Business,Tiruchirappalli,10.8253,78.6604,0.06,7,Suspended
+ACC101333,TN20,Jan Dhan,Ramanathapuram,9.3246,78.8171,0.72,6,Suspended
+ACC101334,TN01,Savings,Ariyalur,11.1331,79.0484,0.54,2,Under Monitoring
+ACC101335,TN08,Wallet,Erode,11.2917,77.7441,0.28,7,Under Monitoring
+ACC101336,TN24,Jan Dhan,Tenkasi,8.9428,77.3543,0.55,4,Active
+ACC101337,TN29,Wallet,Thoothukudi,8.7304,78.1202,0.45,5,Frozen
+ACC101338,TN08,Current,Erode,11.3195,77.6806,0.44,5,Active
+ACC101339,TN11,Current,Karur,11.0049,78.1226,0.96,1,Under Monitoring
+ACC101340,TN32,Business,Tirupathur,12.4933,78.5843,0.17,12,Under Monitoring
+ACC101341,TN33,Wallet,Tiruppur,11.0716,77.3869,0.79,2,Frozen
+ACC101342,TN23,Business,Sivaganga,9.7947,78.4993,0.1,5,Under Monitoring
+ACC101343,TN01,Wallet,Ariyalur,11.138,79.0568,0.13,6,Frozen
+ACC101344,TN10,Business,Kancheepuram,12.8029,79.6817,0.16,4,Frozen
+ACC101345,TN28,Current,Tiruvarur,10.7635,79.6627,0.15,11,Closed
+ACC101346,TN12,Current,Krishnagiri,12.5679,78.2228,0.64,3,Active
+ACC101347,TN09,Wallet,Kallakurichi,11.6921,79.0129,0.91,6,Active
+ACC101348,TN13,Savings,Madurai,9.9616,78.1078,0.54,11,Frozen
+ACC101349,TN15,Jan Dhan,Nagapattinam,10.7598,79.801,0.45,0,Suspended
+ACC101350,TN08,Jan Dhan,Erode,11.3274,77.7615,0.71,3,Suspended
+ACC101351,TN04,Current,Coimbatore,10.9709,76.911,0.74,3,Suspended
+ACC101352,TN31,Jan Dhan,Tirunelveli,8.7547,77.7168,0.22,7,Suspended
+ACC101353,TN22,Jan Dhan,Salem,11.6255,78.1629,0.69,12,Frozen
+ACC101354,TN22,Jan Dhan,Salem,11.6884,78.1321,0.77,8,Closed
+ACC101355,TN24,Current,Tenkasi,8.9714,77.2861,0.41,1,Frozen
+ACC101356,TN08,Savings,Erode,11.3497,77.7584,0.66,3,Frozen
+ACC101357,TN29,Savings,Thoothukudi,8.7217,78.1395,0.37,11,Under Monitoring
+ACC101358,TN13,Business,Madurai,9.9473,78.0742,0.23,8,Suspended
+ACC101359,TN36,Jan Dhan,Vellore,12.956,79.1273,0.72,6,Active
+ACC101360,TN31,Wallet,Tirunelveli,8.7163,77.8019,0.79,2,Closed
+ACC101361,TN18,Current,Perambalur,11.2132,78.9277,0.11,11,Frozen
+ACC101362,TN26,Wallet,Theni,10.0289,77.5138,0.95,2,Under Monitoring
+ACC101363,TN33,Wallet,Tiruppur,11.1147,77.3301,0.61,3,Frozen
+ACC101364,TN01,Current,Ariyalur,11.1472,79.0878,0.06,12,Closed
+ACC101365,TN30,Business,Tiruchirappalli,10.8113,78.7072,0.33,3,Suspended
+ACC101366,TN18,Business,Perambalur,11.1961,78.8545,0.55,4,Active
+ACC101367,TN10,Jan Dhan,Kancheepuram,12.8769,79.6806,0.79,10,Frozen
+ACC101368,TN14,Business,Mayiladuthurai,11.0701,79.6683,0.64,5,Suspended
+ACC101369,TN06,Business,Dharmapuri,12.1041,78.1216,0.89,4,Suspended
+ACC101370,TN04,Savings,Coimbatore,11.0492,76.9277,0.95,2,Suspended
+ACC101371,TN02,Business,Chengalpattu,12.7096,80.0125,0.92,9,Active
+ACC101372,TN25,Jan Dhan,Thanjavur,10.824,79.1512,0.56,7,Frozen
+ACC101373,TN21,Jan Dhan,Ranipet,12.8976,79.3463,0.85,6,Frozen
+ACC101374,TN29,Current,Thoothukudi,8.7872,78.1282,0.19,7,Active
+ACC101375,TN32,Current,Tirupathur,12.4896,78.5977,0.21,9,Under Monitoring
+ACC101376,TN12,Jan Dhan,Krishnagiri,12.4707,78.18,0.22,6,Closed
+ACC101377,TN13,Savings,Madurai,9.8896,78.1124,0.47,10,Under Monitoring
+ACC101378,TN07,Business,Dindigul,10.3261,77.9945,0.06,1,Under Monitoring
+ACC101379,TN25,Savings,Thanjavur,10.748,79.0892,0.82,0,Frozen
+ACC101380,TN16,Savings,Kanniyakumari,8.0651,77.5824,0.61,12,Active
+ACC101381,TN07,Business,Dindigul,10.386,77.9533,0.71,3,Frozen
+ACC101382,TN31,Business,Tirunelveli,8.7531,77.7882,0.34,7,Frozen
+ACC101383,TN16,Savings,Kanniyakumari,8.0927,77.5152,0.56,0,Active
+ACC101384,TN07,Business,Dindigul,10.3421,77.9707,0.83,2,Active
+ACC101385,TN15,Savings,Nagapattinam,10.7399,79.8334,0.38,4,Frozen
+ACC101386,TN25,Savings,Thanjavur,10.7862,79.1869,0.26,4,Suspended
+ACC101387,TN05,Business,Cuddalore,11.7314,79.7574,0.91,1,Active
+ACC101388,TN10,Current,Kancheepuram,12.8271,79.6871,0.22,6,Frozen
+ACC101389,TN20,Business,Ramanathapuram,9.3957,78.8169,0.15,7,Suspended
+ACC101390,TN17,Savings,Namakkal,11.2478,78.2036,0.96,12,Frozen
+ACC101391,TN21,Current,Ranipet,12.9163,79.3554,0.78,7,Active
+ACC101392,TN08,Business,Erode,11.3337,77.7399,0.18,5,Frozen
+ACC101393,TN12,Wallet,Krishnagiri,12.5039,78.2131,0.5,6,Closed
+ACC101394,TN22,Current,Salem,11.6945,78.1614,0.28,6,Closed
+ACC101395,TN32,Business,Tirupathur,12.4971,78.5693,0.81,6,Active
+ACC101396,TN38,Wallet,Virudhunagar,9.5899,77.9901,0.8,3,Active
+ACC101397,TN16,Jan Dhan,Kanniyakumari,8.0386,77.5879,0.07,8,Under Monitoring
+ACC101398,TN09,Savings,Kallakurichi,11.6943,78.9488,0.84,12,Frozen
+ACC101399,TN19,Wallet,Pudukkottai,10.3441,78.8558,0.95,6,Frozen
+ACC101400,TN14,Current,Mayiladuthurai,11.0641,79.6172,0.94,11,Frozen
+ACC101401,TN25,Savings,Thanjavur,10.8066,79.1303,0.1,1,Closed
+ACC101402,TN05,Wallet,Cuddalore,11.7817,79.8084,0.08,5,Frozen
+ACC101403,TN06,Current,Dharmapuri,12.0854,78.1651,0.81,2,Frozen
+ACC101404,TN31,Current,Tirunelveli,8.7387,77.7766,0.33,6,Suspended
+ACC101405,TN29,Savings,Thoothukudi,8.7429,78.1004,0.87,0,Closed
+ACC101406,TN12,Business,Krishnagiri,12.4846,78.2033,0.44,7,Closed
+ACC101407,TN17,Business,Namakkal,11.2191,78.1883,0.44,2,Suspended
+ACC101408,TN06,Business,Dharmapuri,12.1155,78.2033,0.74,6,Closed
+ACC101409,TN04,Current,Coimbatore,11.006,76.9881,0.96,9,Active
+ACC101410,TN30,Wallet,Tiruchirappalli,10.7718,78.7189,0.82,2,Active
+ACC101411,TN24,Wallet,Tenkasi,8.9259,77.2759,0.12,9,Suspended
+ACC101412,TN02,Current,Chengalpattu,12.6721,79.9799,0.11,9,Active
+ACC101413,TN20,Current,Ramanathapuram,9.3691,78.8459,0.08,4,Active
+ACC101414,TN37,Business,Viluppuram,11.8946,79.5347,0.5,0,Suspended
+ACC101415,TN06,Jan Dhan,Dharmapuri,12.0785,78.1439,0.31,6,Closed
+ACC101416,TN13,Jan Dhan,Madurai,9.9504,78.1424,0.96,11,Active
+ACC101417,TN22,Wallet,Salem,11.704,78.1464,0.52,12,Frozen
+ACC101418,TN02,Business,Chengalpattu,12.7235,79.9734,0.86,0,Suspended
+ACC101419,TN11,Current,Karur,10.9783,78.0345,0.63,11,Frozen
+ACC101420,TN14,Current,Mayiladuthurai,11.1354,79.6195,0.95,8,Closed
+ACC101421,TN34,Jan Dhan,Tiruvannamalai,12.22,79.0378,0.32,9,Under Monitoring
+ACC101422,TN03,Wallet,Chennai,13.0566,80.3204,0.61,2,Closed
+ACC101423,TN32,Savings,Tirupathur,12.5242,78.5304,0.86,8,Active
+ACC101424,TN32,Savings,Tirupathur,12.4892,78.5331,0.32,1,Suspended
+ACC101425,TN37,Jan Dhan,Viluppuram,11.9254,79.4432,0.71,7,Suspended
+ACC101426,TN31,Jan Dhan,Tirunelveli,8.7402,77.7509,0.91,1,Closed
+ACC101427,TN32,Savings,Tirupathur,12.48,78.5448,0.43,9,Frozen
+ACC101428,TN29,Jan Dhan,Thoothukudi,8.7654,78.1473,0.34,1,Under Monitoring
+ACC101429,TN33,Wallet,Tiruppur,11.0848,77.3787,0.68,9,Active
+ACC101430,TN16,Business,Kanniyakumari,8.0391,77.5738,0.32,2,Closed
+ACC101431,TN26,Savings,Theni,9.9827,77.5142,0.67,5,Under Monitoring
+ACC101432,TN30,Business,Tiruchirappalli,10.8305,78.7012,0.13,11,Active
+ACC101433,TN26,Wallet,Theni,9.9803,77.4597,0.35,9,Under Monitoring
+ACC101434,TN14,Wallet,Mayiladuthurai,11.0699,79.6489,0.56,7,Frozen
+ACC101435,TN14,Jan Dhan,Mayiladuthurai,11.1153,79.7022,0.77,0,Suspended
+ACC101436,TN28,Wallet,Tiruvarur,10.7374,79.6055,0.07,12,Under Monitoring
+ACC101437,TN18,Jan Dhan,Perambalur,11.2478,78.8405,0.11,6,Active
+ACC101438,TN20,Wallet,Ramanathapuram,9.401,78.8346,0.67,4,Frozen
+ACC101439,TN04,Savings,Coimbatore,11.0563,76.9487,0.95,4,Frozen
+ACC101440,TN13,Jan Dhan,Madurai,9.9694,78.118,0.55,12,Frozen
+ACC101441,TN28,Jan Dhan,Tiruvarur,10.8074,79.6414,0.82,8,Closed
+ACC101442,TN13,Savings,Madurai,9.9475,78.1276,0.18,10,Suspended
+ACC101443,TN01,Current,Ariyalur,11.1797,79.122,0.51,5,Active
+ACC101444,TN27,Jan Dhan,Tiruvallur,13.1423,79.8575,0.47,2,Under Monitoring
+ACC101445,TN38,Savings,Virudhunagar,9.5408,77.987,0.22,11,Closed
+ACC101446,TN11,Business,Karur,10.9479,78.0614,0.94,10,Closed
+ACC101447,TN01,Jan Dhan,Ariyalur,11.1714,79.0302,0.88,8,Active
+ACC101448,TN32,Wallet,Tirupathur,12.4851,78.5513,0.82,6,Closed
+ACC101449,TN22,Savings,Salem,11.7069,78.1419,0.4,8,Closed
+ACC101450,TN11,Business,Karur,10.9537,78.0551,0.66,10,Under Monitoring
+ACC101451,TN19,Business,Pudukkottai,10.4235,78.8611,0.14,1,Active
+ACC101452,TN06,Savings,Dharmapuri,12.1393,78.1493,0.51,12,Closed
+ACC101453,TN35,Savings,The Nilgiris,11.505,76.734,0.8,10,Suspended
+ACC101454,TN27,Current,Tiruvallur,13.1125,79.9026,0.4,3,Under Monitoring
+ACC101455,TN08,Jan Dhan,Erode,11.3878,77.7586,0.43,10,Under Monitoring
+ACC101456,TN01,Jan Dhan,Ariyalur,11.1682,79.0794,0.3,10,Suspended
+ACC101457,TN20,Wallet,Ramanathapuram,9.3812,78.7825,0.9,0,Active
+ACC101458,TN02,Current,Chengalpattu,12.723,80.0098,0.53,11,Closed
+ACC101459,TN21,Jan Dhan,Ranipet,12.8942,79.3405,0.45,8,Under Monitoring
+ACC101460,TN13,Business,Madurai,9.9396,78.1527,0.8,9,Under Monitoring
+ACC101461,TN09,Wallet,Kallakurichi,11.786,78.9313,0.89,8,Frozen
+ACC101462,TN28,Current,Tiruvarur,10.7261,79.6645,0.52,10,Closed
+ACC101463,TN26,Jan Dhan,Theni,10.0441,77.4427,0.35,1,Active
+ACC101464,TN02,Wallet,Chengalpattu,12.6451,80.0027,0.19,9,Closed
+ACC101465,TN06,Business,Dharmapuri,12.1159,78.1824,0.17,7,Suspended
+ACC101466,TN12,Current,Krishnagiri,12.5339,78.1859,0.23,3,Under Monitoring
+ACC101467,TN17,Savings,Namakkal,11.1964,78.2109,0.63,10,Closed
+ACC101468,TN07,Savings,Dindigul,10.3583,77.9791,0.15,4,Suspended
+ACC101469,TN12,Savings,Krishnagiri,12.4763,78.2482,0.9,3,Under Monitoring
+ACC101470,TN07,Wallet,Dindigul,10.3919,77.9609,0.5,10,Active
+ACC101471,TN14,Wallet,Mayiladuthurai,11.096,79.6348,0.89,12,Frozen
+ACC101472,TN12,Jan Dhan,Krishnagiri,12.4696,78.1816,0.58,9,Active
+ACC101473,TN08,Jan Dhan,Erode,11.3904,77.7156,0.62,8,Active
+ACC101474,TN11,Business,Karur,10.9843,78.1193,0.23,0,Closed
+ACC101475,TN02,Business,Chengalpattu,12.6951,79.9409,0.86,1,Frozen
+ACC101476,TN02,Jan Dhan,Chengalpattu,12.6578,79.934,0.69,2,Suspended
+ACC101477,TN18,Wallet,Perambalur,11.2041,78.8413,0.71,10,Suspended
+ACC101478,TN30,Wallet,Tiruchirappalli,10.7841,78.7493,0.91,4,Frozen
+ACC101479,TN13,Jan Dhan,Madurai,9.9714,78.0801,0.79,9,Suspended
+ACC101480,TN11,Current,Karur,11.0055,78.0754,0.87,6,Closed
+ACC101481,TN18,Jan Dhan,Perambalur,11.2465,78.8928,0.45,9,Suspended
+ACC101482,TN24,Savings,Tenkasi,8.9513,77.354,0.94,4,Closed
+ACC101483,TN27,Jan Dhan,Tiruvallur,13.1506,79.9448,0.93,8,Suspended
+ACC101484,TN26,Savings,Theni,9.9719,77.5077,0.45,2,Suspended
+ACC101485,TN16,Savings,Kanniyakumari,8.0598,77.5257,0.18,5,Active
+ACC101486,TN01,Jan Dhan,Ariyalur,11.1588,79.1003,0.25,9,Suspended
+ACC101487,TN15,Business,Nagapattinam,10.7238,79.8233,0.25,3,Active
+ACC101488,TN36,Jan Dhan,Vellore,12.9381,79.1771,0.8,10,Active
+ACC101489,TN37,Wallet,Viluppuram,11.9583,79.4796,0.81,3,Frozen
+ACC101490,TN04,Wallet,Coimbatore,11.0167,77.0048,0.44,1,Under Monitoring
+ACC101491,TN11,Business,Karur,10.9428,78.0649,0.59,4,Active
+ACC101492,TN37,Savings,Viluppuram,11.9813,79.4645,0.83,6,Active
+ACC101493,TN35,Business,The Nilgiris,11.4455,76.7482,0.11,1,Under Monitoring
+ACC101494,TN20,Jan Dhan,Ramanathapuram,9.3456,78.8167,0.12,12,Suspended
+ACC101495,TN32,Business,Tirupathur,12.4484,78.5459,0.97,7,Active
+ACC101496,TN24,Business,Tenkasi,8.9167,77.2875,0.82,2,Active
+ACC101497,TN21,Wallet,Ranipet,12.8998,79.2921,0.72,12,Suspended
+ACC101498,TN35,Savings,The Nilgiris,11.535,76.7705,0.29,12,Active
+ACC101499,TN08,Savings,Erode,11.3857,77.6747,0.36,9,Under Monitoring
+ACC101500,TN18,Current,Perambalur,11.2767,78.8904,0.16,5,Frozen
+ACC101501,TN38,Wallet,Virudhunagar,9.6009,77.9792,0.54,3,Closed
+ACC101502,TN31,Wallet,Tirunelveli,8.7615,77.7389,0.73,3,Active
+ACC101503,TN17,Jan Dhan,Namakkal,11.24,78.1527,0.83,3,Frozen
+ACC101504,TN05,Savings,Cuddalore,11.7952,79.7274,0.06,3,Under Monitoring
+ACC101505,TN25,Current,Thanjavur,10.7858,79.1218,0.81,12,Closed
+ACC101506,TN33,Jan Dhan,Tiruppur,11.1345,77.3223,0.47,2,Closed
+ACC101507,TN07,Current,Dindigul,10.3343,77.9559,0.96,9,Closed
+ACC101508,TN13,Wallet,Madurai,9.894,78.0976,0.2,4,Closed
+ACC101509,TN07,Current,Dindigul,10.3585,77.9302,0.15,0,Under Monitoring
+ACC101510,TN12,Jan Dhan,Krishnagiri,12.4715,78.2299,0.47,4,Active
+ACC101511,TN36,Savings,Vellore,12.9019,79.1037,0.42,6,Closed
+ACC101512,TN22,Savings,Salem,11.6584,78.133,0.1,6,Under Monitoring
+ACC101513,TN13,Jan Dhan,Madurai,9.8941,78.0875,0.31,9,Under Monitoring
+ACC101514,TN34,Wallet,Tiruvannamalai,12.1862,79.0297,0.28,1,Frozen
+ACC101515,TN08,Savings,Erode,11.3805,77.7247,0.27,8,Active
+ACC101516,TN18,Current,Perambalur,11.2725,78.9021,0.43,6,Active
+ACC101517,TN15,Jan Dhan,Nagapattinam,10.7667,79.812,0.24,10,Suspended
+ACC101518,TN19,Savings,Pudukkottai,10.3391,78.8208,0.7,7,Suspended
+ACC101519,TN16,Current,Kanniyakumari,8.0698,77.4954,0.22,7,Frozen
+ACC101520,TN01,Wallet,Ariyalur,11.1328,79.0307,0.96,1,Frozen
+ACC101521,TN01,Business,Ariyalur,11.1252,79.076,0.05,3,Under Monitoring
+ACC101522,TN08,Savings,Erode,11.3729,77.7239,0.97,3,Closed
+ACC101523,TN33,Current,Tiruppur,11.134,77.3686,0.14,12,Suspended
+ACC101524,TN29,Wallet,Thoothukudi,8.7877,78.1838,0.29,7,Suspended
+ACC101525,TN24,Wallet,Tenkasi,8.9078,77.3004,0.71,8,Closed
+ACC101526,TN31,Savings,Tirunelveli,8.6909,77.7586,0.65,2,Under Monitoring
+ACC101527,TN15,Current,Nagapattinam,10.7529,79.798,0.59,11,Under Monitoring
+ACC101528,TN24,Current,Tenkasi,8.9808,77.2845,0.94,10,Active
+ACC101529,TN18,Business,Perambalur,11.2741,78.877,0.94,8,Frozen
+ACC101530,TN17,Jan Dhan,Namakkal,11.2577,78.1565,0.44,4,Suspended
+ACC101531,TN13,Savings,Madurai,9.9332,78.14,0.83,1,Under Monitoring
+ACC101532,TN30,Business,Tiruchirappalli,10.8373,78.7339,0.32,0,Under Monitoring
+ACC101533,TN10,Wallet,Kancheepuram,12.8523,79.7059,0.32,8,Frozen
+ACC101534,TN20,Wallet,Ramanathapuram,9.3427,78.8621,0.06,0,Frozen
+ACC101535,TN19,Business,Pudukkottai,10.342,78.8193,0.05,5,Active
+ACC101536,TN04,Jan Dhan,Coimbatore,10.9806,76.9937,0.78,8,Closed
+ACC101537,TN10,Savings,Kancheepuram,12.8555,79.6679,0.73,6,Closed
+ACC101538,TN06,Jan Dhan,Dharmapuri,12.0996,78.1555,0.38,12,Under Monitoring
+ACC101539,TN28,Wallet,Tiruvarur,10.8128,79.5942,0.29,4,Closed
+ACC101540,TN20,Current,Ramanathapuram,9.3703,78.85,0.35,9,Frozen
+ACC101541,TN13,Jan Dhan,Madurai,9.8888,78.1252,0.33,1,Suspended
+ACC101542,TN37,Wallet,Viluppuram,11.9447,79.4737,0.86,6,Active
+ACC101543,TN09,Business,Kallakurichi,11.7325,78.9452,0.92,11,Suspended
+ACC101544,TN30,Jan Dhan,Tiruchirappalli,10.7833,78.6968,0.43,0,Closed
+ACC101545,TN02,Wallet,Chengalpattu,12.6527,79.9398,0.89,12,Frozen
+ACC101546,TN38,Business,Virudhunagar,9.5745,77.9745,0.89,4,Active
+ACC101547,TN26,Current,Theni,10.0007,77.4274,0.8,8,Under Monitoring
+ACC101548,TN04,Savings,Coimbatore,10.9723,76.9888,0.65,5,Closed
+ACC101549,TN07,Jan Dhan,Dindigul,10.3689,77.9886,0.85,1,Closed
+ACC101550,TN33,Savings,Tiruppur,11.1287,77.3427,0.57,7,Frozen
+ACC101551,TN15,Current,Nagapattinam,10.7473,79.826,0.97,0,Under Monitoring
+ACC101552,TN13,Savings,Madurai,9.8819,78.0851,0.87,8,Active
+ACC101553,TN16,Current,Kanniyakumari,8.0487,77.491,0.52,6,Active
+ACC101554,TN08,Jan Dhan,Erode,11.3315,77.7655,0.81,8,Suspended
+ACC101555,TN29,Business,Thoothukudi,8.7265,78.0994,0.07,2,Frozen
+ACC101556,TN11,Business,Karur,10.9843,78.0813,0.49,4,Suspended
+ACC101557,TN07,Business,Dindigul,10.3617,77.9863,0.41,11,Active
+ACC101558,TN30,Wallet,Tiruchirappalli,10.8218,78.6695,0.31,1,Closed
+ACC101559,TN25,Savings,Thanjavur,10.7951,79.0912,0.65,10,Closed
+ACC101560,TN29,Savings,Thoothukudi,8.805,78.1203,0.18,11,Under Monitoring
+ACC101561,TN18,Savings,Perambalur,11.2824,78.8679,0.85,8,Frozen
+ACC101562,TN23,Business,Sivaganga,9.8324,78.4372,0.66,5,Closed
+ACC101563,TN22,Wallet,Salem,11.6858,78.1747,0.31,12,Suspended
+ACC101564,TN26,Savings,Theni,10.052,77.4913,0.4,7,Closed
+ACC101565,TN12,Business,Krishnagiri,12.5395,78.2144,0.66,4,Frozen
+ACC101566,TN21,Business,Ranipet,12.9727,79.3181,0.62,6,Active
+ACC101567,TN03,Savings,Chennai,13.1179,80.2366,0.14,1,Under Monitoring
+ACC101568,TN31,Jan Dhan,Tirunelveli,8.7399,77.8048,0.8,11,Frozen
+ACC101569,TN07,Current,Dindigul,10.3852,77.9579,0.96,1,Active
+ACC101570,TN17,Savings,Namakkal,11.1726,78.1924,0.46,5,Closed
+ACC101571,TN02,Current,Chengalpattu,12.676,79.9956,0.4,10,Closed
+ACC101572,TN36,Current,Vellore,12.8861,79.1316,0.68,3,Frozen
+ACC101573,TN11,Wallet,Karur,10.9915,78.1075,0.23,9,Active
+ACC101574,TN07,Current,Dindigul,10.3157,77.9336,0.05,12,Under Monitoring
+ACC101575,TN37,Business,Viluppuram,11.9765,79.4702,0.68,11,Closed
+ACC101576,TN32,Current,Tirupathur,12.5269,78.5731,0.49,5,Suspended
+ACC101577,TN36,Current,Vellore,12.9467,79.1264,0.63,1,Closed
+ACC101578,TN06,Current,Dharmapuri,12.1559,78.138,0.16,3,Active
+ACC101579,TN35,Jan Dhan,The Nilgiris,11.4439,76.7658,0.32,4,Under Monitoring
+ACC101580,TN23,Savings,Sivaganga,9.8805,78.4467,0.32,8,Closed
+ACC101581,TN16,Business,Kanniyakumari,8.1315,77.5385,0.42,0,Closed
+ACC101582,TN08,Business,Erode,11.3381,77.7589,0.29,0,Active
+ACC101583,TN22,Wallet,Salem,11.6404,78.1295,0.76,2,Frozen
+ACC101584,TN36,Jan Dhan,Vellore,12.9589,79.1488,0.87,3,Under Monitoring
+ACC101585,TN05,Business,Cuddalore,11.7884,79.7917,0.76,0,Suspended
+ACC101586,TN05,Wallet,Cuddalore,11.7578,79.7826,0.12,8,Under Monitoring
+ACC101587,TN09,Jan Dhan,Kallakurichi,11.7606,78.9243,0.51,3,Suspended
+ACC101588,TN28,Wallet,Tiruvarur,10.7464,79.6694,0.95,0,Active
+ACC101589,TN02,Current,Chengalpattu,12.6973,80.0117,0.68,11,Active
+ACC101590,TN36,Wallet,Vellore,12.8717,79.1591,0.7,6,Under Monitoring
+ACC101591,TN36,Current,Vellore,12.8781,79.0943,0.62,5,Suspended
+ACC101592,TN13,Jan Dhan,Madurai,9.9189,78.0756,0.27,9,Active
+ACC101593,TN15,Wallet,Nagapattinam,10.7919,79.8837,0.79,9,Active
+ACC101594,TN01,Current,Ariyalur,11.1713,79.0363,0.17,2,Suspended
+ACC101595,TN03,Jan Dhan,Chennai,13.0677,80.2862,0.28,4,Frozen
+ACC101596,TN26,Wallet,Theni,10.0262,77.4925,0.12,8,Frozen
+ACC101597,TN32,Jan Dhan,Tirupathur,12.5335,78.602,0.46,4,Suspended
+ACC101598,TN36,Jan Dhan,Vellore,12.9534,79.1069,0.88,5,Closed
+ACC101599,TN33,Savings,Tiruppur,11.0639,77.3811,0.71,9,Under Monitoring
+ACC101600,TN18,Savings,Perambalur,11.2046,78.8458,0.96,3,Suspended
+ACC101601,TN36,Current,Vellore,12.8788,79.155,0.78,0,Frozen
+ACC101602,TN29,Wallet,Thoothukudi,8.8095,78.0869,0.83,4,Suspended
+ACC101603,TN38,Wallet,Virudhunagar,9.5672,78.0089,0.11,9,Under Monitoring
+ACC101604,TN32,Savings,Tirupathur,12.53,78.5546,0.09,3,Under Monitoring
+ACC101605,TN12,Wallet,Krishnagiri,12.5218,78.2297,0.08,12,Suspended
+ACC101606,TN02,Business,Chengalpattu,12.7193,79.9593,0.82,4,Closed
+ACC101607,TN14,Savings,Mayiladuthurai,11.0926,79.6863,0.45,6,Active
+ACC101608,TN07,Business,Dindigul,10.3512,77.9916,0.68,8,Under Monitoring
+ACC101609,TN28,Business,Tiruvarur,10.788,79.6613,0.29,6,Under Monitoring
+ACC101610,TN16,Current,Kanniyakumari,8.1291,77.5166,0.68,4,Active
+ACC101611,TN16,Business,Kanniyakumari,8.0679,77.5456,0.09,4,Suspended
+ACC101612,TN18,Jan Dhan,Perambalur,11.2624,78.9131,0.62,1,Suspended
+ACC101613,TN37,Jan Dhan,Viluppuram,11.9737,79.5209,0.46,0,Under Monitoring
+ACC101614,TN01,Wallet,Ariyalur,11.0937,79.0645,0.64,8,Frozen
+ACC101615,TN27,Savings,Tiruvallur,13.1482,79.8651,0.88,8,Suspended
+ACC101616,TN05,Wallet,Cuddalore,11.716,79.798,0.31,7,Frozen
+ACC101617,TN15,Current,Nagapattinam,10.7319,79.8567,0.1,1,Active
+ACC101618,TN12,Business,Krishnagiri,12.5547,78.2217,0.09,11,Frozen
+ACC101619,TN04,Jan Dhan,Coimbatore,11.0643,76.9074,0.84,5,Closed
+ACC101620,TN03,Business,Chennai,13.0562,80.2316,0.52,1,Closed
+ACC101621,TN05,Current,Cuddalore,11.7184,79.7784,0.82,10,Under Monitoring
+ACC101622,TN05,Wallet,Cuddalore,11.7856,79.7357,0.35,12,Suspended
+ACC101623,TN22,Wallet,Salem,11.704,78.1335,0.93,4,Closed
+ACC101624,TN02,Current,Chengalpattu,12.6807,79.9548,0.19,9,Active
+ACC101625,TN07,Business,Dindigul,10.3335,77.9508,0.72,11,Closed
+ACC101626,TN38,Jan Dhan,Virudhunagar,9.6312,77.9503,0.59,10,Frozen
+ACC101627,TN25,Savings,Thanjavur,10.8325,79.1837,0.97,9,Closed
+ACC101628,TN37,Business,Viluppuram,11.9635,79.49,0.16,8,Active
+ACC101629,TN31,Business,Tirunelveli,8.7159,77.7384,0.23,9,Suspended
+ACC101630,TN16,Jan Dhan,Kanniyakumari,8.0626,77.5653,0.39,7,Suspended
+ACC101631,TN08,Current,Erode,11.3355,77.763,0.43,1,Suspended
+ACC101632,TN36,Business,Vellore,12.8741,79.1187,0.5,3,Under Monitoring
+ACC101633,TN27,Current,Tiruvallur,13.1471,79.9398,0.17,8,Frozen
+ACC101634,TN27,Business,Tiruvallur,13.1568,79.9177,0.79,5,Suspended
+ACC101635,TN08,Savings,Erode,11.3319,77.7177,0.19,7,Frozen
+ACC101636,TN12,Wallet,Krishnagiri,12.4702,78.1758,0.29,8,Under Monitoring
+ACC101637,TN07,Current,Dindigul,10.3993,78.0029,0.07,2,Active
+ACC101638,TN09,Business,Kallakurichi,11.775,79.0058,0.89,5,Frozen
+ACC101639,TN26,Business,Theni,9.9845,77.4561,0.36,5,Closed
+ACC101640,TN07,Savings,Dindigul,10.3198,78.0116,0.93,6,Under Monitoring
+ACC101641,TN28,Jan Dhan,Tiruvarur,10.7919,79.6544,0.73,11,Closed
+ACC101642,TN33,Savings,Tiruppur,11.0737,77.2919,0.6,10,Under Monitoring
+ACC101643,TN25,Jan Dhan,Thanjavur,10.7809,79.1387,0.6,12,Active
+ACC101644,TN15,Jan Dhan,Nagapattinam,10.7665,79.7997,0.53,8,Closed
+ACC101645,TN33,Wallet,Tiruppur,11.087,77.3295,0.75,2,Active
+ACC101646,TN14,Wallet,Mayiladuthurai,11.1104,79.6609,0.62,1,Suspended
+ACC101647,TN19,Current,Pudukkottai,10.3416,78.7979,0.46,2,Suspended
+ACC101648,TN17,Business,Namakkal,11.2442,78.2099,0.67,2,Active
+ACC101649,TN14,Business,Mayiladuthurai,11.1424,79.6789,0.08,0,Closed
+ACC101650,TN35,Current,The Nilgiris,11.4423,76.767,0.07,3,Suspended
+ACC101651,TN37,Wallet,Viluppuram,11.9633,79.4882,0.82,4,Active
+ACC101652,TN08,Wallet,Erode,11.3799,77.7165,0.13,2,Suspended
+ACC101653,TN08,Jan Dhan,Erode,11.3714,77.7416,0.26,1,Suspended
+ACC101654,TN11,Business,Karur,10.9436,78.0719,0.73,10,Active
+ACC101655,TN21,Savings,Ranipet,12.9205,79.3765,0.79,5,Frozen
+ACC101656,TN36,Savings,Vellore,12.9614,79.1452,0.28,9,Under Monitoring
+ACC101657,TN15,Current,Nagapattinam,10.7437,79.81,0.81,11,Under Monitoring
+ACC101658,TN19,Current,Pudukkottai,10.3496,78.8581,0.93,11,Frozen
+ACC101659,TN01,Wallet,Ariyalur,11.0967,79.0844,0.24,2,Active
+ACC101660,TN27,Jan Dhan,Tiruvallur,13.1515,79.9202,0.27,5,Under Monitoring
+ACC101661,TN34,Current,Tiruvannamalai,12.2631,79.1088,0.86,10,Under Monitoring
+ACC101662,TN32,Wallet,Tirupathur,12.5035,78.5704,0.32,3,Active
+ACC101663,TN19,Wallet,Pudukkottai,10.4266,78.803,0.67,1,Frozen
+ACC101664,TN30,Jan Dhan,Tiruchirappalli,10.8066,78.6895,0.42,2,Under Monitoring
+ACC101665,TN32,Business,Tirupathur,12.4849,78.5396,0.32,8,Frozen
+ACC101666,TN27,Savings,Tiruvallur,13.1464,79.8894,0.68,6,Under Monitoring
+ACC101667,TN29,Wallet,Thoothukudi,8.7541,78.176,0.3,11,Frozen
+ACC101668,TN22,Savings,Salem,11.6452,78.137,0.58,2,Closed
+ACC101669,TN14,Savings,Mayiladuthurai,11.1533,79.6647,0.36,9,Closed
+ACC101670,TN02,Savings,Chengalpattu,12.7241,79.9347,0.71,5,Closed
+ACC101671,TN05,Savings,Cuddalore,11.7499,79.7576,0.23,2,Closed
+ACC101672,TN26,Current,Theni,9.9894,77.4429,0.4,6,Frozen
+ACC101673,TN36,Current,Vellore,12.9605,79.0861,0.07,8,Active
+ACC101674,TN33,Wallet,Tiruppur,11.1376,77.2953,0.31,0,Frozen
+ACC101675,TN16,Savings,Kanniyakumari,8.0655,77.5009,0.78,10,Under Monitoring
+ACC101676,TN09,Jan Dhan,Kallakurichi,11.7745,78.9216,0.52,11,Under Monitoring
+ACC101677,TN02,Savings,Chengalpattu,12.7182,79.9799,0.9,1,Closed
+ACC101678,TN26,Current,Theni,10.0435,77.5127,0.78,6,Closed
+ACC101679,TN02,Jan Dhan,Chengalpattu,12.6713,79.946,0.3,10,Closed
+ACC101680,TN31,Wallet,Tirunelveli,8.693,77.716,0.95,8,Suspended
+ACC101681,TN31,Jan Dhan,Tirunelveli,8.7547,77.76,0.28,0,Under Monitoring
+ACC101682,TN26,Jan Dhan,Theni,10.0367,77.4983,0.47,9,Active
+ACC101683,TN26,Current,Theni,10.0051,77.4745,0.15,4,Suspended
+ACC101684,TN10,Savings,Kancheepuram,12.7937,79.6705,0.85,7,Closed
+ACC101685,TN16,Savings,Kanniyakumari,8.0524,77.5501,0.49,11,Closed
+ACC101686,TN15,Savings,Nagapattinam,10.7939,79.8201,0.34,5,Frozen
+ACC101687,TN03,Jan Dhan,Chennai,13.1016,80.2806,0.86,4,Frozen
+ACC101688,TN36,Wallet,Vellore,12.9211,79.1138,0.66,5,Under Monitoring
+ACC101689,TN31,Business,Tirunelveli,8.7194,77.7807,0.73,1,Under Monitoring
+ACC101690,TN05,Wallet,Cuddalore,11.7107,79.7228,0.53,1,Frozen
+ACC101691,TN13,Wallet,Madurai,9.9622,78.0812,0.87,7,Frozen
+ACC101692,TN34,Wallet,Tiruvannamalai,12.1893,79.1121,0.44,0,Suspended
+ACC101693,TN08,Wallet,Erode,11.3906,77.7392,0.87,4,Closed
+ACC101694,TN21,Business,Ranipet,12.9662,79.3397,0.2,4,Closed
+ACC101695,TN14,Business,Mayiladuthurai,11.1537,79.6405,0.61,7,Under Monitoring
+ACC101696,TN14,Jan Dhan,Mayiladuthurai,11.1512,79.6754,0.84,2,Frozen
+ACC101697,TN34,Wallet,Tiruvannamalai,12.1763,79.0663,0.19,1,Active
+ACC101698,TN20,Current,Ramanathapuram,9.3338,78.7915,0.48,1,Active
+ACC101699,TN30,Business,Tiruchirappalli,10.7561,78.6897,0.57,3,Suspended
+ACC101700,TN01,Current,Ariyalur,11.1175,79.1107,0.86,9,Suspended
+ACC101701,TN24,Business,Tenkasi,8.9831,77.3585,0.57,10,Frozen
+ACC101702,TN05,Business,Cuddalore,11.7132,79.7945,0.31,4,Closed
+ACC101703,TN07,Current,Dindigul,10.3921,77.9782,0.76,5,Closed
+ACC101704,TN38,Business,Virudhunagar,9.5649,77.9931,0.86,10,Under Monitoring
+ACC101705,TN14,Current,Mayiladuthurai,11.0588,79.6266,0.25,12,Closed
+ACC101706,TN10,Current,Kancheepuram,12.8007,79.7411,0.35,0,Frozen
+ACC101707,TN33,Wallet,Tiruppur,11.101,77.3383,0.33,12,Active
+ACC101708,TN16,Business,Kanniyakumari,8.0776,77.5659,0.71,5,Suspended
+ACC101709,TN34,Jan Dhan,Tiruvannamalai,12.2284,79.113,0.83,2,Suspended
+ACC101710,TN10,Wallet,Kancheepuram,12.8402,79.7026,0.78,10,Active
+ACC101711,TN36,Wallet,Vellore,12.9317,79.1003,0.86,7,Suspended
+ACC101712,TN28,Current,Tiruvarur,10.7778,79.672,0.91,3,Under Monitoring
+ACC101713,TN24,Current,Tenkasi,8.9997,77.3646,0.23,5,Closed
+ACC101714,TN13,Savings,Madurai,9.9338,78.1026,0.9,4,Closed
+ACC101715,TN01,Business,Ariyalur,11.1173,79.0933,0.65,6,Active
+ACC101716,TN17,Jan Dhan,Namakkal,11.2314,78.2145,0.82,11,Under Monitoring
+ACC101717,TN30,Wallet,Tiruchirappalli,10.7579,78.7297,0.65,8,Active
+ACC101718,TN03,Jan Dhan,Chennai,13.0356,80.3101,0.19,11,Frozen
+ACC101719,TN09,Savings,Kallakurichi,11.7303,78.9985,0.1,10,Active
+ACC101720,TN21,Savings,Ranipet,12.963,79.311,0.84,10,Closed
+ACC101721,TN02,Jan Dhan,Chengalpattu,12.7276,80.0105,0.34,11,Frozen
+ACC101722,TN38,Jan Dhan,Virudhunagar,9.5888,78.0065,0.42,10,Active
+ACC101723,TN05,Current,Cuddalore,11.7805,79.7716,0.73,1,Frozen
+ACC101724,TN29,Savings,Thoothukudi,8.7418,78.1047,0.52,2,Active
+ACC101725,TN20,Jan Dhan,Ramanathapuram,9.37,78.7939,0.48,11,Active
+ACC101726,TN37,Wallet,Viluppuram,11.8989,79.5279,0.22,1,Frozen
+ACC101727,TN21,Business,Ranipet,12.9399,79.2853,0.21,0,Frozen
+ACC101728,TN24,Wallet,Tenkasi,8.9145,77.3375,0.28,10,Frozen
+ACC101729,TN09,Jan Dhan,Kallakurichi,11.6936,78.9845,0.22,2,Closed
+ACC101730,TN21,Wallet,Ranipet,12.8998,79.3021,0.87,2,Suspended
+ACC101731,TN17,Wallet,Namakkal,11.1954,78.1664,0.59,5,Closed
+ACC101732,TN29,Current,Thoothukudi,8.7179,78.1683,0.41,8,Closed
+ACC101733,TN14,Wallet,Mayiladuthurai,11.0932,79.6845,0.79,3,Suspended
+ACC101734,TN33,Business,Tiruppur,11.1415,77.3705,0.13,12,Frozen
+ACC101735,TN17,Current,Namakkal,11.2157,78.1205,0.16,10,Frozen
+ACC101736,TN31,Current,Tirunelveli,8.7106,77.739,0.57,10,Closed
+ACC101737,TN03,Jan Dhan,Chennai,13.1028,80.2836,0.86,0,Frozen
+ACC101738,TN27,Wallet,Tiruvallur,13.1237,79.9219,0.14,5,Suspended
+ACC101739,TN11,Wallet,Karur,10.9648,78.1018,0.46,9,Under Monitoring
+ACC101740,TN38,Business,Virudhunagar,9.6066,77.9855,0.49,3,Suspended
+ACC101741,TN24,Business,Tenkasi,8.9402,77.333,0.33,3,Closed
+ACC101742,TN07,Wallet,Dindigul,10.355,77.9464,0.59,9,Active
+ACC101743,TN11,Business,Karur,10.9267,78.0567,0.61,11,Closed
+ACC101744,TN13,Business,Madurai,9.9504,78.0828,0.36,0,Active
+ACC101745,TN20,Current,Ramanathapuram,9.394,78.828,0.2,0,Frozen
+ACC101746,TN13,Current,Madurai,9.9053,78.0778,0.27,3,Under Monitoring
+ACC101747,TN06,Current,Dharmapuri,12.0931,78.1637,0.77,0,Under Monitoring
+ACC101748,TN11,Jan Dhan,Karur,10.9201,78.0816,0.42,3,Under Monitoring
+ACC101749,TN25,Wallet,Thanjavur,10.8076,79.1641,0.14,2,Suspended
+ACC101750,TN09,Wallet,Kallakurichi,11.7656,79.0037,0.81,11,Under Monitoring
+ACC101751,TN26,Business,Theni,9.9676,77.4756,0.74,9,Active
+ACC101752,TN15,Business,Nagapattinam,10.735,79.8184,0.39,8,Active
+ACC101753,TN26,Savings,Theni,10.025,77.4406,0.22,3,Suspended
+ACC101754,TN28,Savings,Tiruvarur,10.7501,79.6498,0.45,4,Suspended
+ACC101755,TN25,Wallet,Thanjavur,10.7405,79.1837,0.44,2,Under Monitoring
+ACC101756,TN34,Savings,Tiruvannamalai,12.2218,79.033,0.69,1,Under Monitoring
+ACC101757,TN01,Current,Ariyalur,11.1219,79.0861,0.41,7,Active
+ACC101758,TN32,Wallet,Tirupathur,12.4859,78.5216,0.45,11,Active
+ACC101759,TN29,Business,Thoothukudi,8.7515,78.1322,0.36,8,Suspended
+ACC101760,TN08,Current,Erode,11.3891,77.7204,0.41,10,Active
+ACC101761,TN10,Savings,Kancheepuram,12.8179,79.747,0.6,3,Closed
+ACC101762,TN30,Wallet,Tiruchirappalli,10.7454,78.6829,0.16,7,Under Monitoring
+ACC101763,TN24,Savings,Tenkasi,8.9953,77.3337,0.28,5,Suspended
+ACC101764,TN02,Business,Chengalpattu,12.6706,79.955,0.44,7,Suspended
+ACC101765,TN20,Savings,Ramanathapuram,9.3735,78.8178,0.08,11,Under Monitoring
+ACC101766,TN16,Current,Kanniyakumari,8.0467,77.498,0.73,10,Under Monitoring
+ACC101767,TN28,Jan Dhan,Tiruvarur,10.7506,79.6302,0.62,11,Closed
+ACC101768,TN37,Wallet,Viluppuram,11.8942,79.4688,0.09,9,Active
+ACC101769,TN25,Business,Thanjavur,10.835,79.0957,0.91,11,Suspended
+ACC101770,TN28,Wallet,Tiruvarur,10.7183,79.6794,0.29,10,Active
+ACC101771,TN28,Savings,Tiruvarur,10.7955,79.6415,0.98,9,Closed
+ACC101772,TN35,Current,The Nilgiris,11.511,76.6886,0.58,3,Under Monitoring
+ACC101773,TN18,Current,Perambalur,11.2119,78.8992,0.61,2,Suspended
+ACC101774,TN18,Savings,Perambalur,11.2249,78.834,0.44,2,Suspended
+ACC101775,TN18,Wallet,Perambalur,11.2441,78.9297,0.35,3,Frozen
+ACC101776,TN02,Jan Dhan,Chengalpattu,12.666,79.9868,0.73,9,Under Monitoring
+ACC101777,TN38,Wallet,Virudhunagar,9.6007,77.9453,0.41,8,Active
+ACC101778,TN22,Jan Dhan,Salem,11.6463,78.1783,0.19,11,Under Monitoring
+ACC101779,TN14,Business,Mayiladuthurai,11.1283,79.6707,0.29,0,Closed
+ACC101780,TN06,Wallet,Dharmapuri,12.1338,78.1427,0.24,8,Suspended
+ACC101781,TN20,Jan Dhan,Ramanathapuram,9.389,78.8272,0.48,2,Closed
+ACC101782,TN38,Current,Virudhunagar,9.5996,77.9689,0.44,12,Active
+ACC101783,TN19,Business,Pudukkottai,10.4041,78.8695,0.4,8,Frozen
+ACC101784,TN25,Business,Thanjavur,10.8319,79.1001,0.42,3,Active
+ACC101785,TN37,Jan Dhan,Viluppuram,11.908,79.452,0.77,11,Under Monitoring
+ACC101786,TN36,Wallet,Vellore,12.9017,79.1043,0.89,4,Suspended
+ACC101787,TN24,Savings,Tenkasi,8.9728,77.3338,0.64,10,Suspended
+ACC101788,TN33,Business,Tiruppur,11.1118,77.3136,0.43,12,Under Monitoring
+ACC101789,TN19,Wallet,Pudukkottai,10.3454,78.8578,0.42,0,Closed
+ACC101790,TN22,Wallet,Salem,11.6799,78.1643,0.14,9,Under Monitoring
+ACC101791,TN27,Wallet,Tiruvallur,13.1091,79.86,0.26,9,Closed
+ACC101792,TN33,Savings,Tiruppur,11.1185,77.3643,0.93,5,Closed
+ACC101793,TN16,Current,Kanniyakumari,8.0952,77.5357,0.13,5,Active
+ACC101794,TN25,Business,Thanjavur,10.7881,79.1071,0.9,7,Suspended
+ACC101795,TN16,Current,Kanniyakumari,8.0855,77.5598,0.24,2,Suspended
+ACC101796,TN05,Savings,Cuddalore,11.7187,79.7675,0.28,9,Under Monitoring
+ACC101797,TN16,Current,Kanniyakumari,8.1356,77.5385,0.15,9,Suspended
+ACC101798,TN11,Current,Karur,10.9563,78.1228,0.06,0,Under Monitoring
+ACC101799,TN34,Wallet,Tiruvannamalai,12.2615,79.0317,0.44,4,Closed
+ACC101800,TN08,Business,Erode,11.3557,77.7206,0.07,7,Active
+ACC101801,TN19,Wallet,Pudukkottai,10.4125,78.843,0.09,6,Closed
+ACC101802,TN29,Wallet,Thoothukudi,8.7929,78.0952,0.84,12,Closed
+ACC101803,TN08,Current,Erode,11.3276,77.7329,0.18,3,Under Monitoring
+ACC101804,TN14,Jan Dhan,Mayiladuthurai,11.0682,79.6676,0.12,11,Under Monitoring
+ACC101805,TN16,Jan Dhan,Kanniyakumari,8.0725,77.5574,0.36,7,Suspended
+ACC101806,TN37,Jan Dhan,Viluppuram,11.9495,79.5122,0.19,4,Active
+ACC101807,TN15,Jan Dhan,Nagapattinam,10.7736,79.8663,0.34,11,Frozen
+ACC101808,TN37,Jan Dhan,Viluppuram,11.9376,79.4801,0.32,11,Frozen
+ACC101809,TN10,Business,Kancheepuram,12.8134,79.692,0.64,0,Frozen
+ACC101810,TN38,Jan Dhan,Virudhunagar,9.552,77.9136,0.39,8,Closed
+ACC101811,TN26,Wallet,Theni,10.0222,77.4438,0.37,2,Closed
+ACC101812,TN33,Jan Dhan,Tiruppur,11.1108,77.3289,0.91,10,Frozen
+ACC101813,TN34,Wallet,Tiruvannamalai,12.1928,79.1144,0.06,1,Suspended
+ACC101814,TN15,Jan Dhan,Nagapattinam,10.7378,79.8099,0.62,11,Active
+ACC101815,TN13,Jan Dhan,Madurai,9.9251,78.1267,0.64,0,Closed
+ACC101816,TN15,Current,Nagapattinam,10.7536,79.7982,0.63,5,Closed
+ACC101817,TN05,Jan Dhan,Cuddalore,11.7533,79.7749,0.74,1,Active
+ACC101818,TN29,Business,Thoothukudi,8.7665,78.1093,0.79,2,Frozen
+ACC101819,TN15,Wallet,Nagapattinam,10.7349,79.8928,0.3,4,Active
+ACC101820,TN13,Savings,Madurai,9.9658,78.0831,0.33,3,Frozen
+ACC101821,TN16,Business,Kanniyakumari,8.1145,77.5362,0.14,12,Active
+ACC101822,TN21,Savings,Ranipet,12.8968,79.2949,0.13,3,Active
+ACC101823,TN35,Business,The Nilgiris,11.4631,76.7324,0.58,9,Under Monitoring
+ACC101824,TN08,Wallet,Erode,11.3687,77.6867,0.8,9,Under Monitoring
+ACC101825,TN01,Jan Dhan,Ariyalur,11.1655,79.0887,0.51,2,Suspended
+ACC101826,TN33,Wallet,Tiruppur,11.1099,77.3862,0.33,8,Frozen
+ACC101827,TN22,Jan Dhan,Salem,11.6821,78.1463,0.63,1,Frozen
+ACC101828,TN32,Savings,Tirupathur,12.4756,78.6135,0.49,2,Frozen
+ACC101829,TN05,Wallet,Cuddalore,11.7653,79.7309,0.85,5,Closed
+ACC101830,TN12,Current,Krishnagiri,12.5465,78.24,0.25,8,Suspended
+ACC101831,TN21,Business,Ranipet,12.9244,79.3518,0.91,3,Closed
+ACC101832,TN10,Jan Dhan,Kancheepuram,12.7998,79.7302,0.78,2,Closed
+ACC101833,TN11,Jan Dhan,Karur,11.0058,78.1247,0.66,12,Under Monitoring
+ACC101834,TN18,Current,Perambalur,11.2775,78.8793,0.85,4,Suspended
+ACC101835,TN10,Jan Dhan,Kancheepuram,12.8176,79.689,0.74,7,Suspended
+ACC101836,TN28,Business,Tiruvarur,10.7555,79.6261,0.76,6,Active
+ACC101837,TN27,Jan Dhan,Tiruvallur,13.1548,79.8711,0.47,4,Active
+ACC101838,TN13,Current,Madurai,9.9414,78.0954,0.82,0,Suspended
+ACC101839,TN28,Wallet,Tiruvarur,10.7487,79.6404,0.24,3,Closed
+ACC101840,TN33,Wallet,Tiruppur,11.1441,77.3018,0.28,5,Under Monitoring
+ACC101841,TN38,Wallet,Virudhunagar,9.6324,78.0071,0.78,6,Under Monitoring
+ACC101842,TN16,Jan Dhan,Kanniyakumari,8.137,77.5471,0.11,0,Suspended
+ACC101843,TN18,Business,Perambalur,11.2211,78.9245,0.15,2,Active
+ACC101844,TN21,Wallet,Ranipet,12.9596,79.3707,0.6,9,Frozen
+ACC101845,TN36,Savings,Vellore,12.9103,79.1153,0.56,10,Suspended
+ACC101846,TN36,Business,Vellore,12.9482,79.1515,0.18,12,Active
+ACC101847,TN21,Jan Dhan,Ranipet,12.9677,79.3279,0.87,2,Suspended
+ACC101848,TN30,Current,Tiruchirappalli,10.7866,78.688,0.68,11,Suspended
+ACC101849,TN17,Business,Namakkal,11.2437,78.1197,0.16,6,Under Monitoring
+ACC101850,TN26,Wallet,Theni,10.0402,77.51,0.11,8,Suspended
+ACC101851,TN02,Business,Chengalpattu,12.6876,79.9289,0.52,12,Suspended
+ACC101852,TN35,Wallet,The Nilgiris,11.4699,76.7171,0.11,1,Closed
+ACC101853,TN06,Business,Dharmapuri,12.1558,78.1614,0.79,1,Closed
+ACC101854,TN30,Business,Tiruchirappalli,10.8055,78.6738,0.12,10,Under Monitoring
+ACC101855,TN18,Wallet,Perambalur,11.2293,78.9202,0.74,10,Suspended
+ACC101856,TN05,Current,Cuddalore,11.7628,79.7554,0.54,11,Under Monitoring
+ACC101857,TN02,Wallet,Chengalpattu,12.7014,79.9263,0.82,0,Active
+ACC101858,TN15,Jan Dhan,Nagapattinam,10.7599,79.8208,0.26,10,Suspended
+ACC101859,TN35,Wallet,The Nilgiris,11.507,76.7037,0.81,5,Closed
+ACC101860,TN10,Current,Kancheepuram,12.8615,79.6742,0.22,0,Closed
+ACC101861,TN03,Current,Chennai,13.0867,80.3162,0.35,5,Frozen
+ACC101862,TN14,Current,Mayiladuthurai,11.0888,79.6458,0.3,3,Suspended
+ACC101863,TN02,Current,Chengalpattu,12.7317,80.0201,0.16,6,Active
+ACC101864,TN29,Current,Thoothukudi,8.7522,78.1295,0.42,3,Under Monitoring
+ACC101865,TN38,Savings,Virudhunagar,9.5465,77.9299,0.9,11,Closed
+ACC101866,TN08,Current,Erode,11.3667,77.6792,0.5,9,Suspended
+ACC101867,TN21,Wallet,Ranipet,12.8963,79.3818,0.79,5,Under Monitoring
+ACC101868,TN17,Business,Namakkal,11.1801,78.1631,0.06,12,Under Monitoring
+ACC101869,TN26,Savings,Theni,9.9959,77.5214,0.83,6,Suspended
+ACC101870,TN15,Savings,Nagapattinam,10.7822,79.8759,0.86,0,Suspended
+ACC101871,TN21,Savings,Ranipet,12.8913,79.3082,0.58,2,Closed
+ACC101872,TN10,Current,Kancheepuram,12.8537,79.7298,0.11,12,Frozen
+ACC101873,TN19,Jan Dhan,Pudukkottai,10.3915,78.8528,0.44,2,Closed
+ACC101874,TN10,Current,Kancheepuram,12.8207,79.7461,0.78,0,Under Monitoring
+ACC101875,TN14,Jan Dhan,Mayiladuthurai,11.0989,79.6407,0.83,9,Suspended
+ACC101876,TN02,Savings,Chengalpattu,12.6771,80.0146,0.08,2,Under Monitoring
+ACC101877,TN03,Business,Chennai,13.0704,80.2806,0.54,2,Active
+ACC101878,TN01,Jan Dhan,Ariyalur,11.1797,79.0378,0.97,1,Under Monitoring
+ACC101879,TN30,Wallet,Tiruchirappalli,10.8261,78.7084,0.17,9,Active
+ACC101880,TN20,Wallet,Ramanathapuram,9.3608,78.8724,0.17,10,Closed
+ACC101881,TN24,Business,Tenkasi,8.9732,77.2747,0.51,9,Frozen
+ACC101882,TN09,Current,Kallakurichi,11.7398,78.9944,0.18,10,Active
+ACC101883,TN07,Wallet,Dindigul,10.3406,77.981,0.28,4,Frozen
+ACC101884,TN20,Jan Dhan,Ramanathapuram,9.3849,78.8283,0.6,8,Closed
+ACC101885,TN18,Current,Perambalur,11.217,78.8696,0.19,11,Active
+ACC101886,TN25,Savings,Thanjavur,10.8164,79.1858,0.06,10,Active
+ACC101887,TN16,Current,Kanniyakumari,8.078,77.4897,0.5,5,Frozen
+ACC101888,TN37,Wallet,Viluppuram,11.9353,79.4576,0.63,8,Under Monitoring
+ACC101889,TN08,Jan Dhan,Erode,11.3565,77.7186,0.36,2,Suspended
+ACC101890,TN22,Wallet,Salem,11.6915,78.1416,0.14,5,Closed
+ACC101891,TN17,Savings,Namakkal,11.2471,78.1601,0.07,8,Frozen
+ACC101892,TN07,Current,Dindigul,10.4099,78.0025,0.16,11,Suspended
+ACC101893,TN09,Jan Dhan,Kallakurichi,11.719,78.9575,0.97,1,Closed
+ACC101894,TN12,Wallet,Krishnagiri,12.5506,78.2523,0.53,2,Frozen
+ACC101895,TN02,Current,Chengalpattu,12.7172,79.9611,0.61,2,Closed
+ACC101896,TN34,Business,Tiruvannamalai,12.18,79.078,0.55,11,Closed
+ACC101897,TN11,Jan Dhan,Karur,10.926,78.0946,0.64,9,Frozen
+ACC101898,TN10,Business,Kancheepuram,12.8784,79.7146,0.85,4,Active
+ACC101899,TN26,Jan Dhan,Theni,9.9994,77.479,0.44,7,Under Monitoring
+ACC101900,TN21,Current,Ranipet,12.9494,79.3133,0.12,11,Closed
+ACC101901,TN20,Current,Ramanathapuram,9.4062,78.8434,0.94,0,Under Monitoring
+ACC101902,TN09,Current,Kallakurichi,11.7364,78.9299,0.95,3,Under Monitoring
+ACC101903,TN11,Wallet,Karur,10.9492,78.0459,0.83,1,Frozen
+ACC101904,TN18,Current,Perambalur,11.2735,78.8444,0.74,10,Frozen
+ACC101905,TN14,Wallet,Mayiladuthurai,11.0727,79.6309,0.35,10,Active
+ACC101906,TN34,Jan Dhan,Tiruvannamalai,12.2277,79.1019,0.61,3,Under Monitoring
+ACC101907,TN20,Savings,Ramanathapuram,9.368,78.8431,0.19,12,Suspended
+ACC101908,TN18,Savings,Perambalur,11.2224,78.9212,0.15,7,Under Monitoring
+ACC101909,TN38,Current,Virudhunagar,9.6248,77.9815,0.79,12,Suspended
+ACC101910,TN15,Business,Nagapattinam,10.7275,79.8947,0.61,9,Suspended
+ACC101911,TN16,Wallet,Kanniyakumari,8.122,77.5848,0.44,10,Active
+ACC101912,TN18,Jan Dhan,Perambalur,11.2747,78.8961,0.36,10,Suspended
+ACC101913,TN23,Savings,Sivaganga,9.7946,78.5022,0.5,9,Under Monitoring
+ACC101914,TN15,Business,Nagapattinam,10.7606,79.8215,0.98,11,Under Monitoring
+ACC101915,TN36,Business,Vellore,12.9502,79.1201,0.53,10,Under Monitoring
+ACC101916,TN03,Business,Chennai,13.0435,80.3045,0.65,1,Closed
+ACC101917,TN07,Savings,Dindigul,10.4091,77.9434,0.59,11,Closed
+ACC101918,TN27,Wallet,Tiruvallur,13.162,79.8611,0.65,7,Under Monitoring
+ACC101919,TN37,Business,Viluppuram,11.8938,79.476,0.8,11,Under Monitoring
+ACC101920,TN02,Current,Chengalpattu,12.7006,79.9281,0.93,1,Suspended
+ACC101921,TN27,Savings,Tiruvallur,13.1631,79.942,0.29,10,Suspended
+ACC101922,TN23,Current,Sivaganga,9.821,78.5093,0.35,11,Suspended
+ACC101923,TN11,Current,Karur,10.9659,78.1129,0.65,11,Under Monitoring
+ACC101924,TN23,Current,Sivaganga,9.8778,78.5166,0.36,9,Closed
+ACC101925,TN15,Jan Dhan,Nagapattinam,10.8001,79.805,0.72,10,Under Monitoring
+ACC101926,TN21,Business,Ranipet,12.9269,79.3019,0.41,4,Under Monitoring
+ACC101927,TN23,Jan Dhan,Sivaganga,9.8739,78.5205,0.75,2,Suspended
+ACC101928,TN02,Savings,Chengalpattu,12.6629,79.9568,0.52,10,Closed
+ACC101929,TN19,Business,Pudukkottai,10.3835,78.8103,0.7,3,Active
+ACC101930,TN06,Business,Dharmapuri,12.1692,78.1745,0.84,2,Suspended
+ACC101931,TN35,Jan Dhan,The Nilgiris,11.4813,76.7758,0.15,11,Suspended
+ACC101932,TN37,Savings,Viluppuram,11.9225,79.4586,0.82,3,Closed
+ACC101933,TN10,Jan Dhan,Kancheepuram,12.7868,79.676,0.7,3,Frozen
+ACC101934,TN15,Wallet,Nagapattinam,10.782,79.8165,0.06,3,Active
+ACC101935,TN31,Wallet,Tirunelveli,8.7054,77.7618,0.58,6,Frozen
+ACC101936,TN34,Business,Tiruvannamalai,12.2153,79.0822,0.89,6,Suspended
+ACC101937,TN24,Jan Dhan,Tenkasi,8.9495,77.3016,0.91,3,Suspended
+ACC101938,TN35,Jan Dhan,The Nilgiris,11.4493,76.753,0.35,11,Frozen
+ACC101939,TN35,Business,The Nilgiris,11.4545,76.7818,0.78,8,Under Monitoring
+ACC101940,TN35,Jan Dhan,The Nilgiris,11.4521,76.7663,0.26,5,Closed
+ACC101941,TN15,Wallet,Nagapattinam,10.7441,79.8786,0.48,7,Under Monitoring
+ACC101942,TN38,Wallet,Virudhunagar,9.5437,78.012,0.07,7,Closed
+ACC101943,TN04,Jan Dhan,Coimbatore,11.0145,76.9764,0.11,5,Active
+ACC101944,TN18,Business,Perambalur,11.2094,78.9218,0.08,9,Under Monitoring
+ACC101945,TN28,Current,Tiruvarur,10.8147,79.6059,0.47,8,Suspended
+ACC101946,TN22,Current,Salem,11.6713,78.1836,0.93,2,Closed
+ACC101947,TN38,Jan Dhan,Virudhunagar,9.6235,78.0095,0.1,12,Suspended
+ACC101948,TN38,Savings,Virudhunagar,9.6147,77.9195,0.11,6,Frozen
+ACC101949,TN13,Current,Madurai,9.9732,78.1472,0.97,2,Active
+ACC101950,TN32,Savings,Tirupathur,12.4769,78.5255,0.43,11,Under Monitoring
+ACC101951,TN27,Wallet,Tiruvallur,13.1598,79.871,0.37,1,Suspended
+ACC101952,TN23,Current,Sivaganga,9.864,78.5188,0.51,2,Suspended
+ACC101953,TN26,Current,Theni,9.9831,77.5254,0.64,5,Under Monitoring
+ACC101954,TN07,Business,Dindigul,10.3382,78.0074,0.11,8,Active
+ACC101955,TN24,Savings,Tenkasi,8.9233,77.3615,0.54,0,Suspended
+ACC101956,TN25,Jan Dhan,Thanjavur,10.7398,79.1783,0.57,1,Frozen
+ACC101957,TN13,Business,Madurai,9.925,78.1233,0.96,1,Frozen
+ACC101958,TN24,Business,Tenkasi,8.9241,77.3092,0.84,12,Frozen
+ACC101959,TN33,Current,Tiruppur,11.1399,77.3356,0.63,8,Active
+ACC101960,TN20,Jan Dhan,Ramanathapuram,9.3247,78.8504,0.6,2,Active
+ACC101961,TN32,Current,Tirupathur,12.5041,78.6158,0.91,7,Closed
+ACC101962,TN25,Wallet,Thanjavur,10.8314,79.1547,0.11,3,Suspended
+ACC101963,TN10,Current,Kancheepuram,12.8802,79.7027,0.79,0,Suspended
+ACC101964,TN04,Wallet,Coimbatore,11.0479,76.9968,0.71,9,Active
+ACC101965,TN34,Savings,Tiruvannamalai,12.2417,79.0568,0.54,9,Closed
+ACC101966,TN34,Wallet,Tiruvannamalai,12.251,79.089,0.31,2,Under Monitoring
+ACC101967,TN13,Jan Dhan,Madurai,9.9696,78.1124,0.45,1,Under Monitoring
+ACC101968,TN02,Wallet,Chengalpattu,12.6543,79.9818,0.62,4,Under Monitoring
+ACC101969,TN19,Savings,Pudukkottai,10.3825,78.7747,0.93,4,Closed
+ACC101970,TN37,Business,Viluppuram,11.9074,79.4675,0.09,0,Active
+ACC101971,TN20,Wallet,Ramanathapuram,9.3327,78.8785,0.1,10,Under Monitoring
+ACC101972,TN33,Business,Tiruppur,11.1434,77.342,0.68,0,Frozen
+ACC101973,TN07,Wallet,Dindigul,10.4074,78.0087,0.71,1,Frozen
+ACC101974,TN32,Current,Tirupathur,12.5008,78.5774,0.09,6,Frozen
+ACC101975,TN08,Jan Dhan,Erode,11.2915,77.6912,0.81,5,Frozen
+ACC101976,TN25,Current,Thanjavur,10.7742,79.1716,0.09,2,Closed
+ACC101977,TN16,Business,Kanniyakumari,8.1052,77.5767,0.44,9,Suspended
+ACC101978,TN14,Jan Dhan,Mayiladuthurai,11.0994,79.6044,0.82,6,Suspended
+ACC101979,TN13,Wallet,Madurai,9.9005,78.0708,0.69,0,Under Monitoring
+ACC101980,TN09,Current,Kallakurichi,11.6954,78.9253,0.2,12,Under Monitoring
+ACC101981,TN05,Current,Cuddalore,11.7517,79.7381,0.74,10,Under Monitoring
+ACC101982,TN19,Business,Pudukkottai,10.3583,78.8561,0.29,12,Active
+ACC101983,TN26,Current,Theni,10.0554,77.4823,0.51,2,Closed
+ACC101984,TN03,Wallet,Chennai,13.0806,80.2318,0.09,6,Frozen
+ACC101985,TN06,Savings,Dharmapuri,12.1019,78.1697,0.46,2,Under Monitoring
+ACC101986,TN03,Business,Chennai,13.1094,80.2396,0.25,5,Active
+ACC101987,TN37,Savings,Viluppuram,11.985,79.4702,0.93,2,Suspended
+ACC101988,TN30,Current,Tiruchirappalli,10.8307,78.6603,0.4,4,Closed
+ACC101989,TN05,Current,Cuddalore,11.7164,79.7408,0.66,7,Active
+ACC101990,TN29,Savings,Thoothukudi,8.7985,78.145,0.32,2,Frozen
+ACC101991,TN36,Jan Dhan,Vellore,12.8722,79.151,0.43,8,Active
+ACC101992,TN11,Jan Dhan,Karur,10.9471,78.0409,0.15,3,Active
+ACC101993,TN25,Savings,Thanjavur,10.7933,79.1692,0.76,1,Frozen
+ACC101994,TN03,Business,Chennai,13.0873,80.2227,0.82,7,Closed
+ACC101995,TN25,Jan Dhan,Thanjavur,10.8056,79.1265,0.9,3,Under Monitoring
+ACC101996,TN17,Jan Dhan,Namakkal,11.2669,78.1811,0.5,2,Under Monitoring
+ACC101997,TN35,Jan Dhan,The Nilgiris,11.464,76.7124,0.73,6,Suspended
+ACC101998,TN11,Jan Dhan,Karur,10.9841,78.0698,0.33,0,Under Monitoring
+ACC101999,TN27,Business,Tiruvallur,13.1754,79.9558,0.17,10,Suspended
+ACC102000,TN14,Wallet,Mayiladuthurai,11.1006,79.6452,0.73,7,Under Monitoring

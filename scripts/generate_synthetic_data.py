@@ -225,26 +225,27 @@ def generate_relationships(accounts, n=150):
         })
     return rels
 
-def generate_withdrawal_locations(locations, n=25):
+def load_real_withdrawal_locations():
     w_locs = []
-    used_ids = set()
-    for i in range(n):
-        loc_id = f"WL{1001 + i}"
-        if loc_id in used_ids: continue
-        used_ids.add(loc_id)
-        base_loc = random.choice(locations)
-        w_locs.append({
-            "location_id": loc_id,
-            "district_id": base_loc["district_id"],
-            "location_reference_id": base_loc["location_id"],
-            "location_name": f"{base_loc['location_name']} ATM Cluster",
-            "city": base_loc["city_or_town"],
-            "latitude": jitter(base_loc["latitude"], 0.01),
-            "longitude": jitter(base_loc["longitude"], 0.01),
-            "atm_count": random.randint(1, 15),
-            "location_type": "ATM_ZONE",
-            "area_risk_baseline": round(random.uniform(0.1, 0.9), 2)
-        })
+    filepath = os.path.join(RAW_DIR, "withdrawal_locations.csv")
+    if not os.path.exists(filepath):
+        print("ERROR: withdrawal_locations.csv not found! Run fetch_real_atms.py first.")
+        return []
+    with open(filepath, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            w_locs.append({
+                "location_id": row["location_id"],
+                "district_id": row["district_id"],
+                "location_reference_id": row["location_reference_id"],
+                "location_name": row["location_name"],
+                "city": row["city"],
+                "latitude": float(row["latitude"]),
+                "longitude": float(row["longitude"]),
+                "atm_count": int(row["atm_count"]),
+                "location_type": row["location_type"],
+                "area_risk_baseline": float(row["area_risk_baseline"])
+            })
     return w_locs
 
 def generate_historical_cases(withdrawal_locations, n=200):
@@ -353,12 +354,12 @@ if __name__ == "__main__":
     
     districts = generate_districts()
     locations = generate_locations()
-    accounts = generate_accounts(70)
-    complaints = generate_complaints(35)
-    transactions = generate_transactions(accounts, complaints, 200)
-    relationships = generate_relationships(accounts, 150)
-    withdrawal_locations = generate_withdrawal_locations(locations, 25)
-    historical_cases = generate_historical_cases(withdrawal_locations, 200)
+    accounts = generate_accounts(2000)
+    complaints = generate_complaints(1000)
+    transactions = generate_transactions(accounts, complaints, 8500)
+    relationships = generate_relationships(accounts, 4500)
+    withdrawal_locations = load_real_withdrawal_locations()
+    historical_cases = generate_historical_cases(withdrawal_locations, 1000)
     
     enrich_cc1001(complaints, accounts, transactions, relationships, withdrawal_locations)
     
@@ -368,7 +369,6 @@ if __name__ == "__main__":
     write_csv(os.path.join(RAW_DIR, "complaints.csv"), list(complaints[0].keys()), complaints)
     write_csv(os.path.join(RAW_DIR, "transactions.csv"), list(transactions[0].keys()), transactions)
     write_csv(os.path.join(RAW_DIR, "account_relationships.csv"), list(relationships[0].keys()), relationships)
-    write_csv(os.path.join(RAW_DIR, "withdrawal_locations.csv"), list(withdrawal_locations[0].keys()), withdrawal_locations)
     write_csv(os.path.join(RAW_DIR, "historical_cases.csv"), list(historical_cases[0].keys()), historical_cases)
     
     print("DONE. Tamil Nadu synthetic datasets written to data/raw/")

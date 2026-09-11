@@ -35,6 +35,12 @@ class PredictionFactor(Base):
     direction: Mapped[str] = mapped_column(
         String(20), nullable=False,
     )
+    feature_value: Mapped[str] = mapped_column(
+        String(255), nullable=True,
+    )
+    explanation_text: Mapped[str] = mapped_column(
+        String(500), nullable=True,
+    )
 
     # --- ORM relationships ---
     prediction: Mapped["Prediction"] = relationship(

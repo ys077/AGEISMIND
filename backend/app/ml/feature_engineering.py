@@ -44,35 +44,36 @@ class FeatureEngineer:
         unique_senders = len(set(tx.sender_account for tx in transactions))
         unique_receivers = len(set(tx.receiver_account for tx in transactions))
 
-        # --- Temporal & Geographic Features (from Module 7) ---
-        time_analysis = get_time_analysis(transactions)
-        geo_analysis = get_geography_analysis(complaint, transactions, accounts)
+        from app.services.time_geography_service import analyze_temporal, analyze_geography
+        time_analysis = analyze_temporal(complaint.complaint_id, self.db)
+        geo_analysis = analyze_geography(complaint.complaint_id, self.db)
         
         # Determine complaint/case core location
-        complaint_lat = float(complaint.latitude) if complaint.latitude else 0.0
-        complaint_lon = float(complaint.longitude) if complaint.longitude else 0.0
+        complaint_lat = float(complaint.victim_latitude) if complaint.victim_latitude else 0.0
+        complaint_lon = float(complaint.victim_longitude) if complaint.victim_longitude else 0.0
         complaint_district = complaint.district_id
 
         # Terminal account district
         terminal_district = "UNKNOWN"
-        if geo_analysis.geographic_concentration.district_distribution:
+        if geo_analysis.district_distribution:
             # Most active district
-            terminal_district = geo_analysis.geographic_concentration.district_distribution[0].district_id
+            sorted_districts = sorted(geo_analysis.district_distribution, key=lambda x: x.transaction_count, reverse=True)
+            terminal_district = sorted_districts[0].district
             
-        avg_tx_gap = sum(gap.duration_minutes for gap in time_analysis.time_gaps) / len(time_analysis.time_gaps) if time_analysis.time_gaps else 0.0
-        max_tx_gap = max((gap.duration_minutes for gap in time_analysis.time_gaps), default=0.0)
-        min_tx_gap = min((gap.duration_minutes for gap in time_analysis.time_gaps), default=0.0)
+        avg_tx_gap = time_analysis.time_gaps.average_gap_minutes
+        max_tx_gap = time_analysis.time_gaps.maximum_gap_minutes
+        min_tx_gap = time_analysis.time_gaps.minimum_gap_minutes
 
         # Activity periods
         night_pct = 0.0
         morning_pct = 0.0
         afternoon_pct = 0.0
         evening_pct = 0.0
-        for period in time_analysis.time_periods:
-            if period.period == "Night (00:00-06:00)": night_pct = period.percentage
-            elif period.period == "Morning (06:00-12:00)": morning_pct = period.percentage
-            elif period.period == "Afternoon (12:00-18:00)": afternoon_pct = period.percentage
-            elif period.period == "Evening (18:00-24:00)": evening_pct = period.percentage
+        for period in time_analysis.period_activity:
+            if period.period == "NIGHT": night_pct = period.percentage
+            elif period.period == "MORNING": morning_pct = period.percentage
+            elif period.period == "AFTERNOON": afternoon_pct = period.percentage
+            elif period.period == "EVENING": evening_pct = period.percentage
 
         # --- Candidate-level Expansion ---
         feature_rows = []

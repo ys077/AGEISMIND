@@ -20,3 +20,10 @@ class ComplaintBase(BaseModel):
 
 class ComplaintResponse(ComplaintBase):
     model_config = ConfigDict(from_attributes=True)
+
+class PaginatedComplaintResponse(BaseModel):
+    items: list[ComplaintResponse]
+    total: int
+    page: int
+    page_size: int
+    total_pages: int

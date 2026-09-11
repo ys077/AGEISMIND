@@ -1,0 +1,280 @@
+import uuid
+from typing import List, Optional, Dict, Any
+from sqlalchemy.orm import Session, joinedload
+from sqlalchemy import func
+
+from app.models.alert import Alert
+from app.models.prediction import Prediction
+from app.models.investigation_action import InvestigationAction
+from app.models.audit_log import AuditLog
+from app.models.withdrawal_location import WithdrawalLocation
+from app.models.district import District
+from app.schemas.alert import AlertDetailResponse
+
+
+def generate_alerts_from_predictions(db: Session) -> int:
+    """
+    Scans existing predictions for HIGH or MEDIUM priority.
+    Creates alerts for any that don't already have one.
+    Returns the number of alerts created.
+    """
+    # Find high/medium predictions without an alert
+    # We can do this with an outer join or subquery
+    predictions_to_alert = db.query(Prediction).filter(
+        Prediction.priority.in_(["HIGH", "MEDIUM"]),
+        ~Prediction.prediction_id.in_(db.query(Alert.prediction_id))
+    ).all()
+    
+    count = 0
+    for pred in predictions_to_alert:
+        new_alert = Alert(
+            prediction_id=pred.prediction_id,
+            status="NEW"
+        )
+        db.add(new_alert)
+        count += 1
+        
+    if count > 0:
+        db.commit()
+        
+    return count
+
+
+def get_alerts(
+    db: Session,
+    status: Optional[str] = None,
+    priority: Optional[str] = None,
+    district: Optional[str] = None,
+    complaint_id: Optional[str] = None
+) -> List[Dict[str, Any]]:
+    """
+    Retrieve a list of alerts with optional filters.
+    """
+    query = db.query(Alert, Prediction, WithdrawalLocation, District).join(
+        Prediction, Alert.prediction_id == Prediction.prediction_id
+    ).join(
+        WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id
+    ).join(
+        District, WithdrawalLocation.district_id == District.district_id
+    )
+
+    if status:
+        query = query.filter(Alert.status == status)
+    if priority:
+        query = query.filter(Prediction.priority == priority)
+    if district:
+        query = query.filter(District.district_name == district)
+    if complaint_id:
+        query = query.filter(Prediction.complaint_id == complaint_id)
+
+    results = query.all()
+    
+    formatted_alerts = []
+    for alert, pred, loc, dist in results:
+        formatted_alerts.append({
+            "alert_id": alert.alert_id,
+            "prediction_id": pred.prediction_id,
+            "complaint_id": pred.complaint_id,
+            "withdrawal_location_id": loc.location_id,
+            "district": dist.district_name,
+            "probability": float(pred.risk_score),
+            "rank": pred.rank,
+            "priority": pred.priority,
+            "status": alert.status,
+            "created_at": alert.created_at
+        })
+        
+    # Sort by probability descending, rank ascending
+    formatted_alerts.sort(key=lambda x: (-x["probability"], x["rank"]))
+    return formatted_alerts
+
+
+def get_alert_detail(db: Session, alert_id: uuid.UUID) -> Optional[AlertDetailResponse]:
+    """
+    Retrieve detailed view for an alert, including SHAP explanations.
+    """
+    alert = db.query(Alert).filter(Alert.alert_id == alert_id).first()
+    if not alert:
+        return None
+        
+    pred = db.query(Prediction).options(
+        joinedload(Prediction.factors)
+    ).filter(Prediction.prediction_id == alert.prediction_id).first()
+    
+    if not pred:
+        return None
+        
+    loc = db.query(WithdrawalLocation).options(
+        joinedload(WithdrawalLocation.district)
+    ).filter(WithdrawalLocation.location_id == pred.location_id).first()
+    
+    if not loc:
+        return None
+
+    # Process SHAP factors
+    positive_factors = []
+    negative_factors = []
+    
+    for factor in pred.factors:
+        f_dict = {
+            "feature_name": factor.feature_name,
+            "feature_value": float(factor.feature_value) if factor.feature_value is not None else None,
+            "shap_value": float(factor.shap_value)
+        }
+        if factor.shap_value > 0:
+            positive_factors.append(f_dict)
+        elif factor.shap_value < 0:
+            negative_factors.append(f_dict)
+            
+    # Sort by absolute impact
+    positive_factors.sort(key=lambda x: x["shap_value"], reverse=True)
+    negative_factors.sort(key=lambda x: x["shap_value"])  # smallest (most negative) first
+    
+    # Generate basic explanation text (Module 9 format)
+    explanation_text = "This candidate was prioritized based on several factors. "
+    if positive_factors:
+        top_pos = positive_factors[0]
+        explanation_text += f"The most significant risk indicator was {top_pos['feature_name']} (SHAP: +{top_pos['shap_value']:.4f}). "
+    if negative_factors:
+        top_neg = negative_factors[0]
+        explanation_text += f"Conversely, {top_neg['feature_name']} slightly reduced the overall risk score (SHAP: {top_neg['shap_value']:.4f})."
+
+    return AlertDetailResponse(
+        alert_id=alert.alert_id,
+        prediction_id=pred.prediction_id,
+        complaint_id=pred.complaint_id,
+        withdrawal_location_id=loc.location_id,
+        district=loc.district.district_name if loc.district else "Unknown",
+        probability=float(pred.risk_score),
+        rank=pred.rank,
+        priority=pred.priority,
+        status=alert.status,
+        created_at=alert.created_at,
+        updated_at=alert.updated_at,
+        top_positive_factors=positive_factors[:5],
+        top_negative_factors=negative_factors[:5],
+        explanation_text=explanation_text.strip()
+    )
+
+
+def log_audit_event(
+    db: Session,
+    action_type: str,
+    entity_type: str,
+    entity_id: str,
+    actor_id: str = "SYSTEM",
+    complaint_id: Optional[str] = None,
+    data_hash: Optional[str] = None
+):
+    """
+    Create an audit log entry for tamper-evident tracking.
+    """
+    audit = AuditLog(
+        action_type=action_type,
+        entity_type=entity_type,
+        entity_id=entity_id,
+        actor_id=actor_id,
+        complaint_id=complaint_id,
+        data_hash=data_hash
+    )
+    db.add(audit)
+    db.commit()
+
+
+def update_alert_status(db: Session, alert_id: uuid.UUID, new_status: str, actor_id: str = "INVESTIGATOR_1") -> Optional[Alert]:
+    """
+    Updates alert status and records an audit log.
+    """
+    alert = db.query(Alert).filter(Alert.alert_id == alert_id).first()
+    if not alert:
+        return None
+        
+    old_status = alert.status
+    alert.status = new_status
+    db.commit()
+    db.refresh(alert)
+    
+    # We need complaint_id for the audit log
+    pred = db.query(Prediction).filter(Prediction.prediction_id == alert.prediction_id).first()
+    comp_id = pred.complaint_id if pred else None
+    
+    log_audit_event(
+        db=db,
+        action_type=f"STATUS_CHANGE_{old_status}_TO_{new_status}",
+        entity_type="ALERT",
+        entity_id=str(alert.alert_id),
+        actor_id=actor_id,
+        complaint_id=comp_id,
+        data_hash=f"{old_status}->{new_status}" # simple representation for now
+    )
+    
+    return alert
+
+
+def add_investigator_action(
+    db: Session, 
+    alert_id: uuid.UUID, 
+    action_type: str, 
+    notes: Optional[str], 
+    actor_id: str = "INVESTIGATOR_1"
+) -> Optional[InvestigationAction]:
+    """
+    Records an investigator action and creates an audit log.
+    """
+    alert = db.query(Alert).filter(Alert.alert_id == alert_id).first()
+    if not alert:
+        return None
+        
+    pred = db.query(Prediction).filter(Prediction.prediction_id == alert.prediction_id).first()
+    if not pred:
+        return None
+        
+    action = InvestigationAction(
+        complaint_id=pred.complaint_id,
+        investigator_id=actor_id,
+        action_type=action_type,
+        action_description=f"Alert {alert_id}: {notes}" if notes else f"Alert {alert_id}"
+    )
+    db.add(action)
+    db.commit()
+    db.refresh(action)
+    
+    log_audit_event(
+        db=db,
+        action_type=f"INVESTIGATION_ACTION_{action_type}",
+        entity_type="INVESTIGATION_ACTION",
+        entity_id=str(action.action_id),
+        actor_id=actor_id,
+        complaint_id=pred.complaint_id
+    )
+    
+    return action
+
+
+def get_alert_summary(db: Session) -> Dict[str, int]:
+    """
+    Returns dashboard statistics for alerts.
+    """
+    # Status counts
+    status_counts = db.query(Alert.status, func.count(Alert.alert_id)).group_by(Alert.status).all()
+    status_dict = {status: count for status, count in status_counts}
+    
+    # Priority counts
+    priority_counts = db.query(Prediction.priority, func.count(Alert.alert_id)).join(
+        Prediction, Alert.prediction_id == Prediction.prediction_id
+    ).group_by(Prediction.priority).all()
+    priority_dict = {priority: count for priority, count in priority_counts}
+    
+    total = sum(status_dict.values())
+    
+    return {
+        "total_alerts": total,
+        "new_alerts": status_dict.get("NEW", 0),
+        "acknowledged_alerts": status_dict.get("ACKNOWLEDGED", 0),
+        "in_review_alerts": status_dict.get("IN_REVIEW", 0),
+        "action_taken_alerts": status_dict.get("ACTION_TAKEN", 0),
+        "closed_alerts": status_dict.get("CLOSED", 0),
+        "high_priority": priority_dict.get("HIGH", 0),
+        "medium_priority": priority_dict.get("MEDIUM", 0),
+        "low_priority": priority_dict.get("LOW", 0)
+    }

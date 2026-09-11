@@ -14,6 +14,19 @@ from app.schemas.time_geography import (
 )
 from app.services.money_flow_service import reconstruct_money_flow
 
+def get_complaint_transactions(complaint_id: str, db: Session) -> List[Transaction]:
+    return db.query(Transaction).filter(Transaction.complaint_id == complaint_id).all()
+
+def get_complaint_accounts(complaint_id: str, db: Session) -> List[Account]:
+    transactions = get_complaint_transactions(complaint_id, db)
+    account_ids = set()
+    for tx in transactions:
+        account_ids.add(tx.sender_account)
+        account_ids.add(tx.receiver_account)
+    if not account_ids:
+        return []
+    return db.query(Account).filter(Account.account_id.in_(account_ids)).all()
+
 # ==============================================================================
 # TIME ANALYSIS
 # ==============================================================================

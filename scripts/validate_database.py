@@ -130,15 +130,7 @@ def main() -> int:
                 f"expected {expected}",
             )
 
-        # Empty tables (should be 0)
-        for model, label in [
-            (Prediction, "predictions"),
-            (PredictionFactor, "prediction_factors"),
-            (InvestigationAction, "investigation_actions"),
-            (AuditLog, "audit_logs"),
-        ]:
-            actual = session.query(func.count()).select_from(model).scalar()
-            check(f"{label}: {actual}", actual == 0, "expected 0 (future module)")
+        # Empty tables check removed because modules are now implemented
 
         print()
 

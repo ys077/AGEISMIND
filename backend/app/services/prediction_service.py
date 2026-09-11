@@ -55,7 +55,9 @@ def generate_and_save_prediction(complaint_id: str, db: Session) -> PredictionRe
                 prediction_id=pred.prediction_id,
                 factor_name=factor["factor_name"],
                 contribution=factor["contribution"],
-                direction=factor["direction"]
+                direction=factor["direction"],
+                feature_value=factor.get("feature_value"),
+                explanation_text=factor.get("explanation_text")
             )
             db.add(pf)
             
@@ -89,7 +91,9 @@ def get_stored_prediction(complaint_id: str, db: Session, top_k: int = None) -> 
             {
                 "factor_name": f.factor_name,
                 "contribution": float(f.contribution),
-                "direction": f.direction
+                "direction": f.direction,
+                "feature_value": f.feature_value,
+                "explanation_text": f.explanation_text
             }
             for f in p.factors
         ]

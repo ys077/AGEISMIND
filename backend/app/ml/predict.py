@@ -46,6 +46,11 @@ def generate_prediction(
     # Predict probabilities
     probs = model.predict_proba(X)[:, 1]
     
+    from app.ml.explainer import explain_predictions
+    
+    # Generate SHAP explanations
+    all_candidate_factors = explain_predictions(df, expected_features)
+    
     # Attach probabilities back to candidate info
     results = []
     for idx, candidate in enumerate(candidates):
@@ -53,22 +58,16 @@ def generate_prediction(
         prob = float(probs[idx])
         
         # Determine priority string based on prob
-        if prob > 0.8:
+        if prob > 0.15:
             priority = "CRITICAL"
-        elif prob > 0.5:
+        elif prob > 0.05:
             priority = "HIGH"
-        elif prob > 0.2:
+        elif prob > 0.01:
             priority = "MEDIUM"
         else:
             priority = "LOW"
             
-        # Top 3 feature values to save as explanations (simple feature importance heuristic for now)
-        # For tree models, we might extract shap values later, but for now we just store the raw values of key geographic factors
-        factors = [
-            {"factor_name": "dist_from_complaint_deg", "contribution": dist, "direction": "NEGATIVE" if dist > 0 else "NEUTRAL"},
-            {"factor_name": "same_district_as_victim", "contribution": float(df.loc[idx, "same_district_as_victim"]), "direction": "POSITIVE"},
-            {"factor_name": "historical_frequency", "contribution": float(df.loc[idx, "historical_frequency"]), "direction": "POSITIVE"}
-        ]
+        factors = all_candidate_factors[idx]
             
         results.append({
             "candidate": candidate,

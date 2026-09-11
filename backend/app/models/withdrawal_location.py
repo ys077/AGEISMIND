@@ -44,10 +44,28 @@ class WithdrawalLocation(Base):
         String(50), nullable=False,
     )
     atm_count: Mapped[int] = mapped_column(
-        Integer, nullable=False, default=0,
+        Integer, nullable=False, default=1,
     )
     area_risk_baseline: Mapped[Decimal] = mapped_column(
-        Numeric(5, 2), nullable=False,
+        Numeric(5, 2), nullable=False, default=0.5
+    )
+    source: Mapped[str | None] = mapped_column(
+        String(50), nullable=True,
+    )
+    source_id: Mapped[str | None] = mapped_column(
+        String(50), nullable=True,
+    )
+    operator: Mapped[str | None] = mapped_column(
+        String(100), nullable=True,
+    )
+    brand: Mapped[str | None] = mapped_column(
+        String(100), nullable=True,
+    )
+    address: Mapped[str | None] = mapped_column(
+        String(255), nullable=True,
+    )
+    data_status: Mapped[str | None] = mapped_column(
+        String(50), nullable=True,
     )
 
     # PostGIS geographic point

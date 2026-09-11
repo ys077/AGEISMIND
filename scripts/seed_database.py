@@ -180,15 +180,17 @@ def seed_withdrawal_locations(session: Session):
             stmt = text(f"""
                 INSERT INTO withdrawal_locations (
                     location_id, district_id, location_reference_id, location_name, city,
-                    latitude, longitude, location_type, atm_count, area_risk_baseline, location
+                    latitude, longitude, location_type, atm_count, area_risk_baseline, location,
+                    source, source_id, operator, brand, address, data_status
                 ) VALUES (
-                    :lid, :dist, :lref, :lname, :city, :lat, :lon, :ltype, :atm, :risk, {geom}
+                    :lid, :dist, :lref, :lname, :city, :lat, :lon, :ltype, :atm, :risk, {geom},
+                    :src, :sid, :op, :brnd, :addr, :dstat
                 ) ON CONFLICT (location_id) DO NOTHING
             """)
             session.execute(stmt, {
                 "lid": row["location_id"],
                 "dist": row["district_id"],
-                "lref": row["location_reference_id"],
+                "lref": row["location_reference_id"] if row.get("location_reference_id") else None,
                 "lname": row["location_name"],
                 "city": row["city"],
                 "lat": row["latitude"],
@@ -196,6 +198,12 @@ def seed_withdrawal_locations(session: Session):
                 "ltype": row["location_type"],
                 "atm": row["atm_count"],
                 "risk": row["area_risk_baseline"],
+                "src": row.get("source"),
+                "sid": row.get("source_id"),
+                "op": row.get("operator"),
+                "brnd": row.get("brand"),
+                "addr": row.get("address"),
+                "dstat": row.get("data_status")
             })
 
 

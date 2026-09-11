@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import health, complaints, withdrawal_locations, historical_cases, cases, analysis, money_flow, network_analysis, time_geography, predictions
+from app.routers import health, complaints, withdrawal_locations, historical_cases, cases, analysis, money_flow, network_analysis, time_geography, predictions, explainability, risk_heatmap, alerts, dashboard
 
 app = FastAPI(
     title="Cybercrime Cash Withdrawal Prediction System Mock API",
@@ -34,6 +34,10 @@ app.include_router(money_flow.router, prefix="/api")
 app.include_router(network_analysis.router, prefix="/api")
 app.include_router(time_geography.router, prefix="/api")
 app.include_router(predictions.router, prefix="/api")
+app.include_router(explainability.router, prefix="/api")
+app.include_router(alerts.router, prefix="/api")
+app.include_router(dashboard.router, prefix="/api")
+app.include_router(risk_heatmap.router, prefix="/api/risk-heatmap", tags=["Risk Heatmap"])
 
 @app.get("/", tags=["Root"])
 def read_root():
