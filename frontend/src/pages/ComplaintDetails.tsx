@@ -6,6 +6,7 @@ import {
   getComplaintTransactions, 
   getStoredPrediction 
 } from '../api/client';
+import { formatProbability } from '../utils/probability';
 import { ArrowLeft, FileText, Database, Network, Map, Cpu } from 'lucide-react';
 import { RiskHeatmap } from '../components/RiskHeatmap';
 
@@ -276,7 +277,7 @@ export const ComplaintDetails: React.FC = () => {
                         )}
                       </div>
                       <div className="text-right">
-                        <span className="text-2xl font-bold text-blue-600">{(cand.probability * 100).toFixed(1)}%</span>
+                        <span className="text-2xl font-bold text-blue-600">{formatProbability(cand.probability)}</span>
                         <p className="text-xs text-slate-400 mt-1">Probability</p>
                       </div>
                     </div>

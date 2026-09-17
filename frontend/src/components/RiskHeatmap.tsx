@@ -4,6 +4,7 @@ import Map, { Source, Layer, Marker, Popup, NavigationControl } from 'react-map-
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { getHeatmapData, getCandidateExplanation } from '../api/client';
+import { formatProbability } from '../utils/probability';
 import { useNavigate } from 'react-router-dom';
 import { ShieldAlert, Info, ChevronRight } from 'lucide-react';
 
@@ -200,7 +201,7 @@ export const RiskHeatmap: React.FC<{ complaintId?: string }> = ({ complaintId })
               />
             </Source>
 
-            {[...filteredCandidates.slice(0, 150)].reverse().map(c => (
+            {[...filteredCandidates.slice(0, 150)].filter(c => c.probability >= 0.01).reverse().map(c => (
               <Marker 
                 key={c.prediction_id} 
                 longitude={c.longitude} 
@@ -211,11 +212,12 @@ export const RiskHeatmap: React.FC<{ complaintId?: string }> = ({ complaintId })
                 }}
               >
                 <div className={`cursor-pointer rounded-full border shadow-md flex items-center justify-center text-white font-bold hover:scale-110 transition-transform ${
+                  c.priority === 'CRITICAL' ? 'bg-purple-600 border-white text-xs w-10 h-10 relative z-[60]' :
                   c.priority === 'HIGH' ? 'bg-red-600 border-white text-xs w-9 h-9 relative z-50' : 
                   c.priority === 'MEDIUM' ? 'bg-amber-500 border-white text-[10px] w-8 h-8 relative z-40' : 
                   'bg-blue-600 border-white text-[10px] w-7 h-7 relative z-30'
                 }`}>
-                  {c.probability * 100 < 1 ? '<1%' : (c.probability * 100).toFixed(0) + '%'}
+                  {formatProbability(c.probability)}
                 </div>
               </Marker>
             ))}
@@ -231,7 +233,7 @@ export const RiskHeatmap: React.FC<{ complaintId?: string }> = ({ complaintId })
               >
                 <div className="p-2 text-slate-800">
                   <div className="font-bold text-sm border-b border-slate-200 pb-2 mb-3 flex justify-between items-center">
-                    <span>{complaintId === "ALL_COMPLAINTS" ? "Withdrawal Hotspot" : `Target Node #${selectedCandidate.rank}`}</span>
+                    <span>{complaintId === "ALL_COMPLAINTS" ? "Candidate Withdrawal Zone" : `Candidate Zone #${selectedCandidate.rank}`}</span>
                     {complaintId !== "ALL_COMPLAINTS" && (
                       <button 
                         onClick={() => navigate(`/complaints/${complaintId}`)} 
@@ -241,22 +243,18 @@ export const RiskHeatmap: React.FC<{ complaintId?: string }> = ({ complaintId })
                       </button>
                     )}
                   </div>
-                  <div className="mb-4 text-xs space-y-1.5">
-                    <p><span className="font-semibold text-slate-500 w-24 inline-block">Location ID:</span> {selectedCandidate.withdrawal_location_id}</p>
-                    <p><span className="font-semibold text-slate-500 w-24 inline-block">District:</span> {selectedCandidate.district}</p>
-                    {selectedCandidate.source && (
-                      <p><span className="font-semibold text-slate-500 w-24 inline-block">Source:</span> {selectedCandidate.source}</p>
-                    )}
-                    {selectedCandidate.brand && (
-                      <p><span className="font-semibold text-slate-500 w-24 inline-block">Brand/Bank:</span> {selectedCandidate.brand}</p>
-                    )}
-                    {selectedCandidate.address && (
-                      <p><span className="font-semibold text-slate-500 w-24 inline-block">Address:</span> {selectedCandidate.address}</p>
-                    )}
-                    <p><span className="font-semibold text-slate-500 w-24 inline-block">Confidence:</span> <span className="font-bold">{selectedCandidate.probability * 100 < 0.1 ? '<0.1' : (selectedCandidate.probability * 100).toFixed(1)}%</span></p>
+                  <div className="mb-3 text-xs space-y-1.5">
+                    <p><span className="font-semibold text-slate-500 w-28 inline-block">Candidate ID:</span> {selectedCandidate.withdrawal_location_id || selectedCandidate.location_id}</p>
+                    <p><span className="font-semibold text-slate-500 w-28 inline-block">District:</span> {selectedCandidate.district}</p>
+                    <p><span className="font-semibold text-slate-500 w-28 inline-block">Probability:</span> <span className="font-bold">{formatProbability(selectedCandidate.probability)}</span></p>
                     <p className="flex items-center">
-                      <span className="font-semibold text-slate-500 w-24 inline-block">Priority:</span> 
-                      <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold uppercase ${selectedCandidate.priority === 'HIGH' ? 'bg-red-100 text-red-700' : selectedCandidate.priority === 'MEDIUM' ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-700'}`}>{selectedCandidate.priority}</span>
+                      <span className="font-semibold text-slate-500 w-28 inline-block">Priority:</span> 
+                      <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold uppercase ${selectedCandidate.priority === 'CRITICAL' ? 'bg-purple-100 text-purple-700' : selectedCandidate.priority === 'HIGH' ? 'bg-red-100 text-red-700' : selectedCandidate.priority === 'MEDIUM' ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-700'}`}>{selectedCandidate.priority}</span>
+                    </p>
+                    <p><span className="font-semibold text-slate-500 w-28 inline-block">Rank:</span> #{selectedCandidate.rank}</p>
+                    <p><span className="font-semibold text-slate-500 w-28 inline-block">Model Version:</span> {selectedCandidate.model_version || 'withdrawal_model_v1'}</p>
+                    <p className="mt-2 text-[10px] text-amber-700 bg-amber-50 border border-amber-200 p-1.5 rounded font-medium">
+                      Synthetic candidate withdrawal zone
                     </p>
                   </div>
                   

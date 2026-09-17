@@ -21,7 +21,7 @@ def generate_alerts_from_predictions(db: Session) -> int:
     # Find high/medium predictions without an alert
     # We can do this with an outer join or subquery
     predictions_to_alert = db.query(Prediction).filter(
-        Prediction.priority.in_(["HIGH", "MEDIUM"]),
+        Prediction.priority.in_(["CRITICAL", "HIGH", "MEDIUM"]),
         ~Prediction.prediction_id.in_(db.query(Alert.prediction_id))
     ).all()
     
@@ -32,12 +32,41 @@ def generate_alerts_from_predictions(db: Session) -> int:
             status="NEW"
         )
         db.add(new_alert)
+        db.flush()
         count += 1
+        
+        log_audit_event(
+            db=db,
+            action_type="ALERT_CREATED",
+            entity_type="ALERT",
+            entity_id=str(new_alert.alert_id),
+            actor_id="SYSTEM",
+            complaint_id=pred.complaint_id,
+            data_hash=f"Priority:{pred.priority}|Score:{pred.risk_score}"
+        )
         
     if count > 0:
         db.commit()
         
     return count
+
+
+def get_all_audit_logs(db: Session) -> List[Dict[str, Any]]:
+    """
+    Retrieve all system audit logs.
+    """
+    logs = db.query(AuditLog).order_by(AuditLog.timestamp.desc()).all()
+    return [{
+        "audit_id": str(log.audit_id),
+        "action_type": log.action_type,
+        "entity_type": log.entity_type,
+        "entity_id": log.entity_id,
+        "actor_id": log.actor_id,
+        "complaint_id": log.complaint_id,
+        "data_hash": log.data_hash,
+        "created_at": log.timestamp.isoformat() if log.timestamp else None,
+        "timestamp": log.timestamp.isoformat() if log.timestamp else None
+    } for log in logs]
 
 
 def get_alerts(
@@ -116,14 +145,16 @@ def get_alert_detail(db: Session, alert_id: uuid.UUID) -> Optional[AlertDetailRe
     negative_factors = []
     
     for factor in pred.factors:
+        contrib = float(factor.contribution) if factor.contribution is not None else 0.0
         f_dict = {
-            "feature_name": factor.feature_name,
-            "feature_value": float(factor.feature_value) if factor.feature_value is not None else None,
-            "shap_value": float(factor.shap_value)
+            "feature_name": factor.factor_name,
+            "feature_value": float(factor.feature_value) if (factor.feature_value is not None and str(factor.feature_value).replace('.','',1).isdigit()) else factor.feature_value,
+            "shap_value": contrib,
+            "explanation_text": factor.explanation_text
         }
-        if factor.shap_value > 0:
+        if contrib > 0:
             positive_factors.append(f_dict)
-        elif factor.shap_value < 0:
+        elif contrib < 0:
             negative_factors.append(f_dict)
             
     # Sort by absolute impact
@@ -139,6 +170,23 @@ def get_alert_detail(db: Session, alert_id: uuid.UUID) -> Optional[AlertDetailRe
         top_neg = negative_factors[0]
         explanation_text += f"Conversely, {top_neg['feature_name']} slightly reduced the overall risk score (SHAP: {top_neg['shap_value']:.4f})."
 
+    # Fetch audit logs related to this alert / complaint
+    raw_logs = db.query(AuditLog).filter(
+        (AuditLog.complaint_id == pred.complaint_id) | (AuditLog.entity_id == str(alert.alert_id))
+    ).order_by(AuditLog.timestamp.desc()).all()
+
+    audit_logs = [{
+        "audit_id": str(log.audit_id),
+        "action_type": log.action_type,
+        "entity_type": log.entity_type,
+        "entity_id": log.entity_id,
+        "actor_id": log.actor_id,
+        "complaint_id": log.complaint_id,
+        "data_hash": log.data_hash,
+        "created_at": log.timestamp.isoformat() if log.timestamp else None,
+        "timestamp": log.timestamp.isoformat() if log.timestamp else None
+    } for log in raw_logs]
+
     return AlertDetailResponse(
         alert_id=alert.alert_id,
         prediction_id=pred.prediction_id,
@@ -153,7 +201,8 @@ def get_alert_detail(db: Session, alert_id: uuid.UUID) -> Optional[AlertDetailRe
         updated_at=alert.updated_at,
         top_positive_factors=positive_factors[:5],
         top_negative_factors=negative_factors[:5],
-        explanation_text=explanation_text.strip()
+        explanation_text=explanation_text.strip(),
+        audit_logs=audit_logs
     )
 
 
@@ -274,6 +323,7 @@ def get_alert_summary(db: Session) -> Dict[str, int]:
         "in_review_alerts": status_dict.get("IN_REVIEW", 0),
         "action_taken_alerts": status_dict.get("ACTION_TAKEN", 0),
         "closed_alerts": status_dict.get("CLOSED", 0),
+        "critical_priority": priority_dict.get("CRITICAL", 0),
         "high_priority": priority_dict.get("HIGH", 0),
         "medium_priority": priority_dict.get("MEDIUM", 0),
         "low_priority": priority_dict.get("LOW", 0)

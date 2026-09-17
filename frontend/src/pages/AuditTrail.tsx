@@ -1,38 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
-import { getAlerts, getAlertDetail } from '../api/client';
+import { getAuditTrail, type AuditRecord } from '../api/client';
 import { History, Search, Download } from 'lucide-react';
 import { AuditTimeline } from '../components/alerts/AuditTimeline';
 
 export const AuditTrail: React.FC = () => {
-  const [logs, setLogs] = useState<any[]>([]);
+  const [logs, setLogs] = useState<AuditRecord[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    // Since we don't have a global /api/audit endpoint yet, 
-    // we'll fetch all alerts, grab their details, and merge their audit logs
-    const fetchAllAuditLogs = async () => {
+    const fetchAuditLogs = async () => {
       try {
         setLoading(true);
-        const alertsData = await getAlerts();
-        
-        // Take the top 10 most recent alerts to avoid overwhelming the mock API
-        const recentAlerts = alertsData.slice(0, 10);
-        
-        let allLogs: any[] = [];
-        
-        for (const alert of recentAlerts) {
-          try {
-            const detail = await getAlertDetail(alert.alert_id);
-            if (detail && detail.audit_logs) {
-              allLogs = [...allLogs, ...detail.audit_logs];
-            }
-          } catch (e) {
-            console.error("Failed to fetch detail for alert", alert.alert_id);
-          }
-        }
-        
-        setLogs(allLogs);
+        const data = await getAuditTrail();
+        setLogs(data || []);
       } catch (err) {
         console.error("Failed to fetch audit logs", err);
       } finally {
@@ -40,8 +22,19 @@ export const AuditTrail: React.FC = () => {
       }
     };
     
-    fetchAllAuditLogs();
+    fetchAuditLogs();
   }, []);
+
+  const filteredLogs = logs.filter((log) => {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    return (
+      (log.action_type && log.action_type.toLowerCase().includes(q)) ||
+      (log.actor_id && log.actor_id.toLowerCase().includes(q)) ||
+      (log.complaint_id && log.complaint_id.toLowerCase().includes(q)) ||
+      (log.entity_id && log.entity_id.toLowerCase().includes(q))
+    );
+  });
 
   return (
     <MainLayout>
@@ -57,6 +50,8 @@ export const AuditTrail: React.FC = () => {
             <input 
               type="text" 
               placeholder="Search investigator or action..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-9 pr-4 py-2 border border-slate-300 rounded-lg text-sm w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
             />
           </div>
@@ -74,7 +69,7 @@ export const AuditTrail: React.FC = () => {
             <p>Aggregating global audit records...</p>
           </div>
         ) : (
-          <AuditTimeline logs={logs} />
+          <AuditTimeline logs={filteredLogs} />
         )}
       </div>
     </MainLayout>

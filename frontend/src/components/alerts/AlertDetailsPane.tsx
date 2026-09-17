@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getAlertDetail } from '../../api/client';
+import { formatProbability } from '../../utils/probability';
 import { InvestigatorActionPanel } from './InvestigatorActionPanel';
 import { Map, AlertCircle, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 
@@ -91,7 +92,7 @@ export const AlertDetailsPane: React.FC<{ alertId: string | null, onAlertUpdated
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Confidence Score</span>
               <span className={`text-2xl font-bold ${isHigh ? 'text-red-600' : 'text-blue-600'}`}>
-                {(detail.probability * 100).toFixed(1)}%
+                {formatProbability(detail.probability)}
               </span>
             </div>
           </div>

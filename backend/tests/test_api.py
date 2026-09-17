@@ -13,8 +13,10 @@ def test_get_complaints():
     response = client.get("/api/complaints?page=1&page_size=5")
     assert response.status_code == 200
     data = response.json()
-    assert isinstance(data, list)
-    assert len(data) <= 5
+    assert isinstance(data, dict)
+    assert "items" in data
+    assert isinstance(data["items"], list)
+    assert len(data["items"]) <= 5
 
 def test_get_cc1001():
     response = client.get("/api/complaints/CC1001")

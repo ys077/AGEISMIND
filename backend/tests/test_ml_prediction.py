@@ -39,7 +39,7 @@ def test_post_and_get_prediction_cc1001():
     for idx, cand in enumerate(candidates):
         assert cand["rank"] == idx + 1
         assert 0.0 <= cand["probability"] <= 1.0
-        assert cand["priority"] in ["HIGH", "MEDIUM", "LOW"]
+        assert cand["priority"] in ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
         assert len(cand["location_id"]) > 0
         assert len(cand["district"]) > 0
         assert len(cand["location_name"]) > 0

@@ -28,6 +28,14 @@ def generate_alerts(db: Session = Depends(get_db)):
     return {"message": f"Generated {count} new alerts."}
 
 
+@router.get("/audit", response_model=List[dict])
+def get_audit_trail(db: Session = Depends(get_db)):
+    """
+    Retrieve all system audit logs.
+    """
+    return alert_service.get_all_audit_logs(db)
+
+
 @router.get("/alerts", response_model=List[dict])
 def list_alerts(
     status: Optional[str] = Query(None, description="Filter by status"),

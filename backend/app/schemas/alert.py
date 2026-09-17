@@ -50,6 +50,7 @@ class AlertDetailResponse(BaseModel):
     top_positive_factors: List[dict]
     top_negative_factors: List[dict]
     explanation_text: str
+    audit_logs: List[dict] = []
 
 
 class AlertSummaryResponse(BaseModel):
@@ -59,6 +60,7 @@ class AlertSummaryResponse(BaseModel):
     in_review_alerts: int
     action_taken_alerts: int
     closed_alerts: int
+    critical_priority: int
     high_priority: int
     medium_priority: int
     low_priority: int

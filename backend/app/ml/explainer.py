@@ -72,11 +72,10 @@ def explain_predictions(df: pd.DataFrame, expected_features: List[str]) -> List[
     
     X_imputed = imputer.transform(X)
     
-    # To keep it fast and compatible, we use shap.Explainer
-    # We use a zero background dataset to ensure we get non-zero SHAP values
-    background = np.zeros((1, X_imputed.shape[1]))
-    explainer = shap.KernelExplainer(clf.predict_proba, background)
-    shap_values = explainer.shap_values(X_imputed)
+    # Use TreeExplainer (shap.Explainer) for fast exact SHAP computation
+    explainer = shap.Explainer(clf)
+    shap_explanation = explainer(X_imputed)
+    shap_values = shap_explanation.values
     
     if isinstance(shap_values, list):
         sv = shap_values[1]

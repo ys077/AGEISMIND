@@ -9,7 +9,102 @@ export const apiClient = axios.create({
   },
 });
 
-// Complaints
+// Typed Interfaces
+export interface Complaint {
+  complaint_id: string;
+  crime_category: string;
+  fraud_type: string;
+  fraud_amount: number;
+  report_date?: string;
+  complaint_date?: string;
+  complaint_time?: string;
+  victim_city?: string;
+  district_id?: string;
+  source_channel?: string;
+  status?: string;
+  description?: string;
+  victim_latitude?: number;
+  victim_longitude?: number;
+}
+
+export interface Transaction {
+  transaction_id: string;
+  complaint_id: string;
+  sender_account: string;
+  receiver_account: string;
+  amount: number;
+  timestamp?: string;
+  transaction_time?: string;
+  transaction_type?: string;
+  status?: string;
+}
+
+export interface Account {
+  account_id: string;
+  account_type: string;
+  district_id?: string;
+  latitude?: number;
+  longitude?: number;
+}
+
+export interface WithdrawalCandidate {
+  prediction_id?: string;
+  withdrawal_location_id: string;
+  location_id?: string;
+  latitude: number;
+  longitude: number;
+  district: string;
+  probability: number;
+  priority: string;
+  rank: number;
+  model_version?: string;
+  location_name?: string;
+  source?: string;
+  source_id?: string;
+  operator?: string;
+  brand?: string;
+  address?: string;
+  factors?: any[];
+}
+
+export interface PredictionResponse {
+  complaint_id: string;
+  model_version: string;
+  prediction_timestamp: string;
+  candidate_count: number;
+  ranked_candidates: WithdrawalCandidate[];
+}
+
+export interface HeatmapResponse {
+  complaint_id: string;
+  candidates: WithdrawalCandidate[];
+}
+
+export interface Alert {
+  alert_id: string;
+  prediction_id: string;
+  complaint_id: string;
+  location_id: string;
+  district: string;
+  probability: number;
+  priority: string;
+  status: string;
+  created_at: string;
+}
+
+export interface AuditRecord {
+  audit_id: string;
+  action_type: string;
+  entity_type: string;
+  entity_id: string;
+  actor_id?: string;
+  complaint_id?: string;
+  data_hash?: string;
+  timestamp?: string;
+  created_at?: string;
+}
+
+// Complaints APIs
 export const getComplaints = async (page: number = 1, pageSize: number = 50) => {
   const response = await apiClient.get(`/api/complaints?page=${page}&page_size=${pageSize}`);
   return response.data;
@@ -25,14 +120,34 @@ export const getComplaintTransactions = async (complaintId: string) => {
   return response.data;
 };
 
-// Modules 5, 6, 7 (Analysis)
+export const getComplaintAccounts = async (complaintId: string) => {
+  const response = await apiClient.get(`/api/complaints/${complaintId}/accounts`);
+  return response.data;
+};
+
+export const getComplaintRelationships = async (complaintId: string) => {
+  const response = await apiClient.get(`/api/complaints/${complaintId}/relationships`);
+  return response.data;
+};
+
+export const getComplaintNetwork = async (complaintId: string) => {
+  const response = await apiClient.get(`/api/complaints/${complaintId}/network`);
+  return response.data;
+};
+
+// Analysis APIs
+export const getCaseAnalysis = async (complaintId: string) => {
+  const response = await apiClient.get(`/api/analysis/${complaintId}`);
+  return response.data;
+};
+
 export const getMoneyFlow = async (complaintId: string) => {
   const response = await apiClient.get(`/api/analysis/${complaintId}/money-flow`);
   return response.data;
 };
 
 export const getNetworkAnalysis = async (complaintId: string) => {
-  const response = await apiClient.get(`/api/analysis/${complaintId}/network`);
+  const response = await apiClient.get(`/api/analysis/${complaintId}/network-analysis`);
   return response.data;
 };
 
@@ -41,25 +156,35 @@ export const getTimeGeography = async (complaintId: string) => {
   return response.data;
 };
 
-// Module 8 (Predictions)
+// Prediction APIs
 export const getStoredPrediction = async (complaintId: string) => {
   const response = await apiClient.get(`/api/predictions/${complaintId}`);
   return response.data;
 };
 
-// Module 9 (Explainability)
+export const generatePrediction = async (complaintId: string) => {
+  const response = await apiClient.post(`/api/predictions/${complaintId}`);
+  return response.data;
+};
+
+// Explainability APIs
 export const getCandidateExplanation = async (complaintId: string, locationId: string) => {
   const response = await apiClient.get(`/api/explanations/${complaintId}/candidates/${locationId}`);
   return response.data;
 };
 
-// Module 10 (Heatmap)
+// Risk Heatmap APIs
 export const getHeatmapData = async (complaintId: string) => {
   const response = await apiClient.get(`/api/risk-heatmap/${complaintId}`);
   return response.data;
 };
 
-// Module 11 (Alerts & Audit)
+export const getHeatmapDistricts = async (complaintId: string) => {
+  const response = await apiClient.get(`/api/risk-heatmap/${complaintId}/districts`);
+  return response.data;
+};
+
+// Alerts & Audit APIs
 export const getAlertSummary = async () => {
   const response = await apiClient.get('/api/investigator/alerts/summary');
   return response.data;
@@ -82,6 +207,11 @@ export const updateAlertStatus = async (alertId: string, status: string) => {
 
 export const addInvestigatorAction = async (alertId: string, actionData: { action_type: string, notes?: string }) => {
   const response = await apiClient.post(`/api/alerts/${alertId}/actions`, actionData);
+  return response.data;
+};
+
+export const getAuditTrail = async (): Promise<AuditRecord[]> => {
+  const response = await apiClient.get('/api/audit');
   return response.data;
 };
 

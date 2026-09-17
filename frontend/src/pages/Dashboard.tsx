@@ -184,12 +184,12 @@ export const Dashboard: React.FC = () => {
           </div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="text-3xl font-extrabold text-red-700">
-              {alertSummary.high_priority || 13}
+              {alertSummary.high_priority ?? alertSummary.critical_priority ?? 0}
             </span>
             <span className="text-xs font-semibold text-red-600">High Risk (&gt;70%)</span>
           </div>
           <div className="mt-3 flex items-center justify-between text-xs text-red-800 border-t border-red-200/60 pt-2.5">
-            <span>Queue: <strong>{alertSummary.total_alerts || 26} pending</strong></span>
+            <span>Queue: <strong>{alertSummary.total_alerts ?? 0} pending</strong></span>
             <span className="font-semibold text-red-700">Active Window: ~2-6 hrs</span>
           </div>
         </div>
