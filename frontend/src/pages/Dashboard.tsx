@@ -21,7 +21,9 @@ import {
 } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
-  const { dashboardData: data, modelInfo, preloadApp } = useAppStore();
+  const data = useAppStore(state => state.dashboardData);
+  const modelInfo = useAppStore(state => state.modelInfo);
+  const preloadApp = useAppStore(state => state.preloadApp);
   const [refreshing, setRefreshing] = useState<boolean>(false);
   const navigate = useNavigate();
 
@@ -30,10 +32,6 @@ export const Dashboard: React.FC = () => {
     await preloadApp(true); // Refreshes the cache
     setRefreshing(false);
   };
-
-  React.useEffect(() => {
-    preloadApp(false);
-  }, []);
 
   const formatCurrency = (val: number) => {
     if (!val) return '₹0';
@@ -57,16 +55,6 @@ export const Dashboard: React.FC = () => {
         return 'bg-blue-100 text-blue-800 border-blue-200';
     }
   };
-
-  if (!data) {
-    return (
-      <MainLayout>
-        <div className="flex flex-col items-center justify-center h-[70vh] gap-3 text-slate-500">
-          <p className="text-sm font-medium">No dashboard data available.</p>
-        </div>
-      </MainLayout>
-    );
-  }
 
   const alertSummary = data?.alert_summary || {};
   const totalComplaints = data?.total_complaints || 0;

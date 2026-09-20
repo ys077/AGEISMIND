@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 // @ts-ignore
 import Map, { Source, Layer, Marker, Popup, NavigationControl } from 'react-map-gl/maplibre';
-import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { getHeatmapData, getCandidateExplanation } from '../api/client';
 import { useAppStore } from '../store/appDataStore';
@@ -25,6 +24,7 @@ export const RiskHeatmap: React.FC<RiskHeatmapProps> = ({ mode, complaintId }) =
   const [explanation, setExplanation] = useState<any | null>(null);
   const [loadingExplanation, setLoadingExplanation] = useState<boolean>(false);
 
+  const [mapReady, setMapReady] = useState(false);
   const mapRef = useRef<any>(null);
   const navigate = useNavigate();
   const { globalHeatmap, modelInfo } = useAppStore();
@@ -116,9 +116,19 @@ export const RiskHeatmap: React.FC<RiskHeatmapProps> = ({ mode, complaintId }) =
     return displayLimit === 'ALL' ? filteredData : filteredData.slice(0, displayLimit);
   }, [filteredData, displayLimit, mode]);
 
+  const handleMapLoad = useCallback((event: any) => {
+    const map = event?.target;
+    map?.resize?.();
+    setMapReady(true);
+  }, []);
+
   // Fit bounds dynamically for COMPLAINT mode. Global mode is fixed to Tamil Nadu.
   useEffect(() => {
-    if (mode === 'complaint' && displayedData.length > 0 && mapRef.current) {
+    if (!mapReady || !mapRef.current) return;
+    const map = mapRef.current?.getMap?.() ?? mapRef.current;
+    if (!map?.fitBounds) return;
+
+    if (mode === 'complaint' && displayedData.length > 0) {
       const lats = displayedData.map((c: any) => c.latitude);
       const lngs = displayedData.map((c: any) => c.longitude);
       
@@ -128,23 +138,23 @@ export const RiskHeatmap: React.FC<RiskHeatmapProps> = ({ mode, complaintId }) =
       const maxLng = Math.max(...lngs);
       
       if (maxLat - minLat < 0.01 && maxLng - minLng < 0.01) {
-        mapRef.current.flyTo({ center: [minLng, minLat], zoom: 13, duration: 1000 });
+        map.flyTo({ center: [minLng, minLat], zoom: 13, duration: 1000 });
       } else {
         const bounds: [[number, number], [number, number]] = [
           [minLng - 0.05, minLat - 0.05],
           [maxLng + 0.05, maxLat + 0.05]
         ];
-        mapRef.current.fitBounds(bounds, { padding: 40, duration: 1000 });
+        map.fitBounds(bounds, { padding: 40, duration: 1000 });
       }
-    } else if (mode === 'global' && mapRef.current) {
+    } else if (mode === 'global') {
         // Reset to strict Tamil Nadu bounds if switching to global
         const tnBounds: [[number, number], [number, number]] = [
           [76.14, 8.07],
           [80.34, 13.50]
         ];
-        mapRef.current.fitBounds(tnBounds, { padding: 40, duration: 1000 });
+        map.fitBounds(tnBounds, { padding: 40, duration: 0 });
     }
-  }, [displayedData, mode]);
+  }, [displayedData, mode, mapReady]);
 
   const uniqueDistricts = useMemo(() => {
     const dists = new Set<string>(currentData.map((c: any) => c.district));
@@ -240,7 +250,7 @@ export const RiskHeatmap: React.FC<RiskHeatmapProps> = ({ mode, complaintId }) =
         </div>
       </div>
 
-      <div className="flex-1 relative">
+      <div className="flex-1 relative min-h-0">
         {mode === 'complaint' && candidates.length > 0 && (
           <div className="absolute top-28 left-4 z-10 bg-white border border-slate-200 rounded-lg p-4 w-64 shadow-lg pointer-events-auto">
             <h3 className="text-xs font-bold text-slate-800 mb-2 border-b border-slate-200 pb-2 flex items-center gap-2"><MapPin size={14}/> CASE-SPECIFIC PREDICTION</h3>
@@ -302,8 +312,8 @@ export const RiskHeatmap: React.FC<RiskHeatmapProps> = ({ mode, complaintId }) =
             zoom: 6
           }}
           mapStyle={MAPTILER_KEY ? `https://api.maptiler.com/maps/basic-v2/style.json?key=${MAPTILER_KEY}` : undefined}
-          mapLib={maplibregl}
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
+          onLoad={handleMapLoad}
           interactiveLayerIds={mode === 'global' ? ['global-clusters', 'global-unclustered'] : undefined}
           onClick={(e: any) => {
              if (mode === 'global' && e.features && e.features.length > 0) {

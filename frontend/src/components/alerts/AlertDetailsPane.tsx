@@ -4,7 +4,12 @@ import { formatProbability } from '../../utils/probability';
 import { InvestigatorActionPanel } from './InvestigatorActionPanel';
 import { Map, AlertCircle, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 
-export const AlertDetailsPane: React.FC<{ alertId: string | null, onAlertUpdated: () => void, onViewMap: (complaintId: string) => void }> = ({ alertId, onAlertUpdated, onViewMap }) => {
+export const AlertDetailsPane: React.FC<{
+  alertId: string | null;
+  onAlertUpdated: () => void;
+  onViewMap: (complaintId: string) => void;
+  onDetailLoaded?: (detail: any) => void;
+}> = ({ alertId, onAlertUpdated, onViewMap, onDetailLoaded }) => {
   const [detail, setDetail] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -21,6 +26,7 @@ export const AlertDetailsPane: React.FC<{ alertId: string | null, onAlertUpdated
         const data = await getAlertDetail(alertId);
         setDetail(data);
         setError(null);
+        onDetailLoaded?.(data);
       } catch (err) {
         console.error(err);
         setError("Unable to retrieve alert details.");

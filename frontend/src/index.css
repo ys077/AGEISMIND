@@ -81,6 +81,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Tailwind preflight sets max-width:100% on canvas, which blanks MapLibre WebGL */
+.maplibregl-canvas {
+  max-width: none !important;
+}
+
 /* Custom Scrollbar for clean look */
 ::-webkit-scrollbar {
   width: 8px;

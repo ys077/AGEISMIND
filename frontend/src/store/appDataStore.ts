@@ -4,82 +4,160 @@ import {
   getModelInfo, 
   getComplaints, 
   getAlerts,
+  getAlertSummary,
   getGlobalHeatmapData
 } from '../api/client';
 import { apiClient } from '../api/client';
+
+const COMPLAINTS_PAGE_SIZE = 50;
+
+let complaintsRequest: Promise<any> | null = null;
+let alertsRequest: Promise<any> | null = null;
+
+const summarizeAlerts = (alerts: any[]) => {
+  const list = alerts || [];
+  return {
+    total_alerts: list.length,
+    new_alerts: list.filter((a) => a.status === 'NEW').length,
+    in_review_alerts: list.filter((a) => a.status === 'IN_REVIEW').length,
+    action_taken_alerts: list.filter((a) => a.status === 'ACTION_TAKEN').length,
+    high_priority: list.filter((a) => a.priority === 'HIGH' || a.priority === 'CRITICAL').length,
+  };
+};
 
 export interface AppState {
   dashboardData: any;
   modelInfo: any;
   complaintsList: any;
   alertsList: any;
+  alertSummary: any;
   globalHeatmap: any;
   casesCache: Record<string, any>; // Cache for complete case data
   
   isPreloading: boolean;
+  hasPreloaded: boolean;
   preloadError: string | null;
   
   preloadApp: (forceRefresh?: boolean) => Promise<void>;
+  ensureComplaints: (forceRefresh?: boolean) => Promise<any>;
+  ensureAlerts: (forceRefresh?: boolean) => Promise<any>;
   fetchCaseComplete: (complaintId: string) => Promise<any>;
   fetchGlobalHeatmap: () => Promise<void>;
 }
 
 export const useAppStore = create<AppState>((set, get) => ({
-  dashboardData: null,
-  modelInfo: null,
+  dashboardData: {},
+  modelInfo: {},
   complaintsList: null,
   alertsList: null,
+  alertSummary: null,
   globalHeatmap: null,
   casesCache: {},
   
-  isPreloading: true,
+  isPreloading: false,
+  hasPreloaded: false,
   preloadError: null,
 
-  preloadApp: async (forceRefresh?: boolean) => {
-    const currentData = get().dashboardData;
-    if (!forceRefresh && currentData) return;
-    
-    const isInitial = !currentData;
-    if (isInitial) {
-      set({ isPreloading: true, preloadError: null });
+  ensureComplaints: async (forceRefresh?: boolean) => {
+    if (!forceRefresh && get().complaintsList?.items) return get().complaintsList;
+    if (!forceRefresh && complaintsRequest) return complaintsRequest;
+
+    complaintsRequest = getComplaints(1, COMPLAINTS_PAGE_SIZE)
+      .then((data) => {
+        if (data) set({ complaintsList: data });
+        return data;
+      })
+      .catch((err) => {
+        console.error(err);
+        return get().complaintsList;
+      })
+      .finally(() => {
+        complaintsRequest = null;
+      });
+
+    return complaintsRequest;
+  },
+
+  ensureAlerts: async (forceRefresh?: boolean) => {
+    if (!forceRefresh && Array.isArray(get().alertsList) && get().alertsList.length) {
+      return get().alertsList;
     }
+    if (!forceRefresh && alertsRequest) return alertsRequest;
+
+    alertsRequest = Promise.all([
+      getAlerts().catch((err) => {
+        console.error(err);
+        return get().alertsList;
+      }),
+      getAlertSummary().catch((err) => {
+        console.error(err);
+        return get().alertSummary;
+      }),
+    ])
+      .then(([alerts, summary]) => {
+        const list = Array.isArray(alerts)
+          ? [...alerts].sort((a: any, b: any) => (b.probability || 0) - (a.probability || 0))
+          : [];
+        set({
+          alertsList: list,
+          alertSummary: summary || summarizeAlerts(list),
+        });
+        return list;
+      })
+      .finally(() => {
+        alertsRequest = null;
+      });
+
+    return alertsRequest;
+  },
+
+  preloadApp: async (forceRefresh?: boolean) => {
+    const { hasPreloaded, isPreloading } = get();
+
+    if (!forceRefresh && (hasPreloaded || isPreloading)) return;
+
+    set({ isPreloading: true, preloadError: null });
     
     try {
-      // Safety timeout to guarantee UI unblocks even if network hangs
-      const timeoutGuard = new Promise(resolve => setTimeout(resolve, 4000));
-      
-      const [dashboardData, modelInfo] = await Promise.race([
-        Promise.all([
-          getDashboardOverview().catch(() => null),
-          getModelInfo().catch(() => null)
-        ]),
-        timeoutGuard.then(() => [null, null])
-      ]) as [any, any];
+      const { ensureComplaints, ensureAlerts } = get();
 
-      // Unblock the UI immediately after critical data is loaded or timeout reached
+      const loadSecondary = () => {
+        void ensureComplaints(forceRefresh);
+        void ensureAlerts(forceRefresh);
+      };
+
+      const [dashboardData, modelInfo] = await Promise.all([
+        getDashboardOverview().catch(err => {
+          console.error("Failed to fetch dashboard overview:", err);
+          return null;
+        }),
+        getModelInfo().catch(err => {
+          console.error("Failed to fetch model info:", err);
+          return null;
+        })
+      ]);
+
       set(state => ({
-        dashboardData: dashboardData || state.dashboardData,
-        modelInfo: modelInfo || state.modelInfo,
-        isPreloading: false
+        dashboardData: dashboardData || state.dashboardData || {},
+        modelInfo: modelInfo || state.modelInfo || {},
+        isPreloading: false,
+        hasPreloaded: true
       }));
 
-      // 2. Fetch heavier data sets in the background
-      // 2. Fetch heavier data sets in the background independently to prevent blocking
-      getComplaints(1, 100)
-        .then(data => data && set(state => ({ ...state, complaintsList: data })))
-        .catch(console.error);
-
-      getAlerts()
-        .then(data => data && set(state => ({ ...state, alertsList: data })))
-        .catch(console.error);
-
-      getGlobalHeatmapData()
-        .then(data => data && set(state => ({ ...state, globalHeatmap: data })))
-        .catch(console.error);
-
+      if (forceRefresh) {
+        loadSecondary();
+      } else {
+        const idle = (window as any).requestIdleCallback as
+          | ((cb: () => void, opts?: { timeout: number }) => void)
+          | undefined;
+        if (idle) idle(loadSecondary, { timeout: 1500 });
+        else setTimeout(loadSecondary, 0);
+      }
     } catch (err) {
       console.error("Preload error:", err);
-      set({ preloadError: "Failed to load application data", isPreloading: false });
+      set({ preloadError: "Failed to load application data", isPreloading: false, hasPreloaded: true });
+    } finally {
+      set({ isPreloading: false, hasPreloaded: true });
     }
   },
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAlertSummary, getAlerts, getAlertDetail } from '../api/client';
+import { getAlerts, getAlertSummary } from '../api/client';
 import { AlertList } from '../components/alerts/AlertList';
 import { AlertDetailsPane } from '../components/alerts/AlertDetailsPane';
 import { AuditTimeline } from '../components/alerts/AuditTimeline';
@@ -7,12 +7,15 @@ import { ShieldAlert, Clock, CheckSquare, BellRing, Filter, Search, RefreshCw } 
 import { MainLayout } from '../components/layout/MainLayout';
 import { useAppStore } from '../store/appDataStore';
 
+const EMPTY_ALERTS: any[] = [];
+
 export const AlertsPage: React.FC = () => {
-  const [summary, setSummary] = useState<any>(null);
-  const [alerts, setAlerts] = useState<any[]>([]);
+  const storeAlerts = useAppStore(state => state.alertsList);
+  const storeSummary = useAppStore(state => state.alertSummary);
+  const ensureAlerts = useAppStore(state => state.ensureAlerts);
+
   const [selectedAlertId, setSelectedAlertId] = useState<string | null>(null);
   const [selectedAlertDetail, setSelectedAlertDetail] = useState<any>(null);
-  const [loading, setLoading] = useState<boolean>(true);
   const [refreshing, setRefreshing] = useState<boolean>(false);
 
   // Filters
@@ -20,55 +23,41 @@ export const AlertsPage: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  const { alertsList } = useAppStore();
+  const alerts = Array.isArray(storeAlerts) ? storeAlerts : EMPTY_ALERTS;
+  const summary = storeSummary;
+  const loading = !Array.isArray(storeAlerts);
 
   const loadAlertsData = async (isManualRefresh = false) => {
     try {
       if (isManualRefresh) setRefreshing(true);
-      
-      const [sum, al] = await Promise.all([
-        getAlertSummary(),
-        getAlerts()
-      ]);
-
-      setSummary(sum);
-      
-      const sorted = (al || []).sort((a: any, b: any) => (b.probability || 0) - (a.probability || 0));
-      setAlerts(sorted);
-
-      // Auto-select first alert if none selected or current is invalid
-      if (sorted.length > 0 && (!selectedAlertId || !sorted.some((a: any) => a.alert_id === selectedAlertId))) {
-        setSelectedAlertId(sorted[0].alert_id);
+      if (isManualRefresh) {
+        const [al, sum] = await Promise.all([getAlerts(), getAlertSummary()]);
+        const list = Array.isArray(al)
+          ? [...al].sort((a: any, b: any) => (b.probability || 0) - (a.probability || 0))
+          : [];
+        useAppStore.setState({ alertsList: list, alertSummary: sum });
+      } else {
+        await ensureAlerts();
       }
     } catch (err) {
       console.error("Failed to load alerts data", err);
     } finally {
-      setLoading(false);
       if (isManualRefresh) setRefreshing(false);
     }
   };
 
   useEffect(() => {
-    loadAlertsData();
-  }, []);
+    ensureAlerts();
+  }, [ensureAlerts]);
 
   useEffect(() => {
-    if (selectedAlertId) {
-      getAlertDetail(selectedAlertId)
-        .then(setSelectedAlertDetail)
-        .catch(console.error);
-    } else {
-      setSelectedAlertDetail(null);
+    if (alerts.length > 0 && (!selectedAlertId || !alerts.some((a: any) => a.alert_id === selectedAlertId))) {
+      setSelectedAlertId(alerts[0].alert_id);
     }
-  }, [selectedAlertId]);
+  }, [alerts, selectedAlertId]);
 
   const handleAlertUpdated = () => {
-    loadAlertsData();
-    if (selectedAlertId) {
-      getAlertDetail(selectedAlertId)
-        .then(setSelectedAlertDetail)
-        .catch(console.error);
-    }
+    loadAlertsData(true);
   };
 
   // Filtered alerts
@@ -222,6 +211,7 @@ export const AlertsPage: React.FC = () => {
             alertId={selectedAlertId} 
             onAlertUpdated={handleAlertUpdated} 
             onViewMap={() => { window.location.href = '/heatmap'; }}
+            onDetailLoaded={setSelectedAlertDetail}
           />
         </div>
 

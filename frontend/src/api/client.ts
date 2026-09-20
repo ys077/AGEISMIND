@@ -123,8 +123,20 @@ export interface AuditRecord {
 }
 
 // Complaints APIs
-export const getComplaints = async (page: number = 1, pageSize: number = 50) => {
-  const response = await apiClient.get(`/api/complaints?page=${page}&page_size=${pageSize}`);
+export const getComplaints = async (
+  page: number = 1,
+  pageSize: number = 50,
+  filters: { q?: string; status?: string; category?: string } = {}
+) => {
+  const response = await apiClient.get('/api/complaints', {
+    params: {
+      page,
+      page_size: pageSize,
+      q: filters.q || undefined,
+      status: filters.status || undefined,
+      category: filters.category || undefined,
+    },
+  });
   return response.data;
 };
 

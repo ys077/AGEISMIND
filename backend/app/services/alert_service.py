@@ -140,7 +140,19 @@ def get_alerts(
     """
     Retrieve a list of alerts with optional filters.
     """
-    query = db.query(Alert, Prediction, WithdrawalLocation, District).join(
+    # Column-only query avoids selectin-loading SHAP factors, historical cases, etc.
+    query = db.query(
+        Alert.alert_id,
+        Alert.status,
+        Alert.created_at,
+        Prediction.prediction_id,
+        Prediction.complaint_id,
+        Prediction.risk_score,
+        Prediction.rank,
+        Prediction.priority,
+        WithdrawalLocation.location_id,
+        District.district_name,
+    ).join(
         Prediction, Alert.prediction_id == Prediction.prediction_id
     ).join(
         WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id
@@ -157,26 +169,20 @@ def get_alerts(
     if complaint_id:
         query = query.filter(Prediction.complaint_id == complaint_id)
 
-    results = query.all()
-    
-    formatted_alerts = []
-    for alert, pred, loc, dist in results:
-        formatted_alerts.append({
-            "alert_id": alert.alert_id,
-            "prediction_id": pred.prediction_id,
-            "complaint_id": pred.complaint_id,
-            "withdrawal_location_id": loc.location_id,
-            "district": dist.district_name,
-            "probability": float(pred.risk_score),
-            "rank": pred.rank,
-            "priority": pred.priority,
-            "status": alert.status,
-            "created_at": alert.created_at
-        })
-        
-    # Sort by probability descending, rank ascending
-    formatted_alerts.sort(key=lambda x: (-x["probability"], x["rank"]))
-    return formatted_alerts
+    results = query.order_by(Prediction.risk_score.desc(), Prediction.rank.asc()).all()
+
+    return [{
+        "alert_id": row.alert_id,
+        "prediction_id": row.prediction_id,
+        "complaint_id": row.complaint_id,
+        "withdrawal_location_id": row.location_id,
+        "district": row.district_name,
+        "probability": float(row.risk_score) if row.risk_score is not None else 0.0,
+        "rank": row.rank,
+        "priority": row.priority,
+        "status": row.status,
+        "created_at": row.created_at
+    } for row in results]
 
 
 def get_alert_detail(db: Session, alert_id: uuid.UUID) -> Optional[AlertDetailResponse]:

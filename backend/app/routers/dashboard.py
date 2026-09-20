@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, noload, load_only
 from sqlalchemy import func, desc
 from datetime import datetime, timedelta
 
@@ -30,7 +30,7 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
             return _dashboard_cache["data"]
 
     # 1. Macro KPIs
-    total_complaints = db.query(Complaint).count()
+    total_complaints = db.query(func.count(Complaint.complaint_id)).scalar() or 0
     total_fraud_val = db.query(func.sum(Complaint.fraud_amount)).scalar() or 0
     total_fraud_amount = float(total_fraud_val)
     avg_fraud_amount = round(total_fraud_amount / total_complaints, 2) if total_complaints > 0 else 0
@@ -118,7 +118,30 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
     channel_breakdown = [{"channel": ch or "Unknown", "count": count} for ch, count in channel_query]
 
     # 6. Recent Incident Stream (Latest 8 complaints)
-    recent_records = db.query(Complaint).order_by(desc(Complaint.complaint_date), desc(Complaint.complaint_time)).limit(8).all()
+    recent_records = (
+        db.query(Complaint)
+        .options(
+            load_only(
+                Complaint.complaint_id,
+                Complaint.complaint_date,
+                Complaint.complaint_time,
+                Complaint.crime_category,
+                Complaint.fraud_type,
+                Complaint.fraud_amount,
+                Complaint.victim_city,
+                Complaint.district_id,
+                Complaint.source_channel,
+                Complaint.status,
+            ),
+            noload(Complaint.transactions),
+            noload(Complaint.predictions),
+            noload(Complaint.investigation_actions),
+            noload(Complaint.district),
+        )
+        .order_by(desc(Complaint.complaint_date), desc(Complaint.complaint_time))
+        .limit(8)
+        .all()
+    )
     recent_complaints = []
     for c in recent_records:
         recent_complaints.append({

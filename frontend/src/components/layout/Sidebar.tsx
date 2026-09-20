@@ -42,14 +42,6 @@ export const Sidebar: React.FC = () => {
           ))}
         </ul>
       </div>
-
-      <div className="p-4 border-t border-slate-200 text-xs text-slate-500">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-          <span>System Online</span>
-        </div>
-        <p>User: INV. KOWALSKI</p>
-      </div>
     </nav>
   );
 };

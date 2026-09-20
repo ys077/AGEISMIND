@@ -1,7 +1,7 @@
 from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy.orm import Session
-from sqlalchemy import distinct
+from sqlalchemy.orm import Session, noload, load_only
+from sqlalchemy import distinct, func, desc, or_
 from app.api.deps import get_db
 from app.models import Complaint, Transaction, Account, AccountRelationship
 from app.schemas import (
@@ -22,12 +22,59 @@ from app.schemas.complaint import PaginatedComplaintResponse
 def get_complaints(
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
+    q: Optional[str] = Query(None, description="Search complaint ID, category, type, city, or status"),
+    status: Optional[str] = Query(None),
+    category: Optional[str] = Query(None),
     db: Session = Depends(get_db)
 ):
+    query = db.query(Complaint)
+    filters = []
+    term = (q or "").strip()
+    if term:
+        like = f"%{term}%"
+        filters.append(or_(
+            Complaint.complaint_id.ilike(like),
+            Complaint.crime_category.ilike(like),
+            Complaint.fraud_type.ilike(like),
+            Complaint.victim_city.ilike(like),
+            Complaint.status.ilike(like),
+        ))
+    if status:
+        filters.append(Complaint.status == status)
+    if category:
+        filters.append(Complaint.crime_category == category)
+    if filters:
+        query = query.filter(*filters)
+
     offset = (page - 1) * page_size
-    total = db.query(Complaint).count()
-    complaints = db.query(Complaint).offset(offset).limit(page_size).all()
-    total_pages = (total + page_size - 1) // page_size
+    total = query.with_entities(func.count(Complaint.complaint_id)).scalar() or 0
+    complaints = (
+        query.options(
+            load_only(
+                Complaint.complaint_id,
+                Complaint.complaint_date,
+                Complaint.complaint_time,
+                Complaint.fraud_type,
+                Complaint.fraud_amount,
+                Complaint.victim_city,
+                Complaint.victim_latitude,
+                Complaint.victim_longitude,
+                Complaint.crime_category,
+                Complaint.source_channel,
+                Complaint.status,
+                Complaint.district_id,
+            ),
+            noload(Complaint.transactions),
+            noload(Complaint.predictions),
+            noload(Complaint.investigation_actions),
+            noload(Complaint.district),
+        )
+        .order_by(desc(Complaint.complaint_date), Complaint.complaint_id)
+        .offset(offset)
+        .limit(page_size)
+        .all()
+    )
+    total_pages = (total + page_size - 1) // page_size if page_size else 1
     
     return PaginatedComplaintResponse(
         items=complaints,
