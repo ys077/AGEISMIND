@@ -5,6 +5,7 @@ import { AlertDetailsPane } from '../components/alerts/AlertDetailsPane';
 import { AuditTimeline } from '../components/alerts/AuditTimeline';
 import { ShieldAlert, Clock, CheckSquare, BellRing, Filter, Search, RefreshCw } from 'lucide-react';
 import { MainLayout } from '../components/layout/MainLayout';
+import { useAppStore } from '../store/appDataStore';
 
 export const AlertsPage: React.FC = () => {
   const [summary, setSummary] = useState<any>(null);
@@ -19,16 +20,20 @@ export const AlertsPage: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  const { alertsList } = useAppStore();
+
   const loadAlertsData = async (isManualRefresh = false) => {
     try {
       if (isManualRefresh) setRefreshing(true);
-      const [summaryData, alertsData] = await Promise.all([
+      
+      const [sum, al] = await Promise.all([
         getAlertSummary(),
         getAlerts()
       ]);
-      setSummary(summaryData);
+
+      setSummary(sum);
       
-      const sorted = (alertsData || []).sort((a: any, b: any) => (b.probability || 0) - (a.probability || 0));
+      const sorted = (al || []).sort((a: any, b: any) => (b.probability || 0) - (a.probability || 0));
       setAlerts(sorted);
 
       // Auto-select first alert if none selected or current is invalid
@@ -45,8 +50,6 @@ export const AlertsPage: React.FC = () => {
 
   useEffect(() => {
     loadAlertsData();
-    const interval = setInterval(() => loadAlertsData(), 30000);
-    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -137,12 +140,12 @@ export const AlertsPage: React.FC = () => {
 
         <div className="bg-emerald-50 rounded-lg border border-emerald-200 p-4 shadow-sm flex flex-col">
           <span className="text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-2 flex items-center gap-2">
-            <CheckSquare size={14} className="text-emerald-600" /> Intercepts Executed
+            <CheckSquare size={14} className="text-emerald-600" /> Actions Recorded
           </span>
           <span className="text-3xl font-bold text-emerald-900">
             {summary ? (summary.action_taken_alerts || summary.action_taken || 0) : '--'}
           </span>
-          <span className="text-[11px] text-emerald-700 font-medium mt-1">Freeze & dispatch orders logged</span>
+          <span className="text-[11px] text-emerald-700 font-medium mt-1">Investigator actions logged</span>
         </div>
       </div>
 

@@ -5,13 +5,16 @@ from sqlalchemy.orm import Session
 from app.models import Complaint, Transaction, Account, WithdrawalLocation
 from app.ml.feature_engineering import FeatureEngineer
 from app.ml.model_loader import model_loader
+from app.services.risk_service import get_risk_level
 
 def generate_prediction(
     db: Session,
     complaint: Complaint,
     transactions: List[Transaction],
     accounts: List[Account],
-    candidates: List[WithdrawalLocation]
+    candidates: List[WithdrawalLocation],
+    job_id: str = None,
+    update_job_stage=None
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     """
     Generates predictions for all candidates against a complaint.
@@ -27,6 +30,9 @@ def generate_prediction(
     
     fe = FeatureEngineer(db)
     
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "TRANSACTION_FEATURES")
+        
     # Generate features
     df = fe.generate_features_for_complaint(
         complaint=complaint,
@@ -36,6 +42,14 @@ def generate_prediction(
         historical_frequencies=hist_freq
     )
     
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "NETWORK_FEATURES")
+        
+    # Removed artificial temporal delay for visibility as feature generation is fast
+    
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "GEOGRAPHIC_FEATURES")
+        
     # Validate feature alignment
     missing_cols = set(expected_features) - set(df.columns)
     if missing_cols:
@@ -43,29 +57,31 @@ def generate_prediction(
         
     X = df[expected_features]
     
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "ML_MODEL_EVALUATION")
+        
     # Predict probabilities
     probs = model.predict_proba(X)[:, 1]
     
     from app.ml.explainer import explain_predictions
+    
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "SHAP_EXPLANATION")
     
     # Generate SHAP explanations
     all_candidate_factors = explain_predictions(df, expected_features)
     
     # Attach probabilities back to candidate info
     results = []
+    
+    if update_job_stage and job_id:
+        update_job_stage(job_id, "RISK_CLASSIFICATION")
+        
     for idx, candidate in enumerate(candidates):
         dist = float(df.loc[idx, "dist_from_complaint_deg"])
         prob = float(probs[idx])
         
-        # Determine priority string based on prob
-        if prob > 0.15:
-            priority = "CRITICAL"
-        elif prob > 0.05:
-            priority = "HIGH"
-        elif prob > 0.01:
-            priority = "MEDIUM"
-        else:
-            priority = "LOW"
+        priority = get_risk_level(prob)
             
         factors = all_candidate_factors[idx]
             

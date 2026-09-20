@@ -108,12 +108,14 @@ export const AlertDetailsPane: React.FC<{ alertId: string | null, onAlertUpdated
                 <ArrowUpRight size={14} /> Risk Escalators
               </h4>
               <ul className="space-y-2.5">
-                {detail.top_positive_factors?.slice(0, 3).map((f: any, i: number) => (
+                {detail.top_positive_factors?.slice(0, 3).map((f: any, i: number) => {
+                  const val = f.contribution ?? f.shap_value ?? 0;
+                  return (
                   <li key={i} className="text-sm text-slate-700 flex items-start gap-3 bg-red-50/50 p-2.5 rounded border-l-2 border-l-red-500">
-                    <span className="text-red-600 font-bold min-w-[50px]">+{f.contribution.toFixed(3)}</span>
-                    <span className="flex-1">{f.explanation_text || f.factor_name} <span className="text-slate-400 text-xs ml-1">(Val: {f.feature_value})</span></span>
+                    <span className="text-red-600 font-bold min-w-[50px]">+{val.toFixed(3)}</span>
+                    <span className="flex-1">{f.explanation_text || f.factor_name || f.feature_name} <span className="text-slate-400 text-xs ml-1">(Val: {f.feature_value})</span></span>
                   </li>
-                ))}
+                )})}
               </ul>
             </div>
 
@@ -123,12 +125,14 @@ export const AlertDetailsPane: React.FC<{ alertId: string | null, onAlertUpdated
                   <ArrowDownRight size={14} /> Mitigating Factors
                 </h4>
                 <ul className="space-y-2.5">
-                  {detail.top_negative_factors?.slice(0, 2).map((f: any, i: number) => (
+                  {detail.top_negative_factors?.slice(0, 2).map((f: any, i: number) => {
+                    const val = f.contribution ?? f.shap_value ?? 0;
+                    return (
                     <li key={i} className="text-sm text-slate-700 flex items-start gap-3 bg-emerald-50/50 p-2.5 rounded border-l-2 border-l-emerald-500">
-                      <span className="text-emerald-600 font-bold min-w-[50px]">{f.contribution.toFixed(3)}</span>
-                      <span className="flex-1">{f.explanation_text || f.factor_name} <span className="text-slate-400 text-xs ml-1">(Val: {f.feature_value})</span></span>
+                      <span className="text-emerald-600 font-bold min-w-[50px]">{val.toFixed(3)}</span>
+                      <span className="flex-1">{f.explanation_text || f.factor_name || f.feature_name} <span className="text-slate-400 text-xs ml-1">(Val: {f.feature_value})</span></span>
                     </li>
-                  ))}
+                  )})}
                 </ul>
               </div>
             )}

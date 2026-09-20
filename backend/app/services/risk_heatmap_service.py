@@ -3,147 +3,143 @@ from fastapi import HTTPException
 from sqlalchemy.orm import Session, joinedload
 
 from app.models.prediction import Prediction
+from app.services.risk_service import get_risk_level
 from app.models.withdrawal_location import WithdrawalLocation
 from app.models.complaint import Complaint
-from app.schemas.risk_heatmap import HeatmapCandidate, HeatmapResponse, DistrictAggregation, DistrictHeatmapResponse
+from app.schemas.risk_heatmap import HeatmapCandidate, HeatmapResponse, DistrictAggregation, DistrictHeatmapResponse, GlobalHeatmapResponse, GlobalHeatmapCandidate
 
-def get_heatmap_candidates(complaint_id: str, db: Session) -> HeatmapResponse:
-    if complaint_id == "ALL_COMPLAINTS":
-        all_preds = (
-            db.query(Prediction, WithdrawalLocation)
-            .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
-            .options(joinedload(WithdrawalLocation.district))
-            .all()
-        )
-        if not all_preds:
-            # Fallback to all withdrawal locations if no predictions exist yet
-            locations = db.query(WithdrawalLocation).options(joinedload(WithdrawalLocation.district)).all()
-            if not locations:
-                raise HTTPException(status_code=404, detail="No candidate locations found")
-            candidates = []
-            for loc in locations:
-                candidates.append(HeatmapCandidate(
-                    prediction_id=f"GLOBAL_{loc.location_id}",
-                    withdrawal_location_id=loc.location_id,
-                    latitude=loc.latitude,
-                    longitude=loc.longitude,
-                    district=loc.district.district_name if loc.district else loc.district_id,
-                    probability=0.0,
-                    rank=999,
-                    priority="LOW",
-                    model_version="withdrawal_model_v1",
-                    source=loc.source,
-                    source_id=loc.source_id,
-                    operator=loc.operator,
-                    brand=loc.brand,
-                    address=loc.address
-                ))
-            return HeatmapResponse(complaint_id=complaint_id, candidates=candidates)
-
-        # Aggregate by location_id taking the prediction with maximum probability
-        agg_map = {}
-        for pred, loc in all_preds:
-            prob = float(pred.risk_score)
-            loc_id = loc.location_id
-            if loc_id not in agg_map or prob > agg_map[loc_id]["prob"]:
-                agg_map[loc_id] = {
-                    "pred": pred,
-                    "loc": loc,
-                    "prob": prob
-                }
-
-        # Sort aggregated unique candidate locations by prob descending
-        sorted_candidates = sorted(agg_map.values(), key=lambda x: (-x["prob"], x["loc"].location_id))
-
+def get_global_heatmap(db: Session) -> GlobalHeatmapResponse:
+    all_preds = (
+        db.query(Prediction, WithdrawalLocation)
+        .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
+        .options(joinedload(WithdrawalLocation.district))
+        .all()
+    )
+    if not all_preds:
+        # Fallback to all withdrawal locations if no predictions exist yet
+        locations = db.query(WithdrawalLocation).options(joinedload(WithdrawalLocation.district)).all()
+        if not locations:
+            raise HTTPException(status_code=404, detail="No candidate locations found")
         candidates = []
-        for rank, item in enumerate(sorted_candidates, start=1):
-            pred = item["pred"]
-            loc = item["loc"]
-            candidates.append(HeatmapCandidate(
-                prediction_id=str(pred.prediction_id),
-                withdrawal_location_id=loc.location_id,
+        for loc in locations:
+            candidates.append(GlobalHeatmapCandidate(
+                location_id=loc.location_id,
                 latitude=loc.latitude,
                 longitude=loc.longitude,
                 district=loc.district.district_name if loc.district else loc.district_id,
-                probability=item["prob"],
-                rank=rank,
-                priority=pred.priority,
-                model_version=pred.model_version,
-                source=loc.source,
-                source_id=loc.source_id,
-                operator=loc.operator,
-                brand=loc.brand,
-                address=loc.address
+                complaint_count=0,
+                prediction_count=0,
+                average_probability=0.0,
+                maximum_probability=0.0,
+                risk_level="LOW"
             ))
+        return GlobalHeatmapResponse(candidates=candidates)
 
-        return HeatmapResponse(
-            complaint_id=complaint_id,
-            candidates=candidates
-        )
-    else:
-        complaint = db.query(Complaint).filter(Complaint.complaint_id == complaint_id).first()
-        if not complaint:
-            raise HTTPException(status_code=404, detail="Complaint not found")
+    # Aggregate by location_id
+    agg_map = {}
+    for pred, loc in all_preds:
+        prob = float(pred.risk_score)
+        loc_id = loc.location_id
+        if loc_id not in agg_map:
+            agg_map[loc_id] = {
+                "loc": loc,
+                "complaints": set(),
+                "predictions": 0,
+                "total_prob": 0.0,
+                "max_prob": 0.0
+            }
+        
+        agg_map[loc_id]["complaints"].add(pred.complaint_id)
+        agg_map[loc_id]["predictions"] += 1
+        agg_map[loc_id]["total_prob"] += prob
+        if prob > agg_map[loc_id]["max_prob"]:
+            agg_map[loc_id]["max_prob"] = prob
 
-        predictions = (
-            db.query(Prediction, WithdrawalLocation)
-            .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
-            .options(joinedload(WithdrawalLocation.district))
-            .filter(Prediction.complaint_id == complaint_id)
-            .order_by(Prediction.rank.asc())
-            .all()
-        )
+    candidates = []
+    for loc_id, stats in agg_map.items():
+        loc = stats["loc"]
+        avg_prob = stats["total_prob"] / stats["predictions"] if stats["predictions"] > 0 else 0.0
+        max_prob = stats["max_prob"]
+        
+        # Calculate risk level based on max_prob or avg_prob
+        risk_level = get_risk_level(max_prob)
 
-        if not predictions:
-            raise HTTPException(status_code=404, detail="No predictions found for this complaint")
+        candidates.append(GlobalHeatmapCandidate(
+            location_id=loc_id,
+            latitude=loc.latitude,
+            longitude=loc.longitude,
+            district=loc.district.district_name if loc.district else loc.district_id,
+            complaint_count=len(stats["complaints"]),
+            prediction_count=stats["predictions"],
+            average_probability=avg_prob,
+            maximum_probability=max_prob,
+            risk_level=risk_level
+        ))
 
-        candidates = []
-        for pred, loc in predictions:
-            candidates.append(HeatmapCandidate(
-                prediction_id=str(pred.prediction_id),
-                withdrawal_location_id=loc.location_id,
-                latitude=loc.latitude,
-                longitude=loc.longitude,
-                district=loc.district.district_name if loc.district else loc.district_id,
-                probability=float(pred.risk_score),
-                rank=pred.rank,
-                priority=pred.priority,
-                model_version=pred.model_version,
-                source=loc.source,
-                source_id=loc.source_id,
-                operator=loc.operator,
-                brand=loc.brand,
-                address=loc.address
-            ))
+    # Sort aggregated candidates by max probability descending
+    candidates.sort(key=lambda x: (-x.maximum_probability, x.location_id))
 
-        return HeatmapResponse(
-            complaint_id=complaint_id,
-            candidates=candidates
-        )
+    return GlobalHeatmapResponse(
+        candidates=candidates
+    )
 
-def get_heatmap_districts(complaint_id: str, db: Session) -> DistrictHeatmapResponse:
-    if complaint_id == "ALL_COMPLAINTS":
-        predictions = (
-            db.query(Prediction, WithdrawalLocation)
-            .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
-            .options(joinedload(WithdrawalLocation.district))
-            .all()
-        )
-    else:
-        complaint = db.query(Complaint).filter(Complaint.complaint_id == complaint_id).first()
-        if not complaint:
-            raise HTTPException(status_code=404, detail="Complaint not found")
+def get_heatmap_candidates(complaint_id: str, db: Session, limit: int = 10) -> HeatmapResponse:
+    complaint = db.query(Complaint).filter(Complaint.complaint_id == complaint_id).first()
+    if not complaint:
+        raise HTTPException(status_code=404, detail="Complaint not found")
 
-        predictions = (
-            db.query(Prediction, WithdrawalLocation)
-            .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
-            .options(joinedload(WithdrawalLocation.district))
-            .filter(Prediction.complaint_id == complaint_id)
-            .all()
-        )
+    predictions = (
+        db.query(Prediction, WithdrawalLocation)
+        .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
+        .options(joinedload(WithdrawalLocation.district))
+        .filter(Prediction.complaint_id == complaint_id)
+        .order_by(Prediction.rank.asc())
+        .limit(limit)
+        .all()
+    )
 
     if not predictions:
-        raise HTTPException(status_code=404, detail="No predictions found for this complaint")
+        return HeatmapResponse(complaint_id=complaint_id, candidates=[])
+
+    candidates = []
+    for pred, loc in predictions:
+        candidates.append(HeatmapCandidate(
+            prediction_id=str(pred.prediction_id),
+            withdrawal_location_id=loc.location_id,
+            latitude=loc.latitude,
+            longitude=loc.longitude,
+            district=loc.district.district_name if loc.district else loc.district_id,
+            probability=float(pred.risk_score),
+            rank=pred.rank,
+            priority=pred.priority,
+            model_version=pred.model_version,
+            source=loc.source,
+            source_id=loc.source_id,
+            operator=loc.operator,
+            brand=loc.brand,
+            address=loc.address
+        ))
+
+    return HeatmapResponse(
+        complaint_id=complaint_id,
+        candidates=candidates
+    )
+
+def get_heatmap_districts(complaint_id: str, db: Session) -> DistrictHeatmapResponse:
+    complaint = db.query(Complaint).filter(Complaint.complaint_id == complaint_id).first()
+    if not complaint:
+        raise HTTPException(status_code=404, detail="Complaint not found")
+
+    predictions = (
+        db.query(Prediction, WithdrawalLocation)
+        .join(WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id)
+        .options(joinedload(WithdrawalLocation.district))
+        .filter(Prediction.complaint_id == complaint_id)
+        .all()
+    )
+
+    if not predictions:
+        return DistrictHeatmapResponse(complaint_id=complaint_id, districts=[])
 
     district_map = {}
     

@@ -4,6 +4,7 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
+  timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -78,6 +79,23 @@ export interface PredictionResponse {
 export interface HeatmapResponse {
   complaint_id: string;
   candidates: WithdrawalCandidate[];
+}
+
+export interface GlobalHeatmapCandidate {
+  location_id: string;
+  latitude: number;
+  longitude: number;
+  district: string;
+  complaint_count: number;
+  prediction_count: number;
+  average_probability: number;
+  maximum_probability: number;
+  risk_level: string;
+}
+
+export interface GlobalHeatmapResponse {
+  map_type: string;
+  candidates: GlobalHeatmapCandidate[];
 }
 
 export interface Alert {
@@ -167,6 +185,21 @@ export const generatePrediction = async (complaintId: string) => {
   return response.data;
 };
 
+export const runPredictionJob = async (complaintId: string) => {
+  const response = await apiClient.post(`/api/predictions/${complaintId}/run`);
+  return response.data;
+};
+
+export const getPredictionJobStatus = async (jobId: string) => {
+  const response = await apiClient.get(`/api/predictions/jobs/${jobId}/status`);
+  return response.data;
+};
+
+export const getModelInfo = async () => {
+  const response = await apiClient.get('/api/ml/model-info');
+  return response.data;
+};
+
 // Explainability APIs
 export const getCandidateExplanation = async (complaintId: string, locationId: string) => {
   const response = await apiClient.get(`/api/explanations/${complaintId}/candidates/${locationId}`);
@@ -176,6 +209,11 @@ export const getCandidateExplanation = async (complaintId: string, locationId: s
 // Risk Heatmap APIs
 export const getHeatmapData = async (complaintId: string) => {
   const response = await apiClient.get(`/api/risk-heatmap/${complaintId}`);
+  return response.data;
+};
+
+export const getGlobalHeatmapData = async () => {
+  const response = await apiClient.get(`/api/risk-heatmap/global`);
   return response.data;
 };
 

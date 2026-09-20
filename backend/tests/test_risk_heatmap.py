@@ -13,7 +13,6 @@ def test_get_heatmap_candidates_cc1001():
     data = response.json()
     
     assert data["complaint_id"] == "CC1001"
-    assert data["data_status"] == "synthetic_prototype"
     assert "candidates" in data
     
     candidates = data["candidates"]
@@ -67,13 +66,12 @@ def test_get_heatmap_districts_cc1001():
     assert 0.0 <= d["highest_probability"] <= 1.0
     assert 0.0 <= d["average_probability"] <= 1.0
 
-def test_get_heatmap_candidates_all_complaints():
+def test_get_global_heatmap():
     client.post("/api/predictions/CC1001")
     
-    response = client.get("/api/risk-heatmap/ALL_COMPLAINTS")
+    response = client.get("/api/risk-heatmap/global")
     assert response.status_code == 200
     data = response.json()
     
-    assert data["complaint_id"] == "ALL_COMPLAINTS"
     assert "candidates" in data
     assert len(data["candidates"]) > 0

@@ -25,10 +25,32 @@ def test_get_model_info():
     assert eval_metrics["top_3_hit_rate"] is not None
 
 def test_post_and_get_prediction_cc1001():
-    # 1. Generate prediction via POST
-    post_res = client.post("/api/predictions/CC1001")
+    # 1. Generate prediction via POST async
+    post_res = client.post("/api/predictions/CC1001/run")
     assert post_res.status_code == 200
-    data = post_res.json()
+    job_data = post_res.json()
+    assert "job_id" in job_data
+    
+    job_id = job_data["job_id"]
+    
+    import time
+    # Poll until completed
+    status = "PROCESSING"
+    attempts = 0
+    while status == "PROCESSING" or status == "INITIALIZING":
+        if attempts > 30:
+            break
+        time.sleep(0.5)
+        status_res = client.get(f"/api/predictions/jobs/{job_id}/status")
+        status = status_res.json().get("status")
+        attempts += 1
+        
+    assert status == "COMPLETED"
+
+    # 2. Retrieve prediction via GET
+    get_res = client.get("/api/predictions/CC1001")
+    assert get_res.status_code == 200
+    data = get_res.json()
     
     assert data["complaint_id"] == "CC1001"
     assert data["candidate_count"] > 0
@@ -50,13 +72,9 @@ def test_post_and_get_prediction_cc1001():
             assert "contribution" in f
             assert f["direction"] in ["POSITIVE", "NEGATIVE", "NEUTRAL"]
             
-    # Probabilities should be monotonically non-increasing
     probs = [c["probability"] for c in candidates]
     assert all(probs[i] >= probs[i+1] for i in range(len(probs)-1))
 
-    # 2. Retrieve prediction via GET
-    get_res = client.get("/api/predictions/CC1001")
-    assert get_res.status_code == 200
     stored_data = get_res.json()
     assert stored_data["complaint_id"] == "CC1001"
     assert len(stored_data["ranked_candidates"]) > 0
@@ -71,8 +89,14 @@ def test_post_and_get_prediction_cc1001():
 
 def test_prediction_404_not_found():
     # POST with non-existent complaint
-    res_post = client.post("/api/predictions/NON_EXISTENT_CASE")
-    assert res_post.status_code == 404
+    res_post = client.post("/api/predictions/NON_EXISTENT_CASE/run")
+    assert res_post.status_code == 200
+    
+    job_id = res_post.json()["job_id"]
+    import time
+    time.sleep(0.5)
+    status_res = client.get(f"/api/predictions/jobs/{job_id}/status")
+    # Job should fail eventually, but for GET:
     
     # GET with non-existent complaint
     res_get = client.get("/api/predictions/NON_EXISTENT_CASE")

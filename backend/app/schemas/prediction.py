@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 from typing import List, Optional, Dict, Any
 
 class PredictionFactorSchema(BaseModel):
@@ -39,6 +39,11 @@ class ModelEvaluation(BaseModel):
     top_5_hit_rate: Optional[float]
     mrr: Optional[float]
 
+class RiskThresholds(BaseModel):
+    critical: float
+    high: float
+    medium: float
+
 class ModelInfoResponse(BaseModel):
     model_type: str
     model_version: str
@@ -54,3 +59,4 @@ class ModelInfoResponse(BaseModel):
     target_definition: str = "withdrawal_zone"
     disclaimer: str = "Model training and evaluation use synthetic prototype data created for demonstration purposes. Performance metrics do not represent real-world operational accuracy."
     evaluation: ModelEvaluation
+    risk_thresholds: RiskThresholds

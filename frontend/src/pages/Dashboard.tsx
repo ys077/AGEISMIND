@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getDashboardOverview } from '../api/client';
 import { MainLayout } from '../components/layout/MainLayout';
+import { useAppStore } from '../store/appDataStore';
 import { 
   ShieldAlert, 
   IndianRupee, 
-  TrendingUp, 
   FileText, 
   MapPin, 
   ArrowUpRight, 
@@ -22,28 +21,18 @@ import {
 } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const { dashboardData: data, modelInfo, preloadApp } = useAppStore();
   const [refreshing, setRefreshing] = useState<boolean>(false);
   const navigate = useNavigate();
 
-  const loadOverview = async (isManual = false) => {
-    try {
-      if (isManual) setRefreshing(true);
-      const overview = await getDashboardOverview();
-      setData(overview);
-    } catch (err) {
-      console.error("Failed to load dashboard overview", err);
-    } finally {
-      setLoading(false);
-      if (isManual) setRefreshing(false);
-    }
+  const handleManualRefresh = async () => {
+    setRefreshing(true);
+    await preloadApp(true); // Refreshes the cache
+    setRefreshing(false);
   };
 
-  useEffect(() => {
-    loadOverview();
-    const timer = setInterval(() => loadOverview(), 45000);
-    return () => clearInterval(timer);
+  React.useEffect(() => {
+    preloadApp(false);
   }, []);
 
   const formatCurrency = (val: number) => {
@@ -69,12 +58,11 @@ export const Dashboard: React.FC = () => {
     }
   };
 
-  if (loading && !data) {
+  if (!data) {
     return (
       <MainLayout>
         <div className="flex flex-col items-center justify-center h-[70vh] gap-3 text-slate-500">
-          <RefreshCw className="animate-spin text-blue-600" size={32} />
-          <p className="text-sm font-medium">Aggregating State Cybercrime Intelligence...</p>
+          <p className="text-sm font-medium">No dashboard data available.</p>
         </div>
       </MainLayout>
     );
@@ -82,11 +70,13 @@ export const Dashboard: React.FC = () => {
 
   const alertSummary = data?.alert_summary || {};
   const totalComplaints = data?.total_complaints || 0;
+  const predictionCoverage = data?.prediction_coverage || 0;
   const totalFraud = data?.total_fraud_amount || 0;
   const avgFraud = data?.avg_fraud_amount || 0;
   const statusBreakdown = data?.status_breakdown || {};
   const underInvestigationCount = statusBreakdown['Under Investigation'] || 0;
   const resolvedCount = statusBreakdown['Resolved'] || 0;
+  const modelVersion = modelInfo?.model_version || "unknown";
 
   return (
     <MainLayout>
@@ -100,18 +90,18 @@ export const Dashboard: React.FC = () => {
             <h2 className="text-2xl font-bold text-slate-900">Tamil Nadu Cyber Intelligence Command</h2>
           </div>
           <p className="text-slate-500 text-sm mt-1">
-            Macro Threat Analytics, Financial Loss Trajectory & Predictive Cash Withdrawal Surveillance
+            Predictive Cash Withdrawal Intelligence
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center gap-2 text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1.5 rounded-lg">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Predictive Engine Active (v2.4)</span>
+            <span>Predictive Engine Active ({modelVersion})</span>
           </div>
 
           <button
-            onClick={() => loadOverview(true)}
+            onClick={handleManualRefresh}
             disabled={refreshing}
             className="flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 shadow-sm transition-colors disabled:opacity-50"
           >
@@ -127,16 +117,16 @@ export const Dashboard: React.FC = () => {
         <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
           <div className="flex justify-between items-start">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              Total Complaints
+              Prediction Coverage
             </span>
             <span className="p-2 rounded-lg bg-blue-50 text-blue-600">
               <FileText size={18} />
             </span>
           </div>
           <div className="mt-2 flex items-baseline gap-2">
-            <span className="text-3xl font-extrabold text-slate-900">{totalComplaints.toLocaleString()}</span>
-            <span className="text-xs font-semibold text-emerald-600 flex items-center">
-              <TrendingUp size={12} className="mr-0.5" /> State Registry
+            <span className="text-3xl font-extrabold text-slate-900">{predictionCoverage.toLocaleString()}</span>
+            <span className="text-sm font-semibold text-slate-500 flex items-center">
+              / {totalComplaints.toLocaleString()} cases
             </span>
           </div>
           <div className="mt-3 flex items-center gap-3 text-xs text-slate-500 border-t border-slate-100 pt-2.5">
@@ -173,7 +163,7 @@ export const Dashboard: React.FC = () => {
         <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl border border-red-200 p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
           <div className="flex justify-between items-start">
             <span className="text-xs font-semibold text-red-700 uppercase tracking-wider flex items-center gap-1.5">
-              <Flame size={14} className="text-red-600" /> Critical Intercepts
+              <Flame size={14} className="text-red-600" /> Priorities
             </span>
             <button 
               onClick={() => navigate('/alerts')}
@@ -184,13 +174,12 @@ export const Dashboard: React.FC = () => {
           </div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="text-3xl font-extrabold text-red-700">
-              {alertSummary.high_priority ?? alertSummary.critical_priority ?? 0}
+              {(alertSummary.high_priority || 0) + (alertSummary.critical_priority || 0)}
             </span>
-            <span className="text-xs font-semibold text-red-600">High Risk (&gt;70%)</span>
+            <span className="text-xs font-semibold text-red-600">High Priority candidates</span>
           </div>
           <div className="mt-3 flex items-center justify-between text-xs text-red-800 border-t border-red-200/60 pt-2.5">
             <span>Queue: <strong>{alertSummary.total_alerts ?? 0} pending</strong></span>
-            <span className="font-semibold text-red-700">Active Window: ~2-6 hrs</span>
           </div>
         </div>
 
@@ -206,12 +195,12 @@ export const Dashboard: React.FC = () => {
           </div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="text-3xl font-extrabold text-slate-900">
-              {data?.districts_ranking?.length || 8}
+              {data?.districts_ranking?.filter((d: any) => d.risk_level === 'CRITICAL' || d.risk_level === 'HIGH').length || 0}
             </span>
             <span className="text-xs font-semibold text-amber-600">Active Clusters</span>
           </div>
           <div className="mt-3 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100 pt-2.5">
-            <span>Primary: <strong className="text-slate-800">{data?.districts_ranking?.[0]?.city || 'Chennai'}</strong></span>
+            <span>Primary: <strong className="text-slate-800">{data?.districts_ranking?.[0]?.city || 'N/A'}</strong></span>
             <button
               onClick={() => navigate('/heatmap')}
               className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-0.5"
@@ -283,15 +272,15 @@ export const Dashboard: React.FC = () => {
           <div className="mt-6 pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
             <div className="p-2 rounded-lg bg-slate-50">
               <span className="text-slate-400 block text-[10px] uppercase font-bold">Top Threat</span>
-              <strong className="text-slate-800 font-bold">{data?.categories_breakdown?.[0]?.category || 'Cyber Deception'}</strong>
+              <strong className="text-slate-800 font-bold">{data?.categories_breakdown?.[0]?.category || 'N/A'}</strong>
             </div>
             <div className="p-2 rounded-lg bg-slate-50">
-              <span className="text-slate-400 block text-[10px] uppercase font-bold">High Value Modus</span>
-              <strong className="text-slate-800 font-bold">Identity & Banking</strong>
+              <span className="text-slate-400 block text-[10px] uppercase font-bold">Top Modus Operandi</span>
+              <strong className="text-slate-800 font-bold">{data?.fraud_types_breakdown?.[0]?.fraud_type || 'N/A'}</strong>
             </div>
             <div className="p-2 rounded-lg bg-slate-50">
-              <span className="text-slate-400 block text-[10px] uppercase font-bold">Recovery Window</span>
-              <strong className="text-emerald-700 font-bold">Golden Hour (1930)</strong>
+              <span className="text-slate-400 block text-[10px] uppercase font-bold">Top Source Channel</span>
+              <strong className="text-emerald-700 font-bold">{data?.channel_breakdown?.[0]?.channel || 'N/A'}</strong>
             </div>
           </div>
         </div>
@@ -368,7 +357,7 @@ export const Dashboard: React.FC = () => {
                 <span>Recent High-Risk Incident Telemetry</span>
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                Live intake of cyber financial crime reports undergoing predictive modeling
+                Recent cyber-financial cases undergoing predictive analysis
               </p>
             </div>
             <button
@@ -473,9 +462,9 @@ export const Dashboard: React.FC = () => {
                 <span className="text-[11px] font-bold tracking-wider text-blue-400 uppercase">Investigator Tools</span>
                 <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
               </div>
-              <h4 className="text-sm font-bold mb-1">Direct Tactical Dispatch</h4>
+              <h4 className="text-sm font-bold mb-1">Prioritize Candidates</h4>
               <p className="text-xs text-slate-300 mb-4">
-                Intercept predicted withdrawal locations before suspects cash out.
+                Review model-ranked candidate locations for timely investigation.
               </p>
             </div>
 
@@ -484,7 +473,7 @@ export const Dashboard: React.FC = () => {
                 onClick={() => navigate('/alerts')}
                 className="py-2.5 px-3 bg-red-600 hover:bg-red-700 text-white rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm"
               >
-                <BellRing size={14} /> Alert Triage ({alertSummary.total_alerts || 26})
+                <BellRing size={14} /> Alert Triage ({alertSummary.total_alerts || 0})
               </button>
 
               <button

@@ -106,7 +106,7 @@ def get_candidate_explanation(complaint_id: str, location_id: str, db: Session) 
     ).first()
     
     if not pred:
-        raise HTTPException(status_code=404, detail="Prediction for this candidate not found.")
+        return None
         
     metadata = model_loader.get_metadata()
     if pred.model_version != metadata["model_version"]:
@@ -123,17 +123,31 @@ def get_global_explainability_info() -> ModelExplainabilityResponse:
     metadata = model_loader.get_metadata()
     model = model_loader.get_model()
     
+    global_fi_dict = metadata.get("global_feature_importance", {})
+    
     global_fi = []
-    for i, fname in enumerate(metadata["features"]):
-        global_fi.append(GlobalFeatureImportance(
-            feature_name=fname,
-            importance=0.0, # Placeholder, global FI requires a background dataset eval
+    for fname in metadata["features"]:
+        importance = global_fi_dict.get(fname, 0.0)
+        global_fi.append({
+            "feature_name": fname,
+            "importance": importance
+        })
+        
+    # Sort by importance descending
+    global_fi.sort(key=lambda x: x["importance"], reverse=True)
+    
+    # Assign ranks and convert to objects
+    ranked_global_fi = []
+    for i, item in enumerate(global_fi):
+        ranked_global_fi.append(GlobalFeatureImportance(
+            feature_name=item["feature_name"],
+            importance=item["importance"],
             rank=i+1
         ))
         
     return ModelExplainabilityResponse(
         model_version=metadata["model_version"],
         supported_model_type=metadata["model_type"],
-        explanation_method="SHAP Explainer (Local)",
-        global_feature_importance=global_fi
+        explanation_method="SHAP Explainer (Global approximation from evaluation data)",
+        global_feature_importance=ranked_global_fi
     )

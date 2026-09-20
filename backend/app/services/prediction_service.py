@@ -6,9 +6,25 @@ from sqlalchemy import desc
 from app.models import Complaint, Transaction, Account, WithdrawalLocation, Prediction, PredictionFactor
 from app.ml.predict import generate_prediction
 from app.ml.model_loader import model_loader
-from app.schemas.prediction import PredictionResponse, ModelInfoResponse, ModelEvaluation
+from app.schemas.prediction import PredictionResponse, ModelInfoResponse, ModelEvaluation, RiskThresholds
+from app.services.risk_service import RISK_THRESHOLDS
+from app.db.database import SessionLocal
+import threading
+import time
 
-def generate_and_save_prediction(complaint_id: str, db: Session) -> PredictionResponse:
+PREDICTION_JOBS: Dict[str, Any] = {}
+
+def update_job_stage(job_id: str, stage: str):
+    if job_id in PREDICTION_JOBS:
+        if stage not in PREDICTION_JOBS[job_id]["completed_stages"]:
+            if PREDICTION_JOBS[job_id]["stage"]:
+                PREDICTION_JOBS[job_id]["completed_stages"].append(PREDICTION_JOBS[job_id]["stage"])
+            PREDICTION_JOBS[job_id]["stage"] = stage
+
+def generate_and_save_prediction(complaint_id: str, db: Session, job_id: str = None) -> PredictionResponse:
+    if job_id:
+        update_job_stage(job_id, "LOADING_FEATURES")
+        
     complaint = db.query(Complaint).filter(Complaint.complaint_id == complaint_id).first()
     if not complaint:
         raise ValueError(f"Complaint {complaint_id} not found")
@@ -27,8 +43,11 @@ def generate_and_save_prediction(complaint_id: str, db: Session) -> PredictionRe
         raise ValueError("No withdrawal candidates found in database.")
         
     # Generate predictions
-    ranked_results, metadata = generate_prediction(db, complaint, transactions, accounts, candidates)
+    ranked_results, metadata = generate_prediction(db, complaint, transactions, accounts, candidates, job_id, update_job_stage)
     
+    if job_id:
+        update_job_stage(job_id, "PERSISTING_PREDICTIONS")
+        
     # Persist to database (clear old predictions for this complaint first)
     db.query(Prediction).filter(Prediction.complaint_id == complaint_id).delete()
     db.flush()
@@ -63,6 +82,14 @@ def generate_and_save_prediction(complaint_id: str, db: Session) -> PredictionRe
             
     db.commit()
     
+    # Automatically generate alerts for new high-priority predictions
+    try:
+        from app.services.alert_service import generate_alerts_from_predictions
+        generate_alerts_from_predictions(db)
+    except Exception as e:
+        # Don't fail the prediction if alert generation fails
+        print(f"Warning: Failed to generate alerts: {e}")
+    
     # We use the timestamp of the top prediction as the overall timestamp
     timestamp = prediction_models[0].created_at.isoformat() if prediction_models else ""
     
@@ -74,12 +101,46 @@ def generate_and_save_prediction(complaint_id: str, db: Session) -> PredictionRe
         ranked_candidates=ranked_results
     )
 
+def run_prediction_background(complaint_id: str, job_id: str):
+    db = SessionLocal()
+    try:
+        # Provide immediate visual feedback for initializing
+        update_job_stage(job_id, "INITIALIZING")
+        generate_and_save_prediction(complaint_id, db, job_id)
+        if job_id in PREDICTION_JOBS:
+            PREDICTION_JOBS[job_id]["status"] = "COMPLETED"
+            PREDICTION_JOBS[job_id]["stage"] = "COMPLETED"
+    except Exception as e:
+        if job_id in PREDICTION_JOBS:
+            PREDICTION_JOBS[job_id]["status"] = "FAILED"
+            PREDICTION_JOBS[job_id]["stage"] = str(e)
+        print(f"Background prediction failed for {complaint_id}: {e}")
+    finally:
+        db.close()
+
+def start_prediction_job(complaint_id: str) -> str:
+    job_id = str(uuid.uuid4())
+    PREDICTION_JOBS[job_id] = {
+        "job_id": job_id,
+        "complaint_id": complaint_id,
+        "status": "PROCESSING",
+        "stage": "INITIALIZING",
+        "completed_stages": []
+    }
+    
+    thread = threading.Thread(target=run_prediction_background, args=(complaint_id, job_id))
+    thread.daemon = True
+    thread.start()
+    
+    return job_id
+
 def get_stored_prediction(complaint_id: str, db: Session, top_k: int = None) -> PredictionResponse:
     # Check if we have predictions
-    preds = db.query(Prediction).filter(Prediction.complaint_id == complaint_id).order_by(Prediction.rank).all()
-    
-    if not preds:
+    total_count = db.query(Prediction).filter(Prediction.complaint_id == complaint_id).count()
+    if total_count == 0:
         return None
+
+    preds = db.query(Prediction).filter(Prediction.complaint_id == complaint_id).order_by(Prediction.rank).all()
         
     if top_k is not None:
         preds = preds[:top_k]
@@ -114,7 +175,7 @@ def get_stored_prediction(complaint_id: str, db: Session, top_k: int = None) -> 
         complaint_id=complaint_id,
         model_version=preds[0].model_version,
         prediction_timestamp=preds[0].created_at.isoformat(),
-        candidate_count=len(preds),
+        candidate_count=total_count,
         ranked_candidates=ranked_candidates
     )
 
@@ -144,5 +205,11 @@ def get_model_info() -> ModelInfoResponse:
         positive_labels=metadata["dataset_stats"]["positive_labels"],
         negative_labels=metadata["dataset_stats"]["negative_labels"],
         training_date=metadata["training_date"],
-        evaluation=eval_metrics
+        target_definition="withdrawal_zone",
+        evaluation=eval_metrics,
+        risk_thresholds=RiskThresholds(
+            critical=RISK_THRESHOLDS["CRITICAL"],
+            high=RISK_THRESHOLDS["HIGH"],
+            medium=RISK_THRESHOLDS["MEDIUM"]
+        )
     )

@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
@@ -21,7 +22,7 @@ def get_case_explanation(complaint_id: str, db: Session = Depends(get_db)):
     """
     return explainability_service.get_case_explanation(complaint_id, db)
 
-@router.get("/explanations/{complaint_id}/candidates/{location_id}", response_model=SingleCandidateExplanationResponse)
+@router.get("/explanations/{complaint_id}/candidates/{location_id}", response_model=Optional[SingleCandidateExplanationResponse])
 def get_candidate_explanation(complaint_id: str, location_id: str, db: Session = Depends(get_db)):
     """
     Returns explanation for a specific ranked candidate.

@@ -1,5 +1,5 @@
 import React from 'react';
-import { History, CheckCircle, MessageSquare, PlusCircle, ShieldAlert, FileText } from 'lucide-react';
+import { History, CheckCircle, MessageSquare, PlusCircle, ShieldAlert } from 'lucide-react';
 
 export const AuditTimeline: React.FC<{ logs: any[] }> = ({ logs }) => {
   if (!logs || logs.length === 0) {

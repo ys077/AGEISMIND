@@ -10,7 +10,8 @@ from app.models.audit_log import AuditLog
 from app.models.withdrawal_location import WithdrawalLocation
 from app.models.district import District
 from app.schemas.alert import AlertDetailResponse
-
+from app.services import email_service
+from app.core.config import settings
 
 def generate_alerts_from_predictions(db: Session) -> int:
     """
@@ -42,8 +43,68 @@ def generate_alerts_from_predictions(db: Session) -> int:
             entity_id=str(new_alert.alert_id),
             actor_id="SYSTEM",
             complaint_id=pred.complaint_id,
-            data_hash=f"Priority:{pred.priority}|Score:{pred.risk_score}"
+            data_hash=f"Priority:{pred.priority}|Score:{pred.risk_score}",
+            commit=False
         )
+
+        # ----------------------------------------------------
+        # Email Notification & Duplicate Prevention
+        # ----------------------------------------------------
+        # Deduplicate by complaint_id to avoid sending multiple emails
+        # if the complaint is re-processed and new alerts are generated.
+        existing_email_log = db.query(AuditLog).filter(
+            AuditLog.complaint_id == pred.complaint_id,
+            AuditLog.action_type == "EMAIL_SENT"
+        ).first()
+
+        if not existing_email_log and settings.ENABLE_EMAIL_NOTIFICATIONS:
+            # Fetch location and district data for the email format
+            loc = db.query(WithdrawalLocation).filter(WithdrawalLocation.location_id == pred.location_id).first()
+            dist_name = "Unknown"
+            if loc:
+                dist = db.query(District).filter(District.district_id == loc.district_id).first()
+                if dist:
+                    dist_name = dist.district_name
+
+            alert_data = {
+                "alert_id": str(new_alert.alert_id),
+                "complaint_id": pred.complaint_id,
+                "priority": pred.priority,
+                "withdrawal_location_id": pred.location_id,
+                "district": dist_name,
+                "probability": float(pred.risk_score) if pred.risk_score is not None else 0.0,
+                "created_at": new_alert.created_at.isoformat() if new_alert.created_at else "N/A"
+            }
+
+            recipient = settings.ALERT_FROM_EMAIL  # Using from_email as recipient for alerts per instructions?
+            # Wait, the instruction says "Send the email to my test recipient." for the test. 
+            # For the alert, it doesn't specify a generic alert recipient list, I will default to sending to ALERT_FROM_EMAIL or a hypothetical investigator email.
+            # Let's send to ALERT_FROM_EMAIL for simplicity in testing as requested.
+            
+            email_success = email_service.send_alert_email(recipient, alert_data)
+
+            if email_success:
+                log_audit_event(
+                    db=db,
+                    action_type="EMAIL_SENT",
+                    entity_type="ALERT",
+                    entity_id=str(new_alert.alert_id),
+                    actor_id="SYSTEM",
+                    complaint_id=pred.complaint_id,
+                    data_hash=f"EmailSentTo:{recipient}",
+                    commit=False
+                )
+            else:
+                log_audit_event(
+                    db=db,
+                    action_type="EMAIL_FAILED",
+                    entity_type="ALERT",
+                    entity_id=str(new_alert.alert_id),
+                    actor_id="SYSTEM",
+                    complaint_id=pred.complaint_id,
+                    data_hash="Email delivery failed",
+                    commit=False
+                )
         
     if count > 0:
         db.commit()
@@ -213,7 +274,8 @@ def log_audit_event(
     entity_id: str,
     actor_id: str = "SYSTEM",
     complaint_id: Optional[str] = None,
-    data_hash: Optional[str] = None
+    data_hash: Optional[str] = None,
+    commit: bool = True
 ):
     """
     Create an audit log entry for tamper-evident tracking.
@@ -227,7 +289,8 @@ def log_audit_event(
         data_hash=data_hash
     )
     db.add(audit)
-    db.commit()
+    if commit:
+        db.commit()
 
 
 def update_alert_status(db: Session, alert_id: uuid.UUID, new_status: str, actor_id: str = "INVESTIGATOR_1") -> Optional[Alert]:

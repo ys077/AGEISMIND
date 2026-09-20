@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MainLayout } from '../components/layout/MainLayout';
 import { getComplaints } from '../api/client';
+import { useAppStore } from '../store/appDataStore';
 import { Search, Filter, FileText, ChevronRight } from 'lucide-react';
 
 export const ComplaintsList: React.FC = () => {
@@ -12,8 +13,19 @@ export const ComplaintsList: React.FC = () => {
   const [total, setTotal] = useState(0);
   const navigate = useNavigate();
 
+  const { complaintsList } = useAppStore();
+
   useEffect(() => {
     const fetchComplaints = async () => {
+      // Use cache for page 1 if available
+      if (page === 1 && complaintsList?.items) {
+        setComplaints(complaintsList.items);
+        setTotal(complaintsList.total);
+        setTotalPages(complaintsList.total_pages);
+        setLoading(false);
+        return;
+      }
+
       setLoading(true);
       try {
         const data = await getComplaints(page, 50);
@@ -32,7 +44,7 @@ export const ComplaintsList: React.FC = () => {
       }
     };
     fetchComplaints();
-  }, [page]);
+  }, [page, complaintsList]);
 
   const handleNext = () => {
     if (page < totalPages) setPage(page + 1);

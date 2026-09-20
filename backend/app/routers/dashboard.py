@@ -2,15 +2,20 @@ from typing import Dict, Any, List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func, desc
+from datetime import datetime, timedelta
 
 from app.api.deps import get_db
 from app.models.complaint import Complaint
 from app.services import alert_service
+from app.services.risk_service import get_risk_level
 
 router = APIRouter(
     prefix="/dashboard",
     tags=["Dashboard"]
 )
+
+_dashboard_cache = {}
+_CACHE_TTL_SECONDS = 60
 
 @router.get("/overview", response_model=Dict[str, Any])
 def get_dashboard_overview(db: Session = Depends(get_db)):
@@ -18,6 +23,12 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
     Get comprehensive executive dashboard data including total complaints,
     financial exposure, crime categories, fraud types, district rankings, and recent cases.
     """
+    global _dashboard_cache
+    now = datetime.now()
+    if "data" in _dashboard_cache and "timestamp" in _dashboard_cache:
+        if now - _dashboard_cache["timestamp"] < timedelta(seconds=_CACHE_TTL_SECONDS):
+            return _dashboard_cache["data"]
+
     # 1. Macro KPIs
     total_complaints = db.query(Complaint).count()
     total_fraud_val = db.query(func.sum(Complaint.fraud_amount)).scalar() or 0
@@ -64,23 +75,39 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
         })
 
     # 4. Top Hotspot Districts / Cities
-    city_query = db.query(
-        Complaint.victim_city,
-        Complaint.district_id,
-        func.count(Complaint.complaint_id),
+    from app.models.prediction import Prediction
+    from app.models.withdrawal_location import WithdrawalLocation
+    from app.models.district import District
+
+    dist_query = db.query(
+        District.district_id,
+        District.district_name,
+        func.count(Prediction.prediction_id),
+        func.max(Prediction.risk_score),
+        func.count(func.distinct(WithdrawalLocation.location_id)),
         func.sum(Complaint.fraud_amount)
-    ).group_by(Complaint.victim_city, Complaint.district_id).order_by(desc(func.count(Complaint.complaint_id))).limit(8).all()
+    ).select_from(Prediction).join(
+        WithdrawalLocation, Prediction.location_id == WithdrawalLocation.location_id
+    ).join(
+        District, WithdrawalLocation.district_id == District.district_id
+    ).join(
+        Complaint, Prediction.complaint_id == Complaint.complaint_id
+    ).filter(
+        Prediction.rank == 1
+    ).group_by(District.district_id, District.district_name).order_by(desc(func.max(Prediction.risk_score))).all()
 
     districts_ranking = []
-    for city, dist_id, count, amt in city_query:
-        amt_float = float(amt) if amt else 0
-        risk_level = "CRITICAL" if count >= 33 else "HIGH" if count >= 30 else "ELEVATED"
+    for dist_id, dist_name, p_count, max_score, loc_count, total_fraud in dist_query:
+        risk_level = get_risk_level(float(max_score)) if max_score else "LOW"
+                
         districts_ranking.append({
-            "city": city or "Unknown",
+            "city": dist_name or "Unknown",
             "district_id": dist_id or "TN00",
-            "complaint_count": count,
-            "total_fraud_amount": amt_float,
-            "risk_level": risk_level
+            "complaint_count": p_count,  # true predicted hotspot incidents
+            "total_fraud_amount": float(total_fraud) if total_fraud else 0.0,
+            "risk_level": risk_level,
+            "max_score": float(max_score) if max_score else 0.0,
+            "location_count": loc_count
         })
 
     # 5. Source Channel Distribution
@@ -110,8 +137,13 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
     # 7. Alert Intelligence Summary
     alert_summary = alert_service.get_alert_summary(db)
 
-    return {
+    # 8. Prediction Coverage
+    from app.models.prediction import Prediction
+    prediction_coverage = db.query(Prediction.complaint_id).distinct().count()
+
+    result = {
         "total_complaints": total_complaints,
+        "prediction_coverage": prediction_coverage,
         "total_fraud_amount": total_fraud_amount,
         "avg_fraud_amount": avg_fraud_amount,
         "status_breakdown": status_breakdown,
@@ -122,3 +154,8 @@ def get_dashboard_overview(db: Session = Depends(get_db)):
         "recent_complaints": recent_complaints,
         "alert_summary": alert_summary
     }
+
+    _dashboard_cache["data"] = result
+    _dashboard_cache["timestamp"] = now
+
+    return result

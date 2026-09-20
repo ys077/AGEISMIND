@@ -1,14 +1,66 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MainLayout } from '../components/layout/MainLayout';
-import { 
-  getComplaint, 
-  getComplaintTransactions, 
-  getStoredPrediction 
-} from '../api/client';
+import { useAppStore } from '../store/appDataStore';
 import { formatProbability } from '../utils/probability';
-import { ArrowLeft, FileText, Database, Network, Map, Cpu } from 'lucide-react';
+import { ArrowLeft, FileText, Database, Network, Map, Cpu, Loader2 } from 'lucide-react';
 import { RiskHeatmap } from '../components/RiskHeatmap';
+
+const LoadingScreen = ({ complaintId }: { complaintId: string }) => {
+  return (
+    <div className="flex flex-col items-center justify-center h-[70vh]">
+      <Loader2 className="w-12 h-12 text-blue-600 animate-spin mb-6" />
+      <div className="text-xl font-bold text-slate-900 mb-3">
+        Loading Intelligence for {complaintId}
+      </div>
+      <div className="text-sm font-medium text-slate-500 animate-pulse h-6">
+        Retrieving core database records...
+      </div>
+    </div>
+  );
+};
+
+const InvestigationPipeline = ({ complaint, transactions, prediction }: any) => {
+  const steps = [
+    { id: 'complaint', label: 'Complaint', status: complaint ? 'COMPLETED' : 'PENDING' },
+    { id: 'transactions', label: 'Transactions', status: transactions && transactions.length > 0 ? 'COMPLETED' : (transactions ? 'NO DATA' : 'PENDING') },
+    { id: 'network', label: 'Network', status: transactions && transactions.length > 0 ? 'COMPLETED' : 'PENDING' },
+    { id: 'geography', label: 'Time & Geography', status: transactions && transactions.length > 0 ? 'COMPLETED' : 'PENDING' },
+    { id: 'prediction', label: 'ML Prediction', status: prediction ? 'COMPLETED' : 'PENDING' },
+    { id: 'risk', label: 'Risk Classification', status: prediction ? 'COMPLETED' : 'PENDING' },
+    { id: 'shap', label: 'SHAP', status: prediction ? 'COMPLETED' : 'PENDING' },
+    { id: 'heatmap', label: 'Heatmap', status: prediction ? 'COMPLETED' : 'PENDING' }
+  ];
+
+  return (
+    <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-5 mb-6">
+      <h3 className="text-sm font-bold text-slate-800 mb-4 uppercase tracking-wider">Investigation Pipeline</h3>
+      <div className="flex items-center justify-between overflow-x-auto pb-2">
+        {steps.map((step, idx) => (
+          <div key={step.id} className="flex items-center">
+            <div className="flex flex-col items-center gap-2">
+              <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold border-2
+                ${step.status === 'COMPLETED' ? 'bg-emerald-500 border-emerald-500 text-white' : 
+                  step.status === 'NO DATA' ? 'bg-slate-200 border-slate-300 text-slate-500' :
+                  'bg-white border-slate-300 text-slate-300'}`}
+              >
+                {step.status === 'COMPLETED' ? '✓' : (step.status === 'NO DATA' ? '!' : '○')}
+              </div>
+              <span className={`text-[10px] font-semibold uppercase text-center w-20 leading-tight
+                ${step.status === 'COMPLETED' ? 'text-slate-800' : 'text-slate-400'}`}>
+                {step.label}
+              </span>
+            </div>
+            {idx < steps.length - 1 && (
+              <div className={`w-8 h-0.5 mx-2 -mt-6
+                ${step.status === 'COMPLETED' ? 'bg-emerald-500' : 'bg-slate-200'}`}></div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export const ComplaintDetails: React.FC = () => {
   const { complaintId } = useParams<{ complaintId: string }>();
@@ -20,6 +72,38 @@ export const ComplaintDetails: React.FC = () => {
   
   const [activeTab, setActiveTab] = useState('OVERVIEW');
   const [loading, setLoading] = useState(true);
+  const [predictionJobId, setPredictionJobId] = useState<string | null>(null);
+  const [jobStatus, setJobStatus] = useState<any>(null);
+
+  const [isStartingEngine, setIsStartingEngine] = useState(false);
+
+  const { fetchCaseComplete } = useAppStore();
+
+  useEffect(() => {
+    let intervalId: any;
+    if (predictionJobId && jobStatus?.status !== 'COMPLETED' && jobStatus?.status !== 'FAILED') {
+      intervalId = setInterval(async () => {
+        try {
+          const { getPredictionJobStatus } = await import('../api/client');
+          const status = await getPredictionJobStatus(predictionJobId);
+          setJobStatus(status);
+          
+          if (status.status === 'COMPLETED' || status.status === 'FAILED') {
+            clearInterval(intervalId);
+            // Fetch fresh predictions directly from the backend bypassing cache
+            if (status.status === 'COMPLETED' && complaintId) {
+              const { getStoredPrediction } = await import('../api/client');
+              const pred = await getStoredPrediction(complaintId);
+              setPrediction(pred);
+            }
+          }
+        } catch (err) {
+          console.error("Failed to poll prediction job status", err);
+        }
+      }, 300);
+    }
+    return () => clearInterval(intervalId);
+  }, [predictionJobId, jobStatus, complaintId, fetchCaseComplete]);
 
   useEffect(() => {
     if (!complaintId) return;
@@ -27,31 +111,25 @@ export const ComplaintDetails: React.FC = () => {
     const loadData = async () => {
       try {
         setLoading(true);
-        const comp = await getComplaint(complaintId);
-        setComplaint(comp);
-
-        try {
-          const txs = await getComplaintTransactions(complaintId);
-          setTransactions(Array.isArray(txs) ? txs : []);
-        } catch (e) {
-          console.error("No transactions", e);
-        }
-
-        try {
-          const pred = await getStoredPrediction(complaintId);
-          setPrediction(pred);
-        } catch (e) {
-          console.error("No predictions", e);
-        }
+        const fullCase = await fetchCaseComplete(complaintId);
+        setComplaint(fullCase.complaint);
+        setTransactions(fullCase.transactions || []);
+        
+        // Unblock the main UI immediately
+        setLoading(false);
+        
+        // We purposefully do NOT auto-load predictions here so that 
+        // the user can experience the live Intelligence processing flow
+        // by clicking "Run Predictive Engine" for ANY complaint they open.
+        setPrediction(null);
       } catch (err) {
         console.error("Failed to load complaint details", err);
-      } finally {
         setLoading(false);
       }
     };
 
     loadData();
-  }, [complaintId]);
+  }, [complaintId, fetchCaseComplete]);
 
   const tabs = [
     { id: 'OVERVIEW', label: 'Overview', icon: FileText },
@@ -64,9 +142,7 @@ export const ComplaintDetails: React.FC = () => {
   if (loading) {
     return (
       <MainLayout>
-        <div className="flex items-center justify-center h-64">
-          <div className="text-slate-500 font-medium animate-pulse">Loading intelligence for {complaintId}...</div>
-        </div>
+        <LoadingScreen complaintId={complaintId || 'Unknown'} />
       </MainLayout>
     );
   }
@@ -123,6 +199,8 @@ export const ComplaintDetails: React.FC = () => {
         </div>
       </div>
 
+      <InvestigationPipeline complaint={complaint} transactions={transactions} prediction={prediction} />
+
       {/* Tabs */}
       <div className="border-b border-slate-200 mb-6">
         <nav className="flex space-x-8">
@@ -148,8 +226,7 @@ export const ComplaintDetails: React.FC = () => {
       {/* Content Area */}
       <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-6 min-h-[500px]">
         
-        {activeTab === 'OVERVIEW' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className={activeTab === 'OVERVIEW' ? "grid grid-cols-1 md:grid-cols-2 gap-8" : "hidden"}>
             <div>
               <h3 className="text-lg font-semibold text-slate-900 mb-4">Case Summary</h3>
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-slate-700 text-sm leading-relaxed whitespace-pre-wrap">
@@ -179,10 +256,8 @@ export const ComplaintDetails: React.FC = () => {
               </div>
             </div>
           </div>
-        )}
 
-        {activeTab === 'TRANSACTIONS' && (
-          <div>
+        <div className={activeTab === 'TRANSACTIONS' ? "block" : "hidden"}>
             <h3 className="text-lg font-semibold text-slate-900 mb-4">Transaction History ({transactions.length})</h3>
             <div className="overflow-x-auto border border-slate-200 rounded-lg">
               <table className="w-full text-left border-collapse">
@@ -221,10 +296,8 @@ export const ComplaintDetails: React.FC = () => {
               </table>
             </div>
           </div>
-        )}
 
-        {activeTab === 'NETWORK' && (
-          <div>
+        <div className={activeTab === 'NETWORK' ? "block" : "hidden"}>
             <h3 className="text-lg font-semibold text-slate-900 mb-4">Fraud Network Flow</h3>
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col items-center justify-center min-h-[350px]">
               <Network size={48} className="text-blue-500 mb-4 animate-bounce" />
@@ -243,25 +316,67 @@ export const ComplaintDetails: React.FC = () => {
               </div>
             </div>
           </div>
-        )}
 
-        {activeTab === 'GEOGRAPHY' && (
-          <div className="h-[550px]">
-            <h3 className="text-lg font-semibold text-slate-900 mb-4">Predictive Withdrawal Heatmap</h3>
-            <RiskHeatmap complaintId={cId} />
+        <div className={activeTab === 'GEOGRAPHY' ? "block" : "hidden"}>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold text-slate-900">Predictive Withdrawal Heatmap</h3>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+              <div className="lg:col-span-3 h-[550px]">
+                <RiskHeatmap key={prediction ? 'has-pred' : 'no-pred'} mode="complaint" complaintId={complaintId} />
+              </div>
+              <div className="lg:col-span-1 space-y-4">
+                <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                  <h4 className="text-sm font-bold text-slate-800 mb-1 uppercase tracking-wider">Top Predicted Withdrawal Locations</h4>
+                  <p className="text-xs text-slate-500 mb-4">Model-ranked candidate withdrawal locations</p>
+                  
+                  {prediction?.ranked_candidates && prediction.ranked_candidates.length > 0 ? (
+                    <div className="space-y-3">
+                      {prediction.ranked_candidates.slice(0, 3).map((cand: any, idx: number) => (
+                        <div key={idx} className="bg-white border border-slate-200 rounded p-3 relative overflow-hidden">
+                          <div className={`absolute left-0 top-0 bottom-0 w-1 ${cand.priority === 'CRITICAL' ? 'bg-red-500' : cand.priority === 'HIGH' ? 'bg-orange-500' : cand.priority === 'MEDIUM' ? 'bg-amber-500' : 'bg-emerald-500'}`}></div>
+                          <div className="pl-3">
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="text-xs font-bold text-slate-700">#{cand.rank || idx + 1} {cand.location_name || cand.location_id}</span>
+                              <span className="text-xs font-bold text-slate-900">{formatProbability(cand.probability)}</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <span className="text-[10px] text-slate-500">{cand.district}</span>
+                              <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded ${cand.priority === 'CRITICAL' ? 'bg-red-100 text-red-700' : cand.priority === 'HIGH' ? 'bg-orange-100 text-orange-700' : cand.priority === 'MEDIUM' ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                                {cand.priority}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-sm text-slate-500 text-center py-4">No predictions available</div>
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
-        )}
 
-        {activeTab === 'PREDICTION' && (
-          <div>
+        <div className={activeTab === 'PREDICTION' ? "block" : "hidden"}>
             {prediction && prediction.ranked_candidates && prediction.ranked_candidates.length > 0 ? (
               <div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-4">
-                  Top Cash Withdrawal Location Predictions ({prediction.ranked_candidates.length} candidates)
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                  {prediction.candidate_count ? prediction.candidate_count.toLocaleString() : prediction.ranked_candidates.length.toLocaleString()} candidate locations evaluated
                 </h3>
+                <p className="text-sm text-slate-600 mb-4">Top 10 predicted withdrawal locations</p>
+                
+                {prediction.ranked_candidates[0]?.probability < 0.01 && (
+                  <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg mb-6 shadow-sm">
+                    <h4 className="font-bold text-amber-800 text-sm mb-1 uppercase">Low Predictive Signal</h4>
+                    <p className="text-sm text-amber-700">All currently scored candidates have low model probability. The locations below are ranked relative to this complaint and should be treated as investigative leads rather than confirmed withdrawal locations.</p>
+                  </div>
+                )}
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {prediction.ranked_candidates.slice(0, 10).map((cand: any, idx: number) => (
-                    <div key={idx} className="border border-slate-200 rounded-lg p-4 bg-slate-50 flex justify-between items-center">
+                  {prediction.ranked_candidates.map((cand: any, idx: number) => (
+                    <div key={idx} className="flex flex-col mb-4">
+                      <div className="border border-slate-200 rounded-lg p-4 bg-slate-50 flex justify-between items-center shadow-sm">
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
@@ -269,31 +384,135 @@ export const ComplaintDetails: React.FC = () => {
                           </span>
                           <p className="font-semibold text-slate-900">{cand.location_name || cand.location_id}</p>
                         </div>
-                        <p className="text-sm text-slate-500 mt-1">{cand.district}</p>
+                        <p className="text-sm text-slate-500 mt-1">District: {cand.district}</p>
                         {cand.priority && (
-                          <span className={`inline-block mt-2 px-2 py-0.5 rounded text-xs font-bold ${cand.priority === 'HIGH' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'}`}>
+                          <span className={`inline-block mt-2 px-2 py-0.5 rounded text-[10px] font-bold ${
+                            cand.priority === 'CRITICAL' ? 'bg-purple-100 text-purple-700' :
+                            cand.priority === 'HIGH' ? 'bg-red-100 text-red-700' : 
+                            cand.priority === 'MEDIUM' ? 'bg-amber-100 text-amber-700' :
+                            'bg-emerald-100 text-emerald-700'
+                          }`}>
                             {cand.priority} PRIORITY
                           </span>
                         )}
+                        <span className="inline-block mt-2 ml-2 px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600">
+                          {cand.model_version || prediction.model_version || 'v1'}
+                        </span>
                       </div>
                       <div className="text-right">
-                        <span className="text-2xl font-bold text-blue-600">{formatProbability(cand.probability)}</span>
-                        <p className="text-xs text-slate-400 mt-1">Probability</p>
+                        <span className="text-2xl font-bold text-slate-800">{formatProbability(cand.probability)}</span>
+                        <p className="text-[10px] text-slate-500 mt-1 uppercase font-semibold">Model Probability</p>
                       </div>
                     </div>
-                  ))}
-                </div>
+                    {cand.factors && cand.factors.length > 0 && (
+                      <div className="bg-white border border-slate-200 border-t-0 rounded-b-lg p-3 grid grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-[10px] font-bold text-emerald-700 uppercase mb-1">Top Positive Factors</p>
+                          <ul className="text-xs text-slate-600 space-y-1">
+                            {cand.factors.filter((f: any) => f.direction === 'POSITIVE' || f.contribution > 0).slice(0, 3).map((f: any, i: number) => (
+                              <li key={i} className="flex justify-between border-b border-slate-50 pb-0.5">
+                                <span>{f.factor_name}</span>
+                                <span className="text-emerald-600 font-mono">+{Number(f.contribution).toFixed(3)}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="text-[10px] font-bold text-rose-700 uppercase mb-1">Top Negative Factors</p>
+                          <ul className="text-xs text-slate-600 space-y-1">
+                            {cand.factors.filter((f: any) => f.direction === 'NEGATIVE' || f.contribution < 0).slice(0, 3).map((f: any, i: number) => (
+                              <li key={i} className="flex justify-between border-b border-slate-50 pb-0.5">
+                                <span>{f.factor_name}</span>
+                                <span className="text-rose-600 font-mono">{Number(f.contribution).toFixed(3)}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+                
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center h-64 text-slate-500">
-                <Cpu size={48} className="text-slate-300 mb-4" />
-                <p className="font-medium text-slate-700">No ML prediction has been run for this complaint yet.</p>
-                <p className="text-sm text-slate-400 mt-1">Predictions are generated automatically by the background risk engine.</p>
-              </div>
+              predictionJobId ? (
+                <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-4">
+                    <Cpu size={24} className="text-blue-600 animate-pulse" />
+                    <h3 className="text-lg font-bold text-slate-900">PREDICTIVE ENGINE</h3>
+                    <span className="ml-auto px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-full">
+                      {jobStatus?.status || 'INITIALIZING'}
+                    </span>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {["INITIALIZING", "LOADING_FEATURES", "TRANSACTION_FEATURES", "NETWORK_FEATURES", "GEOGRAPHIC_FEATURES", "ML_MODEL_EVALUATION", "SHAP_EXPLANATION", "RISK_CLASSIFICATION", "PERSISTING_PREDICTIONS"].map((stage, idx) => {
+                      const isCompleted = jobStatus?.completed_stages?.includes(stage);
+                      const isCurrent = jobStatus?.stage === stage;
+                      const isPending = !isCompleted && !isCurrent;
+                      
+                      if (isPending && idx > (jobStatus?.completed_stages?.length || 0) + 1) return null; // hide far future stages
+                      
+                      return (
+                        <div key={stage} className={`flex items-center gap-3 ${isPending ? 'opacity-40' : 'opacity-100'}`}>
+                          <div className={`w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold ${
+                            isCompleted ? 'bg-emerald-500 text-white' : 
+                            isCurrent ? 'bg-blue-500 text-white animate-pulse' : 
+                            'border border-slate-300 text-slate-300'
+                          }`}>
+                            {isCompleted ? '✓' : idx + 1}
+                          </div>
+                          <span className={`text-sm font-mono ${isCompleted ? 'text-slate-700' : isCurrent ? 'text-blue-700 font-bold' : 'text-slate-400'}`}>
+                            {stage.replace(/_/g, ' ')}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-64 text-slate-500 border border-slate-200 border-dashed rounded-lg bg-slate-50">
+                  <Cpu size={48} className="text-slate-300 mb-4" />
+                  <p className="font-medium text-slate-700">Prediction Pending</p>
+                  <p className="text-sm text-slate-400 mt-1 mb-4">No prediction has been executed for this complaint.</p>
+                  <button
+                    onClick={async () => {
+                      try {
+                        setIsStartingEngine(true);
+                        const { runPredictionJob } = await import('../api/client');
+                        const res = await runPredictionJob(complaintId!);
+                        setPredictionJobId(res.job_id);
+                        setJobStatus(res);
+                      } catch (err) {
+                        console.error("Failed to start prediction", err);
+                        alert("Failed to start predictive engine.");
+                      } finally {
+                        setIsStartingEngine(false);
+                      }
+                    }}
+                    disabled={isStartingEngine}
+                    className={`flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold shadow-sm transition-colors ${
+                      isStartingEngine 
+                        ? 'bg-blue-400 text-white cursor-not-allowed' 
+                        : 'bg-blue-600 text-white hover:bg-blue-700'
+                    }`}
+                  >
+                    {isStartingEngine ? (
+                      <>
+                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        Initializing Engine...
+                      </>
+                    ) : (
+                      <>
+                        <Cpu size={18} /> Run Predictive Engine
+                      </>
+                    )}
+                  </button>
+                </div>
+              )
             )}
           </div>
-        )}
-
       </div>
     </MainLayout>
   );

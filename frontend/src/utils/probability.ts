@@ -30,8 +30,12 @@ export function formatProbability(value: number | null | undefined): string {
   if (normalized === 0) {
     return '0%';
   }
-  if (normalized > 0 && normalized < 1) {
-    return '<1%';
+  
+  if (normalized >= 1) {
+    return `${Math.round(normalized)}%`;
+  } else if (normalized >= 0.1) {
+    return `${normalized.toFixed(1)}%`;
+  } else {
+    return `${normalized.toFixed(2)}%`;
   }
-  return `${Math.round(normalized)}%`;
 }

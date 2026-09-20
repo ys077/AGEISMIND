@@ -20,6 +20,14 @@ class Settings(BaseSettings):
     PROJECT_VERSION: str = "0.2.0"
     DEBUG: bool = False
 
+    # Email Settings
+    SMTP_HOST: str = "smtp.gmail.com"
+    SMTP_PORT: int = 587
+    SMTP_USERNAME: str = ""
+    SMTP_PASSWORD: str = ""
+    ALERT_FROM_EMAIL: str = ""
+    ENABLE_EMAIL_NOTIFICATIONS: bool = False
+
     model_config = SettingsConfigDict(
         env_file=str(PROJECT_ROOT / ".env"),
         env_file_encoding="utf-8",
